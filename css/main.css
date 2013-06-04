@@ -222,7 +222,7 @@ h1 a:hover                              { background-position: 4px -45px; }
   }
 
 #version2-2011.work .twelvecol .overlay {
-  background: url("../images/2011/work_frame_big.png") no-repeat;
+  background: url("../images/work_frame_big.png") no-repeat;
   height: 177px;
   left: 0;
   position: absolute;
@@ -245,7 +245,7 @@ h1 a:hover                              { background-position: 4px -45px; }
 }
 
 #version2-2011.work #featured-content .slug {
-  background: url("../images/2011/work_cake_mini_screenshots.png") no-repeat 100% 0;
+  background: url("../images/work_cake_mini_screenshots.png") no-repeat 100% 0;
   height: 145px;
   padding-left: 40px;
   width: 725px;
@@ -336,7 +336,7 @@ h1 a:hover                              { background-position: 4px -45px; }
 }
 
 #version2-2011.work #gallery .thumbnails .twocol .overlay {
-  background: url("../images/2011/work_frame_thumbnail.png") no-repeat;
+  background: url("../images/work_frame_thumbnail.png") no-repeat;
   height: 162px;
   left: 0;
   position: absolute;
@@ -431,12 +431,12 @@ h1 a:hover                              { background-position: 4px -45px; }
         rgba(0,0,0,0.2),
         rgba(255,255,255,0.2) 30px,
         rgba(255,255,255,0)),
-      url(../images/2011/work_white_carbon.png);
+      url(../images/work_white_carbon.png);
       -moz-box-shadow:0 2px 1px rgba(0, 0, 0, 0.7) inset;
   }
 
   .cssgradients #version2-2011.work-cake #thumbnails {
-    background: url(../images/2011/work_white_carbon.png);
+    background: url(../images/work_white_carbon.png);
   }
 
 #version2-2011.work-cake .thumbnail {
@@ -458,7 +458,7 @@ h1 a:hover                              { background-position: 4px -45px; }
 }
 
 #version2-2011.work-cake #thumbnails .overlay {
-  background: url(../images/2011/work_thumbnail_overlay.png) no-repeat;
+  background: url(../images/work_thumbnail_overlay.png) no-repeat;
   height: 328px;
   position: absolute;
   width: 250px;
@@ -627,7 +627,7 @@ h1 a:hover                              { background-position: 4px -45px; }
 	left: 50%;
 	margin-left: -300px;
 	width: 520px;
-	background: #eee url(../images/2011/modal-gloss.png) no-repeat -200px -80px;
+	background: #eee url(../images/modal-gloss.png) no-repeat -200px -80px;
 	position: absolute;
 	z-index: 101;
 	padding: 30px 40px 34px;
