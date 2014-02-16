@@ -2,35 +2,72 @@
 <html>
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-		<title>Al Abut - designer, crimefighter.</title>
-        <!--[if lte IE 9]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" /><![endif]-->
-        <link rel="stylesheet" href="css/1140.css" type="text/css" media="screen" />
-    	<link rel="stylesheet" href="css/main.css" type="text/css" media="screen" />
-    </head>
-	<body id="version2-2011" class="about2 home">
-		<div class="container">
-		    <div class="row">
-      		    <div id="header">
-          			<h1><a href="/" title=":: Al Abut :: Home Page ::">Al Abut</a></h1>
-          			<ul id="top-nav">
-          				<li class="home"><a href="/">home</a></li>
-          				<!-- <li class="about"><a href="/about.html">about</a></li> -->
-                        <li class="work"><a href="/work.html">work</a></li>
-                        <!-- <li class="contact"><a href="/contact.html">contact</a></li> -->
-          			</ul>
-      		    </div>
-      		    <!-- end header -->
-		    </div>
-		    <!-- end row -->
-		    <div class="row">
-      		    <div id="content">
-                    <img src="images/about_content_bg.png" alt="Al Abut is a designer and crimefighter." />
-      		    </div>
-      		    <!-- end content -->
-		    </div>
-		    <!-- end row -->
-		</div>
-		<!-- end container -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Al Abut. Designer, crimefighter.</title>
+    <style type="text/css" media="screen">
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body, html, section {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+section {
+  background: #333;
+  position: relative;
+}
+
+.inner-border, .container {  
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  width: 95%;
+}
+
+.inner-border {
+  border: 3px double #fff;
+  height: 95%;
+}
+
+.container {
+  color: #fff;
+  font-family: 'HelveticaNeue-UltraLight', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-size: 54px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  text-align: center;
+  text-rendering: optimizeLegibility;
+}
+
+    </style>
+  </head>
+	<body>
+	  <section>
+	    <div class="inner-border">
+        <div class="container">
+          And so begins a fresh start.
+        </div><!-- /container -->
+	    </div><!-- /inner-border -->
+	  </section>
+	  <section>
+	    <div class="inner-border">
+        <div class="container">
+          Always look forward.
+        </div><!-- /container -->
+	    </div><!-- /inner-border -->
+	  </section>
 
 		<!-- google analytics -->
 		<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
@@ -39,5 +76,5 @@
 			_uacct = "UA-256299-1";
 			urchinTracker();
 		</script>
-    </body>
+  </body>
 </html>
