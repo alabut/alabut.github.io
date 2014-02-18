@@ -21,6 +21,7 @@ body, html, section {
 
 section {
   background: #333;
+  overflow: hidden;
   position: relative;
 }
 
@@ -39,16 +40,31 @@ section {
 .inner-border {
   border: 3px double #fff;
   height: 95%;
+  z-index: 10;
 }
 
-.container {
+.container h1,
+.container h2 {
   color: #fff;
-  font-family: 'HelveticaNeue-UltraLight', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-  font-size: 54px;
-  font-weight: 100;
-  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
   text-align: center;
   text-rendering: optimizeLegibility;
+}
+
+.container h1 {
+  font-family: 'HelveticaNeue-UltraLight', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 100px;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.container h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 
 .animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}.animated.hinge{-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}
@@ -106,22 +122,74 @@ section {
   animation-name: fadeInUp;
 }
 
+video {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 0;
+}
+
     </style>
   </head>
 	<body>
 	  <section>
 	    <div class="inner-border">
         <div class="container animated fadeInUp">
-          And so begins a fresh start.
-        </div><!-- /container -->
-	    </div><!-- /inner-border -->
+          <h1>Al Abut</h1>
+          <h2>Designer, crimefighter.</h2>
+        </div>
+	    </div>
 	  </section>
 	  <section>
 	    <div class="inner-border">
         <div class="container">
-          Always look forward.
-        </div><!-- /container -->
-	    </div><!-- /inner-border -->
+          <h1>I design software</h1>
+          <h2>At Zapier</h2>
+        </div>
+	    </div>
+	  </section>
+	  <section>
+	    <div class="inner-border">
+        <div class="container">
+          <h1>I love California</h1>
+          <h2>It's where I grew up</h2>
+          <h2>It's where I work</h2>
+        </div>
+	    </div>
+	  </section>
+	  <section>
+	    <div class="inner-border">
+        <div class="container">
+          <h1>I love to travel</h1>
+          <h2>And explore the planet</h2>
+        </div>
+	    </div>
+	  </section>
+	  <section>
+	    <div class="inner-border">
+        <div class="container">
+          <h1>And so does my lady</h1>
+          <h2>I'm a lucky guy</h2>
+        </div>
+	    </div>
+	  </section>
+	  
+	  
+	  
+	  
+	  
+	  
+	  <section>
+	    <div class="inner-border">
+        <div class="container">
+          <h1>REPLACE</h1>
+          <h2>REPLACE</h2>
+        </div>
+	    </div>
+      <video id="video" autoplay="autoplay" loop="" muted="muted" preload="auto">
+        <source src="https://mtc.cdn.vine.co/v/videos/AED3CA47-3555-4D03-AE19-9C345233DDB9-5436-000008E5CC2F3CF6_1.0.3.mp4?versionId=A6vKLAeL_GOtvSGaKtJs_w1VZ4ByMorL" type="video/mp4">
+      </video>
 	  </section>
 
 		<!-- google analytics -->
