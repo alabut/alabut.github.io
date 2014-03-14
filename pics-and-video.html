@@ -60,26 +60,56 @@ a {
   color: #fff;
 }
 
-a:hover {
-  border-color: #FF3E00;
+.intro .black-icon,
+aside .white-icon {
+  display: none;
+}
+
+.intro a:hover .black-icon,
+aside a:hover .white-icon {
+  display: inline;
+  margin: 0 5px -4px 0;
+}
+
+.intro a:hover .white-icon,
+aside a:hover .black-icon {
+  display: none;
+}
+
+aside a:hover {
+  background: #000;
+  color: #fff;
+}
+
+.intro .container a:hover {
+  background: #fff;
+  color: #000;
 }
 
 a img {
   display: inline;
+  height: 20px;
   margin: 0 5px -4px 0;
-  width: 20px;
 }
 
-a:hover img {
-  opacity: 1;
-}
-
-img.scroll-indicator {
+.scroll-indicator {
+  border: none;
   bottom: 10px;
-  height: 40px;
   left: 50%;
-  margin: 0 0 0 -20px;
+  margin: 0 0 0 -30px;
+  padding: 0;
   position: absolute;
+}
+
+.scroll-indicator img {
+  height: 40px;
+  margin: 0;
+  opacity: 0.5;
+  width: 40px;
+}
+
+.scroll-indicator:hover img {
+  opacity: 1;
 }
 
 .intro {
@@ -407,16 +437,30 @@ and (max-device-width : 480px) {
           <img src="images/al-avatar.png">
           <h1>Al Abut</h1>
           <h2>Designer, crimefighter</h2>
-          <a href="http://dribbble.com/alabut"><img src="images/icon-dribbble-white.png"> Dribbble</a>
-          <a href="http://twitter.com/alabut"><img src="images/icon-twitter-white.png"> Twitter</a>
-          <a href="http://instagram.com/alabut"><img src="images/icon-instagram-white.png"> Instagram</a>
+          <a href="http://dribbble.com/alabut">
+            <img src="images/icon-dribbble-white.png" class="white-icon">
+            <img src="images/icon-dribbble-black.png" class="black-icon">
+            Dribbble
+          </a>
+          <a href="http://twitter.com/alabut">
+            <img src="images/icon-twitter-white.png" class="white-icon">
+            <img src="images/icon-twitter-black.png" class="black-icon">
+            Twitter
+          </a>
+          <a href="http://instagram.com/alabut">
+            <img src="images/icon-instagram-white.png" class="white-icon">
+            <img src="images/icon-instagram-black.png" class="black-icon">
+            Instagram
+          </a>
         </div>
-        <img src="images/icon-chevron-down.png" class="scroll-indicator">
+        <a href="#content" class="scroll-indicator">
+          <img src="images/icon-chevron-down.png">
+        </a>
 	    </div>
 	  </section>
 	  
 	  <!-- BACKGROUND -->
-    <aside>
+    <aside id="content">
       <h1>My Background</h1>
       <hr>
       <h2>Geographically &amp; culturally</h2>
@@ -786,10 +830,24 @@ and (max-device-width : 480px) {
       <h1>Links</h1>
       <hr>
       <h2>Get in touch</h2>
-      <a href="http://dribbble.com/alabut"><img src="images/icon-dribbble-black.png"> Dribbble</a>
-      <a href="http://twitter.com/alabut"><img src="images/icon-twitter-black.png"> Twitter</a>
-      <a href="http://instagram.com/alabut"><img src="images/icon-instagram-black.png"> Instagram</a>
+      <a href="http://dribbble.com/alabut">
+        <img src="images/icon-dribbble-white.png" class="white-icon">
+        <img src="images/icon-dribbble-black.png" class="black-icon">
+        Dribbble
+      </a>
+      <a href="http://twitter.com/alabut">
+        <img src="images/icon-twitter-white.png" class="white-icon">
+        <img src="images/icon-twitter-black.png" class="black-icon">
+        Twitter
+      </a>
+      <a href="http://instagram.com/alabut">
+        <img src="images/icon-instagram-white.png" class="white-icon">
+        <img src="images/icon-instagram-black.png" class="black-icon">
+        Instagram
+      </a>
     </aside>
+    
+    <script src="smooth-scroll.min.js"></script>
     
 		<!-- google analytics -->
 		<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
