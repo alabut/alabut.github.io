@@ -20,6 +20,10 @@ body, html, section {
   width: 100%;
 }
 
+section, aside {
+  display: block;
+}
+
 section {
 	background-attachment: fixed;
   background-color: #333;
@@ -27,6 +31,13 @@ section {
   background-size: cover;
   overflow: hidden;
   position: relative;
+}
+
+aside {
+  background: #fff;
+  color: #222;
+  padding: 100px 0;
+  text-align: center;
 }
 
 .intro {
@@ -65,12 +76,24 @@ section {
   background-image: url(images/california.jpg);
 }
 
+.sandiego {
+  background-image: url(images/sandiego.jpg);
+}
+
 .travel-me {
   background-image: url(images/travel-me.jpg);
 }
 
 .travel-yesi {
   background-image: url(images/travel-yesi.jpg);
+}
+
+.amsterdam {
+  background-image: url(images/amsterdam.jpg);
+}
+
+.maui {
+  background-image: url(images/maui.jpg);
 }
 
 .san-francisco {
@@ -96,8 +119,8 @@ section {
   z-index: 10;
 }
 
-.container h1,
-.container h2 {
+h1,
+h2 {
   color: #fff;
   margin: 0;
   padding: 0;
@@ -105,16 +128,19 @@ section {
   text-rendering: optimizeLegibility;
 }
 
-.container h1 {
-  font-family: 'Lato', 'HelveticaNeue-UltraLight', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
-  font-size: 100px;
-  font-weight: 100;
-  letter-spacing: -5px; 
-  line-height: 100%;
-  margin-bottom: 10px;
+h1.no-img {
+  margin-bottom: 20px;
 }
 
-.container h2 {
+h1 {
+  font-family: Georgia, serif;
+  font-size: 47px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 100%;
+}
+
+h2 {
   font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 18px;
   font-weight: 300;
@@ -122,8 +148,48 @@ section {
   text-transform: uppercase;
 }
 
+section h1 {
+  line-height: 120%;
+}
+
+aside h1, aside h2 {
+  color: #222;
+}
+
+aside h1 {
+  font-family: Georgia, serif;
+  font-size: 47px;
+  font-weight: 700;
+  letter-spacing: 0;
+  margin-bottom: 15px;
+}
+
+aside h2 {
+  color: #222;
+  font-size: 18px;
+}
+
+.intro h1 {
+  font-family: 'Lato', 'HelveticaNeue-UltraLight', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 76px;
+  font-weight: 100;
+}
+
+.intro h2 {
+  font-family: Georgia;
+  font-style: italic;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: none;
+}
+
 img {
-  margin-bottom: 20px;
+  margin: 20px 0;
+  max-height: 30px;
+}
+
+.intro img {
+  max-height: none;
 }
 
 hr {
@@ -135,6 +201,15 @@ hr {
   line-height: 2px;
   margin: 0 17px 20px;
   width: 100px;
+}
+
+section img:nth-of-type(2) {
+  margin-top: 30px;
+}
+
+aside hr {
+  border-color: #222;
+  margin: 10px 0 5px;
 }
 
 .animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}.animated.hinge{-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}
@@ -203,11 +278,14 @@ video {
 	z-index: 0;
 }
 
-.video-container {
+.video-container .inner-border,
+.amsterdam .inner-border,
+.maui .inner-border,
+.sandiego .inner-border {
   background: rgba(0, 0, 0, 0.5);
 }
 
-.video-container-purple {
+.video-container-purple .inner-border {
   /* solid bg color */
   background: rgba(226, 88, 140, 0.5);
   
@@ -231,11 +309,49 @@ video {
   margin-left: -3px;
 }
 
+@media only screen and (max-width : 1024px) {
+  video, .video-container {
+    display: none;
+  }
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  
+  section {
+    background-attachment: scroll;
+  }
+  
+  .balboa-park .inner-border,
+  .san-francisco .inner-border {
+    background: rgba(0,0,0,0.5);
+  }
+  
+  .intro img, .sandiego img {
+    max-width: 103px;
+  }
+  
+  h1, aside h1 {
+    font-size: 29px;
+  }
+  
+  h1, h2 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  hr {
+    width: 50px;
+  }
+  
+}
+
     </style>
   </head>
 	<body>
 	  
-	  <!-- intro -->
+	  <!-- INTRO -->
 	  <section class="intro">
 	    <div class="inner-border">
         <div class="container animated fadeInUp">
@@ -246,9 +362,15 @@ video {
 	    </div>
 	  </section>
 	  
-	  <!-- location bios -->
-	  <section>
-	    <div class="inner-border video-container">
+	  <!-- BACKGROUND -->
+    <aside>
+      <h1>My Background</h1>
+      <hr>
+      <h2>Geographically &amp; culturally</h2>
+    </aside>
+    
+	  <section class="video-container">
+	    <div class="inner-border">
         <div class="container">
           <h1>Born in Istanbul</h1>
           <hr>
@@ -274,14 +396,14 @@ video {
 	    </div>
 	  </section>
 
-    <section style="background-image: url(http://www.lajollaresidential.com/43/pix/Via_Casa_Alta_1994_1.jpg)">
-        <div class="inner-border video-container">
+    <section class="sandiego">
+        <div class="inner-border">
            <div class="container">
              <h1>San Diego's my&nbsp;hometown</h1>
              <hr>
              <img src="images/icon-ucsd.png">
              <hr>
-             <h2>Went to college in La Jolla</h2>
+             <h2>Went to college in La&nbsp;Jolla</h2>
            </div>
         </div>
          <!-- <video id="video" autoplay="autoplay" loop="" muted="muted" preload="auto">
@@ -289,8 +411,8 @@ video {
                   </video> -->
       </section>
 	  
-	  <!--     <section>
-	       <div class="inner-border video-container">
+	  <!--     <section class="video-container">
+	       <div class="inner-border">
 	          <div class="container">
 	            <h1>The beaches are postcard&nbsp;per<span class="kern-more">f</span>ec<span class="kern-more">t</span></h1>
 	            <hr>
@@ -304,7 +426,13 @@ video {
 	        </video>
 	     </section> -->
 	  
-	  <!-- work -->
+	  <!-- WORK -->
+    <aside>
+      <h1>My Work</h1>
+      <hr>
+      <h2>Pushing pixels</h2>
+    </aside>
+    
 	  <section class="design">
 	    <div class="inner-border">
         <div class="container">
@@ -312,8 +440,8 @@ video {
           <hr>
           <img src="images/icon-computer.png">
           <hr>
-          <h2>For work &amp; play</h2>
-          <!-- move that to the process/paper section? -->
+          <h2>For work &amp;&nbsp;play</h2>
+          <!-- move to the process/paper section? -->
         </div>
 	    </div>
 	  </section>
@@ -325,7 +453,7 @@ video {
           <hr>
           <img src="images/icon-yc.png">
           <hr>
-          <h2>Working at startups since 2007</h2>
+          <h2>Working at startups since&nbsp;2007</h2>
         </div>
 	    </div>
 	  </section>
@@ -337,13 +465,14 @@ video {
           <hr>
           <img src="images/icon-pencil.png">
           <hr>
-          <h2>It's super fast &amp; creative</h2>
+          <h2>It's super fast &amp;&nbsp;creative</h2>
+          <!-- add section on usability or other process? -->
         </div>
 	    </div>
 	  </section>
 	  
 	  <section class="nightowl">
-	    <div class="inner-border video-container">
+	    <div class="inner-border">
         <div class="container">
           <h1>I'm a night&nbsp;owl</h1>
           <hr>
@@ -354,7 +483,13 @@ video {
 	    </div>
 	  </section>
 	  
-	  <!-- family -->
+	  <!-- FAMILY -->
+    <aside>
+      <h1>My Loved Ones</h1>
+      <hr>
+      <h2>They complete me</h2>
+    </aside>
+    
 	  <section class="yesi">
 	    <div class="inner-border">
         <div class="container">
@@ -362,7 +497,7 @@ video {
           <hr>
           <img src="images/icon-heart.png">
           <hr>
-          <h2>She's the nicest person I know</h2>
+          <h2>She's the nicest person I&nbsp;know</h2>
         </div>
 	    </div>
 	  </section>
@@ -386,13 +521,13 @@ video {
           <hr>
           <img src="images/icon-paws.png">
           <hr>
-          <h2>They wear funny clothes</h2>
+          <h2>They wear funny&nbsp;clothes</h2>
         </div>
 	    </div>
 	  </section>
 	  
-	  <!--     <section>
-	       <div class="inner-border video-container">
+	  <!--     <section class="video-container">
+	       <div class="inner-border">
 	          <div class="container">
 	            <h1>They love going for&nbsp;walks</h1>
 	            <hr>
@@ -406,8 +541,8 @@ video {
 	        </video>
 	     </section> -->
 	  
-	  <section>
-	    <div class="inner-border video-container">
+	  <section class="video-container">
+	    <div class="inner-border">
         <div class="container">
           <h1>They love the&nbsp;beach</h1>
           <hr>
@@ -421,15 +556,21 @@ video {
       </video>
 	  </section>
 	  
-	  <!-- travel -->
+	  <!-- INTERESTS -->
+    <aside>
+      <h1>My Interests</h1>
+      <hr>
+      <h2>How I recharge</h2>
+    </aside>
+    
 	  <section class="travel-me">
 	    <div class="inner-border">
         <div class="container">
           <hr>
           <img src="images/icon-signs.png">
           <hr>
-          <h1>I love to&nbsp;travel</h1>
-          <h2>And explore the planet</h2>
+          <h1 class="no-img">I love to&nbsp;travel</h1>
+          <h2>And explore the&nbsp;planet</h2>
           <hr>
           <img src="images/icon-globe.png">
           <hr>
@@ -443,7 +584,7 @@ video {
           <hr>
           <img src="images/icon-plane.png">
           <hr>
-          <h1>And so does my&nbsp;baby</h1>
+          <h1 class="no-img">And so does my&nbsp;baby</h1>
           <h2>I'm a lucky guy</h2>
           <hr>
           <img src="images/icon-smiley.png">
@@ -452,10 +593,10 @@ video {
 	    </div>
 	  </section>
 	  
-	  <section style="background-image: url(http://www.kurbantravel.com/public/uploads/images/37410810915753248.jpg)">
-	    <div class="inner-border video-container">
+	  <section class="amsterdam">
+	    <div class="inner-border">
         <div class="container">
-          <h1>We love&nbsp;Amsterdam</h1>
+          <h1>We love Amsterdam</h1>
           <hr>
           <img src="images/icon-windmill.png">
           <hr>
@@ -467,14 +608,14 @@ video {
 	          </video> -->
 	  </section>
 	  
-	  <section style="background-image: url(http://krazy4projects.com/wp-content/uploads/2013/07/maui.jpg)">
-	    <div class="inner-border video-container">
+	  <section class="maui">
+	    <div class="inner-border">
         <div class="container">
           <h1>We really love&nbsp;Hawaii</h1>
           <hr>
           <img src="images/icon-hawaii.png">
           <hr>
-          <h2>Went to Maui twice last year</h2>
+          <h2>Went to Maui twice last&nbsp;year</h2>
         </div>
 	    </div>
       <!-- <video id="video" autoplay="autoplay" loop="" muted="muted" preload="auto">
@@ -482,14 +623,14 @@ video {
             </video> -->
 	  </section>
 	  
-	  <section>
-	    <div class="inner-border video-container">
+	  <section class="video-container">
+	    <div class="inner-border">
         <div class="container">
           <h1>We hiked a&nbsp;rainforest</h1>
           <hr>
           <img src="images/icon-hiking.png">
           <hr>
-          <h2>From Kipahulu to Haleakala</h2>
+          <h2>From Kipahulu to&nbsp;Haleakala</h2>
         </div>
 	    </div>
       <video id="video" autoplay="autoplay" loop="" muted="muted" preload="auto">
@@ -497,14 +638,14 @@ video {
       </video>
 	  </section>
 	  
-	  <section>
-	    <div class="inner-border video-container">
+	  <section class="video-container">
+	    <div class="inner-border">
         <div class="container">
           <h1>Learned to scuba</h1>
           <hr>
           <img src="images/icon-scuba.png">
           <hr>
-          <h2>Saw turtles &amp; a manta ray</h2>
+          <h2>Saw turtles &amp; a manta&nbsp;ray</h2>
         </div>
 	    </div>
       <video id="video" autoplay="autoplay" loop="" muted="muted" preload="auto">
@@ -512,14 +653,14 @@ video {
       </video>
 	  </section>
 	  
-	  <section>
-	    <div class="inner-border video-container">
+	  <section class="video-container">
+	    <div class="inner-border">
         <div class="container">
           <h1>Even went freediving</h1>
           <hr>
           <img src="images/icon-snorkel.png">
           <hr>
-          <h2>Through a cave with a sleeping shark</h2>
+          <h2>Through a cave with a sleeping&nbsp;shark</h2>
         </div>
 	    </div>
       <video id="video" autoplay="autoplay" loop="" muted="muted" preload="auto">
@@ -527,21 +668,20 @@ video {
       </video>
 	  </section>
 	  
-	  <!-- where I am now -->
 	  <section class="san-francisco">
-	    <div class="inner-border video-container">
+	    <div class="inner-border">
         <div class="container">
           <h1>I live in San&nbsp;Francisco</h1>
           <hr>
           <img src="images/icon-golden-gate.png">
           <hr>
-          <h2>There's so much to explore</h2>
+          <h2>There's so much to&nbsp;explore</h2>
         </div>
 	    </div>
 	  </section>
 	  
-	  <!-- <section>
-	       <div class="inner-border video-container">
+	  <!-- <section class="video-container">
+	       <div class="inner-border">
 	         <div class="container">
 	           <h1>SF's pret<span class="kern-more">t</span><span class="kern-more">y</span> great</h1>
 	           <hr>
@@ -555,13 +695,13 @@ video {
 	       </video>
 	     </section> -->
 	  
-	  <section>
-	    <div class="inner-border video-container">
+	  <section class="video-container">
+	    <div class="inner-border">
         <div class="container">
           <hr>
           <img src="images/icon-utensils.png">
           <hr>
-          <h1>The food here is&nbsp;legit</h1>
+          <h1 class="no-img">The food here is&nbsp;legit</h1>
           <h2>So is the coffee</h2>
           <hr>
           <img src="images/icon-coffee.png">
@@ -573,14 +713,14 @@ video {
       </video>
 	  </section>
 	  
-	  <section>
-	    <div class="inner-border video-container">
+	  <section class="video-container">
+	    <div class="inner-border">
         <div class="container">
-          <h1>The music scene is eclectic</h1>
+          <h1>The music scene is&nbsp;eclectic</h1>
           <hr>
           <img src="images/icon-music.png">
           <hr>
-          <h2>Live shows are a soul-cleansing experience</h2>
+          <h2>Live shows are a soul-cleansing&nbsp;experience</h2>
         </div>
 	    </div>
       <video id="video" autoplay="autoplay" loop="" muted="muted" preload="auto">
@@ -588,11 +728,18 @@ video {
       </video>
 	  </section>
 	  
+    <!-- LINKS -->
+    <aside>
+      <h1>Links</h1>
+      <hr>
+      <h2>Get in touch</h2>
+    </aside>
+    
 	  <section>
 	    <div class="inner-border">
         <div class="container">
-          <h1>That's all I've got so&nbsp;far</h1>
-          <h2>I'm making this up as I go</h2>
+          <h1 class="no-img">That's all I've got so&nbsp;far</h1>
+          <h2>I'm making this up as I&nbsp;go</h2>
         </div>
 	    </div>
 	  </section>
