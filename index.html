@@ -96,7 +96,7 @@ a img {
   border: none;
   bottom: 10px;
   left: 50%;
-  margin: 0 0 0 -30px;
+  margin: 0 0 0 -20px;
   padding: 0;
   position: absolute;
 }
@@ -403,6 +403,11 @@ video {
   
 }
 
+aside a {
+  margin: 40px 20px 0;
+  min-width: 170px;
+}
+
 @media only screen 
 and (min-device-width : 320px) 
 and (max-device-width : 480px) {
@@ -423,6 +428,31 @@ and (max-device-width : 480px) {
   hr {
     width: 50px;
   }
+
+  .intro img.avatar {
+    margin: -20px 0 0;
+    max-width: 100px;
+  }
+  
+  .intro h1 {
+    font-size: 47px;
+    font-weight: 300;
+  }
+
+  .intro span {
+    display: none;
+  }
+  
+  .intro .white-icon,
+  .intro .black-icon {
+    margin: 0;
+  }
+  
+  .intro a {
+    border: none;
+    margin-top: 20px;
+    padding: 0;
+  }
   
 }
 
@@ -434,23 +464,23 @@ and (max-device-width : 480px) {
 	  <section class="intro">
 	    <div class="inner-border">
         <div class="container animated fadeInUp">
-          <img src="images/al-avatar.png">
+          <img class="avatar" src="images/al-avatar.png">
           <h1>Al Abut</h1>
           <h2>Designer, crimefighter</h2>
           <a href="http://dribbble.com/alabut">
             <img src="images/icon-dribbble-white.png" class="white-icon">
             <img src="images/icon-dribbble-black.png" class="black-icon">
-            Dribbble
+            <span>Dribbble</span>
           </a>
           <a href="http://twitter.com/alabut">
             <img src="images/icon-twitter-white.png" class="white-icon">
             <img src="images/icon-twitter-black.png" class="black-icon">
-            Twitter
+            <span>Twitter</span>
           </a>
           <a href="http://instagram.com/alabut">
             <img src="images/icon-instagram-white.png" class="white-icon">
             <img src="images/icon-instagram-black.png" class="black-icon">
-            Instagram
+            <span>Instagram</span>
           </a>
         </div>
         <a href="#content" class="scroll-indicator">
@@ -460,7 +490,7 @@ and (max-device-width : 480px) {
 	  </section>
 	  
 	  <!-- WORK -->
-    <aside>
+    <aside id="content">
       <h1>My Work</h1>
       <hr>
       <h2>Pushing pixels</h2>
@@ -517,7 +547,7 @@ and (max-device-width : 480px) {
 	  </section>
 	  
 	  <!-- BACKGROUND -->
-    <aside id="content">
+    <aside>
       <h1>My Background</h1>
       <hr>
       <h2>Geographically &amp; culturally</h2>
