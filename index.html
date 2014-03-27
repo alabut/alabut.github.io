@@ -313,6 +313,16 @@ aside hr {
   margin: 10px 0 5px;
 }
 
+.signature {
+  padding: 0 0 40px;
+}
+
+.signature img {
+  margin: 0;
+  max-height: none;
+  max-width: 50%;
+}
+
 .animated{-webkit-animation-fill-mode:both;-moz-animation-fill-mode:both;-ms-animation-fill-mode:both;-o-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}.animated.hinge{-webkit-animation-duration:2s;-moz-animation-duration:2s;-ms-animation-duration:2s;-o-animation-duration:2s;animation-duration:2s;}
 
 @-webkit-keyframes fadeInUp {
@@ -435,11 +445,14 @@ video {
 .writing a {
   border: none;
   border-bottom: 1px solid #333;
+  display: inline;
   font-family: georgia;
   font-size: 18px;
   font-weight: 100;
   letter-spacing: 0;
-  padding: 0 0 5px;
+  line-height: 140%;
+  margin: 0;
+  padding: 0 0 1px;
   text-transform: none;
 }
 
@@ -448,6 +461,10 @@ aside li {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+aside li {
+  margin-top: 20px;
 }
 
 @media only screen and (max-width : 1024px) {
@@ -978,6 +995,10 @@ and (max-device-width : 480px) {
         <li><a href="http://refer.ly/blog/usability-testing-for-startups/">Usability Testing For Startups: A History &amp; How-To</a></li>
         <li><a href="http://refer.ly/blog/a-doable-sacrifice-y-combinator-as-a-married-man/">A Doable Sacrifice: Doing YC as a Married Man</a></li>
       </ul>
+    </aside>
+    <aside class="signature">
+      <h1>Thank you</h1>
+      <img src="images/signature.png">
     </aside>
     
     <script src="smooth-scroll.min.js"></script>
