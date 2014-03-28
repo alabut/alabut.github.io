@@ -65,13 +65,13 @@ aside .white-icon {
   display: none;
 }
 
-.intro a:hover .black-icon,
+/*.intro a:hover .black-icon,*/
 aside a:hover .white-icon {
   display: inline;
   margin: 0 5px -4px 0;
 }
 
-.intro a:hover .white-icon,
+/*.intro a:hover .white-icon,*/
 aside a:hover .black-icon {
   display: none;
 }
@@ -80,10 +80,29 @@ aside a:hover {
   background: #000;
   color: #fff;
 }
-
+/*
 .intro .container a:hover {
   background: #fff;
   color: #000;
+}*/
+
+.dribbble:hover,
+.twitter:hover,
+.instagram:hover {
+  border-color: transparent;
+  color: #fff;
+}
+
+.dribbble:hover {
+  background: #EA4C88;
+}
+
+.twitter:hover {
+  background: #56ACEE;
+}
+
+.instagram:hover {
+  background: #663D36;
 }
 
 a img {
@@ -134,7 +153,6 @@ a img {
 
 .visualdesign {
   background-image: url(images/visualdesign.jpg);
-/*  background-size: auto;*/
 }
 
 .code {
@@ -395,18 +413,18 @@ video {
 }
 
 .video-container .inner-border,
+.design .inner-border,
 .amsterdam .inner-border,
 .maui .inner-border,
 .sandiego .inner-border,
 .san-francisco .inner-border,
 .nightowl .inner-border,
-.workspace .inner-border,
 .biology .inner-border,
 .science .inner-border,
 .dogs .inner-border,
-.usability .inner-border,
 .code .inner-border,
-.soccer .inner-border {
+.soccer .inner-border,
+.travel-me .inner-border {
   background: rgba(0, 0, 0, 0.5);
 }
 
@@ -548,17 +566,17 @@ and (max-device-width : 480px) {
           <img class="avatar" src="images/al-avatar.png">
           <h1>Al Abut</h1>
           <h2>Designer, crimefighter</h2>
-          <a href="http://dribbble.com/alabut">
+          <a href="http://dribbble.com/alabut" class="dribbble">
             <img src="images/icon-dribbble-white.png" class="white-icon">
             <img src="images/icon-dribbble-black.png" class="black-icon">
             <span>Dribbble</span>
           </a>
-          <a href="http://twitter.com/alabut">
+          <a href="http://twitter.com/alabut" class="twitter">
             <img src="images/icon-twitter-white.png" class="white-icon">
             <img src="images/icon-twitter-black.png" class="black-icon">
             <span>Twitter</span>
           </a>
-          <a href="http://instagram.com/alabut">
+          <a href="http://instagram.com/alabut" class="instagram">
             <img src="images/icon-instagram-white.png" class="white-icon">
             <img src="images/icon-instagram-black.png" class="black-icon">
             <span>Instagram</span>
@@ -584,7 +602,7 @@ and (max-device-width : 480px) {
           <hr>
           <img src="images/icon-computer.png">
           <hr>
-          <h2>For work &amp;&nbsp;play</h2>
+          <h2>Web &amp; mobile apps</h2>
         </div>
 	    </div>
 	  </section>
@@ -597,6 +615,30 @@ and (max-device-width : 480px) {
           <img src="images/icon-yc.png">
           <hr>
           <h2>Working at startups since&nbsp;2007</h2>
+        </div>
+	    </div>
+	  </section>
+	  
+	  <section class="visualdesign">
+	    <div class="inner-border">
+        <div class="container">
+          <h1>I love visual&nbsp;design</h1>
+          <hr>
+          <img src="images/icon-measure.png">
+          <hr>
+          <h2>It pays to sweat the details</h2>
+        </div>
+	    </div>
+	  </section>
+	  
+	  <section class="code">
+	    <div class="inner-border">
+        <div class="container">
+          <h1>Craft my own&nbsp;HTML/CSS</h1>
+          <hr>
+          <img src="images/icon-code.png">
+          <hr>
+          <h2>Was a developer before becoming a designer</h2>
         </div>
 	    </div>
 	  </section>
@@ -621,30 +663,6 @@ and (max-device-width : 480px) {
           <img src="images/icon-usability.png">
           <hr>
           <h2>It's my favorite research&nbsp;tool</h2>
-        </div>
-	    </div>
-	  </section>
-	  
-	  <section class="visualdesign">
-	    <div class="inner-border">
-        <div class="container">
-          <h1>I love visual design&nbsp;too</h1>
-          <hr>
-          <img src="images/icon-measure.png">
-          <hr>
-          <h2>It pays to sweat the details</h2>
-        </div>
-	    </div>
-	  </section>
-	  
-	  <section class="code">
-	    <div class="inner-border">
-        <div class="container">
-          <h1>Craft my own HTML/CSS</h1>
-          <hr>
-          <img src="images/icon-code.png">
-          <hr>
-          <h2>Was a developer before becoming a designer</h2>
         </div>
 	    </div>
 	  </section>
@@ -973,17 +991,17 @@ and (max-device-width : 480px) {
       <h2>Learn more about me via the links below</h2>
     
       <h2 class="link-list">Social Networks</h2>
-      <a href="http://dribbble.com/alabut">
+      <a href="http://dribbble.com/alabut" class="dribbble">
         <img src="images/icon-dribbble-white.png" class="white-icon">
         <img src="images/icon-dribbble-black.png" class="black-icon">
         Dribbble
       </a>
-      <a href="http://twitter.com/alabut">
+      <a href="http://twitter.com/alabut" class="twitter">
         <img src="images/icon-twitter-white.png" class="white-icon">
         <img src="images/icon-twitter-black.png" class="black-icon">
         Twitter
       </a>
-      <a href="http://instagram.com/alabut">
+      <a href="http://instagram.com/alabut" class="instagram">
         <img src="images/icon-instagram-white.png" class="white-icon">
         <img src="images/icon-instagram-black.png" class="black-icon">
         Instagram
