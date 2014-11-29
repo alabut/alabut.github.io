@@ -326,7 +326,7 @@ aside h2 {
   font-family: 'Lato', 'HelveticaNeue-UltraLight', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 76px;
   font-weight: 100;
-  letter-spacing: -1px;
+  letter-spacing: -5px;
 }
 
 .home .intro h1 {
@@ -335,7 +335,7 @@ aside h2 {
 }
 
 .about .intro h1 {
-  letter-spacing: -2px;
+  letter-spacing: -5px;
 }
 
 .intro h2 {
@@ -352,11 +352,11 @@ aside h2 {
 }
 
 .intro .kern-out {
-  letter-spacing: 1px;
+  letter-spacing: 0;
 }
 
-.intro .kern-in {
-  letter-spacing: -5px;
+.home .intro .kern-out {
+  letter-spacing: 1px;
 }
 
 img {
