@@ -1,3 +1,32 @@
+/********************
+  Navigation
+********************/
+
+.navigation {
+  background: rgba(0,0,0,0.5);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05), 0 -1px 6px rgba(0, 0, 0, 0.1) inset;
+  color: #fff;
+  font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  padding: 20px;
+  text-rendering: optimizeLegibility;
+  text-transform: uppercase;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1170px;
+}
+
+
+
+/********************
+  Styles for home & about page
+  (initially developed as a single long-scrolling page)
+********************/
 
 *, *:before, *:after {
   -moz-box-sizing: border-box;
@@ -51,6 +80,8 @@ a {
   border-color: #fff;
   color: #fff;
   min-width: 115px;
+  margin-top: 120px;
+  padding-right: 17px; /* This is to offset the 3px letter-spacing */
 }
 
 .intro a.button:hover {
@@ -131,98 +162,98 @@ a img {
 }
 
 .intro {
-  background-image: url(http://d32mxho067pe0f.cloudfront.net/images/intro.jpg);
+  background-image: url(../images/intro.jpg);
 }
 
 .about .intro {
-  background-image: url(http://d32mxho067pe0f.cloudfront.net/images/intro-original.jpg);
+  background-image: url(../images/intro-original.jpg);
 }
 
 .design {
-  background-image: url(http://d32mxho067pe0f.cloudfront.net/images/design.jpg);
+  background-image: url(../images/design.jpg);
 }
 
 .yc {
-  background-image: url(http://d32mxho067pe0f.cloudfront.net/images/yc.jpg);
+  background-image: url(../images/yc.jpg);
 }
 
 .paper {
-  background-image: url(http://d32mxho067pe0f.cloudfront.net/images/paper.jpg);
+  background-image: url(../images/paper.jpg);
 }
 
 .usability {
-  background-image: url(http://d32mxho067pe0f.cloudfront.net/images/usability.jpg);
+  background-image: url(../images/usability.jpg);
 }
 
 .visualdesign {
-  background-image: url(http://d32mxho067pe0f.cloudfront.net/images/visualdesign.jpg);
+  background-image: url(../images/visualdesign.jpg);
 }
 
 .code {
-  background-image: url(http://d32mxho067pe0f.cloudfront.net/images/code.jpg);
+  background-image: url(../images/code.jpg);
 }
 
 .nightowl {
-  background-image: url(http://d32mxho067pe0f.cloudfront.net/images/al-nightowl.jpg);
+  background-image: url(../images/al-nightowl.jpg);
 }
 
 .workspace {
-  background-image: url(http://d32mxho067pe0f.cloudfront.net/images/workspace4.jpg);
+  background-image: url(../images/workspace4.jpg);
 }
 
 .yesi {
-  background-image: url(http://d32mxho067pe0f.cloudfront.net/images/yesi.jpg);
+  background-image: url(../images/yesi.jpg);
 }
 
 .balboa-park {
-  background-image: url(http://d32mxho067pe0f.cloudfront.net/images/balboa-park.jpg);
+  background-image: url(../images/balboa-park.jpg);
 }
 
 .dogs {
-  background-image: url(http://d32mxho067pe0f.cloudfront.net/images/dogs2.jpg);
+  background-image: url(../images/dogs2.jpg);
 }
 
 .california {
-  background-image: url(http://d32mxho067pe0f.cloudfront.net/images/california.jpg);
+  background-image: url(../images/california.jpg);
 }
 
 .sandiego {
-  background-image: url(http://d32mxho067pe0f.cloudfront.net/images/sandiego.jpg);
+  background-image: url(../images/sandiego.jpg);
 }
 
 .biology {
-  background-image: url(http://d32mxho067pe0f.cloudfront.net/images/biology.jpg);
+  background-image: url(../images/biology.jpg);
 }
 
 .science {
-  background-image: url(http://d32mxho067pe0f.cloudfront.net/images/space-shuttle.jpg);
+  background-image: url(../images/space-shuttle.jpg);
 }
 
 .soccer {
-  background-image: url(http://d32mxho067pe0f.cloudfront.net/images/al-soccer.jpg);
+  background-image: url(../images/al-soccer.jpg);
 }
 
 .travel-me {
-  background-image: url(http://d32mxho067pe0f.cloudfront.net/images/travel-me.jpg);
+  background-image: url(../images/travel-me.jpg);
 }
 
 .travel-yesi {
-  background-image: url(http://d32mxho067pe0f.cloudfront.net/images/travel-yesi.jpg);
+  background-image: url(../images/travel-yesi.jpg);
 }
 
 .amsterdam {
-  background-image: url(http://d32mxho067pe0f.cloudfront.net/images/amsterdam.jpg);
+  background-image: url(../images/amsterdam.jpg);
 }
 
 .maui {
-  background-image: url(http://d32mxho067pe0f.cloudfront.net/images/maui.jpg);
+  background-image: url(../images/maui.jpg);
 }
 
 .san-francisco {
-  background-image: url(http://d32mxho067pe0f.cloudfront.net/images/san-francisco2.jpg);
+  background-image: url(../images/san-francisco2.jpg);
 }
 
-.inner-border, .container {  
+.inner-border, .slide-container {  
   -webkit-transform: translate(-50%,-50%);
   -moz-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
@@ -295,25 +326,37 @@ aside h2 {
   font-family: 'Lato', 'HelveticaNeue-UltraLight', "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 76px;
   font-weight: 100;
-  letter-spacing: -4px;
+  letter-spacing: -1px;
+}
+
+.home .intro h1 {
+  font-size: 100px;
+  line-height: 100%;
 }
 
 .about .intro h1 {
-  letter-spacing: -5px;
+  letter-spacing: -2px;
 }
 
 .intro h2 {
   font-family: Georgia;
+  font-size: 33px;
   font-style: italic;
   font-weight: 300;
-  letter-spacing: 1px;
+  letter-spacing: 0;
   text-transform: none;
 }
 
 .about .intro h2 {
-  font-size: 29px;
-  letter-spacing: 0;
   margin-top: 10px;
+}
+
+.intro .kern-out {
+  letter-spacing: 1px;
+}
+
+.intro .kern-in {
+  letter-spacing: -5px;
 }
 
 img {
@@ -510,6 +553,17 @@ aside li {
   margin-top: 20px;
 }
 
+aside a {
+  margin: 40px 20px 0;
+  min-width: 170px;
+}
+
+
+
+/********************
+  Mobile tweaks
+********************/
+
 @media only screen and (max-width : 1024px) {
   
   section {
@@ -525,11 +579,6 @@ aside li {
     background: rgba(0,0,0,0.5);
   }
   
-}
-
-aside a {
-  margin: 40px 20px 0;
-  min-width: 170px;
 }
 
 @media only screen 
