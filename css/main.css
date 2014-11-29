@@ -362,6 +362,7 @@ aside h2 {
 img {
   margin: 20px 0;
   max-height: 30px;
+  vertical-align: initial;
 }
 
 .intro img {
