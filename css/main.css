@@ -74,6 +74,7 @@ a {
   text-decoration: none;
   text-rendering: optimizeLegibility;
   text-transform: uppercase;
+  -webkit-transition: all .1s ease-in;
 }
 
 .intro a {
@@ -116,6 +117,14 @@ aside .white-icon {
   min-width: initial;
 }
 
+.home .intro .social-links a {
+  opacity: 0.5;
+}
+
+.home .intro .social-links a:hover {
+  opacity: 1;
+}
+
 /*.intro a:hover .black-icon,*/
 aside a:hover .white-icon {
   display: inline;
@@ -154,6 +163,14 @@ aside a:hover {
 
 .instagram:hover {
   background: #663D36;
+}
+
+.linkedin:hover {
+  background: #0071B3;
+}
+
+.gmail:hover {
+  background: #D34730;
 }
 
 a img {
@@ -366,6 +383,10 @@ aside h2 {
   font-weight: 300;
   letter-spacing: 0;
   text-transform: none;
+}
+
+.home .intro h2 {
+  margin-bottom: 5px;
 }
 
 .about .intro h2 {
