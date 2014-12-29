@@ -99,25 +99,33 @@ a {
   padding: 0;
 }
 
+.navigation p {
+  margin: 0;
+}
+
 .navigation a {
   margin: 0;
-  min-height: 62px;
+  min-height: inherit;
   min-width: inherit;
 }
 
-.navigation a:hover {
+.navigation a:hover,
+.navigation a:active {
   text-decoration: none;
 }
 
 .navigation .buttons a {
   border: none;
   margin: 0 17px 0 20px;
+  opacity: 0.5;
   padding: 20px 0;
 }
 
-.navigation .buttons .active {
-  border-top: 3px solid #fff;
-  padding-top: 17px;
+.navigation .buttons .active,
+.navigation .buttons a:hover {
+  border-top: 2px solid #fff;
+  opacity: 1;
+  padding-top: 6px;
 }
 
 .navigation .links a {
@@ -365,6 +373,10 @@ h1 {
   line-height: 100%;
 }
 
+h1.rule {
+  margin-bottom: 5px;
+}
+
 h2 {
   font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   font-size: 18px;
@@ -386,7 +398,7 @@ aside h1 {
   font-size: 47px;
   font-weight: 700;
   letter-spacing: 0;
-  margin-bottom: 15px;
+  margin-bottom: 0;
 }
 
 aside h2 {
@@ -421,10 +433,6 @@ aside h2 {
 
 .home .intro h2 {
   margin-bottom: 5px;
-}
-
-.about .intro h2 {
-  margin-top: 10px;
 }
 
 .intro .kern-out {
