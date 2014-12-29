@@ -95,6 +95,40 @@ a {
   text-decoration: none;
 }
 
+.navigation {
+  padding: 0;
+}
+
+.navigation a {
+  margin: 0;
+  min-height: 62px;
+  min-width: inherit;
+}
+
+.navigation a:hover {
+  text-decoration: none;
+}
+
+.navigation .buttons a {
+  border: none;
+  margin: 0 17px 0 20px;
+  padding: 20px 0;
+}
+
+.navigation .buttons .active {
+  border-top: 3px solid #fff;
+  padding-top: 17px;
+}
+
+.navigation .links a {
+  border: none;
+  opacity: 0.5;
+}
+
+.navigation .links a:hover {
+  opacity: 1;
+}
+
 .intro .black-icon,
 aside .white-icon {
   display: none;
