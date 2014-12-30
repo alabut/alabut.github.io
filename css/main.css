@@ -486,6 +486,7 @@ aside hr {
 
 .signature h1 {
   color: #fff;
+  margin-bottom: 40px;
 }
 
 .signature img {
@@ -641,6 +642,10 @@ aside li {
 aside a {
   margin: 40px 20px 0;
   min-width: 170px;
+}
+
+aside a:hover {
+  text-decoration: none;
 }
 
 
