@@ -352,6 +352,10 @@ a img {
   z-index: 10;
 }
 
+.home .inner-border {
+  border-color: rgba(255,255,255,0.1);
+}
+
 h1,
 h2 {
   color: #fff;
@@ -661,6 +665,10 @@ aside a:hover {
   padding-bottom: 8px;
 }
 
+.home .intro .wordmark {
+  white-space: nowrap;
+}
+
 .spin180 {
   
   /* Chrome, Safari */
@@ -706,9 +714,15 @@ aside a:hover {
   
 }
 
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
+
+@media only screen and (max-width : 700px) {
+  .home .intro h1 .border {
+    border: none;
+    padding: 0;
+  }
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
   
   .intro img, .sandiego img {
     max-width: 103px;
@@ -737,19 +751,41 @@ and (max-device-width : 480px) {
     font-weight: 300;
   }
 
-  .intro span {
+/*  .intro span {
     display: none;
-  }
+  }*/
   
   .intro .white-icon,
   .intro .black-icon {
     margin: 0;
   }
   
-  .intro a {
+  /*.intro a {
     border: none;
     margin-top: 20px;
     padding: 0;
+  }*/
+  
+  .home .intro h1 {
+    font-size: 45px;
+  }
+  
+  .home .intro .spin180 {
+    padding-bottom: 2px;
+  }
+  
+  .home .intro h2 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .home .intro a {
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+  
+  .home .intro .social-links {
+    display: none;
   }
   
 }
