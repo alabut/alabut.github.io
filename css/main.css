@@ -788,4 +788,17 @@ aside a:hover {
     display: none;
   }
   
+  .navigation .links,
+  .about .intro .avatar {
+    display: none;
+  }
+  
+  .navigation .buttons a {
+    margin-left: 10px;
+  }
+  
+  .about .intro h1 {
+    letter-spacing: -2px;
+  }
+  
 }
