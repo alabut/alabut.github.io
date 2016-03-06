@@ -26,7 +26,6 @@ html, body {
 }
 
 .card {
-    background: #fff;
     left: 50%;
     padding: 30px;
     position: absolute;
@@ -36,7 +35,22 @@ html, body {
     width: 80%;
 }
 
-.card.headlines {
+.logo {
+    background-image: url(images/al-sxsw-large.jpg);
+    background-position: 0% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* use media queries for editorial reasons (adjust picture cropping for giant image) */
+
+@media (min-height: 800px) {
+    .logo {
+        background-position: 10% 50%;
+    }
+}
+
+.logo .card {
     text-align: center;
 }
 
@@ -56,7 +70,7 @@ h2, em, .button {
 }
 
 .dark {
-    background: #191919;
+    background-color: #191919;
 }
 
 .headshot {
@@ -66,7 +80,7 @@ h2, em, .button {
 }
 
 .headshot img {
-    width: 103px;
+    border-radius: 50%;
 }
 
 p {
@@ -106,17 +120,15 @@ p:last-of-type {
     </head>
     <body>
 	  
-        <div class="column light">
-            <div class="card headlines">
-                <h1>Al Abut</h1>
-                <h2>Product Designer</h2>
-                <h3>San Francisco, CA</h3>                
-            </div> <!-- /card headlines -->
-        </div> <!-- /column light -->
-
-        <div class="column dark">
+        <div class="column logo dark">
             <div class="card">
-                <div class="headshot"><img src="http://d32mxho067pe0f.cloudfront.net/images/al-avatar.png"></div>
+                <img src="images/logo.png">
+            </div> <!-- /card -->
+        </div> <!-- /column logo dark -->
+
+        <div class="column">
+            <div class="card">
+                <div class="headshot"><img src="images/al-sxsw-small.jpg"></div>
                 <p>Aenean lacinia bibendum nulla sed consectetur. Maecenas faucibus mollis interdum. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Curabitur blandit tempus porttitor.</p>
                 <p>Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
                 <p class="tagline"><strong>Contact me for a private portfolio:</strong></p>
@@ -126,7 +138,7 @@ p:last-of-type {
                     <span><a href="http://example.com/">[image goes here]</a></span>
                 </div> <!-- /social-links -->
             </div> <!-- /card -->
-        </div> <!-- /column dark -->
+        </div> <!-- /column -->
     
 		<!-- google analytics -->
 		<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
