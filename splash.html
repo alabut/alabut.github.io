@@ -74,7 +74,6 @@ h2, em, .button {
 }
 
 .headshot {
-    margin-top: -88px;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -84,7 +83,9 @@ h2, em, .button {
 }
 
 ul, li {
-    list-style-type: circle;
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
 }
 
 li {
@@ -97,10 +98,6 @@ li em {
 
 ul, li, p {
     margin: 0 0 20px;
-}
-
-p:last-of-type {
-    margin-bottom: 0;
 }
 
 .button {
@@ -119,12 +116,32 @@ p:last-of-type {
     color: #fff;
 }
 
+.tagline {
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+
 .tagline,
 .social-links {
     text-align: center;
 }
 
+.social-links span {
+    display: block;
+    margin-bottom: 10px;
+}
+
 .social-links a {
+    border-bottom: 1px solid #ddd;
+    color: #666;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    border-bottom: 1px solid #000;
     color: #000;
 }
 
@@ -141,6 +158,8 @@ p:last-of-type {
         <div class="column">
             <div class="card">
                 <div class="headshot"><img src="images/al-sxsw-small.jpg"></div>
+
+                <p class="tagline">Work highlights:</p>
                 <ul>
                     <li>
                         <strong>Cofounder &amp; Y Combinator alum</strong>
@@ -159,11 +178,15 @@ p:last-of-type {
                         <em>(acquired by Groupon)</em>
                     </li>
                 </ul>
-                <p class="tagline"><strong>Contact me for a private portfolio:</strong></p>
+
+                <p class="tagline">Request private portfolio:</p>
                 <a class="button" href="mailto:&#x61;&#x6C;&#x61;&#x62;&#x75;&#x74;&#x40;&#x67;&#x6D;&#x61;&#x69;&#x6C;&#x2E;&#x63;&#x6F;&#x6D;">alabut@gmail.com</a>
+
+                <p class="tagline">Links:</p>
                 <div class="social-links">
-                    <span><a href="http://example.com/">[image goes here]</a></span>
-                    <span><a href="http://example.com/">[image goes here]</a></span>
+                    <span><a href="http://dribbble.com/alabut">Dribbble</a></span>
+                    <span><a href="http://linkedin.com/in/alabut">Linkedin</a></span>
+                    <span><a href="http://twitter.com/alabut">Twitter</a></span>
                 </div> <!-- /social-links -->
             </div> <!-- /card -->
         </div> <!-- /column -->
