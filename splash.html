@@ -42,7 +42,7 @@ html, body {
     background-size: cover;
 }
 
-/* use media queries for editorial reasons (adjust picture cropping for giant image) */
+/* editorial adjustment (adjust picture cropping for giant image) */
 
 @media (min-height: 800px) {
     .logo {
@@ -105,10 +105,19 @@ ul, li, p {
     color: #000;
     display: block;
     margin: 20px auto 20px;
-    padding: 20px 40px;
+    padding: 20px 0;
     text-align: center;
     text-decoration: none;
-    width: 50%;
+    width: 70%;
+}
+
+.button span {
+    font-style: normal;
+    font-weight: 400;
+    display: block;
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
 }
 
 .button:hover {
@@ -145,6 +154,64 @@ ul, li, p {
     color: #000;
 }
 
+/* responsive design tweaks */
+
+@media (min-height: 300px) and (max-height: 600px) and (min-width: 1000px) {
+
+    .tagline:last-of-type, .social-links {
+        display: none;
+    }    
+
+}
+
+@media (max-height: 600px) and (min-width: 1000px) {
+
+    .card {
+        padding: 0;
+    }
+
+    .logo img {
+        margin-left: -200px;
+    }
+
+    .headshot {
+        display: none;
+    }
+
+    .tagline:first-of-type {
+        margin-top: 10px;
+    }
+
+    .button {
+        padding: 10px;
+    }
+
+}
+
+
+@media (min-height: 600px) and (max-height: 850px) {
+    .card {
+        padding: 0;
+    }
+
+    .headshot img {
+        width: 100px;
+    }
+
+     .tagline:last-of-type, .social-links {
+        display: none;
+    }  
+}
+
+
+@media (min-width: 768px) and (max-width: 1000px) {
+
+    .logo {
+        background-position: 20% 50%;
+    }
+
+}
+
         </style>
     </head>
     <body>
@@ -166,21 +233,23 @@ ul, li, p {
                         <em>(Referly, S12)</em>
                     </li>
                     <li>
-                        <strong>Senior Product Designer</strong> at Buyads
+                        <strong>Senior Product Designer</strong> at&nbsp;Buyads
                         <em>(acquired by Rubicon Project)</em>
                     </li>
                     <li>
-                        <strong>Senior UX Designer</strong> at Cake Financial
+                        <strong>Senior UX Designer</strong> at Cake&nbsp;Financial
                         <em>(acquired by E-Trade)</em>
                     </li>
                     <li>
-                        <strong>UX Designer</strong> at Ludic Labs
+                        <strong>UX Designer</strong> at Ludic&nbsp;Labs
                         <em>(acquired by Groupon)</em>
                     </li>
                 </ul>
 
-                <p class="tagline">Request private portfolio:</p>
-                <a class="button" href="mailto:&#x61;&#x6C;&#x61;&#x62;&#x75;&#x74;&#x40;&#x67;&#x6D;&#x61;&#x69;&#x6C;&#x2E;&#x63;&#x6F;&#x6D;">alabut@gmail.com</a>
+                <a class="button" href="mailto:&#x61;&#x6C;&#x61;&#x62;&#x75;&#x74;&#x40;&#x67;&#x6D;&#x61;&#x69;&#x6C;&#x2E;&#x63;&#x6F;&#x6D;">
+                    <span>Request private portfolio:</span>
+                    alabut@gmail.com
+                </a>
 
                 <p class="tagline">Links:</p>
                 <div class="social-links">
