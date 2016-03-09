@@ -104,7 +104,7 @@ ul, li, p {
     border: 3px solid #000;
     color: #000;
     display: block;
-    margin: 20px auto 20px;
+    margin: 40px auto;
     padding: 20px 0;
     text-align: center;
     text-decoration: none;
@@ -154,24 +154,24 @@ ul, li, p {
     color: #000;
 }
 
-/* responsive design tweaks */
+/* responsive design layout adjustments */
 
-@media (min-height: 300px) and (max-height: 600px) and (min-width: 1000px) {
+@media (max-height: 600px) and (min-width: 900px) {
+
+    .column {
+        width: 70%;
+    }
+
+    .column.logo {
+        width: 30%;
+    }
 
     .tagline:last-of-type, .social-links {
         display: none;
-    }    
-
-}
-
-@media (max-height: 600px) and (min-width: 1000px) {
+    }
 
     .card {
         padding: 0;
-    }
-
-    .logo img {
-        margin-left: -200px;
     }
 
     .headshot {
