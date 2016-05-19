@@ -137,21 +137,29 @@ ul, li, p {
     text-align: center;
 }
 
-.social-links span {
-    display: block;
-    margin-bottom: 10px;
-}
-
 .social-links a {
-    border-bottom: 1px solid #ddd;
-    color: #666;
-    font-weight: 300;
+    font-size: 21px;
+    line-height: 100%;
+    margin-right: 5px;
+    padding: 10px 10px 6px 10px;
     text-decoration: none;
 }
 
-.social-links a:hover {
-    border-bottom: 1px solid #000;
-    color: #000;
+.social-links a:hover img {
+    filter: invert(100%);
+}
+
+.social-links a.dribbble:hover {
+    background: #EA4C88;
+}
+
+.social-links a.linkedin:hover {
+    background: #0177B7;
+}
+
+.social-links img {
+    max-height: 20px;
+    max-width: 20px;
 }
 
 /* responsive design layout adjustments */
@@ -165,11 +173,7 @@ ul, li, p {
     .column.logo {
         width: 30%;
     }
-
-    .tagline:last-of-type, .social-links {
-        display: none;
-    }
-
+    
     .card {
         padding: 0;
     }
@@ -198,9 +202,6 @@ ul, li, p {
         width: 100px;
     }
 
-     .tagline:last-of-type, .social-links {
-        display: none;
-    }  
 }
 
 
@@ -251,11 +252,9 @@ ul, li, p {
                     alabut@gmail.com
                 </a>
 
-                <p class="tagline">Links:</p>
                 <div class="social-links">
-                    <span><a href="http://dribbble.com/alabut">Dribbble</a></span>
-                    <span><a href="http://linkedin.com/in/alabut">Linkedin</a></span>
-                    <span><a href="http://twitter.com/alabut">Twitter</a></span>
+                    <a href="http://dribbble.com/alabut" title="Dribbble" class="dribbble"><img src="images/icon-dribbble-black.png"></a>
+                    <a href="http://linkedin.com/in/alabut" title="Linkedin" class="linkedin"><img src="images/icon-linkedin-black.png"></a>
                 </div> <!-- /social-links -->
             </div> <!-- /card -->
         </div> <!-- /column -->
