@@ -120,10 +120,12 @@
 	},
 	"file_history":
 	[
-		"/Users/alabut/Sites/alabut.github.io/partnered v1 (purple header).html",
-		"/Users/alabut/Sites/alabut.github.io/partnered v2 (black:white with multiple videos) - TEMP.html",
-		"/Users/alabut/Sites/alabut.github.io/partnered v2 (black:white with multiple videos).html",
+		"/Users/alabut/Sites/alabut.github.io/partnered v4 (black:white w:o intro video).html",
 		"/Users/alabut/Sites/alabut.github.io/partnered.html",
+		"/Users/alabut/Sites/alabut.github.io/partnered v3 (black:white with image captions).html",
+		"/Users/alabut/Sites/alabut.github.io/partnered v2 (black:white with multiple videos) - TEMP.html",
+		"/Users/alabut/Sites/alabut.github.io/partnered v1 (purple header).html",
+		"/Users/alabut/Sites/alabut.github.io/partnered v2 (black:white with multiple videos).html",
 		"/Users/alabut/Sites/alabut.github.io/partnered-firebug.html",
 		"/Users/alabut/Sites/alabut.github.io/splash.html",
 		"/Users/alabut/Sites/alabut.github.io/work.html",
@@ -205,6 +207,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"youtube",
+			"col-md",
+			"footer",
+			"li ",
 			"headline",
 			"5px",
 			".screenshots",
@@ -327,11 +333,12 @@
 			"sort"
 		],
 		"highlight": true,
-		"in_selection": true,
+		"in_selection": false,
 		"preserve_case": false,
 		"regex": false,
 		"replace_history":
 		[
+			"col-sm",
 			"h1>",
 			"4>",
 			"2>",
@@ -427,7 +434,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
-	"side_bar_width": 216.0,
+	"side_bar_visible": false,
+	"side_bar_width": 400.0,
 	"status_bar_visible": true
 }
