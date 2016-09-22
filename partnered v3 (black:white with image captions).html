@@ -72,21 +72,6 @@ body, html {
     text-align: left;
 }
 
-.work-container li {
-    border-right: 1px solid rgba(255, 255, 255, 0.5);
-    display: inline;
-    float: left;
-    list-style-type: none;
-    margin: 0 25px 0 0;
-    padding: 0 25px 0 0;
-}
-
-.work-container li:last-of-type {
-    border: none;
-    margin-right: 0;
-    padding-right: 0;
-}
-
 @media only screen and (min-width : 1200px) {
     .project-metadata li {
         margin-right: 47px;
@@ -98,14 +83,15 @@ body, html {
         /*width: 100%;*/
     }
 
-    .work-container li {
-        border-right: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    .project-metadata li {
         display: block;
-        float: none;
-        margin: 0 0 10px;
-        padding: 0 0 10px;
+        margin-right: 0;
+        text-align: center;
     }
+}
+
+.project-metadata li:last-of-type {
+    margin-right: 0;
 }
 
 .work-container:last-of-type {
@@ -130,9 +116,7 @@ h1 {
 }
 
 h4 {
-    font-family: Georgia;
     font-size: 22px;
-    font-style: italic;
     margin-top: 5px;
     margin-bottom: 20px;
 }
@@ -156,7 +140,6 @@ h5 {
 }
 
 p {
-    font-family: Georgia;
     font-size: 22px;
     font-weight: 300;
     margin-bottom: 20px;
@@ -194,9 +177,9 @@ p {
                 <!-- ***************** NAVIGATION ***************** -->
 
                 <div class="row mini-nav" style="">
-                    <div class="col-sm-8 col-sm-offset-2">
-                        <a href="/">Home</a>
-                        <a href="/about.html">About</a>
+                    <div class="col-sm-12">
+                        <a href="/">Home/About</a>
+                        <!-- <a href="/overview.html">Overview</a> -->
                         <a href="/partnered.html" class="active-nav" style="margin-right: 0;">Case Study</a>
                     </div> <!-- /col-sm-12 -->
                 </div> <!-- /row mini-nav -->
@@ -206,13 +189,13 @@ p {
                 <!-- ***************** PROJECT INFO ***************** -->
                 
                 <div class="row project-metadata">
-                    <div class="col-sm-8 col-sm-offset-2">
+                    <div class="col-md-8 col-md-offset-2">
                         
                         <img class="img-responsive center-block" src="http://d32mxho067pe0f.cloudfront.net/images/partnered/partnered-logo.png" style="/* width: 100%; */
     border: none;
     /* filter: invert(100%); */
     margin-bottom: 100px;">
-                    </div> <!-- /col-sm-8 col-sm-offset-2 -->
+                    </div> <!-- /col-md-8 col-md-offset-2 -->
                 </div> <!-- /row project-metadata -->
 
 
@@ -221,23 +204,35 @@ p {
                 
                 <div class="row work-container" style="margin-top: 0;
     margin-bottom: 60px;">
-                    <div class="col-sm-8 col-sm-offset-2">
+                    <div class="col-md-6 col-md-offset-2-disabled">
 
                         <ul style="text-align: left;
     margin: 0;
     padding: 0;
     display: table;
     margin-bottom: 20px;">
-                            <li>
+                            <li style="display: inline;
+    list-style-type: none;
+    float: left;
+    margin: 0 25px 0 0;
+    padding: 0 25px 0 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.5)">
                                 <h5>Company</h5>
                                 <h4 style="">Partnered</h4>
                             </li>
-                            <li>
+                            <li style="display: inline;
+    list-style-type: none;
+    float: left;
+    margin: 0 25px 0 0;
+    padding: 0 25px 0 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);">
                                 <h5>Role</h5>
                                 <h4>Chief Product Officer</h4>
 
                             </li>
-                            <li>
+                            <li style="display: inline;
+    list-style-type: none;
+    float: left;">
                                 <h5>Year</h5>
                                 <h4>2015</h4>
                             </li>
@@ -260,7 +255,7 @@ p {
                     </div>
 
 
-<div class="col-sm-6" style="display: none;">
+<div class="col-md-6" style="/* display: none; */">
                         <h1 style="margin-top: 0;
     display: none;">Video Walkthrough</h1>
                         <div class="embed-responsive embed-responsive-16by9" style="margin-top: 0;">
@@ -278,7 +273,7 @@ p {
 
 
 
- <!-- /col-sm-8 col-sm-offset-2 -->
+ <!-- /col-md-8 col-md-offset-2 -->
                 </div> <!-- /row work-container -->
 
 
@@ -420,12 +415,12 @@ color: #fff;">
             <div class="row">
                 <div class="col-sm-12">
 <div class="embed-responsive embed-responsive-16by9" style="margin-top: 0;">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/82qvCmZNryM?rel=0&amp;showinfo=0&amp;vq=hd720" allowfullscreen=""></iframe>
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QVE6UBJ8YQg?rel=0&amp;showinfo=0&amp;vq=hd720" allowfullscreen=""></iframe>
                         </div>
                     <p class="caption" style="font-style: italic;
     text-align: center;
     margin: 40px 0 20px;">The logged-in view of the network</p>
-<img src="http://d32mxho067pe0f.cloudfront.net/images/partnered/home-loggedin-short.jpg" class="img-responsive center-block">
+<img src="http://d32mxho067pe0f.cloudfront.net/images/partnered/home.jpg" class="img-responsive center-block">
                     <p class="caption" style="font-style: italic;
     text-align: center;
     margin: 40px 0 20px;">The mobile layout for a typical post page</p>
@@ -459,9 +454,8 @@ color: #fff;">
     line-height: 120%;
     padding: 20px 0;
     margin: 40px 0;">What I observed is that we had mainly single seat users and not many teams.</p>
-    <p>Our individual-centric features (like posts and pitches) had good traction, but we saw almost no usage of the ones we'd developed specifically for groups of multiple users.</p>
-<p>So I added a research project to get to know our largest customer, an advertising agency. I met their team leader every week for several months and did a deep dive to learn about their needs.</p>
-                    <p style="">What I uncovered was that it took too much organizational change to incorporate our product into their existing marketing campaigns, hindering a larger company-wide adoption.</p>
+<p>So I added a research project to get to know our largest customer, an advertising agency. I met their team leader every week for several months to learn about their needs.</p>
+                    <p style="">What I learned was that it took too much organizational change to incorporate our product into their marketing campaigns and that was hindering a larger company-wide adoption.</p>
 
 
 <p style="font-weight: 900;
@@ -479,7 +473,7 @@ margin-bottom: 60px;">The solution was to redesign a little-used feature called 
             <div class="row">
                 <div class="col-sm-12">
 <div class="embed-responsive embed-responsive-16by9" style="margin-top: 0;">
-                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Hdqx7gWZs_U?rel=0&amp;showinfo=0&amp;vq=hd720" allowfullscreen=""></iframe>
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QVE6UBJ8YQg?rel=0&amp;showinfo=0&amp;vq=hd720" allowfullscreen=""></iframe>
                         </div>
 <p class="caption" style="font-style: italic;
     text-align: center;
@@ -548,12 +542,13 @@ color: #fff;">
     border-bottom: 5px solid #000;
     line-height: 120%;
     padding: 20px 0;
-    margin: 40px 0;">Partnered was the first time I designed something that got its initial paying customers.</p>
+    margin: 40px 0;">Partnered was the first time I designed something that got its very first paying customers.</p>
 
 <p>The responsibilities of being CPO also gave me personal insights into what my leadership style was. I was especially influenced by Ed Catmull's book on Pixar and the role that difficult crises can play, if you treat them as teachable moments that highlight company values and write down a shared playbook of how to avoid similar situations.</p>
-<p><strong>Thank you for reading!</strong> Email me at <em><a href="mailto:alabut@gmail.com?subject=Partnered%20Case%20Study">alabut@gmail.com</a></em> or call my cell at 858-603-1820 if you have any&nbsp;questions.</p>
-<p style="text-align: center" ;=""><img src="http://d32mxho067pe0f.cloudfront.net/images/partnered/signature-black.png" style="border: none;
-    margin: 0 0 40px; max-width: 100%;"></p>
+<p><strong>Thank you for reading!</strong> Email me at <em><a href="mailto:alabut@gmail.com?subject=Partnered%20Case%20Study">alabut@gmail.com</a></em> if you have any&nbsp;questions.</p>
+<p style="text-align: center" ;=""><img src="http://d32mxho067pe0f.cloudfront.net/images/about/signature.png" style="border: none;
+    margin: 0 0 40px;
+    filter: invert(100%);"></p>
 
 </div> <!-- /col -->
 </div> <!-- /row -->
@@ -573,8 +568,8 @@ color: #fff;">
         <div class="container footer">
             <div class="row mini-nav">
                 <div class="col-sm-12">
-                    <a href="/">Home</a>
-                    <a href="/about.html">About</a>
+                    <a href="/">Home/About</a>
+                    <!-- <a href="/overview.html">Overview</a> -->
                     <a href="/partnered.html" class="active-nav">Case Study</a>
                 </div> <!-- /col-sm-12 mini-nav -->
             </div> <!-- /row mini-nav -->
