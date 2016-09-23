@@ -4,7 +4,12 @@ I got a lot of great responses! Ranging from high level about the narrative all 
 
 Some common themes:
 
-* is this for a PM or a designer?
+* is this for a PM or a designer? if PM, then ADD METRICS.
+
+“You can make one sentence talking about achievements like: lead the team to Increase revenue by 300% within the first 3 month."
+
+“lastly, some highlighted/bold metrics of success would probably help?  I'm sure most people will be skimming thru as opposed to reading all the text”
+
 * if PM, narrative needs work to prove the results - talk about team process, concrete outcomes, etc. (may have lost some of the “color commentary” by cutting out the intro video)
 * if design, then before and after pics might help. Feels like a collection of pretty pixels.
 * speaking of pixels, the screenshots are huge and make the page feel super long and possibly overwhelming. Smaller clickable thumbnails might help.
