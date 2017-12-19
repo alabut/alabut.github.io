@@ -35,7 +35,7 @@ html, body {
 
 .column {
     float: left;
-    height: 100vh;
+    height: 80vh;
     position: relative;
     width: 50%;
 }
@@ -85,7 +85,13 @@ ul strong {
 }
 
 .dark {
-    background-color: #191919;
+    background-color: #222;
+    color: #eee;
+}
+
+.gray {
+    background-color: #eee;
+    color: #222;
 }
 
 .headshot {
@@ -148,6 +154,25 @@ ul {
     color: #fff;
 }
 
+.dark .button {
+    border-color: #fff;
+    color: #fff;
+}
+
+.dark .button:hover {
+    background: #fff;
+    color: #000;
+}
+
+.case-study .button {
+    border-radius: 50px;
+    display: inline-block;
+    font-size: 14px;
+    margin: 10px 0 0;
+    padding: 10px 20px 7px;
+    width: auto;
+}
+
 .tagline {
     font-weight: 400;
     letter-spacing: 2px;
@@ -193,6 +218,16 @@ ul {
 .social-links img {
     max-height: 20px;
     max-width: 20px;
+}
+
+.case-studies {
+    clear: both;
+}
+
+.case-study {
+    margin: 0 auto;
+    max-width: 800px;
+    padding: 60px;
 }
 
 /* responsive design layout adjustments */
@@ -287,15 +322,43 @@ ul {
                     </li>
                 </ul>
 
-                <a class="button" href="http://alabut.com/partnered.html">
-                    <span>Featured Case Study</span>
-                </a>
+                <p class="tagline work"><span>Links</span></p>
 
                 <div class="social-links">
                     <a href="http://dribbble.com/alabut" title="Dribbble" class="dribbble"><img src="http://d32mxho067pe0f.cloudfront.net/images/about/icon-dribbble-black.png"></a>
                     <a href="http://linkedin.com/in/alabut" title="Linkedin" class="linkedin"><img src="http://d32mxho067pe0f.cloudfront.net/images/about/icon-linkedin-black.png"></a>
                 </div> <!-- /social-links -->
             </div> <!-- /card -->
-        </div> <!-- /column -->
+        </div> <!-- /column bio -->
+
+
+
+
+        <div class="case-studies">
+            <div class="case-study-wrapper dark">
+                <div class="case-study">
+                    <p>partnered work goes here</p>
+                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+                    <a class="button" href="http://alabut.com/partnered.html">
+                        <span>View Details</span>
+                    </a>
+                </div> <!-- /case-study -->
+            </div> <!-- /case-study-wrapper dark -->
+            <div class="case-study-wrapper gray">
+                <div class="case-study">
+                    <p>triangle work goes here</p>
+                    <p>Sed posuere consectetur est at lobortis. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus.</p>
+                    <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Maecenas faucibus mollis interdum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+                    <a class="button" href="http://alabut.com/partnered.html">
+                        <span>View Details</span>
+                    </a>
+                </div> <!-- /case-study -->
+            </div> <!-- /case-study-wrapper gray -->
+        </div> <!--  /case-studies -->
+
+
+
+
     </body>
 </html>
