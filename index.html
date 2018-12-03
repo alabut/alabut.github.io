@@ -15,7 +15,6 @@
         <script async src='https://www.google-analytics.com/analytics.js'></script>
         <!-- End Google Analytics -->
         
-        <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400italic,700italic,900italic' rel='stylesheet' type='text/css'>
         <style type="text/css" media="screen">
 
 *, *:after, *:before {
@@ -33,9 +32,28 @@ html, body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+.scroll-indicator {
+    animation: bounce 1s infinite;
+    animation-delay: 2s;
+    animation-iteration-count: 2;
+    left: 50%;
+    position: absolute;
+    top: 95%;
+    transform: translateX(-34px);
+    z-index: 1;
+}
+
+.scroll-indicator img {
+    height: 12px;
+}
+
+.scroll-indicator .img-mobile {
+    display: none;
+}
+
 .column {
     float: left;
-    height: 80vh;
+    height: 100vh;
     position: relative;
     width: 50%;
 }
@@ -51,7 +69,7 @@ html, body {
 }
 
 .logo {
-    background-image: url(http://d32mxho067pe0f.cloudfront.net/images/splash/al-sxsw-medium.jpg);
+    background-image: url(http://d32mxho067pe0f.cloudfront.net/images/splash/al-in-Maui.jpg);
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -59,6 +77,7 @@ html, body {
 
 .logo .card {
     text-align: center;
+    top: 70%;
 }
 
 .logo img {
@@ -75,13 +94,9 @@ h2, h3 {
     margin: 10px 0;
 }
 
-ul strong, .button {
-    font-family: 'Playfair Display', Georgia, serif;
-    font-style: italic;
-}
-
 ul strong {
     font-size: 22px;
+    font-weight: 500;
 }
 
 .dark {
@@ -104,6 +119,11 @@ ul strong {
     max-width: 200px;
 }
 
+.slogan {
+    line-height: 140%;
+    margin-top: 20px;
+}
+
 ul, li {
     list-style-type: none;
     padding-left: 0;
@@ -117,7 +137,8 @@ li {
 
 li em {
     display: block;
-    font-style: normal;
+    font-family: Georgia, serif;
+    font-size: initial;
 }
 
 ul, li, p {
@@ -129,8 +150,8 @@ ul {
 }
 
 .button {
-    border: 3px solid #000;
-    color: #000;
+    border: 3px solid #fff;
+    color: #fff;
     display: block;
     font-size: 18px;
     margin: 40px auto;
@@ -150,8 +171,19 @@ ul {
 }
 
 .button:hover {
-    background: #000;
-    color: #fff;
+    background: #fff;
+}
+
+.blue .button:hover {
+    color: #4A90E2;
+}
+
+.purple .button:hover {
+    color: #9013FE;
+}
+
+.pink .button:hover {
+    color: #C51E60;
 }
 
 .dark .button {
@@ -176,12 +208,12 @@ ul {
 .tagline {
     font-weight: 400;
     letter-spacing: 2px;
-    margin-top: 40px;
+    margin-top: 80px;
     text-transform: uppercase;
 }
 
 .tagline.work span {
-    border-bottom: 3px solid #000;
+    border-bottom: 2px solid #000;
     margin-bottom: 30px;
     padding-bottom: 3px;
 }
@@ -222,12 +254,15 @@ ul {
 
 .case-studies {
     clear: both;
+    color: #fff;
 }
 
 .case-study {
     margin: 0 auto;
     max-width: 800px;
+    min-height: 510px;
     padding: 60px;
+    position: relative;
 }
 
 .case-study .subheader h5 {
@@ -240,6 +275,18 @@ ul {
 
 .gray .case-study .subheader h5 {
     color: rgba(0,0,0,0.5);
+}
+
+.blue {
+    background: radial-gradient(farthest-corner at 30% 20%, #3BB9F0 20%, #4A90E2 60%, #4A90E2) !important;
+}
+
+.purple {
+    background: radial-gradient(farthest-corner at 30% 20%, #C32AFF 20%, #9013FE 60%, #9013FE) !important;
+}
+
+.pink {
+    background: radial-gradient(farthest-corner at 30% 20%, #EC4989 20%, #C51E60 60%, #840135) !important;
 }
 
 .case-study .subheader h2 {
@@ -257,7 +304,10 @@ ul {
 }
 
 .case-study .thumbnail img {
-    width: 100%;
+    bottom: 0;
+    position: absolute;
+    right: 0;
+    width: 300px;
 }
 
 .case-study .subheader,
@@ -266,7 +316,19 @@ ul {
     width: 100%;
 }
 
+
+/* animation */
+
+@keyframes bounce {
+    0% { top: 95%; }
+    50%   { top: 96%; }
+    100% { top: 95%; }
+}
+
+
 /* responsive design layout adjustments */
+
+    /* tablet landscape */
 
 @media (max-height: 600px) and (min-width: 900px) {
 
@@ -296,7 +358,8 @@ ul {
 
 }
 
-
+    /* tablet portrait */
+    
 @media (min-height: 600px) and (max-height: 850px) {
     .card {
         padding: 0;
@@ -309,10 +372,16 @@ ul {
 
 }
 
+    /* phone */
+
 @media (max-width: 768px) {
     .column {
         float: none;
         width: 100%;
+    }
+
+    .logo .card {
+        padding: 0;
     }
     
     .bio .card {
@@ -322,11 +391,29 @@ ul {
         transform: inherit;
         width: 100%;
     }
+
+    .scroll-indicator {
+        transform: translateX(0);
+    }
+
+    .scroll-indicator .img-desktop {
+        display: none;
+    }
+
+    .scroll-indicator .img-mobile {
+        display: block;
+    }
 }
+
 
         </style>
     </head>
     <body>
+
+        <div class="scroll-indicator">
+            <img class="img-desktop" src="images/splash/chevron-double.png">
+            <img class="img-mobile" src="images/splash/chevron-white.png">
+        </div>
 	  
         <div class="column logo dark">
             <div class="card">
@@ -336,14 +423,8 @@ ul {
 
         <div class="column bio">
             <div class="card">
-                <div class="headshot"><img src="http://d32mxho067pe0f.cloudfront.net/images/splash/al-sxsw-small3.jpg"></div>
-
                 <p class="tagline work"><span>Work highlights</span></p>
                 <ul>
-                    <li>
-                        <strong>Y Combinator</strong>
-                        <em>(cofounded Referly)</em>
-                    </li>
                     <li>
                         <strong>Cake Financial</strong>
                         <em>(acquired by E-Trade)</em>
@@ -357,13 +438,6 @@ ul {
                         <em>(acquired by Rubicon)</em>
                     </li>
                 </ul>
-
-                <p class="tagline work"><span>Links</span></p>
-
-                <div class="social-links">
-                    <a href="http://dribbble.com/alabut" title="Dribbble" class="dribbble"><img src="http://d32mxho067pe0f.cloudfront.net/images/about/icon-dribbble-black.png"></a>
-                    <a href="http://linkedin.com/in/alabut" title="Linkedin" class="linkedin"><img src="http://d32mxho067pe0f.cloudfront.net/images/about/icon-linkedin-black.png"></a>
-                </div> <!-- /social-links -->
             </div> <!-- /card -->
         </div> <!-- /column bio -->
 
@@ -371,45 +445,75 @@ ul {
 
 
         <div class="case-studies">
-            <div class="case-study-wrapper dark">
-                <div class="case-study">
-                    <div class="subheader">
-                        <h5>CASE STUDY</h5>
-                        <h2>Partnered</h2>
-                    </div>
-                    <div class="description">
-                        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur. Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Maecenas faucibus mollis interdum.</p>
-                    </div>
-                    <div class="thumbnail">
-                        <img src="images/about/california.jpg">
-                    </div>
-                    <div class="cta">
-                        <a class="button" href="http://alabut.com/partnered.html">
-                            <span>View Details</span>
-                        </a>
-                    </div>
-                </div> <!-- /case-study -->
-            </div> <!-- /case-study-wrapper dark -->
-            <div class="case-study-wrapper gray">
+
+            
+            <!-- TRIANGLE (saved for later)
+            <div class="case-study-wrapper blue">
                 <div class="case-study">
                     <div class="subheader">
                         <h5>CASE STUDY</h5>
                         <h2>Triangle Health</h2>
                     </div>
                     <div class="description">
-                        <p>Sed posuere consectetur est at lobortis. Donec sed odio dui. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</p>
+                        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
                     </div>
                     <div class="thumbnail">
-                        <img src="images/about/dogs.jpg">
+                        <img alt="" class="_1pw49q0" src="images/splash/phone-triangle.png">
                     </div>
                     <div class="cta">
                         <a class="button" href="http://alabut.com/partnered.html">
                             <span>View Details</span>
                         </a>
                     </div>
+                </div>
+            </div>
+             /TRIANGLE -->
+
+            <div class="case-study-wrapper purple">
+                <div class="case-study">
+                    <div class="subheader">
+                        <h5>CASE STUDY</h5>
+                        <h2>Partnered</h2>
+                    </div>
+                    <div class="description">
+                        <p>Read a detailed walkthrough of my time as Chief Product Officer of a promising YC startup.</p>
+                    </div>
+                    <div class="thumbnail">
+                        <img src="images/splash/phone-partnered.png">
+                    </div>
+                    <div class="cta">
+                        <a class="button" href="http://alabut.com/partnered.html">
+                            <span>Project Details</span>
+                        </a>
+                    </div>
+                </div> <!-- /case-study -->
+            </div> <!-- /case-study-wrapper -->
+
+            <div class="case-study-wrapper pink">
+                <div class="case-study">
+                    <div class="subheader">
+                        <h5>LINK</h5>
+                        <h2>Dribbble</h2>
+                    </div>
+                    <div class="description">
+                        <p>View a broader range of my design work and work samples.</p>
+                    </div>
+                    <div class="thumbnail">
+                        <img src="images/splash/dribbble.png" style="
+                            width: 370px;
+                            top: 61%;
+                            transform: translateY(-50%) !important;
+                        ">
+                    </div>
+                    <div class="cta">
+                        <a class="button" href="http://alabut.com/partnered.html">
+                            <span>dribbble.com/alabut</span>
+                        </a>
+                    </div>
                 </div> <!-- /case-study -->
             </div> <!-- /case-study-wrapper gray -->
-        </div> <!--  /case-studies -->
+
+        </div> <!-- /case-studies -->
 
 
 
