@@ -199,6 +199,16 @@ ul {
     color: #000;
 }
 
+.white .button {
+    border-color: #000;
+    color: #000;
+}
+
+.white .button:hover {
+    background: #000;
+    color: #fff;
+}
+
 .case-study .button {
     border-radius: 50px;
     display: inline-block;
@@ -263,6 +273,10 @@ ul {
     position: relative;
 }
 
+.white .case-study {
+    color: #000;
+}
+
 .case-study .subheader h5 {
     color: rgba(255,255,255,0.5);
     font-weight: 400;
@@ -271,7 +285,8 @@ ul {
     padding: 0;
 }
 
-.gray .case-study .subheader h5 {
+.gray .case-study .subheader h5,
+.white .case-study .subheader h5 {
     color: rgba(0,0,0,0.5);
 }
 
@@ -289,6 +304,10 @@ ul {
 
 .black {
     background: radial-gradient(farthest-corner at 30% 20%, #222 20%, #111 60%, #000) !important;
+}
+
+.white {
+    background: radial-gradient(farthest-corner at 30% 20%, #fff 20%, #eee 60%, #ddd) !important;
 }
 
 .case-study .subheader h2 {
@@ -532,6 +551,12 @@ ul {
                 </div> <!-- /case-study -->
             </div> <!-- /case-study-wrapper pink -->
 
+
+
+            <!--
+
+            ARCHIVING MY TWITTER LINK UNTIL IT'S MORE ACTIVE, OR HAS MORE THAN JUST PICS AS CONTENT.
+
             <div class="case-study-wrapper blue">
                 <div class="case-study">
                     <div class="case-study-text">
@@ -547,16 +572,22 @@ ul {
                                 <span>twitter.com/alabut</span>
                             </a>
                         </div>                
-                    </div> <!-- /case-study-text -->
+                    </div> <!~~ /case-study-text ~~>
                     <div class="thumbnail">
                         <img src="images/splash/twitter.png" style="
                             width: 370px;
                             top: 50%;
                             transform: translateY(-50%) !important;
                         ">
-                    </div> <!-- /thumbnail -->
-                </div> <!-- /case-study -->
-            </div> <!-- /case-study-wrapper blue -->
+                    </div> <!~~ /thumbnail ~~>
+                </div> <!~~ /case-study ~~>
+            </div> <!~~ /case-study-wrapper blue ~~>
+
+            *********************************************************************
+            * IMPORTANT: to uncomment section
+            *            sub inner comments "~~" -> "--" & remove this comment
+            *********************************************************************
+            -->
 
             <div class="case-study-wrapper black">
                 <div class="case-study">
@@ -583,6 +614,32 @@ ul {
                     </div> <!-- /thumbnail -->
                 </div> <!-- /case-study -->
             </div> <!-- /case-study-wrapper black -->
+
+            <div class="case-study-wrapper white">
+                <div class="case-study">
+                    <div class="case-study-text">
+                        <div class="subheader">
+                            <h5>LINK</h5>
+                            <h2>VSCO</h2>
+                        </div>
+                        <div class="description">
+                            <p>A selection of my favorite photographs that I've edited with the VSCO app.</p>
+                        </div>    
+                        <div class="cta">
+                            <a class="button" href="https://vsco.co/alabut">
+                                <span>vsco.co/alabut</span>
+                            </a>
+                        </div>
+                    </div> <!-- /case-study-text -->
+                    <div class="thumbnail">
+                        <img src="images/splash/VSCO.png" style="
+                            width: auto;
+                            top: 50%;
+                            transform: translateY(-50%) !important;
+                        ">
+                    </div> <!-- /thumbnail -->
+                </div> <!-- /case-study -->
+            </div> <!-- /case-study-wrapper white -->
 
         </div> <!-- /case-studies -->
 
