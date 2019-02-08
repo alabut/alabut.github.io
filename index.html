@@ -15,6 +15,7 @@
         <script async src='https://www.google-analytics.com/analytics.js'></script>
         <!-- End Google Analytics -->
         
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <style type="text/css" media="screen">
 
 *, *:after, *:before {
@@ -171,6 +172,7 @@ ul {
 
 .button:hover {
     background: #fff;
+    text-decoration: none;
 }
 
 .blue .button:hover {
@@ -265,7 +267,7 @@ ul {
     color: #fff;
 }
 
-.case-study {
+.case-study-disabled {
     margin: 0 auto;
     max-width: 800px;
     min-height: 510px;
@@ -314,21 +316,33 @@ ul {
     margin-top: 0;
 }
 
-.case-study .description,
-.case-study .thumbnail {
+/*.case-study .description,
+.case-study .hero-image {
     float: left;
     width: 45%;
+}*/
+
+.case-study .case-study-text-wrapper,
+.case-study .hero-image {
+    min-height: 510px;
 }
 
-.case-study .thumbnail {
+.case-study .hero-image {
     padding-left: 5%;
 }
 
-.case-study .thumbnail img {
+.case-study .hero-image img {
     bottom: 0;
     position: absolute;
-    right: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 300px;
+}
+
+.case-study .hero-image.social-media-logo img {
+    bottom: initial;
+    top: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .case-study .subheader,
@@ -430,6 +444,40 @@ ul {
     .scroll-indicator .img-mobile {
         display: block;
     }
+
+    .case-study .case-study-text-wrapper,
+    .case-study .hero-image {
+        min-height: initial;
+        padding: 60px 0 0;
+    }
+
+    .case-study .case-study-text {
+        position: static;
+        top: initial;
+        transform: none;
+    }
+
+    .social-media-text {
+        padding-bottom: 60px;
+    }
+
+    .case-study .hero-image {
+        text-align: center;
+    }
+
+    .case-study .hero-image img {
+        position: static;
+        transform: none;
+    }
+
+    .case-study .hero-image.social-media-logo img {
+        bottom: 0;
+        padding-bottom: 60px;
+        top: initial;
+        transform: none;
+        width: 140px;
+    }
+
 }
 
 
@@ -478,168 +526,189 @@ ul {
 
             
             
-            
-             
-
-            <div class="case-study-wrapper purple">
-                <div class="case-study">
-                    <div class="case-study-text">
-                        <div class="subheader">
-                            <h5>CASE STUDY</h5>
-                            <h2>Partnered</h2>
-                        </div>
-                        <div class="description">
-                            <p>A detailed walkthrough of my time as Chief Product Officer, overhauling a B2B app to land the first customers.</p>
-                        </div>
-                        <div class="cta">
-                            <a class="button" href="http://alabut.com/partnered.html">
-                                <span>Project Details</span>
-                            </a>
-                        </div>
-                    </div> <!-- /case-study-text -->
-                    <div class="thumbnail">
-                        <img src="http://d32mxho067pe0f.cloudfront.net/images/splash/phone-partnered.png">
-                    </div> <!-- /thumbnail -->
-                </div> <!-- /case-study -->
-            </div> <!-- /case-study-wrapper -->
-
-            <div class="case-study-wrapper blue">
-                <div class="case-study">
-                    <div class="case-study-text">
-                        <div class="subheader">
-                            <h5>CASE STUDY</h5>
-                            <h2>Triangle Health</h2>
-                        </div>
-                        <div class="description">
-                            <p>A quick project improving the onboarding of an innovative medical service.</p>
-                        </div>
-                        <div class="cta">
-                            <a class="button" href="http://alabut.com/partnered.html">
-                                <span>View Details</span>
-                            </a>
-                        </div>
-                    </div> <!-- /case-study-text -->
-                    <div class="thumbnail">
-                        <img alt="" class="_1pw49q0" src="http://d32mxho067pe0f.cloudfront.net/images/splash/phone-triangle.png">
-                    </div> <!-- /thumbnail -->
-                </div> <!-- /case-study -->
-            </div> <!-- /case-study-wrapper -->
-
-            <div class="case-study-wrapper pink">
-                <div class="case-study">
-                    <div class="case-study-text">
-                        <div class="subheader">
-                            <h5>LINK</h5>
-                            <h2>Dribbble</h2>
-                        </div>
-                        <div class="description">
-                            <p>A broader range of my design work and work samples.</p>
-                        </div>
-                        <div class="cta">
-                            <a class="button" href="http://dribbble.com/alabut">
-                                <span>dribbble.com/alabut</span>
-                            </a>
-                        </div>
-                    </div> <!-- /case-study-text -->
-                    <div class="thumbnail">
-                        <img src="http://d32mxho067pe0f.cloudfront.net/images/splash/dribbble.png" style="
-                            width: 370px;
-                            top: 50%;
-                            transform: translateY(-50%) !important;
-                        ">
-                    </div> <!-- /thumbnail -->
-                </div> <!-- /case-study -->
-            </div> <!-- /case-study-wrapper pink -->
 
 
 
-            <!--
 
-            ARCHIVING MY TWITTER LINK UNTIL IT'S MORE ACTIVE, OR HAS MORE THAN JUST PICS AS CONTENT.
 
-            <div class="case-study-wrapper blue">
-                <div class="case-study">
-                    <div class="case-study-text">
-                        <div class="subheader">
-                            <h5>LINK</h5>
-                            <h2>Twitter</h2>
-                        </div>
-                        <div class="description">
-                            <p>Random personal thoughts &amp; links.</p>
-                        </div>
-                        <div class="cta">
-                            <a class="button" href="http://twitter.com/alabut">
-                                <span>twitter.com/alabut</span>
-                            </a>
-                        </div>                
-                    </div> <!~~ /case-study-text ~~>
-                    <div class="thumbnail">
-                        <img src="images/splash/twitter.png" style="
-                            width: 370px;
-                            top: 50%;
-                            transform: translateY(-50%) !important;
-                        ">
-                    </div> <!~~ /thumbnail ~~>
-                </div> <!~~ /case-study ~~>
-            </div> <!~~ /case-study-wrapper blue ~~>
 
-            *********************************************************************
-            * IMPORTANT: to uncomment section
-            *            sub inner comments "~~" -> "--" & remove this comment
-            *********************************************************************
-            -->
 
-            <div class="case-study-wrapper black">
-                <div class="case-study">
-                    <div class="case-study-text">
-                        <div class="subheader">
-                            <h5>LINK</h5>
-                            <h2>Medium</h2>
-                        </div>
-                        <div class="description">
-                            <p>My articles and blog posts.</p>
-                        </div>    
-                        <div class="cta">
-                            <a class="button" href="https://medium.com/@alabut">
-                                <span>medium.com/@alabut</span>
-                            </a>
-                        </div>
-                    </div> <!-- /case-study-text -->
-                    <div class="thumbnail">
-                        <img src="images/splash/medium.png" style="
-                            width: 370px;
-                            top: 50%;
-                            transform: translateY(-50%) !important;
-                        ">
-                    </div> <!-- /thumbnail -->
-                </div> <!-- /case-study -->
-            </div> <!-- /case-study-wrapper black -->
 
-            <div class="case-study-wrapper white">
-                <div class="case-study">
-                    <div class="case-study-text">
-                        <div class="subheader">
-                            <h5>LINK</h5>
-                            <h2>VSCO</h2>
-                        </div>
-                        <div class="description">
-                            <p>A selection of my favorite photographs that I've edited with the VSCO app.</p>
-                        </div>    
-                        <div class="cta">
-                            <a class="button" href="https://vsco.co/alabut">
-                                <span>vsco.co/alabut</span>
-                            </a>
-                        </div>
-                    </div> <!-- /case-study-text -->
-                    <div class="thumbnail">
-                        <img src="images/splash/VSCO.png" style="
-                            width: auto;
-                            top: 50%;
-                            transform: translateY(-50%) !important;
-                        ">
-                    </div> <!-- /thumbnail -->
-                </div> <!-- /case-study -->
-            </div> <!-- /case-study-wrapper white -->
+
+
+
+
+
+
+            <div class="case-study-wrapper purple container-fluid"> <!-- This tasty level of the parfait yogurt is made with a full width color bar.  -->
+                <div class="row case-study"> <!-- Narrow main column because the actual content is relatively light on word count. -->
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="row"> <!-- A nested row so that text and hero image can be stacked vertically on mobile. -->
+                            <div class="col-sm-6">
+                                <div class="case-study-text-wrapper"> <!-- Yet another wrapper to overcome Bootstrap's limited ability to vertically position content. -->
+                                    <div class="case-study-text">
+                                        <!-- NOTE: some or all of the following divs could be refactored out. -->
+                                        <div class="subheader">
+                                            <h5>CASE STUDY</h5>
+                                            <h2>Partnered</h2>
+                                        </div>
+                                        <div class="description">
+                                            <p>A detailed walkthrough of my time as Chief Product Officer, overhauling a B2B app to land the first customers.</p>
+                                        </div>
+                                        <div class="cta">
+                                            <a class="button" href="http://alabut.com/partnered.html">
+                                                <span>Project Details</span>
+                                            </a>
+                                        </div> <!-- /cta -->
+                                    </div> <!-- /case-study-text -->
+                                </div> <!-- /case-study-text-wrapper -->
+                            </div> <!-- /col-sm-6 -->
+                            <div class="col-sm-6">
+                                <div class="hero-image"> <!-- See Doug Bowman's classic article on CSS: Making The Absolute, Relative -->
+                                    <img src="http://d32mxho067pe0f.cloudfront.net/images/splash/phone-partnered.png">
+                                </div> <!-- /hero-image -->
+                            </div> <!-- /col-sm-6 -->
+                        </div> <!-- /row -->
+                    </div> <!-- /col-sm-8 col-sm-offset-2 -->
+                </div> <!-- /row case-study -->
+            </div> <!-- /case-study-wrapper purple -->
+
+            <div class="case-study-wrapper blue container-fluid"> <!-- This tasty level of the parfait yogurt is made with a full width color bar.  -->
+                <div class="row case-study"> <!-- Narrow main column because the actual content is relatively light on word count. -->
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="row"> <!-- A nested row so that text and hero image can be stacked vertically on mobile. -->
+                            <div class="col-sm-6">
+                                <div class="case-study-text-wrapper"> <!-- Yet another wrapper to overcome Bootstrap's limited ability to vertically position content. -->
+                                    <div class="case-study-text">
+                                        <!-- NOTE: some or all of the following divs could be refactored out. -->
+                                        <div class="subheader">
+                                            <h5>CASE STUDY</h5>
+                                            <h2>Triangle Health</h2>
+                                        </div>
+                                        <div class="description">
+                                            <p>A quick project improving the onboarding of an innovative medical service.</p>
+                                        </div>
+                                        <div class="cta">
+                                            <a class="button" href="http://alabut.com/partnered.html">
+                                                <span>Project Details</span>
+                                            </a>
+                                        </div> <!-- /cta -->
+                                    </div> <!-- /case-study-text -->
+                                </div> <!-- /case-study-text-wrapper -->
+                            </div> <!-- /col-sm-6 -->
+                            <div class="col-sm-6">
+                                <div class="hero-image"> <!-- See Doug Bowman's classic article on CSS: Making The Absolute, Relative -->
+                                    <img src="http://d32mxho067pe0f.cloudfront.net/images/splash/phone-triangle.png">
+                                </div> <!-- /hero-image -->
+                            </div> <!-- /col-sm-6 -->
+                        </div> <!-- /row -->
+                    </div> <!-- /col-sm-8 col-sm-offset-2 -->
+                </div> <!-- /row case-study -->
+            </div> <!-- /case-study-wrapper purple -->
+
+            <div class="case-study-wrapper pink container-fluid"> <!-- This tasty level of the parfait yogurt is made with a full width color bar.  -->
+                <div class="row case-study"> <!-- Narrow main column because the actual content is relatively light on word count. -->
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="row"> <!-- A nested row so that text and hero image can be stacked vertically on mobile. -->
+                            <div class="col-xs-6">
+                                <div class="case-study-text-wrapper"> <!-- Yet another wrapper to overcome Bootstrap's limited ability to vertically position content. -->
+                                    <div class="case-study-text social-media-text">
+                                        <!-- NOTE: some or all of the following divs could be refactored out. -->
+                                        <div class="subheader">
+                                            <h5>LINK</h5>
+                                            <h2>Dribbble</h2>
+                                        </div>
+                                        <div class="description">
+                                            <p>A broader range of my design work and work samples.</p>
+                                        </div>
+                                        <div class="cta">
+                                            <a class="button" href="http://dribbble.com/alabut">
+                                                <span>dribbble.com/alabut</span>
+                                            </a>
+                                        </div> <!-- /cta -->
+                                    </div> <!-- /case-study-text social-media-text -->
+                                </div> <!-- /case-study-text-wrapper -->
+                            </div> <!-- /col-xs-6 -->
+                            <div class="col-xs-6">
+                                <div class="hero-image social-media-logo"> <!-- See Doug Bowman's classic article on CSS: Making The Absolute, Relative -->
+                                    <img src="http://d32mxho067pe0f.cloudfront.net/images/splash/dribbble.png">
+                                </div> <!-- /hero-image social-media-logo -->
+                            </div> <!-- /col-xs-6 -->
+                        </div> <!-- /row -->
+                    </div> <!-- /col-sm-8 col-sm-offset-2 -->
+                </div> <!-- /row case-study -->
+            </div> <!-- /case-study-wrapper purple -->
+
+            <div class="case-study-wrapper black container-fluid"> <!-- This tasty level of the parfait yogurt is made with a full width color bar.  -->
+                <div class="row case-study"> <!-- Narrow main column because the actual content is relatively light on word count. -->
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="row"> <!-- A nested row so that text and hero image can be stacked vertically on mobile. -->
+                            <div class="col-xs-6">
+                                <div class="case-study-text-wrapper"> <!-- Yet another wrapper to overcome Bootstrap's limited ability to vertically position content. -->
+                                    <div class="case-study-text social-media-text">
+                                        <!-- NOTE: some or all of the following divs could be refactored out. -->
+                                        <div class="subheader">
+                                            <h5>LINK</h5>
+                                            <h2>Medium</h2>
+                                        </div>
+                                        <div class="description">
+                                            <p>My articles and blog posts.</p>
+                                        </div>
+                                        <div class="cta">
+                                            <a class="button" href="https://medium.com/@alabut">
+                                                <span>medium.com/@alabut</span>
+                                            </a>
+                                        </div> <!-- /cta -->
+                                    </div> <!-- /case-study-text social-media-text -->
+                                </div> <!-- /case-study-text-wrapper -->
+                            </div> <!-- /col-xs-6 -->
+                            <div class="col-xs-6">
+                                <div class="hero-image social-media-logo"> <!-- See Doug Bowman's classic article on CSS: Making The Absolute, Relative -->
+                                    <img src="images/splash/medium.png">
+                                </div> <!-- /hero-image -->
+                            </div> <!-- /col-xs-6 -->
+                        </div> <!-- /row -->
+                    </div> <!-- /col-sm-8 col-sm-offset-2 -->
+                </div> <!-- /row case-study -->
+            </div> <!-- /case-study-wrapper purple -->
+
+            <div class="case-study-wrapper white container-fluid"> <!-- This tasty level of the parfait yogurt is made with a full width color bar.  -->
+                <div class="row case-study"> <!-- Narrow main column because the actual content is relatively light on word count. -->
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="row"> <!-- A nested row so that text and hero image can be stacked vertically on mobile. -->
+                            <div class="col-xs-6">
+                                <div class="case-study-text-wrapper"> <!-- Yet another wrapper to overcome Bootstrap's limited ability to vertically position content. -->
+                                    <div class="case-study-text social-media-text">
+                                        <!-- NOTE: some or all of the following divs could be refactored out. -->
+                                        <div class="subheader">
+                                            <h5>LINK</h5>
+                                            <h2>VSCO</h2>
+                                        </div>
+                                        <div class="description">
+                                            <p>A selection of my favorite photographs that I've edited with the VSCO app.</p>
+                                        </div>
+                                        <div class="cta">
+                                            <a class="button" href="https://vsco.co/alabut">
+                                                <span>vsco.co/alabut</span>
+                                            </a>
+                                        </div> <!-- /cta -->
+                                    </div> <!-- /case-study-text social-media-text -->
+                                </div> <!-- /case-study-text-wrapper -->
+                            </div> <!-- /col-xs-6 -->
+                            <div class="col-xs-6">
+                                <div class="hero-image social-media-logo"> <!-- See Doug Bowman's classic article on CSS: Making The Absolute, Relative -->
+                                    <img src="images/splash/VSCO_Seal_Lockup.png">
+                                </div> <!-- /hero-image -->
+                            </div> <!-- /col-xs-6 -->
+                        </div> <!-- /row -->
+                    </div> <!-- /col-sm-8 col-sm-offset-2 -->
+                </div> <!-- /row case-study -->
+            </div> <!-- /case-study-wrapper purple -->
+
+
+
+
+
 
         </div> <!-- /case-studies -->
 
