@@ -324,12 +324,6 @@ ul {
     margin-top: 0;
 }
 
-/*.case-study .description,
-.case-study .hero-image {
-    float: left;
-    width: 45%;
-}*/
-
 .case-study .case-study-text-wrapper,
 .case-study .hero-image {
     min-height: 510px;
@@ -344,11 +338,13 @@ ul {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    width: 300px;
+    max-width: 300px;
 }
 
 .case-study .hero-image.social-media-logo img {
     bottom: initial;
+    max-height: 180px;
+    object-fit: contain;
     top: 50%;
     transform: translate(-50%, -50%);
 }
@@ -490,8 +486,6 @@ ul {
 
     .case-study .hero-image.social-media-logo img {
         bottom: 0;
-        max-height: 180px;
-        object-fit: contain;
         padding-bottom: 60px;
         top: initial;
         transform: none;
