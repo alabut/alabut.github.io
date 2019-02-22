@@ -71,23 +71,6 @@ html, body {
     text-transform: initial;
 }
 
-.bio a {
-    color: #000;
-    border-bottom: 1px solid #ccc;
-    font-weight: 400;
-    padding-bottom: 1px;
-}
-
-.bio a:hover {
-    color: #337ab7;
-    border-bottom: 1px solid #337ab7;
-    text-decoration: none;
-}
-
-.mini-footer a {
-    border-bottom: none;
-}
-
 .card {
     left: 50%;
     padding: 30px;
@@ -171,7 +154,7 @@ li em {
 }
 
 ul, li, p {
-    font-size: 16px;
+    font-size: 18px;
     margin: 0 0 20px;
 }
 
@@ -258,7 +241,7 @@ ul {
 }
 
 .tagline.work span {
-    border-bottom: 2px solid #000;
+    border-bottom: 3px solid #000;
     margin-bottom: 30px;
     padding-bottom: 3px;
 }
@@ -376,6 +359,97 @@ ul {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+}
+
+.mini-tiles, .bio .mini-tiles a {
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 50%;
+
+}
+
+.mini-tiles {
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    min-height: 355px;
+    text-align: center;
+}
+
+.mini-tiles.about {
+    background-image: url(http://d32mxho067pe0f.cloudfront.net/images/about/intro.jpg);
+    background-position: 30% 50%;
+    background-size: cover;
+}
+
+.mini-tiles.writing {
+    background-color: #000;
+    color: #fff;
+}
+
+.mini-tiles.photography {
+}
+
+.bio a {
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    font-weight: 500;
+}
+
+.bio a:hover {
+    color: #337ab7;
+    border-bottom: 1px solid #337ab7;
+    text-decoration: none;
+}
+
+.bio .mini-tiles a {
+    border-bottom: none;
+    color: #000;
+    display: block;
+    height: 355px;
+    padding: 20px 10px;
+    width: 100%;
+
+    /* hover animation timing */
+    transition: background-size 0.1s;
+}
+
+.bio .mini-tiles.about a {
+    background-image: 
+    url(http://d32mxho067pe0f.cloudfront.net/images/about/signature.png);
+    background-position: 50% 50%;
+    background-size: 50%;
+    color: #fff;
+}
+
+.bio .mini-tiles.writing a {
+    background-image: url(http://d32mxho067pe0f.cloudfront.net/images/splash/medium.png);
+    color: #fff;
+    
+}
+
+.bio .mini-tiles.photography a {
+    background-image: url(http://d32mxho067pe0f.cloudfront.net/images/splash/VSCO_Seal_Lockup.png);
+    background-size: 25%;
+    
+}
+
+.bio .mini-tiles.about a:hover {
+    background-size: 60%;
+}
+
+.bio .mini-tiles.writing a:hover {
+    background-size: 60%;
+}
+
+.bio .mini-tiles.photography a:hover {
+    background-size: 30%;
+}
+
+.mini-footer a {
+    border-bottom: none;
 }
 
 
@@ -628,7 +702,7 @@ ul {
                 </div> <!-- /row case-study -->
             </div> <!-- /case-study-wrapper purple -->
 
-            <div class="case-study-wrapper blue container-fluid"> <!-- This tasty level of the parfait yogurt is made with a full width color bar.  -->
+            <div class="case-study-wrapper blue container-fluid" style="display: none;"> <!-- This tasty level of the parfait yogurt is made with a full width color bar.  -->
                 <div class="row case-study"> <!-- Narrow main column because the actual content is relatively light on word count. -->
                     <div class="col-sm-8 col-sm-offset-2">
                         <div class="row"> <!-- A nested row so that text and hero image can be stacked vertically on mobile. -->
@@ -698,16 +772,57 @@ ul {
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
                         <h1 style="
-                        font-size: 17px;margin: 80px 0;/* background-color: #000; */; /* color: #fff; */ ;line-height: 100%;text-align: center;font-weight: 300;font-weight: 400;font-weight: 300;font-style: inherit;font-style: italic;">
+                        font-size: 18px;margin: 65px 0 40px;line-height: 100%;text-align: center;font-weight: 300;">
                             <strong style="
-                            font-size: 25px;line-height: 210%;font-style: normal;">Thank you for checking out my portfolio!</strong><br>
-                            Learn more about my life story &amp; work process on 
-                            <a href="about.html">my about page</a>
-                            <img src="http://d32mxho067pe0f.cloudfront.net/images/about/signature.png" style="
-                            display: block;margin: 50px auto;width: 207px;filter: invert(100%);">
+                                font-size: 15px;line-height: 170%;font-style: normal;font-weight: 500;color: rgba(0, 0, 0, 0.298039);
+                                letter-spacing: 5px;
+
+                                font-weight: bold;
+                                font-style: normal;
+                                text-transform: uppercase;">Personal Links
+                            </strong>
                         </h1>
+
+                        <div class="row" style="margin-bottom: 40px;">
+
+                            <div class="col-sm-4">
+                                <div class="mini-tiles about">
+                                    <span style="border-bottom: 3px solid #fff;padding-bottom: 3px;">
+                                        <a href="http://alabut.com/about.html">
+                                            About Me
+                                        </a>
+                                    </span>
+                                </div> <!-- mini-tiles -->
+                            </div> <!-- /col-sm-4 -->
+
+                            <div class="col-sm-4">
+                                <div class="mini-tiles writing">
+                                    <span style="border-bottom: 3px solid #fff;padding-bottom: 3px;">
+                                        <a href="https://medium.com/@alabut">
+                                            Writing
+                                        </a>
+                                    </span>
+                                </div> <!-- mini-tiles -->
+                            </div> <!-- /col-sm-4 -->
+
+                            <div class="col-sm-4">
+                                <div class="mini-tiles photography">
+                                    <span style="border-bottom: 3px solid #000;padding-bottom: 3px;">
+                                        <a href="https://vsco.co/alabut/">
+                                            Photography
+                                        </a>
+                                    </span>
+                                </div> <!-- mini-tiles -->
+                            </div> <!-- /col-sm-4 -->
+
+
+                        </div> <!-- /row -->
+
+
+
+
                         <div class="mini-footer" style="
-                        color: #666;border-top: 1px solid #ccc;padding-top: 20px;margin-bottom: 20px;font-weight: 400;in-bottom: 20px;">
+                        color: #666;border-top: 1px solid #ccc;padding-top: 20px;margin-bottom: 20px;font-weight: 400;">
                             <div class="row">
                                 <div class="col-sm-6">
                                     Get in touch: 
