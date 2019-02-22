@@ -67,7 +67,7 @@ html, body {
     font-size: 52px;
     font-weight: 200;
     line-height: 100%;
-    margin: 0 0 60px;
+    margin: 65px 0 40px;
     text-transform: initial;
 }
 
@@ -246,35 +246,6 @@ ul {
     padding-bottom: 3px;
 }
 
-.social-links {
-    padding-bottom: 30px;
-}
-
-.social-links a {
-    font-size: 21px;
-    line-height: 100%;
-    margin-right: 5px;
-    padding: 10px 10px 6px 10px;
-    text-decoration: none;
-}
-
-.social-links a:hover img {
-    filter: invert(100%);
-}
-
-.social-links a.dribbble:hover {
-    background: #EA4C88;
-}
-
-.social-links a.linkedin:hover {
-    background: #0177B7;
-}
-
-.social-links img {
-    max-height: 20px;
-    max-width: 20px;
-}
-
 .case-studies {
     clear: both;
     color: #fff;
@@ -389,9 +360,6 @@ ul {
     color: #fff;
 }
 
-.mini-tiles.photography {
-}
-
 .bio a {
     border-bottom: 1px solid #ccc;
     color: #000;
@@ -448,8 +416,20 @@ ul {
     background-size: 30%;
 }
 
+.mini-footer {
+    border-top: 1px solid #ccc;
+    color: #666;
+    font-weight: 400;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
 .mini-footer a {
     border-bottom: none;
+}
+
+.social-links {
+    text-align: right;
 }
 
 
@@ -512,10 +492,6 @@ ul {
         font-size: 22px;
     }
 
-    .bio h1 {
-        margin: 0;
-    }
-
     .case-study .hero-image img {
         width: 100%;
     }
@@ -537,11 +513,13 @@ ul {
 
     .bio {
         height: initial;
-        padding: 80px 20px;
+        padding: 20px;
     }
 
     .bio h1 {
         font-size: 36px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .logo .card {
@@ -594,6 +572,10 @@ ul {
         width: 100%;
     }
 
+    .mini-tiles.photography {
+        margin-bottom: 5px;
+    }
+
     .case-study .hero-image.social-media-logo img {
         bottom: 0;
         padding-bottom: 60px;
@@ -604,6 +586,15 @@ ul {
 
     .case-study .hero-image.social-media-logo {
         padding: 0;
+    }
+
+    .mini-footer {
+        margin-bottom: 0;
+    }
+
+    .email-link, .social-links {
+        margin-bottom: 20px;
+        text-align: center;
     }
 
 }
@@ -772,7 +763,7 @@ ul {
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
                         <h1 style="
-                        font-size: 18px;margin: 65px 0 40px;line-height: 100%;text-align: center;font-weight: 300;">
+                        font-size: 18px;line-height: 100%;text-align: center;font-weight: 300;">
                             <strong style="
                                 font-size: 15px;line-height: 170%;font-style: normal;font-weight: 500;color: rgba(0, 0, 0, 0.298039);
                                 letter-spacing: 5px;
@@ -821,16 +812,13 @@ ul {
 
 
 
-                        <div class="mini-footer" style="
-                        color: #666;border-top: 1px solid #ccc;padding-top: 20px;margin-bottom: 20px;font-weight: 400;">
+                        <div class="mini-footer">
                             <div class="row">
-                                <div class="col-sm-6">
+                                <div class="col-sm-6 email-link">
                                     Get in touch: 
                                     <a href="mailto:alabut@gmail.com">alabut@gmail.com</a>
                                 </div>
-                                <div class="col-sm-6" style="
-                                text-align: right;">
-
+                                <div class="col-sm-6 social-links">
                                     <a href="http://facebook.com/alabut">Facebook</a>
                                     |
                                     <a href="http://twitter.com/alabut">Twitter</a>
