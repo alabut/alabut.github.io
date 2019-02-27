@@ -83,13 +83,14 @@ html, body {
 
 .logo {
     background-image: url(http://d32mxho067pe0f.cloudfront.net/images/splash/al-in-Maui5.jpg);
-    background-position: 50% 50%;
+    background-position: 50% 0%;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .logo .card {
     text-align: center;
+    top: 67%;
     transform: translate(-50%, 0);
 }
 
@@ -442,15 +443,27 @@ ul {
 }
 
 
-/* responsive design layout adjustments */
+/* responsive design via device targeting and layout tweaks */
 
     /* NOTE:
     I used an especially helpful overview of using logic w/ media queries from this article: 
-    https://css-tricks.com/logic-in-media-queries/ */
+    https://css-tricks.com/logic-in-media-queries/
+
+    It might lead to some repetition to use exclusionary boolean operators but it's a good approach until I reorder the styles to be mobile-first.
+
+    */
 
     /* DEVICE: tablet landscape (and excluding small desktops) */
 
 @media (max-height: 768px) and (min-width: 900px) and (max-width: 1024px) {
+
+    .logo {
+        background-position: 50% 50%;
+    }
+
+    .logo .card {
+        top: 50%;
+    }
 
     .column {
         width: 70%;
@@ -482,6 +495,14 @@ ul {
 
 @media (min-width: 768px) and (max-width: 992px) {
 
+    .logo {
+        background-position: 50% 50%;
+    }
+
+    .logo .card {
+        top: 50%;
+    }
+
     .card {
         padding: 0;
     }
@@ -506,11 +527,29 @@ ul {
 
 }
 
+    /* DEVICE: iPad Pro 12.9" portrait */
+
+@media (min-width: 1023px) and (max-width: 1025px) and (min-height: 1365px) and (max-height: 1367px) {
+    
+    .logo .card {
+        top: 50%;
+    }
+
+}
+
     /* DEVICE: phone */
 
 @media (max-width: 768px) {
+
+    .logo {
+        background-position: 50% 50%;
+    }
+
+    .logo .card {
+        top: 50%;
+    }
   
-  .column {
+    .column {
         float: none;
         width: 100%;
     }
