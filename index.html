@@ -444,9 +444,17 @@ ul {
 
 /* responsive design layout adjustments */
 
-    /* tablet landscape */
+    /* NOTE:
+    I used an especially helpful overview of using logic w/ media queries from this article: 
+    https://css-tricks.com/logic-in-media-queries/ */
 
-@media (max-height: 600px) and (min-width: 900px) {
+    /* DEVICE: tablet landscape (and excluding small desktops) */
+
+@media (max-height: 768px) and (min-width: 900px) and (max-width: 1024px) {
+
+* {
+    background: red;
+}
 
     .column {
         width: 70%;
@@ -474,9 +482,13 @@ ul {
 
 }
 
-    /* tablet portrait */
+    /* DEVICE: tablet portrait */
 
-@media (min-height: 600px) and (max-height: 850px) {
+@media (min-width: 768px) and (max-width: 992px) {
+
+* {
+    background: green;
+}
 
     .card {
         padding: 0;
@@ -502,10 +514,13 @@ ul {
 
 }
 
-    /* phone */
+    /* DEVICE: phone */
 
 @media (max-width: 768px) {
     
+* {
+    background: yellow;
+}
     .column {
         float: none;
         width: 100%;
