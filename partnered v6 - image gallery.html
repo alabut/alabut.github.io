@@ -17,6 +17,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
         <link type="text/css" rel="stylesheet" href="css/featherlight.min.css" />
+        <link type="text/css" rel="stylesheet" href="css/featherlight.gallery.min.css" />
         <style type="text/css">
             @media all {
                 .featherlight { color: #333; }
@@ -417,9 +418,9 @@ p {
         <div class="screenshots">
           <div class="container">
 
+            <!-- ***************** test of the featherlight image gallery ***************** -->
 
-
-
+            <!--
             <h2>featherlight</h2>
 
             <div class="btn-group">
@@ -430,80 +431,173 @@ p {
                 <a class="btn btn-default" href="index.html .ajaxcontent" data-featherlight="ajax">Ajax</a>
             </div>
 
+            <section
+              data-featherlight-gallery
+              data-featherlight-filter="a"
+            >
+              <h2>This is a gallery</h2>
+              <a href="images/about/al-soccer.jpg"><img src="images/about/al-soccer.jpg"></a>
+              <a href="images/about/al-soccer2.jpg"><img src="images/about/al-soccer2.jpg"></a>
+            </section>
+            -->
 
-
-
-
-
-
-
-  <!-- Portfolio Grid Section -->
-    <section class="portfolio" id="portfolio">
-      <h2 class="text-center text-uppercase text-secondary mb-0">Gallery</h2>
-      <hr class="star-dark mb-5">
-      <div class="row">
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-1">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="images/about/travel-me.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-2">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="images/about/travel-me.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-3">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="images/about/travel-me.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-4">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="images/about/travel-me.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-5">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="images/about/travel-me.jpg" alt="">
-          </a>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <a class="portfolio-item d-block mx-auto" href="#portfolio-modal-6">
-            <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-              <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                <i class="fas fa-search-plus fa-3x"></i>
-              </div>
-            </div>
-            <img class="img-fluid" src="images/about/travel-me.jpg" alt="">
-          </a>
-        </div>
-      </div>
-  </section>
+            <!-- Portfolio Grid Section -->
+            <section class="portfolio" id="portfolio" data-featherlight-gallery data-featherlight-filter="a">
+              <h2 class="text-center text-uppercase text-secondary mb-0">Gallery</h2>
+              <hr class="star-dark mb-5">
+              <div class="row">
+                <div class="col-md-6 col-lg-4">
+                  <a class="portfolio-item d-block mx-auto" href="images/partnered/home-splash2.png">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                        <i class="fas fa-search-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="images/partnered/home-splash2.png" alt="">
+                  </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <a class="portfolio-item d-block mx-auto" href="images/partnered/home-logofield.png">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                        <i class="fas fa-search-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="images/partnered/home-logofield.png" alt="">
+                  </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <a class="portfolio-item d-block mx-auto" href="images/partnered/home-email-sucks.png">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                        <i class="fas fa-search-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="images/partnered/home-email-sucks.png" alt="">
+                  </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <a class="portfolio-item d-block mx-auto" href="images/partnered/home-loggedin-short.jpg">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                        <i class="fas fa-search-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="images/partnered/home-loggedin-short.jpg" alt="">
+                  </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <a class="portfolio-item d-block mx-auto" href="images/partnered/home-testimonial.png">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                        <i class="fas fa-search-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="images/partnered/home-testimonial.png" alt="">
+                  </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <a class="portfolio-item d-block mx-auto" href="images/partnered/post.gif">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                        <i class="fas fa-search-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="images/partnered/post.gif" alt="">
+                  </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <a class="portfolio-item d-block mx-auto" href="images/partnered/tour.jpg">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                        <i class="fas fa-search-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="images/partnered/tour.jpg" alt="">
+                  </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <a class="portfolio-item d-block mx-auto" href="images/partnered/sxsw.jpg">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                        <i class="fas fa-search-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="images/partnered/sxsw.jpg" alt="">
+                  </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <a class="portfolio-item d-block mx-auto" href="images/partnered/partnerships-01.png">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                        <i class="fas fa-search-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="images/partnered/partnerships-01.png" alt="">
+                  </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <a class="portfolio-item d-block mx-auto" href="images/partnered/partnerships-02.png">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                        <i class="fas fa-search-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="images/partnered/partnerships-02.png" alt="">
+                  </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <a class="portfolio-item d-block mx-auto" href="images/partnered/home-alternate.png">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                        <i class="fas fa-search-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="images/partnered/home-alternate.png" alt="">
+                  </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <a class="portfolio-item d-block mx-auto" href="images/partnered/landing.jpg">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                        <i class="fas fa-search-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="images/partnered/landing.jpg" alt="">
+                  </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <a class="portfolio-item d-block mx-auto" href="images/partnered/retreat.jpg">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                        <i class="fas fa-search-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="images/partnered/retreat.jpg" alt="">
+                  </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <a class="portfolio-item d-block mx-auto" href="images/partnered/readonly.jpg">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                        <i class="fas fa-search-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="images/partnered/readonly.jpg" alt="">
+                  </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <a class="portfolio-item d-block mx-auto" href="images/partnered/help.jpg">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                        <i class="fas fa-search-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="images/partnered/help.jpg" alt="">
+                  </a>
+                </div>
+              </div> <!-- /row -->
+            </section>
 
 
 
@@ -915,6 +1009,7 @@ color: #fff;">
         <!-- ***************** SCRIPTS ***************** -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="js/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/featherlight.gallery.min.js" type="text/javascript" charset="utf-8"></script>
 
     
 
