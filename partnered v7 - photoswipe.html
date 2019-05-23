@@ -1000,6 +1000,38 @@ color: #fff;">
         <!-- UI JS file -->
         <script src="photoswipe/photoswipe-ui-default.min.js"></script> 
 
+        <!-- activate the scripts above to fire up Photoswipe -->
+        <script type="text/javascript">
+
+            var pswpElement = document.querySelectorAll('.pswp')[0];
+
+            // build items array
+            var items = [
+                {
+                    src: 'images/partnered/home-alternate.png',
+                    w: 1920,
+                    h: 7376
+                },
+                {
+                    src: 'images/partnered/home-loggedin-short.jpg',
+                    w: 1707,
+                    h: 2818
+                }
+            ];
+
+            // define options (if needed)
+            var options = {
+                // optionName: 'option value'
+                // for example:
+                index: 0 // start at first slide
+            };
+
+            // Initializes and opens PhotoSwipe
+            var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+            gallery.init();
+
+        </script>
+
     
 
 </body></html>
