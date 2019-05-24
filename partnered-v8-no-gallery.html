@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+        <title>Al Abut. Designer, crimefighter.</title>
+        
+        <!-- ***************** GOOGLE ANALYTICS ***************** -->
+        
+        <script>
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', 'UA-256299-1', 'auto');
+        ga('send', 'pageview');
+        </script>
+        <script async src='https://www.google-analytics.com/analytics.js'></script>
+        <!-- End Google Analytics -->
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <style type="text/css">
+            @media all {
+                .featherlight { color: #333; }
+                .lightbox { display: none; }
+                .fl-page h1,
+                .fl-page h3,
+                .fl-page h4 {
+                    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+                    font-weight: 100;
+                    letter-spacing: 1px;
+                }
+                .fl-page h1 { font-size: 110px; margin-bottom: 0.5em; }
+                .fl-page h1 i { font-style: normal; color: #ddd; }
+                .fl-page h1 span { font-size: 30px; color: #333;}
+                .fl-page h3 { text-align: right; }
+                .fl-page h3 { font-size: 15px; }
+                .fl-page h4 { font-size: 2em; }
+                .fl-page .jumbotron { margin-top: 2em; }
+                .fl-page .doc { margin: 2em 0;}
+                .fl-page .btn-download { float: right; }
+                .fl-page .btn-default { vertical-align: bottom; }
+
+                .fl-page .btn-lg span { font-size: 0.7em; }
+                .fl-page .footer { margin-top: 3em; color: #aaa; font-size: 0.9em;}
+                .fl-page .footer a { color: #999; text-decoration: none; margin-right: 0.75em;}
+                .fl-page .github { margin: 2em 0; }
+                .fl-page .github a { vertical-align: top; }
+                .fl-page .marketing a { color: #999; }
+
+                /* override default feather style... */
+                .fixwidth {
+                    background: rgba(256,256,256, 0.8);
+                }
+                .fixwidth .featherlight-content {
+                    width: 500px;
+                    padding: 25px;
+                    color: #fff;
+                    background: #111;
+                }
+                .fixwidth .featherlight-close {
+                    color: #fff;
+                    background: #333;
+                }
+
+            }
+            @media(max-width: 768px){
+                .fl-page h1 span { display: block; }
+                .fl-page .btn-download { float: none; margin-bottom: 1em; }
+            }
+        </style>
+        <style type="text/css" media="screen">
+
+body, html {
+    background: #222;
+    color: #fff;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.header {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#48009e+0,9f28c6+48,a80171+100 */
+    background: rgb(72,0,158); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(72,0,158,1) 0%, rgba(159,40,198,1) 48%, rgba(168,1,113,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(72,0,158,1)), color-stop(48%,rgba(159,40,198,1)), color-stop(100%,rgba(168,1,113,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(72,0,158,1) 0%,rgba(159,40,198,1) 48%,rgba(168,1,113,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(72,0,158,1) 0%,rgba(159,40,198,1) 48%,rgba(168,1,113,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(72,0,158,1) 0%,rgba(159,40,198,1) 48%,rgba(168,1,113,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(72,0,158,1) 0%,rgba(159,40,198,1) 48%,rgba(168,1,113,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48009e', endColorstr='#a80171',GradientType=0 ); /* IE6-9 */
+}
+
+.mini-nav,
+.project-metadata,
+.work-container {
+    margin-top: 60px;
+}
+
+.mini-nav {
+    text-align: right;
+}
+
+.mini-nav a {
+    color: rgba(255,255,255,0.5);
+    margin: 0 20px;
+    padding-bottom: 2px;
+    text-decoration: none;
+}
+
+.mini-nav a:hover, .mini-nav a:focus {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.mini-nav a.active-nav {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    cursor: default;
+}
+
+.project-metadata {
+    text-align: center;
+}
+
+.project-metadata img {
+    /*-webkit-filter: drop-shadow(0 20px 13px rgba(0,0,0,0.75));*/
+    /*width: 50%;*/
+}
+
+.project-metadata ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.project-metadata li {
+    display: inline-block;
+    margin: 30px 98px 30px 0;
+    text-align: left;
+}
+
+.work-container li {
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    display: inline;
+    float: left;
+    list-style-type: none;
+    margin: 0 25px 0 0;
+    padding: 0 25px 0 0;
+}
+
+.work-container li:last-of-type {
+    border: none;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+@media only screen and (min-width : 1200px) {
+    .project-metadata li {
+        margin-right: 47px;
+    }
+}
+
+@media only screen and (max-width : 630px) {
+    .project-metadata img {
+        /*width: 100%;*/
+    }
+
+    .work-container li {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        display: block;
+        float: none;
+        margin: 0 0 10px;
+        padding: 0 0 10px;
+    }
+}
+
+.work-container:last-of-type {
+    margin-bottom: 40px;
+}
+
+.embed-responsive {
+    border: 3px solid #fff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    border-left: 3px solid #fff;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    padding: 0 0 0 10px;
+}
+
+.screenshots h1 {
+    border-color: #222;
+}
+
+h4 {
+    font-family: Georgia;
+    font-size: 22px;
+    font-style: italic;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+h4:last-of-type {
+    margin-bottom: 0;
+}
+
+h5 {
+    color: rgba(255,255,255,0.5);
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.work-container h5 {
+    margin-bottom: 0;
+}
+
+p {
+    font-family: Georgia;
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.screenshots {
+    background: #f7f7f7;
+    color: #222;
+}
+
+.screenshots img {
+    border: 3px solid #ddd;
+    margin-bottom: 60px;
+}
+
+.footer {
+    padding-bottom: 60px;
+}
+
+
+
+/*
+    Custom styles for the image gallery, surgically transplanted and modified from David Miller's free "Freelancer" Bootstrap theme:
+    https://startbootstrap.com/themes/freelancer/
+*/
+
+.img-fluid {
+    height: auto;
+    max-width: 100%;
+}
+
+.portfolio .portfolio-item {
+    display: block;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.screenshots .portfolio .portfolio-item img {
+    border: none;
+    margin: 0;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption:hover {
+    opacity: 1;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption {
+    background-color: rgba(91,24,164,0.8);
+    opacity: 0;
+    -webkit-transition: all ease .25s;
+    transition: all ease .25s;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption {
+    color: #fff;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+    margin: auto;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption i {
+    font-size: 30px
+}
+
+.h-100 {
+    height: 100%!important;
+}
+
+.w-100 {
+    width: 100%!important;
+}
+
+.position-absolute {
+    position: absolute!important;
+}
+
+.d-flex {
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+
+        </style>
+    <style></style></head>
+    <body>
+
+
+
+
+
+        <!-- ***************** COLORFUL TOP HEADER ***************** -->
+
+        <div class="header" style="background: #222; /* background: linear-gradient(to bottom, #000 0%, #333 100%); */">
+            <div class="container">
+
+                <!-- ***************** NAVIGATION ***************** -->
+
+                <div class="row mini-nav">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <a href="/">Home</a>
+                        <a href="/about.html">About</a>
+                        <a href="/partnered.html" class="active-nav" style="margin-right: 0;">Case Study</a>
+                    </div> <!-- /col-sm-12 -->
+                </div> <!-- /row mini-nav -->
+
+                <!-- ***************** PROJECT INFO ***************** -->
+                
+                <div class="row project-metadata">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        
+                        <img class="img-responsive center-block" src="http://d32mxho067pe0f.cloudfront.net/images/partnered/partnered-logo.png" style="border: none; margin-bottom: 100px;">
+                    </div> <!-- /col-sm-8 col-sm-offset-2 -->
+                </div> <!-- /row project-metadata -->
+
+                <!-- ***************** PROJECT SUMMARY ***************** -->
+                
+                <div class="row work-container" style="margin-top: 0; margin-bottom: 60px;">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <ul style="text-align: left; margin: 0; padding: 0; display: table; margin-bottom: 20px;">
+                            <li>
+                                <h5>Company</h5>
+                                <h4>Partnered</h4>
+                            </li>
+                            <li>
+                                <h5>Role</h5>
+                                <h4>Chief Product Officer</h4>
+
+                            </li>
+                            <li>
+                                <h5>Year</h5>
+                                <h4>2015</h4>
+                            </li>
+                        </ul>
+
+                        <p style="font-family: Georgia;font-size: 36px;line-height: 120%;margin-top: 4px;border-bottom: 5px solid #fff;border-top: 5px solid #fff;padding: 20px 0 25px;">
+                            <strong style="background: #5B18A4;color: #fff;padding: 1px 5px 2px;">
+                                Executive Summary:
+                            </strong><br> 
+                            I led a design overhaul to turn a rough prototype into a premium paid product and land its first&nbsp;customers.
+                        </p>
+
+                    </div><!-- /col-sm-8 col-sm-offset-2 -->
+                </div> <!-- /row work-container -->
+
+            </div> <!-- /container -->
+        </div> <!-- /header -->
+        
+       
+       
+
+
+
+
+        <!-- ***************** PROJECT DETAILS ***************** -->
+
+        
+        <div class="screenshots">
+          <div class="container">
+
+
+            <!-- Thumbnails -->
+            <section class="portfolio" id="portfolio" data-featherlight-gallery data-featherlight-filter="a">
+              <h1>Gallery</h1>
+              <div class="row">
+                <div class="col-md-6 col-lg-4">
+                  <a class="portfolio-item d-block mx-auto" href="images/partnered/home-alternate.png">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                        <i class="fas fa-search-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="images/partnered/home-alternate-thumbnail.png" alt="">
+                  </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <a class="portfolio-item d-block mx-auto" href="images/partnered/home-loggedin-short.jpg">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                        <i class="fas fa-search-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="images/partnered/home-loggedin-short-thumbnail.png" alt="">
+                  </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <a class="portfolio-item d-block mx-auto" href="images/partnered/post.gif">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                        <i class="fas fa-search-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="images/partnered/post-thumbnail.png" alt="">
+                  </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <a class="portfolio-item d-block mx-auto" href="images/partnered/tour.jpg">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                        <i class="fas fa-search-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="images/partnered/tour-thumbnail.png" alt="">
+                  </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <a class="portfolio-item d-block mx-auto" href="images/partnered/sxsw.png">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                        <i class="fas fa-search-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="images/partnered/sxsw.png" alt="">
+                  </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <a class="portfolio-item d-block mx-auto" href="images/partnered/partnerships-02.png">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                        <i class="fas fa-search-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="images/partnered/partnerships-02-thumbnail.png" alt="">
+                  </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <a class="portfolio-item d-block mx-auto" href="images/partnered/retreat.png">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                        <i class="fas fa-search-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="images/partnered/retreat.png" alt="">
+                  </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <a class="portfolio-item d-block mx-auto" href="images/partnered/help.jpg">
+                    <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                      <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                        <i class="fas fa-search-plus fa-3x"></i>
+                      </div>
+                    </div>
+                    <img class="img-fluid" src="images/partnered/help.jpg" alt="">
+                  </a>
+                </div>
+              </div> <!-- /row -->
+            </section>
+
+
+
+
+            <!-- Video walkthroughs -->
+            <div class="row">
+                <div class="col-sm-12">
+                  <h1>Videos</h1>
+                    <div class="embed-responsive embed-responsive-16by9" style="margin-top: 0;margin-bottom: 60px;">
+                        <iframe src="https://player.vimeo.com/video/321671549" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                    <div class="embed-responsive embed-responsive-16by9" style="margin-top: 0;">
+                        <iframe src="https://player.vimeo.com/video/322181800" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div> <!-- /col-sm-12 -->
+            </div> <!-- /row -->
+
+
+
+
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2" style="padding-top: 60px; padding-bottom: 20px;">
+                    
+
+
+
+
+
+
+<h1 style="/* border-color: #fff; */margin-top: 60px;">Overview</h1>
+<p style="font-family: Georgia;"><span style="font-size: 62px;
+    line-height: 62px;
+    float: left;
+    font-weight: 900;
+    margin-right: 5px;">P</span>artnered connects big brands with popular startups to plan advertising and marketing campaigns.</p>
+
+<p style="font-family: Georgia;">When I joined, they had a free prototype with a lot of signups of highly desirable companies but practically no repeat engagement metrics, showing that they had an interesting value proposition that the product wasn't fulfilling.</p>
+
+
+    <p style="/* margin-bottom: 60px; */
+    margin-top: 40px;">
+                            <img class="img-responsive center-block" src="http://d32mxho067pe0f.cloudfront.net/images/partnered/home-logofield.png" style="/* width: 100%; */
+    border: none;">
+                        </p>
+
+
+<p style="font-family: Georgia;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 120%;
+    border-top: 5px solid #000;
+    padding-top: 20px;
+    border-bottom: 5px solid #000;
+    padding-bottom: 20px;
+    margin: 40px 0;
+    /* border: 5px solid #000; */
+    /* padding: 20px; */">In other words, the product sounded interesting enough to attract very influential marketers that tried it but rarely came back.</p>
+
+    <p>The idea was an interesting and unique one <em>- treat startups like a new type of advertising channel -</em> but <strong>the UX was a confusing Tinder-like interaction</strong> that lacked any explanation of why you'd want to use it or what business opportunities might come of it. Most users would swipe through a list of companies and indicate interest, without ever coming back to follow up on the resulting activity.</p>
+
+    <p><strong>Plus it looked like crap.</strong> Nobody's going to fork over money for something even uglier than a default Bootstrap theme. Visual design is important as an indicator of quality and personality. <strong>To most people, the design <em>is</em> the product.</strong></p>
+
+
+
+
+
+</div>
+
+                 <!-- /col-sm-6 col-sm-offset-3 -->
+            </div> <!-- row -->
+
+</div> <!-- /container -->
+
+
+
+<div class="dark-wrapper" style="background: #222;
+color: #fff;">
+<div class="container dark">
+
+            <div class="row">
+
+<div class="col-sm-8 col-sm-offset-2">
+
+<div class="table-of-contents" style="margin-top: 60px;
+    border: 5px solid rgba(255,255,255,0.1);
+    padding: 40px;">
+
+
+<p style="font-family: Georgia;
+    font-size: 32px;">My work unfolded in three phases:</p>
+
+<ul style="font-size: 22px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    list-style-type: circle;">
+<li style="border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 0;
+    list-style-position: inside;"><strong style="text-transform: uppercase;">Phase 1 -</strong> <em style="font-family: Georgia;">redesign &amp; relaunch at SXSW.</em></li>
+<li style="/* margin-bottom: 10px; */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 0;
+    list-style-position: inside;"><strong style="text-transform: uppercase;">Phase 2 -</strong> <em style="font-family: Georgia;">target larger customers.</em></li>
+<li style="border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 0;
+    list-style-position: inside;"><strong style="text-transform: uppercase;">Extras -&nbsp;</strong> <em style="font-family: Georgia;">experiment with ongoing ideas.</em></li>
+
+</ul>
+
+
+                </div><!-- /table-of-contents -->
+</div>
+
+                <div class="col-sm-8 col-sm-offset-2">
+
+
+<h1 style="margin-top: 60px;
+    border-color: #fff;">Phase 1</h1>
+                    <p>Immediately after joining, my first priority was to overhaul the free prototype and relaunch it as a paid product at SXSW. The team cranked in an all-out 3 week sprint to completely redesign the app from top to bottom.</p>
+
+                    <p>We completely threw away the confusing Tinder-like interaction, <strong>focused on promoting the content and interactions that were unique to the network</strong> <em>(the posts &amp; pitches described in the video below)</em> and gave the visual design a completely new coat of paint.</p>
+
+
+
+
+
+
+
+                </div> <!-- /col-sm-8 col-sm-offset-2 -->
+            </div> <!-- row -->
+
+            <div class="row">
+                <div class="col-sm-12">
+                 
+
+
+                    <p class="caption" style="font-style: italic;
+    text-align: center;
+    margin: 40px 0 20px;">It was clear that posts and pitches were worth highlighting because of their engagement rates compared to the alternative - unsolicited cold emails.</p>
+<img src="http://d32mxho067pe0f.cloudfront.net/images/partnered/home-email-sucks.png" class="img-responsive center-block">
+
+  </div> <!-- /col-sm-12 -->
+            </div> <!-- /row -->
+
+            <div class="row">
+
+<div class="col-sm-8 col-sm-offset-2">
+
+<p>In Austin, we hosted our own event with panelists from our user base and I gave product demos to VIP guests that we targeted in advance.</p>
+                    <p style="font-weight: 900;
+    font-size: 36px;
+    font-family: Georgia;
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    line-height: 120%;
+    padding: 20px 0;
+    margin: 40px 0;">The relaunch was a success and we had our first paid customers shortly after returning from Austin.</p>
+                    
+                </div> <!-- /col-sm-8 col-sm-offset-2 -->
+            </div> <!-- row -->
+
+            <div class="row">
+                <div class="col-sm-12">
+                    
+                    <p class="caption" style="font-style: italic;
+    text-align: center;
+    margin: 40px 0 20px;">The logged-in view of the network</p>
+<img src="http://d32mxho067pe0f.cloudfront.net/images/partnered/home-loggedin-short.jpg" class="img-responsive center-block">
+                    
+                    <p class="caption" style="font-style: italic;
+    text-align: center;
+    margin: 40px 0 20px;">A rave review by one of our most influential customers</p>
+<img src="http://d32mxho067pe0f.cloudfront.net/images/partnered/home-testimonial.png" class="img-responsive center-block">
+
+                    <p class="caption" style="font-style: italic;
+    text-align: center;
+    margin: 40px 0 20px;">The mobile layout for a typical post page</p>
+                    <img src="http://d32mxho067pe0f.cloudfront.net/images/partnered/post.gif" class="img-responsive center-block">
+
+                    <p class="caption" style="font-style: italic;
+    text-align: center;
+    margin: 40px 0 20px;">Product tour page</p>
+                    <img src="http://d32mxho067pe0f.cloudfront.net/images/partnered/tour.jpg" class="img-responsive center-block">
+
+                    <p class="caption" style="font-style: italic;
+    text-align: center;
+    margin: 40px 0 20px;">Announcement of our SXSW event</p>
+                    <img src="http://d32mxho067pe0f.cloudfront.net/images/partnered/sxsw.png" class="img-responsive center-block">
+
+                </div> <!-- /col-sm-12 -->
+            </div> <!-- /row -->
+
+</div> <!-- /container -->
+
+</div>
+<div class="container">
+
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <h1 style="/* border-color: #fff; */
+    margin-top: 60px;">Phase 2</h1>
+                    <p>After the relaunch, it quickly became apparent that although we had traction with our new features, they were largely 1-on-1 interactions and our user base was composed of only single seat customers.</p>
+
+    <p><strong>This was a problem because we thought our main revenue source would be groups of people from the same company.</strong> Teams typically come from big brands and advertising agencies with larger marketing budgets, as opposed to the long tail of individuals in scrappy hustler mode at startups.</p>
+
+<p>So what was the deal? I added a research project to find out and met our largest customer every week for several months, doing a deep dive to learn about their needs.</p>
+
+<p style="font-weight: 900;
+font-size: 36px;
+font-family: Georgia;
+border-top: 5px solid #000;
+border-bottom: 5px solid #000;
+line-height: 120%;
+padding: 20px 0;
+margin: 40px 0;">This phase was very familiar work for me - an organic and highly iterative process that I've done many times before.</p>
+
+<p>I'm in my sweet spot when I'm regularly meeting with a small base of enthusiastic early adopters and cycling through experiments until we find the features that take off with a larger audience. It's a different kind of slow burn compared to the firefighter work in the first phase.</p>
+
+
+    <p style="margin: 0;">
+                            <img class="img-responsive center-block" src="http://d32mxho067pe0f.cloudfront.net/images/partnered/build-measure-learn-shirt.jpg" style="/* width: 100%; */
+    border: none; margin: 40px 0 0;">
+                        </p>
+                    <p class="caption" style="font-style: italic;
+    text-align: center;
+    margin: 20px 0 40px;">This is practically my life motto :)</p>
+<p>Sure enough, we eventually found the solution: <strong>to redesign a little-used feature called partnerships, turning it into a vendor database to help track complicated customer relationships.</strong></p>
+<p>Before, partnerships were simply a way to show activity across the network, sort of like badges. Rethinking how it could be used internally on larger teams transformed partnerships into more of a CRM for marketing and a way to track all external business relationships.</p>
+<p>All of this grew from the realization that companies can often lose track of which teams have worked with specific clients or vendors, particularly at large organizations with flat hierarchies, like many advertising agencies.</p>
+                </div> <!-- /col-sm-6 col-sm-offset-3 -->
+            </div> <!-- row -->
+
+            <div class="row">
+                <div class="col-sm-12">
+                   
+<p class="caption" style="font-style: italic;
+    text-align: center;
+    margin: 40px 0 20px;">An example dashboard of internal and external partnerships</p>
+                    <img src="http://d32mxho067pe0f.cloudfront.net/images/partnered/partnerships-01.png" class="img-responsive center-block">
+<p class="caption" style="font-style: italic;
+    text-align: center;
+    margin: 40px 0 20px;">An earlier prototype with stronger delineations between relationships on and off the Partnered network</p>
+                    <img src="http://d32mxho067pe0f.cloudfront.net/images/partnered/partnerships-02.png" class="img-responsive center-block">
+                </div> <!-- /col-sm-12 -->
+            </div> <!-- /row -->
+</div> <!-- /container -->
+<div class="dark-wrapper" style="background: #222;
+color: #fff;">
+
+<div class="container">
+
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <h1 style="margin-top: 60px;
+    border-color: #fff;">Extras</h1>
+                    <p>This is the cutting room floor - a random assortment of fun experiments that didn't make it to production.</p>
+                </div> <!-- /col-sm-6 col-sm-offset-3 -->
+            </div> <!-- row -->
+
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <p class="caption" style="font-style: italic; text-align: center; margin: 40px 0 20px;">
+                          Variation of the home page that emphasized the customer testimonials rather than product features
+                    </p>
+                    <img src="http://d32mxho067pe0f.cloudfront.net/images/partnered/home-alternate.png" class="img-responsive center-block">
+
+                    <p class="caption" style="font-style: italic; text-align: center; margin: 40px 0 20px;">An early prototype of the home page emphasizing startup founders, as well as signup for the newsletter&nbsp;</p>
+                    <img src="http://d32mxho067pe0f.cloudfront.net/images/partnered/landing.jpg" class="img-responsive center-block">
+
+                    <p class="caption" style="font-style: italic; text-align: center; margin: 40px 0 20px;">Our in-person events at SXSW and Cannes went so well that we toyed with the idea of hosting our own conference</p>
+                    <img src="images/partnered/retreat.png" class="img-responsive center-block">
+
+                    <p class="caption" style="font-style: italic; text-align: center; margin: 40px 0 20px;">One radical idea was to open up the exclusive invite-only network so that anyone could preview it in a limited way</p>
+                    <img src="http://d32mxho067pe0f.cloudfront.net/images/partnered/readonly.jpg" class="img-responsive center-block">
+
+                    <p class="caption" style="font-style: italic; text-align: center; margin: 40px 0 20px;">These mini tutorials during onboarding were a way to try a more playful visual design</p>
+                    <img src="http://d32mxho067pe0f.cloudfront.net/images/partnered/help.jpg" class="img-responsive center-block">
+                </div> <!-- /col-sm-12 -->
+            </div> <!-- /row -->
+
+
+
+          </div>
+</div>
+
+
+
+<div class="container">
+
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+<h1>Summary</h1>
+<p>This project was an important business milestone for me. After years of working at startups, I'd only worked at B2B companies that already had customers or free consumer ones that ran on advertising. Partnered was the first time I designed something that got its initial paying customers.</p>
+
+<p style="font-weight: 900;
+    font-size: 36px;
+    font-family: Georgia;
+    border-top: 5px solid #000;
+    border-bottom: 5px solid #000;
+    line-height: 120%;
+    padding: 20px 0;
+    margin: 40px 0;">More importantly, the opportunity to be CPO gave me insights into what my own personal leadership values are.</p>
+
+<p>I was especially influenced by Ed Catmull's book on Pixar. Difficult crises can be teachable moments that reveal company culture, if you write down lessons learned and create a shared playbook of how to avoid similar situations.</p>
+<p><strong>Thank you for reading!</strong> Email me at <em><a href="mailto:alabut@gmail.com?subject=Partnered%20Case%20Study">alabut@gmail.com</a></em> or call my cell at 858-603-1820 if you have any&nbsp;questions.</p>
+<p style="text-align: center" ;=""><img src="http://d32mxho067pe0f.cloudfront.net/images/partnered/signature-black.png" style="border: none;
+    margin: 0 0 40px; max-width: 100%;"></p>
+
+</div> <!-- /col -->
+</div> <!-- /row -->
+</div> <!-- /container -->
+
+
+ <!-- /container -->
+        </div> <!-- /screenshots -->
+
+
+
+
+
+
+        <!-- ***************** FOOTER ***************** -->
+
+        <div class="container footer">
+            <div class="row mini-nav">
+                <div class="col-sm-12">
+                    <a href="/">Home</a>
+                    <a href="/about.html">About</a>
+                    <a href="/partnered.html" class="active-nav">Case Study</a>
+                </div> <!-- /col-sm-12 mini-nav -->
+            </div> <!-- /row mini-nav -->
+        </div> <!-- /container footer -->
+
+    
+
+</body></html>
