@@ -105,6 +105,20 @@ body, html {
     text-decoration: none;
 }
 
+.mini-nav a:first-of-type {
+    margin-left: 0;
+}
+
+@media only screen and (max-width : 576px) {
+    .mini-nav a {
+        margin: 0 10px;
+    }
+
+    .footer .mini-nav a {
+        font-weight: 300;
+    }
+}
+
 .mini-nav a:hover, .mini-nav a:focus {
     border-bottom: 2px solid #fff;
     color: #fff;
