@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1017px" height="763px" viewBox="0 0 1017 763" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Dribbble 10</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="53.7000241%" x2="100%" y2="52.3143967%" id="linearGradient-1">
+            <stop stop-color="#177EFB" offset="0%"></stop>
+            <stop stop-color="#072836" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" id="linearGradient-2">
+            <stop stop-color="#1470DB" offset="0%"></stop>
+            <stop stop-color="#0A3656" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Dribbble-10" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bg" fill-rule="nonzero">
+            <rect id="Rectangle-3" fill="url(#linearGradient-1)" x="0" y="0" width="1017.00131" height="763"></rect>
+            <circle id="Oval" fill="url(#linearGradient-2)" cx="508.500653" cy="381.998042" r="339.166449"></circle>
+        </g>
+    </g>
+</svg>

@@ -98,8 +98,7 @@ body, html {
 }
 
 .mini-nav a {
-    color: rgba(255,255,255,0.8);
-    font-weight: 500;
+    color: rgba(255,255,255,0.5);
     margin: 0 20px;
     padding-bottom: 2px;
     text-decoration: none;
@@ -217,8 +216,6 @@ h5 {
 }
 
 .work-container h5 {
-    font-weight: 900;
-    letter-spacing: 1px;
     margin-bottom: 0;
 }
 
@@ -245,7 +242,7 @@ p {
 }
 
 .orange {
-    background-attachment: fixed;
+    background-color: orange;
     background-image: url(images/circle/thumbnail3.4.2.png);
     background-position: 50% 50%;
     background-repeat: no-repeat;
@@ -331,53 +328,59 @@ p {
 
 
         <!-- ***************** COLORFUL TOP HEADER ***************** -->
-        <div class="header" style="background: linear-gradient(to bottom, #F76B1C 0%, #011e53 100%);">
-            <div class="header-inner-wrap" style="background-image: url(images/circle/bg4.16.png);background-position: 10% 0%;background-size: initial;background-attachment: fixed; background-repeat: no-repeat;">
-                <div class="container orange">
 
-                    <!-- ***************** NAVIGATION ***************** -->
-                    <div class="row mini-nav" style="padding-bottom: 40px;margin-top: 0;background-image: url(images/circle/bg4.18-circle.svg);background-repeat: no-repeat;background-position: 75% 0%;background-size: contain;">
-                        <div class="col-sm-12">
-                            <a href="/">Home</a>
-                            <a href="/about.html">About</a>
-                            <a href="/partnered.html">Case Study #1</a>
-                            <a href="/partnered.html" class="active-nav" style="margin-right: 0;">Case Study #2</a>
-                        </div> <!-- /col-sm-12 -->
-                    </div> <!-- /row mini-nav -->
+        <div class="header" style="background: #177efb; background: linear-gradient(to bottom, #177efb 0%, #011e53 100%);">
+            <div class="container-fluid orange" style="background-image: url(images/circle/bg2.png);background-image: url(images/circle/bg1.svg);">
+
+                <!-- ***************** NAVIGATION ***************** -->
+
+                <div class="row mini-nav">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <a href="/">Home</a>
+                        <a href="/about.html">About</a>
+                        <a href="/partnered.html">Case Study #1</a>
+                        <a href="/partnered.html" class="active-nav" style="margin-right: 0;">Case Study #2</a>
+                    </div> <!-- /col-sm-12 -->
+                </div> <!-- /row mini-nav -->
 
 
-                    <!-- ***************** PROJECT INFO ***************** -->
-                    <div class="row project-metadata" style="margin-top: 0;margin-bottom: 0;/* display: none; */">
-                        <div class="col-sm-12">
-                            <img class="img-responsive" src="images/circle/logo.png" style="border: none; height: 100px; margin-bottom: 40px;">
-                        </div> <!-- /col-sm-8 col-sm-offset-2 -->
-                    </div> <!-- /row project-metadata -->
+                <!-- ***************** PROJECT INFO ***************** -->
+                
+                <div class="row project-metadata">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <img class="img-responsive" src="images/circle/logo.png" style="border: none; height: 200px; margin-bottom: 100px;">
+                    </div> <!-- /col-sm-8 col-sm-offset-2 -->
+                </div> <!-- /row project-metadata -->
 
-                    <!-- ***************** PROJECT SUMMARY ***************** -->
-                    <div class="row work-container" style="margin-top: 0; margin-bottom: 0;">
-                        <div class="col-sm-12" style="background-repeat: no-repeat;background-position: 100% 60%;background-image: url(images/circle/bg4.18-circle.svg);background-position: 70% 0%;;">
-                            <ul style="text-align: left; margin: 0; padding: 0; display: table; margin-bottom: 20px;">
-                                <li>
-                                    <h5>Company</h5>
-                                    <h4>Circle Medical</h4>
-                                </li>
-                                <li>
-                                    <h5>Role</h5>
-                                    <h4>Consultant</h4>
-                                </li>
-                                <li>
-                                    <h5>Year</h5>
-                                    <h4>2017</h4>
-                                </li>
-                            </ul>
+                <!-- ***************** PROJECT SUMMARY ***************** -->
+                
+                <div class="row work-container" style="margin-top: 0; margin-bottom: 60px;">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <ul style="text-align: left; margin: 0; padding: 0; display: table; margin-bottom: 20px;">
+                            <li>
+                                <h5>Company</h5>
+                                <h4>Circle Medical</h4>
+                            </li>
+                            <li>
+                                <h5>Role</h5>
+                                <h4>Consultant</h4>
 
-                            <p style="font-family: Georgia;font-size: 36px;line-height: 120%;margin-top: 4px;border-bottom: 5px solid #fff;border-top: 5px solid #fff;padding: 20px 0 25px;margin-bottom: 0;">
-                                <strong style="/* background: #fff; *//* color: #D0641E; */padding: 1px 5px 2px;font-weight: 900;font-weight: 100;font-weight: 1000;font-weight: 800;font-weight: 700;">Overview: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</strong><br>A super quick project to improve the patient experience at an innovative health care startup.</p>
-                        </div><!-- /col-sm-8 col-sm-offset-2 -->
-                    </div> <!-- /row work-container -->
+                            </li>
+                            <li>
+                                <h5>Year</h5>
+                                <h4>2017</h4>
+                            </li>
+                        </ul>
 
-                </div> <!-- /container -->
-            </div><!-- /header-inner-wrap -->
+                        <p style="font-family: Georgia;font-size: 36px;line-height: 120%;margin-top: 4px;border-bottom: 5px solid #fff;border-top: 5px solid #fff;padding: 20px 0 25px;">
+                            <strong style="background: #fff;color: #D0641E;padding: 1px 5px 2px;">
+                                Executive Summary:
+                            </strong><br>A super quick project to improve the patient experience at an innovative health care startup.</p>
+
+                    </div><!-- /col-sm-8 col-sm-offset-2 -->
+                </div> <!-- /row work-container -->
+
+            </div> <!-- /container -->
         </div> <!-- /header -->
         
        
@@ -396,7 +399,7 @@ p {
             <!-- Thumbnails -->
             <section class="portfolio" id="portfolio" data-featherlight-gallery="" data-featherlight-filter="a">
               <div class="row">
-                  <div class="col-sm-12">
+                  <div class="col-sm-8 col-sm-offset-2">
                       <h1>Gallery</h1>
                       <div class="row">
                         <div class="col-lg-6">
@@ -449,119 +452,279 @@ p {
 
 
 
-        <div class="container">
+<div class="container">
+
             <div class="row">
                 <div class="col-sm-8 col-sm-offset-2">
-                    <h1 style="margin-top: 60px;">Project Description</h1>
-                    <p>Circle Medical is a new kind of full service medical practice that uses technology to deliver better patient experiences and outcomes at a lower cost. Their iOS and Android apps automate traditionally human-intensive processes such as scheduling, billing and managing medical records.</p>
-                    <p>I worked with them on improving the patient registration and first visit process. It was a fun and quick project that hit all of the major elements of design work in a short time frame: stakeholder interviews, user research, UX streamlining, and UI polish.</p>
-                    <p>My initial mandate was to enhance speed up patient visits by getting more information during the registration process and redesign the check-in screens to solve common user problems.</p>
+                    <h1 style="/* border-color: #fff; */
+    margin-top: 60px;">Project Description</h1>
+                    <p>Vestibulum id ligula porta felis euismod semper.</p>
+
+<p style="font-weight: 900;
+font-size: 36px;
+font-family: Georgia;
+border-top: 5px solid #000;
+border-bottom: 5px solid #000;
+line-height: 120%;
+padding: 20px 0;
+margin: 40px 0;">Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+
+<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+
+<p>Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
                 </div> <!-- /col-sm-6 col-sm-offset-3 -->
             </div> <!-- row -->
-        </div> <!-- /container -->
 
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 col-sm-offset-2">
-                    <h1 style="margin-top: 60px;">User Research &amp; Patient Experience</h1>
-                    <p>I had the privilege of working alongside a design founder that was just as passionate about user research, so we kicked things off by recording interviews with almost everyone at the company. We talked with the CEO, most of the doctors and nurses, the welcome staff for the front office - anyone that interacted with patients on a daily basis. </p>
-                    <p style="font-weight: 900;
-                    font-size: 36px;
-                    font-family: Georgia;
-                    border-top: 5px solid #000;
-                    border-bottom: 5px solid #000;
-                    line-height: 120%;
-                    padding: 20px 0;
-                    margin: 40px 0;">
-                        The foundation of a good UX requires solid user research and not just wireframes, documentation, or other tools of the&nbsp;trade.
-                    </p>
-                    <p>To me, user research is the gold standard of UX tools, beyond anything else in a designer's tool kit. It's also a personal philosophy - to me, the best way to work is to be as user-focused as possible and create the most customer-focused products and services. That's what excites and motivates me in my pursuit of my craft.</p>
-                    <p style="display: none;"><strike>Focus on the tactical aspects of interviewing everybody. Then maybe you can rant about how much knowledge is actually in-house, if you have enough of a product horse sense. At the risk of sounding solipsistic, a company is a tribal repository of distributed insights that you can tap into with the right approach.</strike></p>
-                    <p style="margin-bottom: 60px;">The fun part is then turning all of those conversations into a handful of product insights and then translating those into new designs. Although I worked on several proposed flows of screens and notifications for patient registration, it's useful to zoom down into the redesigned check-in screen to see an example of how the UX work influenced the final work.</p>
-                </div> <!-- /col-sm-6 col-sm-offset-3 -->
-            </div> <!-- row -->
-        </div> <!-- /container -->
+           
+</div> <!-- /container -->
 
-        <div class="container-fluid orange image-block" style="background-image: url(images/circle/bg4.png);background-image: url(images/circle/bg3.svg);">
-            <div class="row">
-                <div class="col-sm-8 col-sm-offset-2">
-                    <img class="img-responsive center-block" src="images/circle/thumbnail3.4.9.png">
-                </div>        
-            </div>
-        </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 col-sm-offset-2">
-                    <p class="caption" style="font-style: italic;text-align: center;margin: 20px 0 40px;">
-                        The overall approach: <strong>establish trust and demonstrate helpfulness before asking the user to do work.</strong></p>
-                    <p class="caption">
-                        Providing useful info right up front sets a good tone and offsets the tedious process of account registration, which is especially important when someone might be under the weather or concerned about a health issue.</p>
-                </div> <!-- /col -->
-            </div> <!-- /row -->
-        </div> <!-- /container -->
 
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 col-sm-offset-2">
-                    <h1 style="margin-top: 40px;">Splash Screens &amp; Messaging</h1>
-                    <p>Language and visual design is also an invaluable tool for a designer, to help subconsciously communicate quality and the values of a product or service. The initial aesthetics can frame the rest of the experience by setting expectations.</p>
-                    <p style="font-weight: 900;
-                    font-size: 36px;
-                    font-family: Georgia;
-                    border-top: 5px solid #000;
-                    border-bottom: 5px solid #000;
-                    line-height: 120%;
-                    padding: 20px 0;
-                    margin: 40px 0;">
-                        First impressions have an impact on overall usability &amp; perceived utility.
-                    </p>
-                    <p style="margin-bottom: 60px;">So in addition to tackling the UX of the check-in process, I focused in on the initial landing screens of the app and experimented with a range of complimentary visual styles: photographic, illustrative, and colorful.</p>
-                </div> <!-- /col-sm-6 col-sm-offset-3 -->
-            </div> <!-- row -->
-        </div> <!-- /container -->
 
-        <div class="container-fluid orange image-block" style="background-image: url(images/circle/bg7.png);">
-            <div class="row">
-                <div class="col-sm-8 col-sm-offset-2">
-                    <img class="img-responsive center-block" src="images/circle/messaging/photo-walkthrough6.png">
-                </div>        
-            </div>
-        </div>
 
-        <div class="container-fluid orange image-block" style="background-image: url(images/circle/bg8.png);">
-            <div class="row">
-                <div class="col-sm-8 col-sm-offset-2">
-                            <img class="img-responsive center-block" src="images/circle/messaging/illustration-walkthrough.png">
-                </div>        
-            </div>
-        </div>
+<div class="container-fluid orange image-block" style="background-image: url(images/circle/bg4.png);background-image: url(images/circle/bg3.svg);">
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+            <img class="img-responsive center-block" src="images/circle/thumbnail3.4.7.png">
+        </div>        
+    </div>
+</div>
 
-        <div class="container-fluid orange image-block" style="background-image: url(images/circle/bg9.svg);">
-            <div class="row">
-                <div class="col-sm-8 col-sm-offset-2">
-                            <img class="img-responsive center-block" src="images/circle/messaging/colorful-walkthrough4.png">
-                </div>        
-            </div>
-        </div>
 
-        <div class="container">
+
+
+
+
+<div class="container">
 
             <div class="row">
                 <div class="col-sm-8 col-sm-offset-2">
-                    <h1>Summary</h1>
-                    <p>I really enjoyed working on this project! These are people doing good in the world and it was clear from the first meeting that Circle Medical takes pride on the level of care provided by their doctors and medical staff, and sees their patient engagement as a differentiator among the flock of startups reinventing primary care.</p>
-                    <p>Hopefully it's clear that those values carried through into the designs in this case study.</p>
-                    <p><strong>Thanks for making it this far!</strong> Feel free to <a href="mailto:alabut@gmail.com?subject=Partnered%20Case%20Study">email me</a> if you have any&nbsp;questions.</p>
-                    <p style="text-align: center">
-                        <img src="http://d32mxho067pe0f.cloudfront.net/images/partnered/signature-black.png" style="border: none;margin: 0 0 40px; max-width: 100%;">
-                    </p>
-                </div> <!-- /col -->
-            </div> <!-- /row -->
-        </div> <!-- /container -->
+                    <p class="caption" style="font-style: italic;
+    text-align: center;
+    margin: 20px 0 40px;">The overall approach: <strong>establish trust and demonstrate helpfulness before asking the user to do work.</strong></p>
+<p class="caption" style="/* font-style: italic; */
+    /* text-align: center; */
+    margin: 20px 0 80px;">Providing useful info right up front sets a good tone and offsets the tedious process of account registration, which is especially important when someone might be under the weather or concerned about a health issue.</p>
 
 
 
+</div> <!-- /col -->
+</div> <!-- /row -->
+</div> <!-- /container -->
+
+
+
+<div class="container-fluid orange image-block" style="background-image: url(images/circle/bg2-svgomg.svg);">
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+            <img class="img-responsive center-block" src="images/circle/thumbnail3.4.8.png">
+
+        </div>        
+    </div>
+</div>
+
+
+
+
+
+
+<div class="container">
+
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <p class="caption" style="font-style: italic;
+    text-align: center;
+    margin: 20px 0 80px;">The overall approach: <strong>be helpful first, then ask for info.</strong> Preface any data entry by setting a helpful tone and providing useful info.</p>
+
+
+</div> <!-- /col -->
+</div> <!-- /row -->
+</div> <!-- /container -->
+
+
+
+
+
+<div class="container-fluid orange image-block" style="background-image: url(images/circle/bg4.svg);">
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+            <img class="img-responsive center-block" src="images/circle/thumbnail3.4.6.png">
+        </div>        
+    </div>
+</div>
+
+
+
+
+
+<div class="container">
+
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <p class="caption" style="font-style: italic;
+    text-align: center;
+    margin: 20px 0 80px;">The overall approach: <strong>be helpful first, then ask for info.</strong> Preface any data entry by setting a helpful tone and providing useful info.</p>
+
+
+</div> <!-- /col -->
+</div> <!-- /row -->
+</div> <!-- /container -->
+
+
+
+
+
+<div class="container-fluid orange image-block" style="background-image: url(images/circle/bg5.svg);">
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+            <img class="img-responsive center-block" src="images/circle/thumbnail3.4.6.png">
+        </div>        
+    </div>
+</div>
+
+
+
+
+
+<div class="container">
+
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <p class="caption" style="font-style: italic;
+    text-align: center;
+    margin: 20px 0 80px;">The overall approach: <strong>be helpful first, then ask for info.</strong> Preface any data entry by setting a helpful tone and providing useful info.</p>
+
+
+</div> <!-- /col -->
+</div> <!-- /row -->
+</div> <!-- /container -->
+
+
+
+
+
+<div class="container-fluid orange image-block" style="background-image: url(images/circle/bg6.svg);">
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+            <img class="img-responsive center-block" src="images/circle/thumbnail3.4.6.png">
+        </div>        
+    </div>
+</div>
+
+
+
+<div class="container">
+
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <p class="caption" style="font-style: italic;
+    text-align: center;
+    margin: 20px 0 80px;">The overall approach: <strong>be helpful first, then ask for info.</strong> Preface any data entry by setting a helpful tone and providing useful info.</p>
+
+
+</div> <!-- /col -->
+</div> <!-- /row -->
+</div> <!-- /container -->
+
+
+
+
+
+<div class="container-fluid orange image-block" style="background-image: url(images/circle/bg7.png);">
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+            <img class="img-responsive center-block" src="images/circle/thumbnail3.4.6.png">
+        </div>        
+    </div>
+</div>
+
+
+
+<div class="container">
+
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <p class="caption" style="font-style: italic;
+    text-align: center;
+    margin: 20px 0 80px;"><strong>Photography-based splash screen.&nbsp;</strong>Setting a friendly and conversational tone for patient-doctor interactions.</p>
+
+
+</div> <!-- /col -->
+</div> <!-- /row -->
+</div>
+
+
+
+ <!-- /container -->
+
+
+
+
+
+<div class="container-fluid orange image-block" style="background-image: url(images/circle/bg8.png);">
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+            <img class="img-responsive center-block" src="images/circle/thumbnail3.4.6.png">
+        </div>        
+    </div>
+</div><div class="container">
+
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <p class="caption" style="font-style: italic;
+    text-align: center;
+    margin: 20px 0 80px;"><strong>Icons &amp; illustrations.&nbsp;</strong>A more playful approach to communicate health and medical care.</p>
+
+
+</div> <!-- /col -->
+</div> <!-- /row -->
+</div>
+
+
+
+<div class="container-fluid orange image-block" style="background-image: url(images/circle/bg9.svg);">
+    <div class="row">
+        <div class="col-sm-8 col-sm-offset-2">
+            <img class="img-responsive center-block" src="images/circle/thumbnail3.4.6.png">
+        </div>        
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="container">
+
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <p class="caption" style="font-style: italic;
+    text-align: center;
+    margin: 20px 0 80px;"><strong>Flat colors &amp; playful gradients.&nbsp;</strong>Clean and straight to the point, but probably a little too generic. Still worth exploring though.</p>
+<h1>Summary</h1>
+<p>Maecenas faucibus mollis interdum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna mollis ornare vel eu leo.</p>
+
+<p style="font-weight: 900;
+    font-size: 36px;
+    font-family: Georgia;
+    border-top: 5px solid #000;
+    border-bottom: 5px solid #000;
+    line-height: 120%;
+    padding: 20px 0;
+    margin: 40px 0;">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p><strong>Thanks for making it this far!</strong> Feel free to <a href="mailto:alabut@gmail.com?subject=Partnered%20Case%20Study">email me</a> if you have any&nbsp;questions.</p>
+<p style="text-align: center" ;=""><img src="http://d32mxho067pe0f.cloudfront.net/images/partnered/signature-black.png" style="border: none;
+    margin: 0 0 40px; max-width: 100%;"></p>
+
+</div> <!-- /col -->
+</div> <!-- /row -->
+</div> <!-- /container -->
+
+
+ <!-- /container -->
         </div> <!-- /project-writeup -->
 
 

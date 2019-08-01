@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1017px" height="763px" viewBox="0 0 1017 763" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Dribbble 11</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="53.7000241%" x2="100%" y2="52.3143967%" id="linearGradient-1">
+            <stop stop-color="#177EFB" offset="0%"></stop>
+            <stop stop-color="#072836" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="100%" x2="100%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#093554" offset="0%"></stop>
+            <stop stop-color="#1572DE" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="98.3359997%" y1="100%" x2="0%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#093554" offset="0%"></stop>
+            <stop stop-color="#1572DE" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Dribbble-11" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="bg" fill-rule="nonzero">
+            <rect id="Rectangle-3" fill="url(#linearGradient-1)" x="0" y="0" width="1017.00131" height="763"></rect>
+            <polygon id="Triangle" fill="url(#linearGradient-2)" points="508.5 39 860 742 157 742"></polygon>
+            <polygon id="Triangle-Copy" fill="url(#linearGradient-3)" transform="translate(508.500000, 377.500000) rotate(180.000000) translate(-508.500000, -377.500000) " points="508.5 26 860 729 157 729"></polygon>
+        </g>
+    </g>
+</svg>
