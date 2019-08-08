@@ -273,6 +273,17 @@ p {
     margin: 0;
 }
 
+.listbox {
+    border: 5px solid #000;
+    margin: 60px 0;
+    padding: 30px 40px 30px;
+}
+
+.listbox h1 {
+    font-size: 25px;
+    margin-top: 10px;
+}
+
 
 
 /*
@@ -492,9 +503,23 @@ p {
                     <p>The foundation of a good UX requires solid user research and not just wireframes, documentation, or other tools of the trade. To me, user research is the gold standard of UX tools, beyond anything else in a designer's tool kit.</p>
                     <p>I had the privilege of working alongside a design founder that was just as passionate about user research and we recorded interviews with almost everyone at the company. We talked with the CEO, most of the doctors and nurses, the welcome staff for the front office - anyone that interacted with patients on a daily basis. </p>
 
-                    <!---------------------------------------------------------------------------------->
-                    <p style="border-top: 3px solid #000; border-bottom: 3px solid #000; font-weight: 900; margin: 60px; padding: 20px 0;">[INSERT LESSONS LEARNED FROM USER RESEARCH, FROM THE MD FILE AND IN THE LIST STYLE FROM PARTNERED]</p>
-                    <!---------------------------------------------------------------------------------->
+                    <div class="listbox">
+                        <h1>Lessons Learned From User Research</h1>
+
+                        <ul style="font-size: 22px;
+                            font-weight: 300;
+                            margin: 0;
+                            padding: 0;
+                            list-style-type: circle;">
+                            <li style="border-top: 1px solid rgba(255, 255, 255, 0.1);
+                                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                                padding: 10px 0;
+                                list-style-position: inside;"><strong style="text-transform: uppercase;">Phase 1 -</strong> <em style="font-family: Georgia;">three crazy weeks for a super quick redesign to relaunch at&nbsp;SXSW.</em></li>
+                            <li style="
+                                padding: 10px 0;
+                                list-style-position: inside;"><strong style="text-transform: uppercase;">Phase 2 -</strong> <em style="font-family: Georgia;">six months of in-depth user research to target larger&nbsp;customers.</em></li>
+                        </ul>
+                    </div><!-- /listbox -->
 
                     <p>The fun part is then turning all of those conversations into a handful of product insights and then translating those into new designs.</p>
 
