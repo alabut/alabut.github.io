@@ -1,0 +1,547 @@
+<html><head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+        <title>Al Abut. Designer, crimefighter.</title>
+        
+        <!-- ***************** GOOGLE ANALYTICS ***************** -->
+        
+        <script>
+        window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+        ga('create', 'UA-256299-1', 'auto');
+        ga('send', 'pageview');
+        </script>
+        <script async="" src="https://www.google-analytics.com/analytics.js"></script>
+        <!-- End Google Analytics -->
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <style type="text/css">
+            @media all {
+                .featherlight { color: #333; }
+                .lightbox { display: none; }
+                .fl-page h1,
+                .fl-page h3,
+                .fl-page h4 {
+                    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+                    font-weight: 100;
+                    letter-spacing: 1px;
+                }
+                .fl-page h1 { font-size: 110px; margin-bottom: 0.5em; }
+                .fl-page h1 i { font-style: normal; color: #ddd; }
+                .fl-page h1 span { font-size: 30px; color: #333;}
+                .fl-page h3 { text-align: right; }
+                .fl-page h3 { font-size: 15px; }
+                .fl-page h4 { font-size: 2em; }
+                .fl-page .jumbotron { margin-top: 2em; }
+                .fl-page .doc { margin: 2em 0;}
+                .fl-page .btn-download { float: right; }
+                .fl-page .btn-default { vertical-align: bottom; }
+
+                .fl-page .btn-lg span { font-size: 0.7em; }
+                .fl-page .footer { margin-top: 3em; color: #aaa; font-size: 0.9em;}
+                .fl-page .footer a { color: #999; text-decoration: none; margin-right: 0.75em;}
+                .fl-page .github { margin: 2em 0; }
+                .fl-page .github a { vertical-align: top; }
+                .fl-page .marketing a { color: #999; }
+
+                /* override default feather style... */
+                .fixwidth {
+                    background: rgba(256,256,256, 0.8);
+                }
+                .fixwidth .featherlight-content {
+                    width: 500px;
+                    padding: 25px;
+                    color: #fff;
+                    background: #111;
+                }
+                .fixwidth .featherlight-close {
+                    color: #fff;
+                    background: #333;
+                }
+
+            }
+            @media(max-width: 768px){
+                .fl-page h1 span { display: block; }
+                .fl-page .btn-download { float: none; margin-bottom: 1em; }
+            }
+        </style>
+        <style type="text/css" media="screen">
+
+body, html {
+    background: #222;
+    color: #fff;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.header {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#48009e+0,9f28c6+48,a80171+100 */
+    background: rgb(72,0,158); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(72,0,158,1) 0%, rgba(159,40,198,1) 48%, rgba(168,1,113,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(72,0,158,1)), color-stop(48%,rgba(159,40,198,1)), color-stop(100%,rgba(168,1,113,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(72,0,158,1) 0%,rgba(159,40,198,1) 48%,rgba(168,1,113,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(72,0,158,1) 0%,rgba(159,40,198,1) 48%,rgba(168,1,113,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(72,0,158,1) 0%,rgba(159,40,198,1) 48%,rgba(168,1,113,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(72,0,158,1) 0%,rgba(159,40,198,1) 48%,rgba(168,1,113,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48009e', endColorstr='#a80171',GradientType=0 ); /* IE6-9 */
+}
+
+.mini-nav,
+.project-metadata,
+.work-container {
+    margin-top: 60px;
+}
+
+.mini-nav {
+    text-align: right;
+}
+
+.mini-nav a {
+    color: rgba(255,255,255,0.5);
+    margin: 0 20px;
+    padding-bottom: 2px;
+    text-decoration: none;
+}
+
+.mini-nav a:hover, .mini-nav a:focus {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.mini-nav a.active-nav {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    cursor: default;
+}
+
+.project-metadata {
+    text-align: center;
+}
+
+.project-metadata img {
+    /*-webkit-filter: drop-shadow(0 20px 13px rgba(0,0,0,0.75));*/
+    /*width: 50%;*/
+}
+
+.project-metadata ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.project-metadata li {
+    display: inline-block;
+    margin: 30px 98px 30px 0;
+    text-align: left;
+}
+
+.work-container li {
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    display: inline;
+    float: left;
+    list-style-type: none;
+    margin: 0 25px 0 0;
+    padding: 0 25px 0 0;
+}
+
+.work-container li:last-of-type {
+    border: none;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+@media only screen and (min-width : 1200px) {
+    .project-metadata li {
+        margin-right: 47px;
+    }
+}
+
+@media only screen and (max-width : 630px) {
+    .project-metadata img {
+        /*width: 100%;*/
+    }
+
+    .work-container li {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        display: block;
+        float: none;
+        margin: 0 0 10px;
+        padding: 0 0 10px;
+    }
+}
+
+.work-container:last-of-type {
+    margin-bottom: 40px;
+}
+
+.embed-responsive {
+    border: 3px solid #fff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    border-left: 3px solid #fff;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    padding: 0 0 0 10px;
+}
+
+.screenshots h1 {
+    border-color: #222;
+}
+
+h4 {
+    font-family: Georgia;
+    font-size: 22px;
+    font-style: italic;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+h4:last-of-type {
+    margin-bottom: 0;
+}
+
+h5 {
+    color: rgba(255,255,255,0.5);
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.work-container h5 {
+    margin-bottom: 0;
+}
+
+p {
+    font-family: Georgia;
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.screenshots {
+    background: #f7f7f7;
+    color: #222;
+}
+
+.screenshots img {
+    border: 3px solid #ddd;
+    margin-bottom: 60px;
+}
+
+.footer {
+    padding-bottom: 60px;
+}
+
+
+
+/*
+    Custom styles for the image gallery, surgically transplanted and modified from David Miller's free "Freelancer" Bootstrap theme:
+    https://startbootstrap.com/themes/freelancer/
+*/
+
+.img-fluid {
+    height: auto;
+    max-width: 100%;
+}
+
+.portfolio .portfolio-item {
+    display: block;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.screenshots .portfolio .portfolio-item img {
+    border: none;
+    margin: 0;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption:hover {
+    opacity: 1;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption {
+    background-color: rgba(91,24,164,0.8);
+    opacity: 0;
+    -webkit-transition: all ease .25s;
+    transition: all ease .25s;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption {
+    color: #fff;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+    margin: auto;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption i {
+    font-size: 30px
+}
+
+.h-100 {
+    height: 100%!important;
+}
+
+.w-100 {
+    width: 100%!important;
+}
+
+.position-absolute {
+    position: absolute!important;
+}
+
+.d-flex {
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+
+        </style>
+    </head>
+    <body>
+
+
+
+
+
+        <!-- ***************** COLORFUL TOP HEADER ***************** -->
+
+        <div class="header" style="background: url(images/blog/blog-banner-7.png);">
+            <div class="header-wrap" style="background: linear-gradient(180deg, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.9) 10%, rgba(0,0,0,0) 100%);">
+
+<div class="container" style="">
+
+                <!-- ***************** NAVIGATION ***************** -->
+
+                <div class="row mini-nav" style="">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <a href="/">Home</a>
+                        <a href="/about.html">About</a>
+<a href="/about.html">Portfolio</a>
+
+                        <a href="/partnered.html" class="active-nav" style="margin-right: 0;">Writing</a>
+                    </div> <!-- /col-sm-12 -->
+                </div> <!-- /row mini-nav -->
+
+                <!-- ***************** PROJECT INFO ***************** -->
+                
+                <div class="row project-metadata" style="margin-top: 90px;margin-bottom: 0;opacity: 0;">
+                    <div class="col-sm-8 col-sm-offset-2">
+                        
+                        <img class="img-responsive center-block" src="images/circle/apple-card-test4.png" style="border: none; margin-bottom: 0;width: 395px;">
+                    </div> <!-- /col-sm-8 col-sm-offset-2 -->
+                </div> <!-- /row project-metadata -->
+
+                <!-- ***************** PROJECT SUMMARY ***************** -->
+                
+                <div class="row work-container" style="margin-top: 0; margin-bottom: 60px;">
+                    <div class="col-sm-8 col-sm-offset-2" style="margin-top: 80px;">
+                        <ul style="text-align: left; margin: 0; padding: 0; display: table; margin-bottom: 20px;">
+                            <li>
+                                
+                                <h4 style="opacity: 1;font-size: 18px;background-color: #fff;padding: 5;padding: 5p;padding: 5px;color: #;color: #0;color: #00;color: #000;">August 7th, 2019</h4>
+                            </li>
+                            
+                            
+                        </ul>
+
+                        <p style="font-family: Georgia;font-size: 36px;line-height: 120%;margin-top: 4px;/* border-bottom: 5px solid #fff; *//* border-top: 5px solid #fff; *//* padding: 20px 0 25px; */">
+                            <strong style="background: #fff;color: #222;padding: 1px 5px 2px;">Using The New Inter Typeface</strong></p>
+
+                    </div><!-- /col-sm-8 col-sm-offset-2 -->
+                </div> <!-- /row work-container -->
+
+            </div>
+</div> <!-- /container -->
+        </div> <!-- /header -->
+        
+       
+       
+
+
+
+
+        <!-- ***************** PROJECT DETAILS ***************** -->
+
+        
+        <div class="screenshots">
+          <div class="container">
+
+
+            <!-- Thumbnails -->
+            
+
+
+
+
+            <!-- Video walkthroughs -->
+             <!-- /row -->
+
+
+
+
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2" style="padding-top: 70px; padding-bottom: 20px;">
+
+<p style="font-family: Georgia;"><span style="font-size: 62px;line-height: 62px;float: left;font-weight: 900;margin-right: 5px;">A</span>pple’s special event this week was all about software subscription services, signaling a new focus on business aside from its bread and butter of consumer electronics.</p>
+<p style="font-family: Georgia;font-weight: 900;font-size: 36px;line-height: 120%;border-top: 5px solid #000;padding-top: 20px;border-bottom: 5px solid #000;padding-bottom: 20px;margin: 40px 0;">“A new kind of credit card. Created by Apple, not a bank.&nbsp;Built for simplicity, transparency, and privacy.”</p>
+<p style="font-family: Georgia;">Nestled among the software announcements, there was one announcement that piqued my interest, the physical version of Apple’s new credit card, Apple Card.</p>
+<p style="/* margin-bottom: 60px; */
+margin-top: 40px;">
+<img class="img-responsive center-block" src="https://www.arun.is/blog/apple-card/card_hand.jpg" style="/* width: 100%; */
+border: none;">
+</p><p>As is expected from Apple, the card is unlike any other. At a close glance, the minutest details set it apart from the rest. Of course, the physical card hasn’t been released yet, but we can learn a lot from what Apple has shown in promotional material.</p>
+</div> <!-- /col-sm-6 col-sm-offset-3 -->
+</div> <!-- row -->
+</div> <!-- /container -->
+
+
+
+
+
+
+
+
+
+<div class="dark-wrapper" style="background: #222;color: #fff;">
+    <div class="container dark">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <div class="table-of-contents" style="margin-top: 60px;
+                    border: 5px solid rgba(255,255,255,0.1);
+                    padding: 40px;">
+                    <p style="font-family: Georgia;
+                        font-size: 32px;">My work unfolded in phases:</p>
+
+                    <ul style="font-size: 22px;
+                        font-weight: 300;
+                        margin: 0;
+                        padding: 0;
+                        list-style-type: circle;">
+                        <li style="border-top: 1px solid rgba(255, 255, 255, 0.1);
+                            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                            padding: 10px 0;
+                            list-style-position: inside;"><strong style="text-transform: uppercase;">Phase 1 -</strong> <em style="font-family: Georgia;">three crazy weeks for a super quick redesign to relaunch at&nbsp;SXSW.</em></li>
+                        <li style="
+                            padding: 10px 0;
+                            list-style-position: inside;"><strong style="text-transform: uppercase;">Phase 2 -</strong> <em style="font-family: Georgia;">six months of in-depth user research to target larger&nbsp;customers.</em></li>
+                    </ul>
+                </div><!-- /table-of-contents -->
+            </div> <!-- /col-sm-8 col-sm-offset-2 -->
+            <div class="col-sm-8 col-sm-offset-2">
+                <h1 style="margin-top: 60px;border-color: #fff;">Phase 1</h1>
+                <p>Immediately after joining, my first priority was to overhaul the free prototype and relaunch it as a paid product at SXSW, since we knew that would be the perfect target audience for growth hackers looking to network with VIP marketers.</p>
+
+                <p>The team cranked in an all-out 3 week sprint to redesign the app from top to bottom. We completely threw away the previous design, refocused the app on features that were unique to the network and gave the visual design a completely new coat of paint.</p>
+            </div> <!-- /col-sm-8 col-sm-offset-2 -->
+        </div> <!-- row -->
+        <div class="row">
+            <div class="col-sm-12">
+                <p class="caption" style="font-style: italic;text-align: center;margin: 40px 0 20px;"><strong>Nailing down the value prop</strong> - the app vastly outperformed typical email intros.</p>
+                <img src="http://d32mxho067pe0f.cloudfront.net/images/partnered/home-email-sucks.png" class="img-responsive center-block">
+            </div> <!-- /col-sm-12 -->
+        </div> <!-- /row -->
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2">
+                <p>In Austin, we hosted our own event with panelists from our user base and I gave product demos to VIP guests that we targeted in advance.</p>
+                <p style="font-weight: 900;font-size: 36px;font-family: Georgia;border-top: 5px solid #fff;border-bottom: 5px solid #fff;line-height:120%;padding: 20px 0;margin: 40px 0 80px;">The relaunch was a success and we had our first paid customers shortly after returning from SXSW.</p>
+            </div> <!-- /col-sm-8 col-sm-offset-2 -->
+        </div> <!-- row -->
+    </div> <!-- /container -->
+</div> <!-- /dark-wrapper -->
+
+
+
+<div class="container">
+
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <h1 style="/* border-color: #fff; */
+    margin-top: 60px;">Phase 2</h1>
+                    <p>After the relaunch, I did user research with our initial customers to see how we could expand our user base from single seat customers to larger teams.</p>
+
+<p style="font-weight: 900;
+font-size: 36px;
+font-family: Georgia;
+border-top: 5px solid #000;
+border-bottom: 5px solid #000;
+line-height: 120%;
+padding: 20px 0;
+margin: 40px 0;">This combo of user research and rapid iteration is my happy place - an organic and highly iterative process that I've done many times before.</p>
+
+<p>I'm in my sweet spot when I'm regularly meeting with a small base of enthusiastic early adopters and cycling through experiments until we find the features that take off with a larger audience. <strong>Feature development is a different kind of slow burn compared to rapid firefighter work,</strong> like in the initial redesign.</p>
+
+
+    <p style="margin: 0;">
+                            <img class="img-responsive center-block" src="http://d32mxho067pe0f.cloudfront.net/images/partnered/build-measure-learn-shirt.jpg" style="/* width: 100%; */
+    border: none; margin: 40px 0 0;">
+                        </p>
+                    <p class="caption" style="font-style: italic;
+    text-align: center;
+    margin: 20px 0 40px;">This is practically my life motto :)</p>
+<p>Sure enough, we eventually found the solution: to redesign a little-used feature called partnerships, turning it into a vendor database to help track complicated customer relationships. See <a href="#video2">the second video above</a> for more info.</p>
+                </div> <!-- /col-sm-6 col-sm-offset-3 -->
+            </div> <!-- row -->
+
+           
+</div> <!-- /container -->
+
+
+
+
+<div class="container">
+
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+<h1>Summary</h1>
+<p>This project was an important business milestone for me. It was immensely satisfying to use the power of design to make something that business users clearly understood and found worth paying for.</p>
+
+<p style="font-weight: 900;
+    font-size: 36px;
+    font-family: Georgia;
+    border-top: 5px solid #000;
+    border-bottom: 5px solid #000;
+    line-height: 120%;
+    padding: 20px 0;
+    margin: 40px 0;">After all of my years of experience, Partnered was my first time being responsible for landing the initial paying customers. And it felt great to come through.</p>
+<p>Every B2B company I worked at before Partnered already had customers but this was my baby, all the way from rough prototype to the initial dollars coming in through the door.</p>
+<p><strong>Thanks for making it this far!</strong> Feel free to <a href="mailto:alabut@gmail.com?subject=Partnered%20Case%20Study">email me</a> if you have any&nbsp;questions.</p>
+<p style="text-align: center" ;=""><img src="http://d32mxho067pe0f.cloudfront.net/images/partnered/signature-black.png" style="border: none;
+    margin: 0 0 40px; max-width: 100%;"></p>
+
+</div> <!-- /col -->
+</div> <!-- /row -->
+</div> <!-- /container -->
+
+
+ <!-- /container -->
+        </div> <!-- /screenshots -->
+
+
+
+
+
+
+        <!-- ***************** FOOTER ***************** -->
+
+        <div class="container footer">
+            <div class="row mini-nav">
+                <div class="col-sm-12">
+                    <a href="/">Home</a>
+                    <a href="/about.html">About</a>
+                    <a href="/partnered.html" class="active-nav">Case Study</a>
+                </div> <!-- /col-sm-12 mini-nav -->
+            </div> <!-- /row mini-nav -->
+        </div> <!-- /container footer -->
+
+    
+
+
+</body></html>
