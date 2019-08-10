@@ -240,7 +240,29 @@ p {
     font-family: Georgia;
     font-size: 22px;
     font-weight: 300;
+    line-height: 150%;
     margin-bottom: 20px;
+}
+
+.blockquote {
+    border-top: 5px solid #000;
+    border-bottom: 5px solid #000;
+    font-family: Georgia;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 120%;
+    margin: 40px 0;
+    padding: 20px 0;
+}
+
+@media only screen and (max-width : 576px) {
+    p {
+        font-size: 18px;
+    }
+
+    h1, .blockquote {
+        font-size: 22px;
+    }
 }
 
 .project-writeup {
@@ -276,12 +298,45 @@ p {
 .listbox {
     border: 5px solid #000;
     margin: 60px 0;
-    padding: 30px 40px 30px;
+    padding: 70px 70px 0;
+}
+
+@media only screen and (max-width : 576px) {
+    .listbox {
+        padding: 40px 20px 0;
+    }
 }
 
 .listbox h1 {
     font-size: 25px;
-    margin-top: 10px;
+    margin: 0 0 10px;
+}
+
+.listbox ul {
+    font-size: 22px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    list-style-type: circle;
+}
+
+.listbox li {
+    padding: 15px 0 0;
+    line-height: 160%;
+    list-style-position: inside;
+}
+
+.listbox li:last-child {
+    margin-bottom: 60px;
+}
+
+.listbox li strong {
+    text-transform: uppercase;
+}
+
+.listbox li em {
+    display: block;
+    font-family: Georgia;
 }
 
 
@@ -480,18 +535,9 @@ p {
             <div class="row">
                 <div class="col-sm-8 col-sm-offset-2">
                     <h1 style="margin-top: 60px;">Project Description</h1>
-                    <p>Circle Medical is a new kind of full service medical practice that uses technology to deliver better patient experiences and outcomes at a lower cost. Their iOS and Android apps automate traditionally human-intensive processes such as scheduling, billing and managing medical records.</p>
-                    <p style="font-weight: 900;
-                    font-size: 36px;
-                    font-family: Georgia;
-                    border-top: 5px solid #000;
-                    border-bottom: 5px solid #000;
-                    line-height: 120%;
-                    padding: 20px 0;
-                    margin: 40px 0;">
-                        My initial mandate was to redesign the check-in screens to speed up patient visits and solve common user problems.
-                    </p>
-                    <p>I worked with them on improving the patient registration and first visit process. It was a fun and quick project that hit all of the major elements of design work in a short time frame: stakeholder interviews, user research, UX streamlining, and UI polish.</p>
+                    <p>Circle Medical is a new kind of full service medical practice that uses technology to deliver better patient experiences and outcomes at a lower cost. Improving their user registration was a fun and quick project that hit all of the major elements of design work: stakeholder interviews, user research, UX streamlining, and UI polish.</p>
+                    <p class="blockquote">Our goal was to improve the patient experience during their first office visit.</p>
+                    <p>The idea was that decreasing any frustrating or time-intensive paperwork should also increase the quality of the patient's time with their doctors, which would aid both diagnosis and relationship-building.</p>
                 </div> <!-- /col-sm-6 col-sm-offset-3 -->
             </div> <!-- row -->
         </div> <!-- /container -->
@@ -500,24 +546,30 @@ p {
             <div class="row">
                 <div class="col-sm-8 col-sm-offset-2">
                     <h1 style="margin-top: 60px;">User Research &amp; Patient Experience</h1>
-                    <p>The foundation of a good UX requires solid user research and not just wireframes, documentation, or other tools of the trade. To me, user research is the gold standard of UX tools, beyond anything else in a designer's tool kit.</p>
-                    <p>I had the privilege of working alongside a design founder that was just as passionate about user research and we recorded interviews with almost everyone at the company. We talked with the CEO, most of the doctors and nurses, the welcome staff for the front office - anyone that interacted with patients on a daily basis. </p>
+                    <p>I had the privilege of working alongside a design founder that was just as passionate about user research as I was, so we kicked off the project by recording interviews with almost everyone at the small but busy company. We talked with the CEO, most of the doctors and nurses, the welcome staff for the front office &#8212; anyone that interacted with patients on a daily basis. </p>
 
                     <div class="listbox">
-                        <h1>Lessons Learned From User Research</h1>
-
-                        <ul style="font-size: 22px;
-                            font-weight: 300;
-                            margin: 0;
-                            padding: 0;
-                            list-style-type: circle;">
-                            <li style="border-top: 1px solid rgba(255, 255, 255, 0.1);
-                                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-                                padding: 10px 0;
-                                list-style-position: inside;"><strong style="text-transform: uppercase;">Phase 1 -</strong> <em style="font-family: Georgia;">three crazy weeks for a super quick redesign to relaunch at&nbsp;SXSW.</em></li>
-                            <li style="
-                                padding: 10px 0;
-                                list-style-position: inside;"><strong style="text-transform: uppercase;">Phase 2 -</strong> <em style="font-family: Georgia;">six months of in-depth user research to target larger&nbsp;customers.</em></li>
+                        <h1>User Research Revealed Several Pain Points</h1>
+                        <ul>
+                            <li>
+                                <strong>Paperwork</strong>
+                                <em>About half of the patients would show up without completing the check in flow. Patients were annoyed by the routine busywork and doctors lost time in appointments to repetitive mundane information gathering.</em>
+                            </li>
+                            <li>
+                                <strong>Location </strong>
+                                <em>Some patients got lost on the way to the office and would show up flustered, which would compound the annoyance of filling out forms.</em>
+                            </li>
+                        </ul>
+                        <h1>Possible Solutions</h1>
+                        <ul>
+                            <li>
+                                <strong>Redesign existing screens &#8212; </strong>
+                                <em>Streamline the process for registering an account for the first visit, rather than gathering too much medical info.</em>
+                            </li>
+                            <li>
+                                <strong>Establish reliable patient communication &#8212; </strong>
+                                <em>Prioritize text and push notifications over email to break up the registration process over time, rather than immediately before an appointment.</em>
+                            </li>
                         </ul>
                     </div><!-- /listbox -->
 
@@ -559,14 +611,7 @@ p {
                 <div class="col-sm-8 col-sm-offset-2">
                     <h1 style="margin-top: 40px;">Splash Screens &amp; Messaging</h1>
                     <p>Language and visual design is also an invaluable tool for a designer, to help subconsciously communicate quality and the values of a product or service. The initial aesthetics can frame the rest of the experience by setting expectations.</p>
-                    <p style="font-weight: 900;
-                    font-size: 36px;
-                    font-family: Georgia;
-                    border-top: 5px solid #000;
-                    border-bottom: 5px solid #000;
-                    line-height: 120%;
-                    padding: 20px 0;
-                    margin: 40px 0;">
+                    <p class="blockquote">
                         First impressions have an impact on overall usability &amp; perceived utility.
                     </p>
                     <p style="margin-bottom: 60px;">So in addition to tackling the UX of the check-in process, I focused in on the initial landing screens of the app and experimented with a range of complimentary visual styles: photographic, illustrative, and colorful.</p>
