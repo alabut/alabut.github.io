@@ -240,7 +240,29 @@ p {
     font-family: Georgia;
     font-size: 22px;
     font-weight: 300;
+    line-height: 150%;
     margin-bottom: 20px;
+}
+
+.blockquote {
+    border-top: 5px solid #000;
+    border-bottom: 5px solid #000;
+    font-family: Georgia;
+    font-size: 36px;
+    font-weight: 900;
+    line-height: 120%;
+    margin: 40px 0;
+    padding: 20px 0;
+}
+
+@media only screen and (max-width : 576px) {
+    p {
+        font-size: 18px;
+    }
+
+    h1, .blockquote {
+        font-size: 22px;
+    }
 }
 
 .project-writeup {
@@ -271,6 +293,50 @@ p {
 .image-block img {
     border: none;
     margin: 0;
+}
+
+.listbox {
+    border: 5px solid #000;
+    margin: 60px 0;
+    padding: 70px 70px 0;
+}
+
+@media only screen and (max-width : 576px) {
+    .listbox {
+        padding: 40px 20px 0;
+    }
+}
+
+.listbox h1 {
+    font-size: 25px;
+    margin: 0 0 10px;
+}
+
+.listbox ul {
+    font-size: 22px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    list-style-type: circle;
+}
+
+.listbox li {
+    padding: 15px 0 0;
+    line-height: 160%;
+    list-style-position: inside;
+}
+
+.listbox li:last-child {
+    margin-bottom: 60px;
+}
+
+.listbox li strong {
+    text-transform: uppercase;
+}
+
+.listbox li em {
+    display: block;
+    font-family: Georgia;
 }
 
 
@@ -469,18 +535,9 @@ p {
             <div class="row">
                 <div class="col-sm-8 col-sm-offset-2">
                     <h1 style="margin-top: 60px;">Project Description</h1>
-                    <p>Circle Medical is a new kind of full service medical practice that uses technology to deliver better patient experiences and outcomes at a lower cost. Their iOS and Android apps automate traditionally human-intensive processes such as scheduling, billing and managing medical records.</p>
-                    <p style="font-weight: 900;
-                    font-size: 36px;
-                    font-family: Georgia;
-                    border-top: 5px solid #000;
-                    border-bottom: 5px solid #000;
-                    line-height: 120%;
-                    padding: 20px 0;
-                    margin: 40px 0;">
-                        My initial mandate was to redesign the check-in screens to speed up patient visits and solve common user problems.
-                    </p>
-                    <p>I worked with them on improving the patient registration and first visit process. It was a fun and quick project that hit all of the major elements of design work in a short time frame: stakeholder interviews, user research, UX streamlining, and UI polish.</p>
+                    <p>Circle Medical is a new kind of full service medical practice that uses technology to deliver better patient experiences and outcomes at a lower cost. Improving their user registration was a fun and quick project that hit all of the major elements of design work: stakeholder interviews, user research, UX streamlining, and UI polish.</p>
+                    <p class="blockquote">Our goal was to improve the patient experience during their first office visit.</p>
+                    <p>The idea was that decreasing any frustrating or time-intensive paperwork should also increase the quality of the patient's time with their doctors, which would aid both diagnosis and relationship-building.</p>
                 </div> <!-- /col-sm-6 col-sm-offset-3 -->
             </div> <!-- row -->
         </div> <!-- /container -->
@@ -489,24 +546,70 @@ p {
             <div class="row">
                 <div class="col-sm-8 col-sm-offset-2">
                     <h1 style="margin-top: 60px;">User Research &amp; Patient Experience</h1>
-                    <p>I had the privilege of working alongside a design founder that was just as passionate about user research, so we kicked things off by recording interviews with almost everyone at the company. We talked with the CEO, most of the doctors and nurses, the welcome staff for the front office - anyone that interacted with patients on a daily basis. </p>
-                    <p>The foundation of a good UX requires solid user research and not just wireframes, documentation, or other tools of the trade. <strong>To me, user research is the gold standard of UX tools, beyond anything else in a designer's tool kit.</strong></p>
-                    <p>It's also a personal philosophy - to me, the best way to work is to be as user-focused as possible and create the most customer-focused products and services. That's what excites and motivates me in my pursuit of my craft.</p>
-                    <p style="display: none;"><strike>Focus on the tactical aspects of interviewing everybody. Then maybe you can rant about how much knowledge is actually in-house, if you have enough of a product horse sense. At the risk of sounding solipsistic, a company is a tribal repository of distributed insights that you can tap into with the right approach.</strike></p>
+                    <p>I had the privilege of working alongside a design founder that was just as passionate about user research as I was, so we kicked off the project by recording interviews with almost everyone at the small but busy company. We talked with the CEO, most of the doctors and nurses, the welcome staff for the front office &#8212; anyone that interacted with patients on a daily basis. </p>
 
-                    <!-------------------------------------------------------------------- 
-                        INSERT LESSONS LEARNED FROM USER RESEARCH, FROM THE MD FILE
-                    --------------------------------------------------------------------->
+                    <div class="listbox">
+                        <h1>User Research Revealed Several Pain Points</h1>
+                        <ul>
+                            <li>
+                                <strong>Paperwork</strong>
+                                <em>About half of the patients would show up without completing the check in flow. Patients were annoyed by the routine busywork and doctors lost time in appointments to repetitive mundane information gathering.</em>
+                            </li>
+                            <li>
+                                <strong>Location </strong>
+                                <em>Some patients got lost on the way to the office and would show up flustered, which would compound the annoyance of filling out forms.</em>
+                            </li>
+                        </ul>
+                        <h1>Possible Solutions</h1>
+                        <ul>
+                            <li>
+                                <strong>Redesign existing screens &#8212; </strong>
+                                <em>Streamline the process for registering an account for the first visit, rather than gathering too much medical info.</em>
+                            </li>
+                            <li>
+                                <strong>Establish reliable patient communication &#8212; </strong>
+                                <em>Prioritize text and push notifications over email to break up the registration process over time, rather than immediately before an appointment.</em>
+                            </li>
+                        </ul>
+                    </div><!-- /listbox -->
 
-                    <p style="margin-bottom: 60px;">
-                        The fun part is then turning all of those conversations into a handful of product insights and then translating those into new designs.
+                    <p style="margin-bottom: 60px;">The fun part is then turning all of those conversations into a handful of product insights and then translating those into new designs. Here's what the first proposed flow looked like:</p>
+                </div> <!-- /col-sm-6 col-sm-offset-3 -->
+            </div> <!-- row -->
+        </div> <!-- /container -->
 
-                        <!--------------------------------------------------------------------
-                            INSERT INFOGRAPHICS HERE TO DEMONSTRATE BOTH FLOWS
-                        ---------------------------------------------------------------------->
+        <div class="container-fluid orange image-block" style="background-image: url(images/circle/bg4.png);background-image: url(images/circle/bg3.svg);">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <picture>
+                        <img class="img-responsive center-block" src="images/circle/checkin/flow1-walkthrough.png">
+                    </picture>
+                </div>        
+            </div>
+        </div>
 
-                        Although I worked on several proposed flows of screens and notifications for patient registration, it's useful to zoom down into the redesigned check-in screen to see an example of how the UX work influenced the final work.
-                    </p>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <p style="margin: 60px 0;">I often like to think through and provide options for different flows, especially if I'm proposing drastic changes.</p>
+                </div> <!-- /col-sm-6 col-sm-offset-3 -->
+            </div> <!-- row -->
+        </div> <!-- /container -->
+
+        <div class="container-fluid orange image-block" style="background-image: url(images/circle/bg4.png);background-image: url(images/circle/bg3.svg);">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <picture>
+                        <img class="img-responsive center-block" src="images/circle/checkin/flow2-walkthrough.png">
+                    </picture>
+                </div>        
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                    <p style="margin: 60px 0;">User insights drove design at every level, so it's also useful to zoom down from the UX of the flow of screens and down into the UI of a single screen.</p>
                 </div> <!-- /col-sm-6 col-sm-offset-3 -->
             </div> <!-- row -->
         </div> <!-- /container -->
@@ -538,14 +641,7 @@ p {
                 <div class="col-sm-8 col-sm-offset-2">
                     <h1 style="margin-top: 40px;">Splash Screens &amp; Messaging</h1>
                     <p>Language and visual design is also an invaluable tool for a designer, to help subconsciously communicate quality and the values of a product or service. The initial aesthetics can frame the rest of the experience by setting expectations.</p>
-                    <p style="font-weight: 900;
-                    font-size: 36px;
-                    font-family: Georgia;
-                    border-top: 5px solid #000;
-                    border-bottom: 5px solid #000;
-                    line-height: 120%;
-                    padding: 20px 0;
-                    margin: 40px 0;">
+                    <p class="blockquote">
                         First impressions have an impact on overall usability &amp; perceived utility.
                     </p>
                     <p style="margin-bottom: 60px;">So in addition to tackling the UX of the check-in process, I focused in on the initial landing screens of the app and experimented with a range of complimentary visual styles: photographic, illustrative, and colorful.</p>
@@ -595,7 +691,7 @@ p {
                     <p>Those values influenced me greatly and carried through into the end product in this case study.</p>
                     <p><strong>Thanks for making it this far!</strong> Feel free to <a href="mailto:alabut@gmail.com?subject=Partnered%20Case%20Study">email me</a> if you have any&nbsp;questions.</p>
                     <p style="text-align: center">
-                        <img src="https://d32mxho067pe0f.cloudfront.net/images/partnered/signature-black.png" style="border: none;margin: 0 0 40px; max-width: 100%;">
+                        <img src="http://d32mxho067pe0f.cloudfront.net/images/partnered/signature-black.png" style="border: none;margin: 0 0 40px; max-width: 100%;">
                     </p>
                 </div> <!-- /col -->
             </div> <!-- /row -->
