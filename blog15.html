@@ -176,6 +176,16 @@ body, html {
     margin-bottom: 40px;
 }
 
+.work-container .headline {
+    font-size: 36px;
+}
+
+@media only screen and (min-width : 576px) {
+    .work-container .headline {
+        font-size: 72px;
+    }
+}
+
 .embed-responsive {
     border: 3px solid #fff;
     margin-top: 10px;
@@ -221,9 +231,39 @@ h5 {
 
 p {
     font-family: Georgia;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 300;
     margin-bottom: 20px;
+}
+
+.ornamental-first-letter {
+    font-size: 50px;
+    line-height: 50px;
+    /******************
+    ⬆⬆⬆ Font-size and line-height must be matching for the proper effect.
+    ******************/
+    float: left;
+    font-weight: 900;
+    margin-right: 5px;
+}
+
+.screenshots .headline {
+    font-size: 27px;
+}
+
+@media only screen and (min-width : 576px) {
+    p {
+    font-size: 22px;
+    }
+
+    .ornamental-first-letter {
+        font-size: 62px;
+        line-height: 62px;
+    }
+
+    .screenshots .headline {
+        font-size: 36px;
+    }
 }
 
 .screenshots {
@@ -353,7 +393,7 @@ p {
                             
                         </ul>
 
-                        <p style="font-family: Georgia;font-size: 72px;line-height: 120%;margin-top: 4px;/* border-bottom: 5px solid #fff; *//* border-top: 5px solid #fff; *//* padding: 20px 0 25px; */">
+                        <p class="headline" style="font-family: Georgia;line-height: 120%;margin-top: 4px;/* border-bottom: 5px solid #fff; *//* border-top: 5px solid #fff; *//* padding: 20px 0 25px; */">
                             <strong style="/* background: #fff; */color: rgba(255,255,255,1);padding: 1px 5px 2px;">Camping With A Leica Q2</strong></p>
 
                     </div><!-- /col-sm-8 col-sm-offset-2 -->
@@ -391,8 +431,8 @@ p {
             <div class="row">
                 <div class="col-sm-8 col-sm-offset-2" style="padding-top: 10px;padding-bottom: 20px;">
 
-<p style="font-family: Georgia;"><span style="font-size: 62px;line-height: 62px;float: left;font-weight: 900;margin-right: 5px;">A</span>pple’s special event this week was all about software subscription services, signaling a new focus on business aside from its bread and butter of consumer electronics.</p>
-<p style="font-family: Georgia;font-weight: 900;font-size: 36px;line-height: 120%;border-top: 5px solid #fff;padding-top: 20px;border-bottom: 5px solid #fff;padding-bottom: 20px;margin: 40px 0;">“A new kind of credit card. Created by Apple, not a bank.&nbsp;Built for simplicity, transparency, and privacy.”</p>
+<p style="font-family: Georgia;"><span class="ornamental-first-letter">A</span>pple’s special event this week was all about software subscription services, signaling a new focus on business aside from its bread and butter of consumer electronics.</p>
+<p class="headline" style="font-family: Georgia;font-weight: 900;line-height: 120%;border-top: 5px solid #fff;padding-top: 20px;border-bottom: 5px solid #fff;padding-bottom: 20px;margin: 40px 0;">“A new kind of credit card. Created by Apple, not a bank.&nbsp;Built for simplicity, transparency, and privacy.”</p>
 <p style="font-family: Georgia;">Nestled among the software announcements, there was one announcement that piqued my interest, the physical version of Apple’s new credit card, Apple Card.</p>
 <p style="/* margin-bottom: 60px; */
 margin-top: 40px;">
