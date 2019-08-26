@@ -295,7 +295,7 @@ ul {
 
 .case-study .case-study-text-wrapper,
 .case-study .hero-image {
-    min-height: 510px;
+    min-height: 370px;
 }
 
 .case-study .hero-image {
@@ -331,6 +331,27 @@ ul {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+}
+
+/* Add a fancy card container on desktop/tablet */
+
+@media (min-width: 768px) {
+    .case-study-card {
+        border-radius: 20px;
+        box-shadow: 0 0 50px 1px rgba(0,0,0,0.2);
+        margin: 100px 0;
+    }
+}
+
+/* Adjust size of card on desktop */
+
+@media (min-width: 1300px) {
+
+    .case-study .case-study-text-wrapper,
+    .case-study .hero-image {
+        min-height: 510px;
+    }
+
 }
 
 .mini-tiles, .bio .mini-tiles a {
@@ -702,68 +723,72 @@ ul {
 
 
 
-            <div class="case-study-wrapper purple container-fluid"> <!-- This tasty level of the parfait yogurt is made with a full width color bar.  -->
-                <div class="row case-study"> <!-- Narrow main column because the actual content is relatively light on word count. -->
+            <div class="purple container-fluid">
+                <div class="row case-study">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="row"> <!-- A nested row so that text and hero image can be stacked vertically on mobile. -->
-                            <div class="col-sm-6">
-                                <div class="case-study-text-wrapper"> <!-- Yet another wrapper to overcome Bootstrap's limited ability to vertically position content. -->
-                                    <div class="case-study-text">
-                                        <!-- NOTE: some or all of the following divs could be refactored out. -->
-                                        <div class="subheader">
-                                            <h5>CASE STUDY #1</h5>
-                                            <h2>Partnered</h2>
-                                        </div>
-                                        <div class="description">
-                                            <p>Overhauled a B2B app and landed the first customers.</p>
-                                        </div>
-                                        <div class="cta">
-                                            <a class="button" href="http://alabut.com/partnered.html">
-                                                <span>Project Details</span>
-                                            </a>
-                                        </div> <!-- /cta -->
-                                    </div> <!-- /case-study-text -->
-                                </div> <!-- /case-study-text-wrapper -->
-                            </div> <!-- /col-sm-6 -->
-                            <div class="col-sm-6">
-                                <div class="hero-image"> <!-- See Doug Bowman's classic article on CSS: Making The Absolute, Relative -->
-                                    <img src="images/splash/phone-partnered.png">
-                                </div> <!-- /hero-image -->
-                            </div> <!-- /col-sm-6 -->
-                        </div> <!-- /row -->
+                        <div class="case-study-card">
+                            <div class="row">
+                                <div class="col-sm-5 col-sm-offset-1">
+                                    <div class="case-study-text-wrapper"> <!-- Yet another wrapper to overcome Bootstrap's limited ability to vertically position content. -->
+                                        <div class="case-study-text">
+                                            <!-- NOTE: the following divs should be refactored out. -->
+                                            <div class="subheader">
+                                                <h5>CASE STUDY #1</h5>
+                                                <h2>Partnered</h2>
+                                            </div>
+                                            <div class="description">
+                                                <p>Overhauled a B2B app and landed the first customers.</p>
+                                            </div>
+                                            <div class="cta">
+                                                <a class="button" href="http://alabut.com/partnered.html">
+                                                    <span>Project Details</span>
+                                                </a>
+                                            </div> <!-- /cta -->
+                                        </div> <!-- /case-study-text -->
+                                    </div> <!-- /case-study-text-wrapper -->
+                                </div> <!-- /col-sm-5 col-sm-offset-1 -->
+                                <div class="col-sm-5">
+                                    <div class="hero-image"> <!-- See Doug Bowman's classic article on CSS: Making The Absolute, Relative -->
+                                        <img src="images/splash/phone-partnered.png">
+                                    </div> <!-- /hero-image -->
+                                </div> <!-- /col-sm-5 -->
+                            </div> <!-- /row -->
+                        </div> <!-- /case-study-card -->
                     </div> <!-- /col-sm-8 col-sm-offset-2 -->
                 </div> <!-- /row case-study -->
-            </div> <!-- /case-study-wrapper purple -->
+            </div> <!-- /purple container-fluid -->
 
-            <div class="case-study-wrapper blue container-fluid"> <!-- This tasty level of the parfait yogurt is made with a full width color bar.  -->
-                <div class="row case-study"> <!-- Narrow main column because the actual content is relatively light on word count. -->
+            <div class="case-study-wrapper blue container-fluid">
+                <div class="row case-study"> 
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="row"> <!-- A nested row so that text and hero image can be stacked vertically on mobile. -->
-                            <div class="col-sm-6">
-                                <div class="case-study-text-wrapper"> <!-- Yet another wrapper to overcome Bootstrap's limited ability to vertically position content. -->
-                                    <div class="case-study-text">
-                                        <!-- NOTE: some or all of the following divs could be refactored out. -->
-                                        <div class="subheader">
-                                            <h5>CASE STUDY #2</h5>
-                                            <h2>Circle Medical</h2>
-                                        </div>
-                                        <div class="description">
-                                            <p>Streamlined the onboarding of an innovative medical service.</p>
-                                        </div>
-                                        <div class="cta">
-                                            <a class="button" href="circlemedical.html">
-                                                <span>Project Details</span>
-                                            </a>
-                                        </div> <!-- /cta -->
-                                    </div> <!-- /case-study-text -->
-                                </div> <!-- /case-study-text-wrapper -->
-                            </div> <!-- /col-sm-6 -->
-                             <div class="col-sm-6">
-                                <div class="hero-image"> <!-- See Doug Bowman's classic article on CSS: Making The Absolute, Relative -->
-                                    <img src="images/splash/phone-circle.png">
-                                </div> <!-- /hero-image -->
-                            </div> <!-- /col-sm-6 -->
-                        </div> <!-- /row -->
+                        <div class="case-study-card">
+                            <div class="row"> 
+                                <div class="col-sm-5 col-sm-offset-1">
+                                    <div class="case-study-text-wrapper"> <!-- Yet another wrapper to overcome Bootstrap's limited ability to vertically position content. -->
+                                        <div class="case-study-text">
+                                            <!-- NOTE: the following divs should be refactored out. -->
+                                            <div class="subheader">
+                                                <h5>CASE STUDY #2</h5>
+                                                <h2>Circle Medical</h2>
+                                            </div>
+                                            <div class="description">
+                                                <p>Streamlined the onboarding of an innovative medical service.</p>
+                                            </div>
+                                            <div class="cta">
+                                                <a class="button" href="circlemedical.html">
+                                                    <span>Project Details</span>
+                                                </a>
+                                            </div> <!-- /cta -->
+                                        </div> <!-- /case-study-text -->
+                                    </div> <!-- /case-study-text-wrapper -->
+                                </div> <!-- /col-sm-5 col-sm-offset-1 -->
+                                 <div class="col-sm-5">
+                                    <div class="hero-image"> <!-- See Doug Bowman's classic article on CSS: Making The Absolute, Relative -->
+                                        <img src="images/splash/phone-circle.png">
+                                    </div> <!-- /hero-image -->
+                                </div> <!-- /col-sm-5 -->
+                            </div> <!-- /row -->
+                        </div> <!-- /case-study-card -->
                     </div> <!-- /col-sm-8 col-sm-offset-2 -->
                 </div> <!-- /row case-study -->
             </div> <!-- /case-study-wrapper purple -->
