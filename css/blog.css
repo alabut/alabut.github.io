@@ -1,13 +1,13 @@
 
 body, html {
-    background: #222;
-    color: #fff;
+    background: #f7f7f7;
+    color: #222;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-.header {
+header {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#48009e+0,9f28c6+48,a80171+100 */
     background: rgb(72,0,158); /* Old browsers */
     background: -moz-linear-gradient(top, rgba(72,0,158,1) 0%, rgba(159,40,198,1) 48%, rgba(168,1,113,1) 100%); /* FF3.6+ */
@@ -23,6 +23,13 @@ body, html {
 
 .header-wrap-white {
     background: linear-gradient(180deg, transparent 0%, rgba(247,247,247,0) 66%, rgba(247,247,247,1) 100%);
+}
+
+
+@media only screen and (max-width : 576px) {
+    .header-wrap-white {
+        background: linear-gradient(180deg, transparent 0%, rgba(247,247,247,0) 40%, rgba(247,247,247,1) 70%);
+    }
 }
 
 .header-wrap-white h1 {
@@ -124,13 +131,23 @@ body, html {
 
 .headline h1 {
     font-size: 36px;
+    font-weight: 900;
+    margin-top: 200px;
+    margin-bottom: 40px;
 }
 
 @media only screen and (min-width : 576px) {
     .headline h1 {
-        font-size: 72px;
+        margin-top: 400px;
     }
 }
+
+@media only screen and (min-width : 992px) {
+    .headline h1 {
+        margin-top: 600px;
+    }
+}
+
 
 .embed-responsive {
     border: 3px solid #fff;
@@ -139,10 +156,19 @@ body, html {
 }
 
 h2 {
-    border-left: 3px solid #222;
+    border-left: 5px solid #222;
+    font-weight: 900;
     margin-top: 40px;
     margin-bottom: 25px;
     padding: 0 0 0 10px;
+}
+
+h3 {
+    border-top: 1px solid rgba(0,0,0,0.1);
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    padding-top: 26px;
 }
 
 h4 {
@@ -176,6 +202,76 @@ article p, article li {
     font-size: 18px;
     font-weight: 300;
     margin-bottom: 20px;
+    position: relative;
+}
+
+article ul {
+    padding-left: 0;
+}
+
+article li {
+    list-style: none;
+    padding-left: 20px;
+}
+
+article li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 11px;
+    width: 8px;
+    height: 8px;
+    background-color: #f15403;
+    border-radius: 50%;
+}
+
+article .dark-wrapper {
+    background: #222;
+    color: #fff;
+    margin: 20px 0;
+}
+
+article .dark ul {
+    margin-bottom: 0;
+}
+
+article .dark li {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    list-style-position: inside;
+    list-style-type: circle;
+    margin: 0;
+    padding: 20px 0;
+}
+
+article .dark li:first-of-type {
+    border-top: none;
+    padding-top: 0;
+}
+
+article .dark li:last-of-type {
+    padding-bottom: 0;
+}
+
+article .dark li::before {
+    content: none;
+}
+
+article .dark h2 {
+    border: none;
+    margin: 0 0 20px;
+    padding: 0;
+}
+
+article .dark .table-of-contents {
+    border: 5px solid rgba(255,255,255,0.1);
+    margin: 60px 0;
+    padding: 40px;
+}
+
+.intro {
+    border: 5px solid rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+    padding: 20px;
 }
 
 .ornamental-first-letter {
@@ -200,79 +296,22 @@ article p, article li {
     }
 }
 
-.screenshots {
-    background: #f7f7f7;
-    color: #222;
-}
-
-.screenshots img {
-    border: 3px solid #ddd;
-    margin-bottom: 60px;
-}
-
 .footer {
+    background: #222;
+    color: #fff;
     padding-bottom: 60px;
 }
 
-
-
-/*
-    Custom styles for the image gallery, surgically transplanted and modified from David Miller's free "Freelancer" Bootstrap theme:
-    https://startbootstrap.com/themes/freelancer/
-*/
-
-.img-fluid {
-    height: auto;
-    max-width: 100%;
+.footer .mini-nav {
+    text-align: center;
 }
 
-.portfolio .portfolio-item {
-    display: block;
-    margin-bottom: 30px;
-    position: relative;
+.footer .mini-nav a, .footer .mini-nav a.active-nav {
+    border-color: rgba(255,255,255,0.5);
+    color: rgba(255,255,255,0.5);
 }
 
-.screenshots .portfolio .portfolio-item img {
-    border: none;
-    margin: 0;
-}
-
-.portfolio .portfolio-item .portfolio-item-caption:hover {
-    opacity: 1;
-}
-
-.portfolio .portfolio-item .portfolio-item-caption {
-    background-color: rgba(91,24,164,0.8);
-    opacity: 0;
-    -webkit-transition: all ease .25s;
-    transition: all ease .25s;
-}
-
-.portfolio .portfolio-item .portfolio-item-caption {
+.footer .mini-nav a:hover {
+    border-color: #fff;
     color: #fff;
-}
-
-.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
-    margin: auto;
-}
-
-.portfolio .portfolio-item .portfolio-item-caption i {
-    font-size: 30px
-}
-
-.h-100 {
-    height: 100%!important;
-}
-
-.w-100 {
-    width: 100%!important;
-}
-
-.position-absolute {
-    position: absolute!important;
-}
-
-.d-flex {
-    display: -ms-flexbox!important;
-    display: flex!important;
 }
