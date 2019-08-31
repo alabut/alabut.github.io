@@ -21,6 +21,10 @@ header {
     background-size: cover;
 }
 
+.header-wrap-gray {
+    background: linear-gradient(180deg, transparent 0%, transparent 70%, rgba(17,17,17,1) 100%);
+}
+
 .header-wrap-white {
     background: linear-gradient(180deg, transparent 0%, rgba(247,247,247,0) 66%, rgba(247,247,247,1) 100%);
 }
@@ -30,6 +34,10 @@ header {
     .header-wrap-white {
         background: linear-gradient(180deg, transparent 0%, rgba(247,247,247,0) 40%, rgba(247,247,247,1) 70%);
     }
+}
+
+.header-wrap-gray h1 {
+    color: #fff
 }
 
 .header-wrap-white h1 {
@@ -62,6 +70,15 @@ header {
     border-bottom: 2px solid #000;
     color: #000;
     cursor: default;
+}
+
+.mini-nav.white a {
+    color: rgba(255,255,255,0.5);
+}
+
+.mini-nav a:hover, .mini-nav a:focus, .mini-nav a.active-nav {
+    border-bottom: 2px solid #fff;
+    color: #fff;
 }
 
 .mini-nav a:last-of-type {
@@ -156,11 +173,12 @@ header {
 }
 
 h2 {
-    border-left: 5px solid #222;
+    font-family: Georgia;
+    font-style: italic;
     font-weight: 900;
     margin-top: 40px;
     margin-bottom: 25px;
-    padding: 0 0 0 10px;
+    text-align: center;
 }
 
 h3 {
@@ -225,10 +243,15 @@ article li::before {
     border-radius: 50%;
 }
 
-article .dark-wrapper {
-    background: #222;
+article .dark {
+    background: #111;
     color: #fff;
     margin: 20px 0;
+}
+
+article .dark.leadsection {
+    margin-top: 0;
+    padding-bottom: 40px;
 }
 
 article .dark ul {
@@ -274,6 +297,10 @@ article .dark .table-of-contents {
     padding: 20px;
 }
 
+.dark .intro {
+    border-color: rgba(255,255,255,0.1);
+}
+
 .ornamental-first-letter {
     font-size: 50px;
     line-height: 50px;
@@ -287,7 +314,7 @@ article .dark .table-of-contents {
 
 @media only screen and (min-width : 576px) {
     article p, article li {
-    font-size: 22px;
+        font-size: 22px;
     }
 
     .ornamental-first-letter {
@@ -296,13 +323,19 @@ article .dark .table-of-contents {
     }
 }
 
+.grayscale {
+    filter: grayscale(100%);
+}
+
 .footer {
-    background: #222;
+    background: #111;
     color: #fff;
-    padding-bottom: 60px;
+    margin-top: 60px;
 }
 
 .footer .mini-nav {
+    margin-top: 30px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
