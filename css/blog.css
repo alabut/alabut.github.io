@@ -146,23 +146,35 @@ header {
     margin-bottom: 40px;
 }
 
-.headline h1 {
+header h1 {
+    color: #fff;
     font-size: 36px;
     font-weight: 900;
-    margin-top: 200px;
-    margin-bottom: 40px;
+    margin-top: 300px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 @media only screen and (min-width : 576px) {
-    .headline h1 {
+    header h1 {
+        font-size: 58px;
         margin-top: 400px;
     }
 }
 
 @media only screen and (min-width : 992px) {
-    .headline h1 {
+    header h1 {
         margin-top: 600px;
     }
+}
+
+header h2 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 100;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-align: left;
 }
 
 
@@ -215,12 +227,20 @@ h5 {
     margin-bottom: 0;
 }
 
+article a {
+    color: #f15403;
+}
+
 article p, article li {
     font-family: Georgia;
     font-size: 18px;
     font-weight: 300;
     margin-bottom: 20px;
     position: relative;
+}
+
+article img {
+    border-radius: 10px;
 }
 
 article ul {
@@ -241,6 +261,10 @@ article li::before {
     height: 8px;
     background-color: #f15403;
     border-radius: 50%;
+}
+
+article ul.double-entry-list strong {
+    display: block;
 }
 
 article .dark {
@@ -285,16 +309,33 @@ article .dark h2 {
     padding: 0;
 }
 
-article .dark .table-of-contents {
-    border: 5px solid rgba(255,255,255,0.1);
-    margin: 60px 0;
+article .blockquote.filled {
+    background: #111;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 900;
+    margin: 40px 0;
     padding: 40px;
 }
 
-.intro {
-    border: 5px solid rgba(0,0,0,0.1);
+.blockquote {
+    border: 3px solid rgba(0,0,0,0.1);
+    border-radius: 10px;
     margin-bottom: 40px;
     padding: 20px;
+}
+
+article .dark .blockquote {
+    border: 3px solid rgba(255,255,255,0.1);
+    font-size: 36px;
+    margin: 40px 0;
+    padding: 40px;
+}
+
+article .blockquote .caption {
+    display: block;
+    font-size: 22px;
+    margin-top: 20px;
 }
 
 .dark .intro {
@@ -307,9 +348,10 @@ article .dark .table-of-contents {
     /******************
     ⬆⬆⬆ Font-size and line-height must be matching for the proper effect.
     ******************/
+    color: #f15403;
     float: left;
     font-weight: 900;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 @media only screen and (min-width : 576px) {
@@ -321,6 +363,11 @@ article .dark .table-of-contents {
         font-size: 62px;
         line-height: 62px;
     }
+}
+
+.blockquote .ornamental-first-letter {
+    line-height: 0;
+    margin-top: 38px;
 }
 
 .grayscale {
