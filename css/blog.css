@@ -381,6 +381,10 @@ article .blockquote .caption {
     filter: grayscale(100%);
 }
 
+.monogram {
+    margin: 80px auto;
+}
+
 .footer {
     background: transparent;
     margin-top: 0;
