@@ -375,9 +375,8 @@ article .blockquote .caption {
 }
 
 .footer {
-    background: #111;
-    color: #fff;
-    margin-top: 60px;
+    background: transparent;
+    margin-top: 0;
 }
 
 .footer .mini-nav {
@@ -386,12 +385,17 @@ article .blockquote .caption {
     text-align: center;
 }
 
+.footer .footer-wrap {
+    border-top: 1px solid rgba(0,0,0,0.1);
+    padding-top: 30px;
+}
+
 .footer .mini-nav a, .footer .mini-nav a.active-nav {
-    border-color: rgba(255,255,255,0.5);
-    color: rgba(255,255,255,0.5);
+    border-color: rgba(0,0,0,0.5);
+    color: rgba(0,0,0,0.5);
 }
 
 .footer .mini-nav a:hover {
-    border-color: #fff;
-    color: #fff;
+    border-color: #000;
+    color: #000;
 }
