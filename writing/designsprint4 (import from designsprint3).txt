@@ -1,0 +1,344 @@
+
+# Beyond The Design Sprint
+## Common critiques and a version for the rest of us
+
+# Table of Contents
+1. Overall Problems
+	1. [Some Designers Are Wary](#problems)
+	2. [Why Your Mileage May Vary](#mileage)
+	3. [Who Design Sprints Are Really For](#who)
+1. Specific Criticisms & Drawbacks
+	1. [Startups Have No Time](#criticisms)
+	2. [Execution Trumps Daydreaming](#execution)
+	3. [Design Exercises Look Like Kindergarten Nonsense](#kindergarten)
+	4. [You Can't Crowdsource Expertise](#expertise)
+1. An Alternative Approach
+	1. [So What Do Experienced Designers Do Instead?](#alternative)
+	2. [The Mini Sprint: One Collaboration Tool Among Many](#minisprint)
+	3. [Results](#results)
+	4. [Benefits](#benefits)
+1. [Wrapping Up](#conclusion)
+1. [Epilogue & Credits](#epilogue)
+
+## Design Sprints Have Spread Far & Wide...
+
+...and have become a staple of the design world. It's such a ubiquitous practice on a global scale that you probably already know what they are, whether you've experienced them or not.
+
+It’s like the way all engineers are familiar with agile, whether they follow it or not. It’s just part of the vocabulary now. 
+
+Designers have been working within a sprint format on engineering-centric teams for a long time, well before the term became popular, but what brought the term to the tipping point of broad awareness is the particular format popularized by Google Ventures and [their book documenting the process.](#)
+
+It's easy to see why the practice has such widespread appeal. It’s easy to learn, emphasizes collaboration, shortcuts engineering overhead with testable prototypes that force you out of the building, and focuses on execution within a specific timeframe, compared to the vague and hand wavy principles of [“design thinking”](#).
+
+Junior designers in particular seem to benefit from it, from what I've gleaned on popular forums like [Designers Guild.](#) A well-documented process is fantastic for those early in the skill acquisition phase of their career, as well as for those (in more repetitive? or client-focused? needing transparency? something to distinguish it from the results-oriented product work) environments like big companies or agencies.
+
+## Overall Problems <a name="problems"></a>
+
+### Some Designers Are Wary
+
+Design sprints sound great. Actually they sound kind of fun. So who wouldn't like that?
+
+Well, I'm not sure I'd like it. And I'm not alone.
+
+> *"I am utterly and completely tired of anyone who claims to have a one size fits all design process to solve all problems. It's lazy, misleading, and a sign of junior designer who can't objectively choose the right process for the current problem."*
+> Senior Designer Friend Who Shall Not Be Named, Unless They Change Their Mind After Reading This Draft *hint* *hint* :)
+
+I'm sure every process has its detractors and it's not a fit for every situation, so that's to be expected and perfectly normal. All I knew personally is that I felt a need to document my own process because I had misgivings about the week-long version and wanted to think through why that was.
+
+Then I found out that I'm not alone in having reservations after privately quizzing a few well-respected friends to get their candid takes. I thought maybe it was just the teams I was used to - super scrappy seed stage startups - but pinging others made me realize it might be more about the experience level of the designer than the situation.
+
+I remember being a bit surprised when design sprints first started to get popular. I remember thinking, doesn't everyone know this stuff already? It looked like just a summary of the typical best practices wrapped up in new packaging: group brainstorming, usability tests, quick prototypes, etc.
+
+In fact, I should be exactly the target audience for a fast and wide-ranging approach like this: someone used to being a lone wolf on small fast teams, a former developer using technical skills to integrate better with engineers, as well as more quickly implement and iterate on my own work. Someone comfortable with the sprint format from the agile development world.
+
+While it's an admirable goal to be inspired by agile sprints to integrate designers into a more nimble approach. But to paraphrase [an old saying about regular expressions:](https://blog.codinghorror.com/regular-expressions-now-you-have-two-problems/) some people wrestling with the design problems at a typical startup think "I know, I'll use agile-inspired techniques to make design more like engineering." Now you've got two problems.
+
+Well more like at least four problems, as I'll describe in great detail below: time, execution, respect and expertise.
+
+Just to be clear, it's not that I'm completely against agile development, design sprints, or any other techniques. I'm just wary of using any one rigid process to solve everything. Hammers and nails and all that.
+
+A more ambidexturous approach to process might be a personality thing but it's definitely a function of seniority. When you're experienced enough, you'll have learned different methodologies over time and picked the bits out that work for you to form your own flexible and idiosyncratic methods that play to your unique strengths.
+
+
+
+### Why Your Mileage May Vary  <a name="mileage"></a>
+
+Before getting into details about process and workflow, it's really important to note that the benefits and drawbacks of a design sprint vary based on the type of designer you are and what kind of team you're on. What level of leadership are you at in your career; how do you like to learn; does your workplace emphasizes collaboration and consensus, or expertise and indepedent thought; and various other factors.
+
+I.e. your mileage might vary on any advice, from me or anyone else. You have to consider its context and how it fits yours.
+
+So like a workplace version of [the Rashomon effect](https://en.wikipedia.org/wiki/Rashomon_effect), what I'm saying is that "good process" is relative and not everything is a universal truth. This is your warning to consider me an unreliable narrator in the story that follows :)
+
+> insert obi wan GIF
+
+
+
+### Who Design Sprints Are Really For <a name="who"></a>
+
+But regardless of what approach you prefer, there's one thing you learn pretty quickly when you look through different approaches to create your own workflow: there's what a technique says it'll do and *what it actually does.* Just like the recurring joke that extremely regimented and formal versions of an agile process make a team anything but agile, design sprints have stated motives that can differ from the actual real world impacts.
+
+> insert cartoon from quora on agile vs common sense?
+
+So let's get real about design sprints - they're more about selling the process over the long term than creating the best results in the short term.   And also maybe teaching design basics to junior designers and non-designers.
+
+As a result, you should temper your expectations about using them because you definitely shouldn't expect to emerge from one of these things with a prototype that'll save the business, for example. They're more about generating buy-in for common best practices so that stakeholders and engineers will be understanding about the time required to cook up actually decent work, plus maybe also a communication bootcamp for junior designers to learn how to lead teams proactively instead of reactively creating whatever's dicated to them. I.e. to think through problems rather than simply throwing mud on the wall.
+
+> In effect, design sprints are participation medals for newbs, plus the occasional grizzled vet that wants to brush up on the basics. (make into a graphic rather than a blockquote?
+
+That's great! But also what makes it not a fit for a lot of teams and most senior designers, ones that realize when to use the right tool and in self-sufficient ways that don't slow everyone down.
+
+### The Realistic Timeframe For Teams  <a name="timeframe"></a>
+
+And to jump to the punchline of what's worked for me instead, I've found that the best format to bring the whole team together to get their best thinking is a long afternoon meeting, regardless of the particular topic or design exercise. For brainstorming, that's just long enough to clear the air and vent any pent-up ideas, then move on to more unexpected and ultimately innovative solutions. For usability tests, it's enough to watch a session and discuss the lessons learned afterwards. So on and so forth.
+
+Anything longer than the length of a movie is a corporate group therapy session disguised as real work (sorry :)
+
+But before I get into my particular format for a new and improved version of design sprints, let's go deeper on why a week-long sprint is a non-starter in many (most?) situations.
+
+
+## Specific Criticisms & Drawbacks <a name="criticisms"></a>
+
+### Startups Have No Time
+
+_(And pretty much no one else does either...)_
+
+The main reason I started using a 90 minute technique is because the types of high-pressure environments I’ve worked in can't take off a week (or even just a few days!) from their usual work to do a longer design sprint, the kind practiced by Google Ventures and explained in [their book.](#)
+
+It's impossible for most teams to press pause for an entire week, no matter how dire their design debt.
+
+Yet at the same time, the kind of early stage startups I'm most familiar with are exactly the teams that are most in need of solid product direction. The frenetic pace of feature development combines with the exploratory nature of a company's early days in an explosive way. Startups inevitably run into avoidable pot holes and even potentially fatal cul de sacs because of their overwhelming emphasis on momentum.
+
+So how do you reconcile the massive design needs with the utter lack of time?
+
+The answer is not to cram a week's worth of design activities into less time, **it's simply to use the right tools at the right time, as you go along.** 
+
+[insert tweet about ongoing process rather than one-time event]
+
+And when it comes to team exercises, be highly selective about only the few key tasks that yield the most benefit and design insights, since a long afternoon meeting is all your team can realistically handle for any one technique, whether that's user testing, brainstorming with sketches, or what have you.
+
+Especially when it comes to exercises that are meant to coax out the collective knowledge of a team, all you really want is to stimulate the best ideas from every team member and synthesize them into concrete product directions. All the other techniques in a design sprint are ones that a self-sufficient designer should be able to carry out in parallel, whether solo or by pairing up with devs and PMs, so why waste everybody's time with esoteric techniques?
+
+Group insights and consensus is exactly what the mini sprint format generates with nothing more than markers, paper, and a stopwatch. It's a more efficient way to get what I consider to be the core benefit of a much longer design sprint.
+
+
+### Execution Trumps Daydreaming <a name="execution"></a>
+
+The underlying reason why startups don't have time is actually pretty rational and applies to most other company types too: **staying busy is a survival mechanism.** People try to stay busy shipping meaningful work, otherwise they risk stagnation at best and existential threats at worst.
+
+One of the dirty secrets of business is that[work is 90 percent execution](https://zapier.com/blog/remote-book-review/). Success is less about inspiration or random strategizing than it is just plain getting shit done, day after day. Even at startups. Especially at startups, actually.
+
+It doesn't matter whether we're talking about companies that are large or small, remote or co-located, have green logos or blue... The hard truth is that all truly effective teams are stocked full of high performing ["armies of one"](http://37signals.com/svn/posts/1430-hire-managers-of-one) that are mostly busy coming up with and implementing creative solutions, rather than using creativity to generate stunningly original ideas for work.
+
+![](../images/writing/designsprint/distraction2.png)
+
+It makes sense, right? You can't afford to have a company filled only with "visionary" types, daydreamers making academic arguments all day. You need people that can soldier on and learn by doing.
+
+You need both modes of work - productivity and reflection - but that doesn't mean equal amounts of time or a rigid schedule for each. Everyone has find their own rhythm for avoiding too much action without thought or thought without action. 
+
+It's not like taking a break from the usual work for a strategy session is guaranteed to stimulate calm and reflective thought, peppered with smart writing and interesting doodles that culminate in brilliant insights. Ha! _If only._
+
+In the real world, strategy sessions are often the opposite of productivity. Sharpie showdowns at the whiteboard, going in circles with endless debates, all while losing momentum on shipping meaningful work. Meeting hell. Vascillating ad nauseam.
+
+Good designers abhor vascilattion. They keep up momentum and maybe even make teams faster, not drag them down.
+
+They know how to make their own prototypes, trawl through support requests to understand customer needs, do competitive analysis, prioritize feature work, and countless other things without having to stop for guidance at every step, and only gather the entire team when needed.
+
+
+
+### Design Exercises Look Like Kindergarten Nonsense <a name="kindergarten"></a>
+
+Let's be real about how most design exercises come across. **Design exercises intended for collaboration look exactly like pointless vacillation to people from traditional business or engineering backgrounds.** Or hell, just even everyday normal civilians.
+
+Stickies, whiteboard doodles, giant markers, weirdly scripted interactions that treat valuable customers like lab mice... they're all insanely valuable tools that I love using. Hell, I've been running usability tests for _two decades._ The first book I bought with my first paycheck at my first web gig was [Designing Web Usability,](https://www.nngroup.com/books/designing-web-usability/) the Jakob Nielsen classic.
+
+But I live in the real world and recognize that these techniques are completely unfamiliar and stangely childish for most non-designers, so they have to be used as needed on a project and definitely not all at once as a substitute for critical thought. That's my usual assumption: everyone else is just too damn busy with spinning their own plates to stop and do my job for me.
+
+Regular people are busy doing their jobs and want designers to just get on with doing theirs too. It's an absolute non-starter to ask most teams to pause their work for a week to play with kindergarten-style toys just so you can figure out what the hell to work on and how to test its efficacy. It will get you laughed out of the room!
+
+You might as well turn down the lights, put on some crappy world music and scroll through random nature scenes while asking whether the design should feel like a leopard or a butterfly.
+
+
+
+### You Can't Crowdsource Expertise <a name="expertise"></a>
+
+Playing with crayons and crowdsourcing product decisions by voting with post-its isn't the best way to show design expertise anyway. Gaining respect comes from understanding everyone else's needs, on the fly and under massive time pressures. Respect other people's roles - their business needs, engineering constraints, customer support backlog, and a thousand other things - all without bring the whole train to a stop.
+
+And most of all, do great work. You might not always get credit for nailing a design but guess who gets the blame if you throw every single idea into a blender and call it a group decision? Not the team or process. _They'll blame you, the designer._ And rightly so - you're supposed to be the arbiter of team input that distills down disparate needs into distinctly understandable visuals, not a hoarder that throws every idea into a junk drawer.
+
+**Good designs are hard decisions made visual - don't shirk the responsibility under the guise of collaboration.** Otherwise you're no better than a PM or technical lead desperately cobbling together wireframes out of random design kits.
+
+When it comes to designers thinking for themselves amidst the pressure of being vastly outnumbered by other roles, the stakes are high. It's about more than just doing good individual work, it's setting the bar for expected product quality for everyone and avoiding the lowest common denominator outcomes.
+
+Don't just take my word for it, look at the science — there are research studies backing this up. Groupthink is the most common team dynamic and [the results are inferior to solitary thought by individuals.](http://www.newyorker.com/reporting/2012/01/30/120130fa_fact_lehrer) So collaboration is great and all but that's not what you're hired to do, to make sure everyone gets along no matter what. You're there to make great products. You need to be strong, speak up and most of all, lead.
+
+Trust me, I've seen the insane amount of churn at companies that don't let designers lead and it's usually the junior folk that suffer, the ones that need guidance the most. Thankfully I've dodged those bullets for the most part - you can sense the turnover from a distance the way an experienced programmer can smell code rot - but I've seen way too many good people get burnt while the company cycles through fresh meat.
+
+*(remove Seinfeld clip? It's patronizing.)*
+
+
+## An Alternative Approach <a name="alternative"></a>
+
+### So What Do Experienced Designers Do Instead?
+
+So that's enough about the problems of long and regimented design sprints. Before getting into the details of yet another technique, let's recap my overall princples of how to do good work and show design leadership on fast-moving teams:
+
+1. **Use an "unprocess".** Pick the right tools at the right time and in a self-sufficient manner, rather than a regimented formal schedule.
+2. **Keep up team momentum.** Bring everyone in short bursts rather than extended sprints.
+3. **Understand everyone else's needs** rather than pushing design methods on other people to understand your goals.
+4. **Avoid groupthink.** Don't shirk hard decisions for the sake of consensus, or you'll just make lowest common denominator Frankenstein designs.
+
+
+
+### The Mini Sprint: One Collaboration Tool Among Many <a name="minisprint"></a>
+
+That's why I've sought out a better approach for collecting design input, something that's better than a typical brainstorming session with whiteboards and fits with my approach to teamwork on fast teams that I outlined above.
+
+[insert a link to Will Evans? something about how I first heard about it from him and it's worked pretty great in all the years since]
+
+I'm not saying I have all the answers, just that people should try something different if they've had similar reservations.
+
+If you don't and you love design sprints, then that's great! Don't let me stop you and have fun continuing to practice your craft and learn new skills.
+
+Don’t worry about whether the deliverables are world changing or fix all of your business needs in 5 days; think of it more as a team building exercise that indoctrinates the value of design and familiarizes everyone with the tools of the trade. Teamwork is the ultimate end result because the team will still be there while sprints and other techniques come and go, so use whatever means necessary to wear all the different hats that designers are expected to be comfortable with.
+
+> Another thing they don’t teach you in design school is what you get paid for… Mostly, designers get paid to negotiate the difficult terrain of individual egos, expectations, tastes, and aspirations of various individuals in an organization or corporation, against business needs, and constraints of the marketplace… Getting a large, diverse group of people to agree on a single new methodology for all of their corporate communications means the designer has to be a strategist, psychiatrist, diplomat, showman, and even a Svengali. The complicated process is worth money. That’s what clients pay for.
+> [Paula Scher](https://signalvnoise.com/posts/2292-another-thing-they-dont-teach-you-in-design-s)
+
+But if you're a designer experiencing any of the problems I described about design sprints - if you find yourself chafing under rigid formats like I did with agile when I was starting out, if you like fast teams but all you want is better design input and don't want the overhead of a dozen different exercises - just know that there are other ways you can experiment with. Techniques that are quicker and more flexible.
+
+Try to mix things up a bit occasionally with things like the mini sprint described below. Block out an afternoon once in a while (let's say quarterly or so, whenever you feel like there's pent up demand for brainstorming) and give this exercise a whirl instead to see how it works for you.
+
+**All you need is paper, markers, a stopwatch and 90 minutes of free time.**
+
+![](https://alabut.com/images/writing/designsprint/sketching-illustration.png)
+
+#### Setup & Prep
+
+*   _Split into teams and select topics_
+
+First you set things up by giving everyone a quick overview of the process, list some possible topics to work on, and then split into groups to tackle one topic each. 
+
+People will naturally gravitate towards the sub-teams tackling ideas that they're most familiar with. That's great - you want people to bring up problem areas that have been bothering them and pitching potential solutions that they've been chewing over already. Plus usually that means there'll be at least one person on each sub-team that will be involved in implementing any good ideas that turn into future projects.
+
+Now you're ready to start sketching.
+
+#### Three Rounds Of Sketching & Presentations
+
+*   _Each with a different format._
+
+You'll do three rounds of activity. Each round is intended to be about 10 minutes long, with 5 minutes of sketching designs on the pads and 5 minutes of discussion. The reality is that the rounds will go long, especially the last one, so it's more of a target guideline than a strict rule.
+
+Here’s the really important bit: it's not just sketching the same thing three times; **each round has a different format and the first two include buffers for silent reflective time,** in order to stimulate individual thought and avoid groupthink before coming together to create consensus.
+
+#### 1st Round: Silent Sketching Of 6 Ideas
+
+*   _Time: 10 minutes (5 min sketching + 5 min discussion)_
+*   _Goal: divergent thought — create many different approaches._
+
+Every person will sketch silently by themselves without talking to anyone else.
+
+![](https://www.classicist.org/assets/images/articles/_crop32/GroupSketch_1_photocredit_PeterOlson.jpg)
+
+To help them get the ball rolling and shake out a wide range of initial ideas without falling in love with the first thought they have, I have everyone do what’s called a 6-up. You divide your first paper into six evenly-sized boxes and fill them up with as many different concepts as possible.
+
+![](https://live.staticflickr.com/8069/8244486731_6ca1d0a95a_b.jpg)
+
+Sketching 6-ups is one of those ingeniously simple techniques that I use all the time to come up with new ideas and love sharing with others. What makes it so stimulating is that you get the obvious ideas out of your system first, which then forces you to stretch the mental muscles a bit to fill the remaining boxes.
+
+Then at the end of the 5 minutes, each subteam got 5 minutes total for each member to take a minute to describe the various ideas they had.
+
+**The point of this round is to cast a wide net for different approaches.**
+
+Silently scribbling out a grid of thumbnails is a powerful method for generating unexpected ideas, whether solo or as a group. A relatively small team of 9 drawing 6 sketches each will create 54 separate visuals! You're pretty much guaranteed to find at least a few really interesting needles in that large of a haystack.
+
+#### 2nd Round: Incorporate Feedback
+
+*   _Time: 10 minutes (5 min sketching + 5 min discussion)_
+*   _Goal: transition from divergent brainstorming to convergent decisions on the most promising ideas._
+
+Everyone goes back to 5 minutes of sketching alone without talking again, but this time with new instructions: *they're required to steal at least one piece of feedback they got from one of their team members.* Then the subteams will get another 5 minutes for everyone to share their work and discuss further.
+
+![](https://images.unsplash.com/photo-1546016366-bf061374d54e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1300&q=80)
+
+**The focus of this round is to begin the transition from divergence to convergence** - to start picking the best ideas from the crop and evolving them, rather than aiming for volume and throwing random mud on the wall in a scattershot melee.
+
+Again, in practice, it’s hard to get people to quiet down and start the next round. That’s a good sign! It means the synapses are firing and ideas are flowing.
+
+#### 3rd round: Group Brainstorming & Design Decisions
+
+*   _Time: 10 minutes (simultaneous sketching & discussion)_
+*   _Goal: create consensus and converge on design decisions._
+
+For the final round of sketching, the groups now have a new task. Instead of sketching individually without talking, they have to do the exact opposite: talk their way into deciding a single set of interfaces to present to the other groups.
+
+![](http://www.servicedesigntools.org/sites/default/files/res_images/GROUP_SKETCHING.jpg)
+
+#### Final Presentations
+
+*   _Time: 30+ minutes (each group presents for 5 min + gets 5 min of feedback)_
+*   _Goal: share your best ideas._
+
+Then comes the fun part - seeing what everyone came up with. The sub-teams all presented to the rest of the company and got insights into the different projects.
+
+![](https://images.zapier.com/storage/blog/5aa11cd3ff6e829011032739b7ebbb3b.1800x1000.jpg?format=jpg)
+
+
+
+### Results <a name="results"></a>
+
+I've run these a few times over the years and have had great results each time. The first time I publicly shared my version was at Toolbox, a conference I organized about flexible approaches to product development. I've also run it internally on my own product teams, as well as for Y Combinator while my company was in the Summer 2012 batch.
+
+I keep coming back to it because it's such a fun and time-efficient team exercise that people seem to love. It does many things at once, such as uncovering and validating potential design directions, introducing team members to the deceptively powerful technique of rough sketches, and overall acts almost like demographic research for me as a designer, where I can step away from the granular details of a feature or product to distill the collective knowledge embedded throughout a team.
+
+This can be especially useful for a fully remote team. For example, after leaving my YC company, I spent a few brief months with our batchmate Zapier and led their team through a quick brainstorming exercise at an annual team retreat in Colorado. It was fun, wide-ranging and a welcome break from implementation and execution. Everyone came out of the session buzzing with good ideas.
+
+> “It was a fast and effective way to braindump a ton of information pretty quickly and also reach a broad consensus at the same time." 
+> - Wade Foster, CEO of Zapier
+
+![Picture of various paper sketches](https://zapier.cachefly.net/storage/photos/c422be9b76e6ccc754ad061cc071b5ae.jpg)
+
+These look like crazy ransom notes to the untrained eye but were insightful internal ideas for improving Zapier. For example, the support team had a lot of thoughts to share about the onboarding process, the developers clustered together to talk about third-party integrations, and marketing folks tackled app discovery.
+
+
+
+### Benefits <a name="benefits"></a>
+
+Even after all of this information, you might still be asking: _is that all there is, just paper and timed rounds? Can this actually deliver deep insights? Is this really better than typical brainstorming or a more formal design sprint?_
+
+Those are fair questions and to be honest, it takes such little time to experiment with that you really just should try it to see how it works. It still might not be to your taste. That's ok! There is no one true design exercise to rule them all. Every team is unique and all designers have their own idiosyncratic approaches.
+
+But since I'm such a big fan and have had great results with it, I'll explain why this technique has worked so well for me compared to other design exercises or brainstorming techniques.
+
+A mini sprint can...
+
+*   **Simultaneously create divergent ideas and convergent decisions.** Typically, idea generation is diametrically opposed to synthesis and getting those two modes confused is one of the most common ways I've seen meetings get derailed when discussing design work. It's really hard to come up with a variety of ideas without spinning off into useless orbits, and then to organize them without shutting down interesting avenues too early. (see [the double diamond process](https://www.justinmind.com/blog/double-diamond-model-what-is-should-you-use/) for more background info)
+*   **Balance individual contribution with group insights.** Any team exercise is an automatic failure if it’s no better than just thinking about a problem by yourself or going with the lowest common denominator from the crowd. It has to be the best of both, or at least be clear about which mode you're in.
+*   **Quickly express visual ideas.** It's a visual technique instead of a writing-centric one so that it’s not in danger of turning into [a boring functional spec with an illusion of agreement.](https://signalvnoise.com/archives/001050.php) Rough little drawings can done rapidly and ideas can be expressed fast enough to evolve them in a loose conversational manner.
+*   **Be extremely multi-threaded.** It's better when a team can cycle through ideas for several projects simultaneously, rather than go in circles on a single topic.
+*   **Be easily archived.** Using paper instead of whiteboards makes it ideal for flipping back through past ideas, instead of being stuck on a single drawing.
+*   **Be a fun exercise instead of a painful debate.** That's really the underlying goal, not some dry metric on productivity. You want your team to be feeling those intangible positives that come from a truly great meeting, the kind that improves on both product direction as well as morale.
+
+
+
+## Wrapping Up <a name="conclusion"></a>
+
+So that’s my take on design sprints and how you run one of these shorter suckers. Whether it’s called a mini sprint, design studio, visual brainstorming or just plain sketching, I haven’t seen this exact format discussed much online. That’s a shame, since it’s a a hidden gem and a super unique part of my designer’s toolkit.
+
+Mini sprints are one of my favorite methods for harnessing the best of individual reflective thought, as well as group consensus on important areas to develop. I always come out of one of these sessions with solid design ideas and more importantly, enthusiasm about future projects from the team.
+
+## Epilogue & Credits <a name="epilogue"></a>
+
+If you've actually made it this far, I can't thank you enough for giving this article that much of your attention. I'm tickled by the irony of writing over four thousand words on better ways to save time. Thankfully, workflow and process seem to be evergreen topics.
+
+This article marks the relaunch of my blog and it's the first of several long form drafts in the pipeline about product design, UX/UI, startups and technology, so please consider [subscribing to the RSS feed](replace) or signing up for my email newsletter if you want to get future articles:
+
+> [insert mailchimp form here]
+
+___
+
+Add to both the format and credits section (and maybe individual image credits?)
+
+>  I first shared the format of this technique on [the Zapier company blog](replace) before design sprints became popular.
+> Images and quote courtesy of Zapier. (ask Mike for permission?)
+
+Add @alabut and link to twitter in the bio, since Twitter is the new comments section.
