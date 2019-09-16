@@ -1,13 +1,10 @@
 
-# Beyond The Design Sprint
-## Common critiques and a version for the rest of us
-
 # Table of Contents
 1. Overall Problems
 	1. [Some Designers Are Wary](#problems)
 	2. [Why Your Mileage May Vary](#mileage)
 	3. [Who Design Sprints Are Really For](#who)
-1. Specific Criticisms & Drawbacks
+1. Workflow Criticisms & Drawbacks
 	1. [Startups Have No Time](#criticisms)
 	2. [Execution Trumps Daydreaming](#execution)
 	3. [Design Exercises Look Like Kindergarten Nonsense](#kindergarten)
@@ -45,39 +42,45 @@ Well, I'm not sure I'd like it. And I'm not alone.
 
 I'm sure every process has its detractors and it's not a fit for every situation, so that's to be expected and perfectly normal. All I knew personally is that I felt a need to document my own process because I had misgivings about the week-long version and wanted to think through why that was.
 
-Then I found out that I'm not alone in having reservations after privately quizzing a few well-respected friends to get their candid takes. I thought maybe it was just the teams I was used to - super scrappy seed stage startups - but pinging others made me realize it might be more about the experience level of the designer than the situation.
+Then I found out that I'm not the only one with reservations after privately quizzing a few well-respected friends to get their candid takes. I thought maybe it was just the teams I was used to - super scrappy seed stage startups - but pinging others made me realize it might be more about the experience level of the designer than the situation.
 
 I remember being a bit surprised when design sprints first started to get popular. I remember thinking, doesn't everyone know this stuff already? It looked like just a summary of the typical best practices wrapped up in new packaging: group brainstorming, usability tests, quick prototypes, etc.
 
 In fact, I should be exactly the target audience for a fast and wide-ranging approach like this: someone used to being a lone wolf on small fast teams, a former developer using technical skills to integrate better with engineers, as well as more quickly implement and iterate on my own work. Someone comfortable with the sprint format from the agile development world.
 
-While it's an admirable goal to be inspired by agile sprints to integrate designers into a more nimble approach. But to paraphrase [an old saying about regular expressions:](https://blog.codinghorror.com/regular-expressions-now-you-have-two-problems/) some people wrestling with the design problems at a typical startup think "I know, I'll use agile-inspired techniques to make design more like engineering." Now you've got two problems.
+It's an admirable goal to be inspired by agile sprints to integrate designers into a more nimble approach. But to paraphrase [an old saying about regular expressions:](https://blog.codinghorror.com/regular-expressions-now-you-have-two-problems/) some people wrestling with the design problems at a typical startup think *"I know, I'll use agile-inspired techniques to make design more like engineering."* **Now you've got two problems.**
 
-Well more like at least four problems, as I'll describe in great detail below: time, execution, respect and expertise.
-
-Just to be clear, it's not that I'm completely against agile development, design sprints, or any other techniques. I'm just wary of using any one rigid process to solve everything. Hammers and nails and all that.
-
-A more ambidexturous approach to process might be a personality thing but it's definitely a function of seniority. When you're experienced enough, you'll have learned different methodologies over time and picked the bits out that work for you to form your own flexible and idiosyncratic methods that play to your unique strengths.
+Well more like at least four problems, as I'll describe in a bit: time, execution, respect and expertise.
 
 
 
 ### Why Your Mileage May Vary  <a name="mileage"></a>
 
-Before getting into details about process and workflow, it's really important to note that the benefits and drawbacks of a design sprint vary based on the type of designer you are and what kind of team you're on. What level of leadership are you at in your career; how do you like to learn; does your workplace emphasizes collaboration and consensus, or expertise and indepedent thought; and various other factors.
+Just to be clear, it's not that I'm completely against agile development, design sprints, or any other techniques. I'm just wary of using any one rigid process to solve everything. Hammers and nails and all that.
+
+It might just be experience talking, the types of places I've been at, or maybe it's the more independent way I like to work and learn, I don't know, but whatever my own idiosyncratic approach is, having an eclectic appetite has worked pretty well for me over the years and helped me survive in the most demanding segment of a demanding industry.
+
+So while I haven't hit any home runs in my career by any means, I'm proud of the base hits and doubles: designing useful things that [get](https://techcrunch.com/2010/01/14/cake-financial-acquired-etrade/) [acquired](https://www.prnewswire.com/news-releases/rubicon-project-acquires-isocket-and-shiny-ads-282920711.html), [cofounding funded companies](https://techcrunch.com/2012/10/15/referly-1m/), and going through [the world's most prestigious startup incubator](https://ycombinator.com), among other highlights. I like to think that means I know what I'm doing while also staying hungry for new methods.
+
+A more ambidexturous approach to process might be a personality thing but it's also definitely a function of seniority. When you're experienced enough, you'll have learned different methodologies over time and picked the bits out that work for you to form your own flexible and idiosyncratic methods that play to your unique strengths.
+
+Before getting into details about what I consider to be the workflow-oriented drawbacks of the design sprint format, it's really important to note at a personal level that the benefits and drawbacks of a design sprint vary based on the type of designer you are and what kind of team you're on. What level of leadership are you at in your career; how do you like to learn; does your workplace emphasizes collaboration and consensus, or expertise and indepedent thought; and various other factors.
 
 I.e. your mileage might vary on any advice, from me or anyone else. You have to consider its context and how it fits yours.
 
 So like a workplace version of [the Rashomon effect](https://en.wikipedia.org/wiki/Rashomon_effect), what I'm saying is that "good process" is relative and not everything is a universal truth. This is your warning to consider me an unreliable narrator in the story that follows :)
 
-> insert obi wan GIF
+![](https://alabut.com/images/writing/designsprint/star-wars-meme.png)
 
 
 
 ### Who Design Sprints Are Really For <a name="who"></a>
 
-But regardless of what approach you prefer, there's one thing you learn pretty quickly when you look through different approaches to create your own workflow: there's what a technique says it'll do and *what it actually does.* Just like the recurring joke that extremely regimented and formal versions of an agile process make a team anything but agile, design sprints have stated motives that can differ from the actual real world impacts.
+But regardless of what approach you prefer, there's one thing you learn pretty quickly when you look through different approaches to create your own workflow: there's what a technique says it'll do and *what it actually does.*
 
-> insert cartoon from quora on agile vs common sense?
+Just like the recurring joke that extremely regimented and formal versions of an agile process make a team anything but agile, design sprints have stated motives that can differ from the actual real world impacts.
+
+![](https://qph.fs.quoracdn.net/main-qimg-3a64b429382574bb684bbbefb8b7563d)
 
 So let's get real about design sprints - they're more about selling the process over the long term than creating the best results in the short term.   And also maybe teaching design basics to junior designers and non-designers.
 
@@ -96,7 +99,7 @@ Anything longer than the length of a movie is a corporate group therapy session 
 But before I get into my particular format for a new and improved version of design sprints, let's go deeper on why a week-long sprint is a non-starter in many (most?) situations.
 
 
-## Specific Criticisms & Drawbacks <a name="criticisms"></a>
+## Workflow Criticisms & Drawbacks <a name="criticisms"></a>
 
 ### Startups Have No Time
 
@@ -125,7 +128,7 @@ Group insights and consensus is exactly what the mini sprint format generates wi
 
 The underlying reason why startups don't have time is actually pretty rational and applies to most other company types too: **staying busy is a survival mechanism.** People try to stay busy shipping meaningful work, otherwise they risk stagnation at best and existential threats at worst.
 
-One of the dirty secrets of business is that[work is 90 percent execution](https://zapier.com/blog/remote-book-review/). Success is less about inspiration or random strategizing than it is just plain getting shit done, day after day. Even at startups. Especially at startups, actually.
+One of the dirty secrets of business is that [work is 90 percent execution](https://zapier.com/blog/remote-book-review/). Success is less about inspiration or random strategizing than it is just plain getting shit done, day after day. Even at startups. Especially at startups, actually.
 
 It doesn't matter whether we're talking about companies that are large or small, remote or co-located, have green logos or blue... The hard truth is that all truly effective teams are stocked full of high performing ["armies of one"](http://37signals.com/svn/posts/1430-hire-managers-of-one) that are mostly busy coming up with and implementing creative solutions, rather than using creativity to generate stunningly original ideas for work.
 
@@ -202,7 +205,8 @@ If you don't and you love design sprints, then that's great! Don't let me stop y
 Don’t worry about whether the deliverables are world changing or fix all of your business needs in 5 days; think of it more as a team building exercise that indoctrinates the value of design and familiarizes everyone with the tools of the trade. Teamwork is the ultimate end result because the team will still be there while sprints and other techniques come and go, so use whatever means necessary to wear all the different hats that designers are expected to be comfortable with.
 
 > Another thing they don’t teach you in design school is what you get paid for… Mostly, designers get paid to negotiate the difficult terrain of individual egos, expectations, tastes, and aspirations of various individuals in an organization or corporation, against business needs, and constraints of the marketplace… Getting a large, diverse group of people to agree on a single new methodology for all of their corporate communications means the designer has to be a strategist, psychiatrist, diplomat, showman, and even a Svengali. The complicated process is worth money. That’s what clients pay for.
-> [Paula Scher](https://signalvnoise.com/posts/2292-another-thing-they-dont-teach-you-in-design-s)
+> [Paula Scher](https://signalvnoise.com/posts/2292-another-thing-they-dont-teach-you-in-design-s), one of the most influential graphic designers in the word and “master conjurer of the instantly familiar.”
+> ![headshot of Paula Scher](https://pentagram-production.imgix.net/b98dac18-7131-490e-ae30-486df1abf571/paula_scher_1500x1500.jpg)
 
 But if you're a designer experiencing any of the problems I described about design sprints - if you find yourself chafing under rigid formats like I did with agile when I was starting out, if you like fast teams but all you want is better design input and don't want the overhead of a dozen different exercises - just know that there are other ways you can experiment with. Techniques that are quicker and more flexible.
 
@@ -328,7 +332,7 @@ Mini sprints are one of my favorite methods for harnessing the best of individua
 
 ## Epilogue & Credits <a name="epilogue"></a>
 
-If you've actually made it this far, I can't thank you enough for giving this article that much of your attention. I'm tickled by the irony of writing over four thousand words on better ways to save time. Thankfully, workflow and process seem to be evergreen topics.
+If you've actually made it this far, I can't thank you enough for giving this article that much of your attention. I'm tickled by the irony of writing over five thousand words on better ways to save time. Thankfully, workflow and process seem to be evergreen topics.
 
 This article marks the relaunch of my blog and it's the first of several long form drafts in the pipeline about product design, UX/UI, startups and technology, so please consider [subscribing to the RSS feed](replace) or signing up for my email newsletter if you want to get future articles:
 

@@ -1,0 +1,541 @@
+
+body, html {
+    background: #f7f7f7;
+    color: #222;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#48009e+0,9f28c6+48,a80171+100 */
+    background: rgb(72,0,158); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(72,0,158,1) 0%, rgba(159,40,198,1) 48%, rgba(168,1,113,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(72,0,158,1)), color-stop(48%,rgba(159,40,198,1)), color-stop(100%,rgba(168,1,113,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(72,0,158,1) 0%,rgba(159,40,198,1) 48%,rgba(168,1,113,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(72,0,158,1) 0%,rgba(159,40,198,1) 48%,rgba(168,1,113,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(72,0,158,1) 0%,rgba(159,40,198,1) 48%,rgba(168,1,113,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(72,0,158,1) 0%,rgba(159,40,198,1) 48%,rgba(168,1,113,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48009e', endColorstr='#a80171',GradientType=0 ); /* IE6-9 */
+    background-position: 50% 100%;
+    background-size: cover;
+}
+
+.header-wrap-gray {
+    background: linear-gradient(180deg, transparent 0%, transparent 70%, rgba(17,17,17,1) 100%);
+}
+
+.header-wrap-white {
+    background: linear-gradient(180deg, transparent 0%, rgba(247,247,247,0) 66%, rgba(247,247,247,1) 100%);
+}
+
+
+@media only screen and (max-width : 576px) {
+    .header-wrap-white {
+        background: linear-gradient(180deg, transparent 0%, rgba(247,247,247,0) 40%, rgba(247,247,247,1) 70%);
+    }
+}
+
+.header-wrap-gray h1 {
+    color: #fff
+}
+
+.header-wrap-white h1 {
+    color: #222;
+}
+
+.mini-nav,
+.project-metadata,
+.work-container {
+    margin-top: 60px;
+}
+
+.mini-nav {
+    text-align: right;
+}
+
+.mini-nav a {
+    color: rgba(0,0,0,0.5);
+    margin: 0 20px;
+    padding-bottom: 2px;
+    text-decoration: none;
+}
+
+.mini-nav a:hover, .mini-nav a:focus {
+    border-bottom: 2px solid #000;
+    color: #000;
+}
+
+.mini-nav a.active-nav {
+    border-bottom: 2px solid #000;
+    color: #000;
+    cursor: default;
+}
+
+.mini-nav.white a {
+    color: rgba(255,255,255,0.5);
+}
+
+.mini-nav a:hover, .mini-nav a:focus, .mini-nav a.active-nav {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.mini-nav a:last-of-type {
+    margin-right: 0;
+}
+
+.project-metadata {
+    text-align: center;
+}
+
+.project-metadata img {
+    /*-webkit-filter: drop-shadow(0 20px 13px rgba(0,0,0,0.75));*/
+    /*width: 50%;*/
+}
+
+.project-metadata ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.project-metadata li {
+    display: inline-block;
+    margin: 30px 98px 30px 0;
+    text-align: left;
+}
+
+.work-container li {
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    display: inline;
+    float: left;
+    list-style-type: none;
+    margin: 0 25px 0 0;
+    padding: 0 25px 0 0;
+}
+
+.work-container li:last-of-type {
+    border: none;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+@media only screen and (min-width : 1200px) {
+    .project-metadata li {
+        margin-right: 47px;
+    }
+}
+
+@media only screen and (max-width : 630px) {
+    .project-metadata img {
+        /*width: 100%;*/
+    }
+
+    .work-container li {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        display: block;
+        float: none;
+        margin: 0 0 10px;
+        padding: 0 0 10px;
+    }
+}
+
+.work-container:last-of-type {
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 900;
+    margin-top: 300px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+@media only screen and (min-width : 576px) {
+    header h1 {
+        font-size: 58px;
+        margin-top: 400px;
+    }
+}
+
+@media only screen and (min-width : 992px) {
+    header h1 {
+        margin-top: 600px;
+    }
+}
+
+header h2 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 100;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+
+.embed-responsive {
+    border: 3px solid #fff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-family: Georgia;
+    font-style: italic;
+    font-weight: 900;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+article h2::before {
+    border-top: 10px solid #f15403;
+    content: '';
+    display: block;
+    margin: 30px auto;
+    width: 80px;
+}
+
+h3 {
+    border-top: 1px solid rgba(0,0,0,0.1);
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    padding-top: 26px;
+}
+
+h4 {
+    background: #222;
+    color: #fff;
+    display: inline-block;
+    font-family: Helvetica;
+    font-size: 22px;
+    font-weight: 900;
+    margin: 20px 0;
+    padding: 5px 10px;
+    text-transform: uppercase;
+}
+
+h4:last-of-type {
+    margin-bottom: 0;
+}
+
+h5 {
+    color: rgba(255,255,255,0.5);
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.work-container h5 {
+    margin-bottom: 0;
+}
+
+article a {
+    border-bottom: 2px solid #f15403;
+    color: #222;
+    padding-bottom: 2px;
+}
+
+article a:hover {
+    color: #f15403;
+    text-decoration: none;
+}
+
+article p, article li {
+    font-family: Georgia;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+article img {
+    border-radius: 10px;
+}
+
+figcaption {
+    font-family: Georgia;
+    font-style: italic;
+    margin: 10px 0 20px;
+    opacity: 0.7;
+}
+
+figcaption .credit {
+    text-align: right;
+}
+
+figcaption.center-caption {
+    text-align: center;
+}
+
+article ul {
+    padding-left: 0;
+}
+
+article li {
+    list-style: none;
+    padding-left: 20px;
+}
+
+article li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 11px;
+    width: 8px;
+    height: 8px;
+    background-color: #f15403;
+    border-radius: 50%;
+}
+
+article ul.double-entry-list strong {
+    display: block;
+}
+
+article .dark {
+    background: #111;
+    color: #fff;
+    margin: 20px 0 0;
+    padding: 40px 0
+}
+
+article .dark.leadsection {
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 40px;
+}
+
+article .dark ul {
+    margin-bottom: 0;
+}
+
+article .dark li {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    list-style-position: inside;
+    list-style-type: circle;
+    margin: 0;
+    padding: 20px 0;
+}
+
+article .dark li:first-of-type {
+    border-top: none;
+    padding-top: 0;
+}
+
+article .dark li:last-of-type {
+    padding-bottom: 0;
+}
+
+article .dark li::before {
+    content: none;
+}
+
+article .dark h2 {
+    margin: 0 0 20px;
+}
+
+article .orange {
+    background: #F15403;
+    
+    margin-top: 20px;
+    padding: 60px 0;
+}
+
+article .dark + .orange {
+    margin-top: 0;
+
+}
+
+article .orange + .dark {
+    margin-top: 0;
+    padding-top: 60px;
+}
+
+article .blockquote.filled {
+    background: #222;
+    color: #fff;
+    border-left: 10px solid #f15403;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-radius: 0;
+    color: #fff;
+    font-weight: 900;
+    margin: 0 0 20px;
+    padding: 40px;
+}
+
+article .filled a {
+    color: #777;
+}
+
+article .filled a:hover {
+    color: #f15403;
+}
+
+.blockquote {
+    border: 10px solid rgba(0,0,0,0.1);
+    border-radius: 10px;
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+.orange-fill {
+    border-left-color: #f15403;
+    border-left-width: 10px;
+    color: #f15403;
+    font-style: italic;
+    padding: 0 20px;
+}
+
+.orange-fill, .orange-fill p {
+    font-weight: 900;
+}
+
+.orange-fill footer {
+    color: #222;
+    font-style: normal;
+}
+
+article .dark .blockquote {
+    border: 3px solid rgba(255,255,255,0.1);
+    font-size: 36px;
+    margin: 40px 0;
+    padding: 40px;
+}
+
+article .blockquote .caption {
+    display: block;
+    font-size: 22px;
+    margin-top: 20px;
+}
+
+article .blockquote.table-of-contents {
+    background: #222;
+    color: #fff;
+    margin: 40px 0;
+    padding: 30px 40px 20px;
+}
+
+article .blockquote.table-of-contents h1 {
+    border-bottom: 5px solid rgba(255,255,255,0.1);
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding-bottom: 7px;
+    text-transform: uppercase;
+}
+
+article .blockquote.table-of-contents ol {
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+article .blockquote.table-of-contents ol ol {
+    margin-bottom: 20px;
+}
+
+article .table-of-contents li::before {
+    background-color: transparent;
+    border: 1px solid rgba(255,255,255,0.5);
+    top: 9px;
+}
+
+article .table-of-contents > ol >li::before {
+    background-color: #fff;
+    border: none;
+}
+
+article .table-of-contents li {
+    margin-bottom: 10px;
+}
+
+article .table-of-contents li a {
+    color: #fff;
+}
+
+article .table-of-contents li a:hover {
+    color: #f15403;
+}
+
+.tweet-wrapper {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.dark .intro {
+    border-color: rgba(255,255,255,0.1);
+}
+
+.ornamental-first-letter {
+    font-size: 50px;
+    line-height: 50px;
+    /******************
+    ⬆⬆⬆ Font-size and line-height must be matching for the proper effect.
+    ******************/
+    color: #f15403;
+    float: left;
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+@media only screen and (min-width : 576px) {
+    article p, article li {
+        font-size: 22px;
+    }
+
+    .ornamental-first-letter {
+        font-size: 62px;
+        line-height: 62px;
+    }
+}
+
+.blockquote .ornamental-first-letter {
+    line-height: 0;
+    margin-top: 38px;
+}
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+.monogram {
+    margin: 80px auto;
+}
+
+.footer {
+    background: transparent;
+    margin-top: 0;
+}
+
+.footer .mini-nav {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.footer .footer-wrap {
+    border-top: 1px solid rgba(0,0,0,0.1);
+    padding-top: 30px;
+}
+
+.footer .mini-nav a, .footer .mini-nav a.active-nav {
+    border-color: rgba(0,0,0,0.5);
+    color: rgba(0,0,0,0.5);
+}
+
+.footer .mini-nav a:hover {
+    border-color: #000;
+    color: #000;
+}
