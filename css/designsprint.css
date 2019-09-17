@@ -314,6 +314,14 @@ article .dark.leadsection {
     padding-bottom: 40px;
 }
 
+article .dark a {
+    color: #fff;
+}
+
+article .dark a:hover {
+    color: #f15403;
+}
+
 article .dark ul {
     margin-bottom: 0;
 }
@@ -343,6 +351,10 @@ article .dark h2 {
     margin: 0 0 20px;
 }
 
+article .dark h3 {
+    border-color: rgba(255,255,255,0.1);
+}
+
 article .orange {
     background: #F15403;
     
@@ -358,6 +370,10 @@ article .dark + .orange {
 article .orange + .dark {
     margin-top: 0;
     padding-top: 60px;
+}
+
+article .orange img {
+    box-shadow: 0 11px 30px 0px rgba(0,0,0,0.5);
 }
 
 article .blockquote.filled {
@@ -407,7 +423,7 @@ article .filled a:hover {
 }
 
 article .dark .blockquote {
-    border: 3px solid rgba(255,255,255,0.1);
+    border-left: 10px solid rgba(255,255,255,0.1);
     font-size: 36px;
     margin: 40px 0;
     padding: 40px;
@@ -538,4 +554,18 @@ article .table-of-contents li a:hover {
 .footer .mini-nav a:hover {
     border-color: #000;
     color: #000;
+}
+
+.dark .footer .footer-wrap {
+    border-color: rgba(255,255,255,0.1);
+}
+
+.dark .footer .mini-nav a, .dark .footer .mini-nav a.active-nav {
+    border-color: rgba(255,255,255,0.5);
+    color: rgba(255,255,255,0.5);
+}
+
+.dark .footer .mini-nav a:hover {
+    border-color: #fff;
+    color: #fff;
 }
