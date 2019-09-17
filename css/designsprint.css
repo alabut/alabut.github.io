@@ -30,7 +30,7 @@ header {
 }
 
 
-@media only screen and (max-width : 576px) {
+@media only screen and (max-width : 767.98px) {
     .header-wrap-white {
         background: linear-gradient(180deg, transparent 0%, rgba(247,247,247,0) 40%, rgba(247,247,247,1) 70%);
     }
@@ -506,7 +506,7 @@ article .table-of-contents li a:hover {
     margin-right: 10px;
 }
 
-@media only screen and (min-width : 576px) {
+@media only screen and (min-width : 767.98px) {
     article p, article li {
         font-size: 22px;
     }
@@ -568,4 +568,29 @@ article .table-of-contents li a:hover {
 .dark .footer .mini-nav a:hover {
     border-color: #fff;
     color: #fff;
+}
+
+.avatar img {
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 767.98px) {
+
+    .footer-top-border {
+        display: none;
+    }
+
+    .avatar {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199.98px) {
+
+    .bio {
+        margin-top: 20px;
+    }
+
 }
