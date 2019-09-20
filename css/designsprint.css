@@ -44,13 +44,8 @@ header {
     color: #222;
 }
 
-.mini-nav,
-.project-metadata,
-.work-container {
-    margin-top: 60px;
-}
-
 .mini-nav {
+    margin-top: 60px;
     text-align: right;
 }
 
@@ -83,67 +78,6 @@ header {
 
 .mini-nav a:last-of-type {
     margin-right: 0;
-}
-
-.project-metadata {
-    text-align: center;
-}
-
-.project-metadata img {
-    /*-webkit-filter: drop-shadow(0 20px 13px rgba(0,0,0,0.75));*/
-    /*width: 50%;*/
-}
-
-.project-metadata ul {
-    list-style-type: none;
-    margin-left: 0;
-    padding-left: 0;
-}
-
-.project-metadata li {
-    display: inline-block;
-    margin: 30px 98px 30px 0;
-    text-align: left;
-}
-
-.work-container li {
-    border-right: 1px solid rgba(255, 255, 255, 0.5);
-    display: inline;
-    float: left;
-    list-style-type: none;
-    margin: 0 25px 0 0;
-    padding: 0 25px 0 0;
-}
-
-.work-container li:last-of-type {
-    border: none;
-    margin-right: 0;
-    padding-right: 0;
-}
-
-@media only screen and (min-width : 1200px) {
-    .project-metadata li {
-        margin-right: 47px;
-    }
-}
-
-@media only screen and (max-width : 630px) {
-    .project-metadata img {
-        /*width: 100%;*/
-    }
-
-    .work-container li {
-        border-right: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-        display: block;
-        float: none;
-        margin: 0 0 10px;
-        padding: 0 0 10px;
-    }
-}
-
-.work-container:last-of-type {
-    margin-bottom: 40px;
 }
 
 header h1 {
@@ -219,10 +153,6 @@ h4 {
     margin: 20px 0;
     padding: 5px 10px;
     text-transform: uppercase;
-}
-
-h4:last-of-type {
-    margin-bottom: 0;
 }
 
 h5 {
@@ -308,9 +238,15 @@ article .dark {
     padding: 40px 0
 }
 
+article .dark + .dark {
+    margin: 0;
+    padding-top: 0;
+}
+
 article .dark.leadsection {
     margin-top: 0;
     margin-bottom: 20px;
+    padding-top: 0;
     padding-bottom: 40px;
 }
 
@@ -364,7 +300,6 @@ article .orange {
 
 article .dark + .orange {
     margin-top: 0;
-
 }
 
 article .orange + .dark {
@@ -374,6 +309,10 @@ article .orange + .dark {
 
 article .orange img {
     box-shadow: 0 11px 30px 0px rgba(0,0,0,0.5);
+}
+
+article .section-without-leading-subheader {
+    padding-top: 40px;
 }
 
 article .blockquote.filled {

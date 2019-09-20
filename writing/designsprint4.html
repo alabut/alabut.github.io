@@ -76,7 +76,7 @@
                                         <ol>
                                             <li><a href="#origin">Agile Spinoff</a></li>
                                             <li><a href="#problems">Some Designers Are Wary</a></li>
-                                            <li><a href="#mileage">Your Mileage May Vary</a></li>
+                                            <li><a href="#relative">All Advice Is Relative</a></li>
                                             <li><a href="#who">Who Design Sprints Are Really For</a></li>
                                         </ol>
                                     </li>
@@ -92,7 +92,7 @@
                                     <li>
                                         Alternatives
                                         <ol>
-                                            <li><a href="#alternatives">So What Do Experienced Designers Do Instead?</a></li>
+                                            <li><a href="#alternatives">What Do Experienced Designers Do Instead?</a></li>
                                             <li><a href="#minisprint">The Mini Sprint: One Collaboration Tool Among Many</a></li>
                                             <li><a href="#results">Results</a></li>
                                             <li><a href="#benefits">Benefits</a></li>
@@ -109,9 +109,28 @@
 
                             <p>Designers have been working within a sprint format on engineering-centric teams for a long time, well before the term became popular, but what brought the term to the tipping point of broad awareness is the particular format popularized by Google Ventures and <a href="#">their book documenting the process.</a></p>
 
+                            <p style="background-color: red;">Insert short list of commonalities with agile...</p>
+
                             <p>It’s easy to see why the practice has such widespread appeal. It’s easy to learn, emphasizes collaboration, shortcuts engineering overhead with testable prototypes that force you out of the building, and focuses on execution within a specific timeframe, compared to the vague and hand wavy principles of <a href="#">“design thinking”</a>.</p>
 
-                            <p>Junior designers in particular seem to benefit from it, from what I’ve gleaned on popular forums like <a href="#">Designers Guild.</a> A well-documented process is fantastic for those early in the skill acquisition phase of their career, as well as for those (in more repetitive? or client-focused? needing transparency? something to distinguish it from the results-oriented product work) environments like big companies or agencies.</p>
+                            <p>Junior designers in particular seem to benefit from it, from what I’ve gleaned on popular forums like <a href="#">Designers Guild.</a> A well-documented process is fantastic for those early in the skill acquisition phase of their career, as well as for those in more specialized and repetitive environments like agencies or big companies.</p>
+
+                            <p>Still, I remember being a bit surprised when design sprints first started to get popular. I remember thinking, <em>doesn’t everyone know this stuff already?</em></p>
+
+                            <p>I'm not saying good design and UX principles are universal these days, just that the tools for tackling those challenges seem pretty well documented. It's not like design sprints are bringing awareness to new techniques like when the UX field was first starting up. Design sprints sounded like just a timeboxed remix of typical best practices wrapped up in new packaging: group brainstorming, usability tests, quick prototypes, etc. Basic stuff taught in any school or bootcamp these days, and very easy to pick up for the self-taught types like myself.</p>
+
+                            <p><strong>In fact, I should be exactly the target audience for a fast and wide-ranging approach like this:</strong> a designer from a technical background that's super familiar with developers, agile techniques, and working on fast teams.</p>
+
+                            <p>Being a designer at startups is particularly challenging and takes a specific kind of attitude, whether learned or acquired. A sort of punk rock level of independence that doesn't mind being a lone wolf fastly outnumbered by engineers and business types. I'll check out anything that's down with the cause of making design faster and purports to have even more experience with startups than I do.</p>
+
+                            <p>It’s an admirable goal for Google Ventures to be inspired by the challenges of early stage startups and come up with new techniques for designers to be more nimble and execution-oriented. But without getting into the age-old debate on the drawbacks of agile, it reminds me of a paraphrased version of <a href="https://blog.codinghorror.com/regular-expressions-now-you-have-two-problems/">an old saying about regular expressions:</a></p>
+
+                            <blockquote class="blockquote filled">
+                                <p>Some designers struggle to keep up with developers and think <em>“I know, I’ll make our design process more like agile&nbsp;development.”</em></p>
+                                <p><strong>Now you’ve got two problems.</strong></p>
+                            </blockquote>
+
+                            <p>Well more like at least four problems, as I’ll describe in the section on workflow obstacles.</p>
 
                             <h3>Some Designers Are Wary</h3>
 
@@ -119,50 +138,38 @@
 
                             <p>Well, I’m not sure I’d like it. And I’m not alone.</p>
 
-                            <p class="blockquote filled" style="
-                            ">
+                            <p class="blockquote filled">
                                 <span class="quotemark" style="
-                                background-image: url(../images/writing/designsprint/quotemark-orange.svg);
-                                background-repeat: no-repeat;
-                                background-position: 50% 0;
-                                display: block;
-                                height: 100px;
-                            "></span>
-                                                            <em>I am utterly and completely tired of anyone who claims to have a one size fits all design process to solve all problems. It’s lazy, misleading, and a sign of junior designer who can’t objectively choose the right process for the current problem.</em>
-                                                            <cite style="
-                                display: inline-block;
-                                margin-top: 20px;
-                                font-style: normal;
-                                font-weight: 100;
-                                opacity: 0.7;
-                            ">— Private message from a senior design executive</cite>
+                                    background-image: url(../images/writing/designsprint/quotemark-orange.svg);
+                                    background-repeat: no-repeat;
+                                    background-position: 50% 0;
+                                    display: block;
+                                    height: 100px;">
+                                </span>
+                                <em>
+                                    I am utterly and completely tired of anyone who claims to have a one size fits all design process to solve all problems. It’s lazy, misleading, and a sign of junior designer who can’t objectively choose the right process for the current problem.
+                                </em>
+                                <cite style="
+                                    display: inline-block;
+                                    margin-top: 20px;
+                                    font-style: normal;
+                                    font-weight: 100;
+                                    opacity: 0.7;">
+                                    — Private message from a senior design executive
+                                </cite>
                             </p>
 
                             <p>I’m sure every process has its detractors and it’s not a fit for every situation, so that’s to be expected and perfectly normal. All I knew personally is that I felt a need to document my own process because I had misgivings about the week-long version and wanted to think through why that was.</p>
 
                             <p>Then I found out that I’m not the only one with reservations after privately quizzing a few well-respected friends to get their candid takes. I thought maybe it was just the teams I was used to - super scrappy seed stage startups - but pinging others made me realize it might be more about the experience level of the designer than the situation.</p>
 
-                            <p>I remember being a bit surprised when design sprints first started to get popular. I remember thinking, <em>doesn’t everyone know this stuff already?</em> It looked like just a summary of the typical best practices wrapped up in new packaging: group brainstorming, usability tests, quick prototypes, etc.</p>
-
-                            <p><strong>In fact, I should be exactly the target audience for a fast and wide-ranging approach like this:</strong> someone used to being a lone wolf on small fast teams, a former developer using technical skills to integrate better with engineers, as well as more quickly implement and iterate on my own work. Someone comfortable with the sprint format from the agile development world.</p>
-
-                            <p>It’s an admirable goal to be inspired by agile sprints to integrate designers into a more nimble approach. But to paraphrase <a href="https://blog.codinghorror.com/regular-expressions-now-you-have-two-problems/">an old saying about regular expressions:</a></p>
-
-                            <blockquote class="blockquote filled">
-                                <p>Some people wrestling with the design problems at a typical startup think <em>“I know, I’ll use agile-inspired techniques to make design more like engineering.”</em></p>
-                                <p>Now you’ve got two problems.</p>
-                            </blockquote>
-
-                            <p>Well more like at least four problems, as I’ll describe in a little bit: time, execution, respect and expertise.</p>
-
-
-                            <h3>Your Mileage May Vary <a name="mileage"></a></h3>
+                            <h3>All Advice Is Relative <a name="relative"></a></h3>
 
                             <p>Just to be clear, it’s not that I’m completely against agile development, design sprints, or any other techniques. I’m just wary of using any one rigid process to solve everything. Hammers and nails and all that.</p>
 
                             <p>It might just be experience talking, the types of places I've been at, or maybe it's the more independent way I like to work and learn, I don't know, but whatever my own idiosyncratic approach is, having an eclectic appetite has worked pretty well for me over the years and helped me survive in the most demanding segment of a demanding industry.</p>
 
-                            <p>So while I haven't hit any home runs in my career by any means, I'm proud of the base hits and doubles: designing useful things that <a href="https://techcrunch.com/2010/01/14/cake-financial-acquired-etrade/">get</a> <a href="https://www.prnewswire.com/news-releases/rubicon-project-acquires-isocket-and-shiny-ads-282920711.html">acquired</a>, <a href="https://techcrunch.com/2012/10/15/referly-1m/">cofounding funded companies</a>, and going through <a href="https://ycombinator.com">the world's most prestigious startup incubator</a>, among other highlights. I like to think that means I know what I'm doing while also staying hungry for new methods.</p>
+                            <p>So while I haven't hit any home runs in my career by any means, I'm proud of the base hits: designing <a href="https://techcrunch.com/2010/01/14/cake-financial-acquired-etrade/">useful things</a> that <a href="https://www.prnewswire.com/news-releases/rubicon-project-acquires-isocket-and-shiny-ads-282920711.html">get acquired</a>, <a href="https://techcrunch.com/2012/10/15/referly-1m/">cofounding companies</a>, going through <a href="https://ycombinator.com">the world's most prestigious startup incubator</a>, and generally surviving and thriving in the ever-changing world of tech. I like to think that means I know what I'm doing while also staying hungry for new methods.</p>
 
                             <p>A more ambidexturous approach to process might be a personality thing but it’s also definitely a function of seniority. When you’re experienced enough, you’ll have learned different methodologies over time and picked the bits out that work for you to form your own flexible and idiosyncratic methods that play to your unique strengths.</p>
 
@@ -172,7 +179,7 @@
 
                             <p>I.e. your mileage might vary on any advice, from me or anyone else. You have to consider its context and how it fits yours.</p>
 
-                            <p><img class="img-responsive center-block" src="https://alabut.com/images/writing/designsprint/star-wars-meme.png"></p>
+                            <p><img class="img-responsive center-block" src="../images/writing/designsprint/rotj-meme.png"></p>
 
                             <p>So like a workplace version of <a href="https://en.wikipedia.org/wiki/Rashomon_effect">the Rashomon effect</a>, what I’m saying is that “good process” is relative and not everything is a universal truth. This is your warning to consider me an unreliable narrator in the story that follows :)</p>
 
@@ -182,21 +189,23 @@
 
                             <p>But regardless of experience or preferred approach, there’s one thing you learn pretty quickly when creating your own workflow from different techniques: there’s what a methodology says it’ll do and <em>what it actually does.</em></p>
 
-                            <p>For example, it's a recurring joke that extremely regimented and formal versions of an agile process make a development team anything but agile. That's for a good reason, since agile is really about expectation management for stakeholders and avoiding executive randomization of engineering pipelines.</p>
+                            <p>For example, it's a recurring joke that <strong>extremely regimented and formal versions of an agile process make a development team anything but agile.</strong> That's for a good reason, since agile is really about expectation management for stakeholders and avoiding executive randomization of engineering pipelines.</p>
 
                             <p>Simlarly, design sprints aren't really about producing amazing design work and have stated goals that differ from the underlying real world effects.</p>
 
                             <p style="display: none;"><img class="img-responsive center-block" src="https://qph.fs.quoracdn.net/main-qimg-3a64b429382574bb684bbbefb8b7563d"></p>
 
-                            <blockquote class="blockquote filled">
-                                <p>So let’s get real - design sprints are more about selling a long term process to stakeholders than creating the best short term results for the team.</p>
+                            <p class="blockquote filled">
+                                <span style="display: block;">So let’s get real - design sprints are more about selling a long term process to stakeholders than creating the best short term results for the team.</span>
 
-                                <p>Plus also maybe teaching the basics of design methods and communication skills to junior designers and non-designers.</p>    
+                                <span style="display: block;margin-top: 20px;">Plus also maybe teaching the basics of design methods and communication skills to junior designers and non-designers.</span>    
                             </blockquote>
 
-                            <p>Design sprints are more about generating buy-in for common best practices so that stakeholders and engineers will be understanding about the time required to cook up actually decent work.</p>
+                            <p>Design sprints are more about generating buy-in for common best practices so that stakeholders and engineers will be understanding about the time and research required to cook up decent designs, instead of rushed work that might not solve underlying UX issues. It's much like the way agile development uses transparency into engineering tasks to buy enough time to do development with little or no technical debt, as opposed to the fragile and smelly code base that comes from constantly switching goals at an executive whim.</p>
 
                             <p>A secondary goal is to act as a communication bootcamp for junior designers to learn how to lead teams proactively instead of reactively creating whatever’s dicated to them. I.e. to independently think through problems rather than simply throwing mud on the wall because of <a href="https://outline.com/SumnzP">"the hippo" - the highest paid person's opinion.</a></p>
+
+                            <p style="background-color: red;">Junior designers: communication and testable prototypes</p>
 
 
                         </div> <!-- /col-sm-8 col-sm-offset-2 -->
@@ -216,7 +225,7 @@
                     </div> <!-- row -->
                 </div> <!-- /container -->
             </section>
-            <section>
+            <section class="section-without-leading-subheader">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-8 col-sm-offset-2">
@@ -379,7 +388,7 @@
                     </div> <!-- row -->
                 </div> <!-- /container -->
             </section>
-            <section>
+            <section class="section-without-leading-subheader">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-8 col-sm-offset-2">
@@ -414,7 +423,7 @@
 
                             <h2>Alternatives <a name="alternatives"></a></h2>
 
-                            <h3>So What Do Experienced Designers Do Instead?</h3>
+                            <h3>What Do Experienced Designers Do Instead?</h3>
 
                             <p>So that’s enough about the problems of long and regimented design sprints. Before getting into the details of yet another technique, let’s recap my overall princples of how to do good work and show design leadership on fast-moving teams:</p>
 
@@ -425,13 +434,17 @@
                             <li><strong>Avoid groupthink.</strong> Don’t shirk hard decisions for the sake of consensus, or you’ll just make lowest common denominator Frankenstein designs.</li>
                             </ol>
 
+                            <p style="background-color: red;">Insert transition to better exercise for team input...</p>
+
                             <h3>The Mini Sprint: One Collaboration Tool Among Many <a name="minisprint"></a></h3>
 
                             <p>That’s why I’ve sought out a better approach for collecting design input, something that’s better than a typical brainstorming session with whiteboards and fits with my approach to teamwork on fast teams that I outlined above.</p>
 
-                            <p>[insert a link to Will Evans? something about how I first heard about it from him and it’s worked pretty great in all the years since]</p>
+                            <p style="background-color: red;">[insert a link to Will Evans? something about how I first heard about it from him and it’s worked pretty great in all the years since]</p>
 
                             <p>I’m not saying I have all the answers, just that people should try something different if they’ve had similar reservations.</p>
+
+                            <p style="background-color: red;">Move pro-sprint section to intro?</p>
 
                             <p>If you don’t and you love design sprints, then that’s great! Don’t let me stop you and have fun continuing to practice your craft and learn new skills.</p>
 
@@ -512,8 +525,16 @@
                             <li><em>Goal: divergent thought — create many different approaches.</em></li>
                             </ul>
 
-                            <p>Every person will sketch silently by themselves without talking to anyone else.</p>
+                            <p>Every person will jot down their initial ideas without talking to anyone else.</p>
+                        </div> <!-- /col-sm-8 col-sm-offset-2 -->
+                    </div> <!-- row -->
+                </div> <!-- /container -->
+            </section>
 
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
                             <figure>
                                 <img class="img-responsive center-block grayscale" src="https://www.classicist.org/assets/images/articles/_crop32/GroupSketch_1_photocredit_PeterOlson.jpg" alt="">
                                 <figcaption>
@@ -527,7 +548,15 @@
                                     </div> <!-- /row -->                        
                                 </figcaption>
                             </figure>
+                        </div> <!-- /col -->
+                    </div> <!-- row -->
+                </div> <!-- /container -->
+            </section>
 
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2">
                             <p>To help them get the ball rolling and shake out a wide range of initial ideas without falling in love with the first thought they have, I have everyone do what’s called a 6-up. You divide your first paper into six evenly-sized boxes and fill them up with as many different concepts as possible.</p>
 
                             <figure>
@@ -555,12 +584,21 @@
                             <h4>2nd Round: Incorporate Feedback</h4>
 
                             <ul>
-                            <li><em>Time: 10 minutes (5 min sketching + 5 min discussion)</em></li>
-                            <li><em>Goal: transition from divergent brainstorming to convergent decisions on the most promising ideas.</em></li>
+                                <li><em>Time: 10 minutes (5 min sketching + 5 min discussion)</em></li>
+                                <li><em>Goal: transition from divergent brainstorming to convergent decisions on the most promising ideas.</em></li>
                             </ul>
 
                             <p>Everyone goes back to 5 minutes of sketching alone without talking again, but this time with new instructions: <em>they’re required to steal at least one piece of feedback they got from one of their team members.</em> Then the subteams will get another 5 minutes for everyone to share their work and discuss further.</p>
 
+                        </div> <!-- /col-sm-8 col-sm-offset-2 -->
+                    </div> <!-- row -->
+                </div> <!-- /container -->
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
                            <figure>
                                 <img class="img-responsive center-block grayscale" src="https://images.unsplash.com/photo-1546016366-bf061374d54e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1300&amp;q=80" alt="">
                                 <figcaption>
@@ -574,16 +612,34 @@
                                     </div> <!-- /row -->                        
                                 </figcaption>
                             </figure>
+                        </div> <!-- /col -->
+                    </div> <!-- row -->
+                </div> <!-- /container -->
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2">
 
                             <p><strong>The focus of this round is to begin the transition from divergence to convergence</strong> - to start picking the best ideas from the crop and evolving them, rather than aiming for volume and throwing random mud on the wall in a scattershot melee.</p>
 
-                            <p>Again, in practice, it’s hard to get people to quiet down and start the next round. That’s a good sign! It means the synapses are firing and ideas are flowing.</p>
+                            <p class="blockquote filled">
+                                <span class="quotemark" style="
+                                    background-image: url(../images/writing/designsprint/tip-icon.svg);
+                                    background-repeat: no-repeat;
+                                    background-position: 50% 0;
+                                    display: block;
+                                    height: 100px;
+                                "></span>
+                                <em>Pro tip: in practice, it’s hard to get people to quiet down and start the next round. That’s a good sign! It means the synapses are firing and ideas are flowing.</em>
+                            </p>
 
                             <h4>3rd round: Design Decisions</h4>
 
                             <ul>
-                            <li><em>Time: 10 minutes (simultaneous sketching &amp; discussion)</em></li>
-                            <li><em>Goal: create consensus and converge on design decisions.</em></li>
+                                <li><em>Time: 10 minutes (simultaneous sketching &amp; discussion)</em></li>
+                                <li><em>Goal: create consensus and converge on design decisions.</em></li>
                             </ul>
 
                             <p>For the final round of sketching, the groups now have a new task. Instead of sketching individually without talking, they have to do the exact opposite: talk their way into deciding a single set of interfaces to present to the other groups.</p>
@@ -605,8 +661,8 @@
                             <h4>Final Presentations</h4>
 
                             <ul>
-                            <li><em>Time: 30+ minutes (each group presents for 5 min + gets 5 min of feedback)</em></li>
-                            <li><em>Goal: share your best ideas.</em></li>
+                                <li><em>Time: 30+ minutes (each group presents for 5 min + gets 5 min of feedback)</em></li>
+                                <li><em>Goal: share your best ideas.</em></li>
                             </ul>
 
                             <p>Then comes the fun part - seeing what everyone came up with. The sub-teams all presented to the rest of the company and got insights into the different projects.</p>
@@ -624,11 +680,11 @@
                                     </div> <!-- /row -->                        
                                 </figcaption>
                             </figure>
-
-                        </div> <!-- /col-sm-8 col-sm-offset-2 -->
+                        </div> <!-- /col -->
                     </div> <!-- row -->
                 </div> <!-- /container -->
             </section>
+
             <section class="dark">
                 <div class="container">
                     <div class="row">
@@ -660,8 +716,16 @@
                                     color: #777;
                                 ">- <a href="https://twitter.com/wadefoster" style="border-color: #777;">Wade Foster</a>, CEO of Zapier</cite>
                             </p>
+                        </div> <!-- /col-sm-8 col-sm-offset-2 -->
+                    </div> <!-- row -->
+                </div> <!-- /container -->
+            </section>
 
-                           <figure>
+            <section class="dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <figure>
                                 <img class="img-responsive center-block grayscale" src="https://zapier.cachefly.net/storage/photos/c422be9b76e6ccc754ad061cc071b5ae.jpg" alt="Picture of various paper sketches">
                                 <figcaption>
                                     <div class="row">
@@ -674,10 +738,16 @@
                                     </div> <!-- /row -->                        
                                 </figcaption>
                             </figure>
+                        </div> <!-- /col -->
+                    </div> <!-- row -->
+                </div> <!-- /container -->
+            </section>
 
+            <section class="dark">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2">
                             <p>These look like crazy ransom notes to the untrained eye but were insightful internal ideas for improving Zapier at the time. For example, the support team had a lot of thoughts to share about the onboarding process, the developers clustered together to talk about third-party integrations, and marketing folks tackled app discovery.</p>
-                            </ul>
-
                         </div> <!-- /col-sm-8 col-sm-offset-2 -->
                     </div> <!-- row -->
                 </div> <!-- /container -->
@@ -700,12 +770,13 @@
                             <p>A mini sprint can…</p>
 
                             <ul>
-                            <li><strong>Simultaneously create divergent ideas and convergent decisions.</strong> Typically, idea generation is diametrically opposed to synthesis and getting those two modes confused is one of the most common ways I’ve seen meetings get derailed when discussing design work. It’s really hard to come up with a variety of ideas without spinning off into useless orbits, and then to organize them without shutting down interesting avenues too early. (see <a href="https://www.justinmind.com/blog/double-diamond-model-what-is-should-you-use/">the double diamond process</a> for more background info)</li>
-                            <li><strong>Balance individual contribution with group insights.</strong> Any team exercise is an automatic failure if it’s no better than just thinking about a problem by yourself or going with the lowest common denominator from the crowd. It has to be the best of both, or at least be clear about which mode you’re in.</li>
-                            <li><strong>Quickly express visual ideas.</strong> It’s a visual technique instead of a writing-centric one so that it’s not in danger of turning into <a href="https://signalvnoise.com/archives/001050.php">a boring functional spec with an illusion of agreement.</a> Rough little drawings can done rapidly and ideas can be expressed fast enough to evolve them in a loose conversational manner.</li>
-                            <li><strong>Be extremely multi-threaded.</strong> It’s better when a team can cycle through ideas for several projects simultaneously, rather than go in circles on a single topic.</li>
-                            <li><strong>Be easily archived.</strong> Using paper instead of whiteboards makes it ideal for flipping back through past ideas, instead of being stuck on a single drawing.</li>
-                            <li><strong>Be a fun exercise instead of a painful debate.</strong> That’s really the underlying goal, not some dry metric on productivity. You want your team to be feeling those intangible positives that come from a truly great meeting, the kind that improves on both product direction as well as morale.</li>
+                                <li><strong>Simultaneously create divergent ideas and convergent decisions.</strong> Typically, idea generation is diametrically opposed to synthesis and getting those two modes confused is one of the most common ways I’ve seen meetings get derailed when discussing design work. It’s really hard to come up with a variety of ideas without spinning off into useless orbits, and then to organize them without shutting down interesting avenues too early. (see <a href="https://www.justinmind.com/blog/double-diamond-model-what-is-should-you-use/">the double diamond process</a> for more background info)</li>
+                                <li><strong>Balance individual contribution with group insights.</strong> Any team exercise is an automatic failure if it’s no better than just thinking about a problem by yourself or going with the lowest common denominator from the crowd. It has to be the best of both, or at least be clear about which mode you’re in.</li>
+                                <li><strong>Quickly express visual ideas.</strong> It’s a visual technique instead of a writing-centric one so that it’s not in danger of turning into <a href="https://signalvnoise.com/archives/001050.php">a boring functional spec with an illusion of agreement.</a> Rough little drawings can done rapidly and ideas can be expressed fast enough to evolve them in a loose conversational manner.</li>
+                                <li><strong>Be extremely multi-threaded.</strong> It’s better when a team can cycle through ideas for several projects simultaneously, rather than go in circles on a single topic.</li>
+                                <li><strong>Be easily archived.</strong> Using paper instead of whiteboards makes it ideal for flipping back through past ideas, instead of being stuck on a single drawing.</li>
+                                <li><strong>Be a fun exercise instead of a painful debate.</strong> That’s really the underlying goal, not some dry metric on productivity. You want your team to be feeling those intangible positives that come from a truly great meeting, the kind that improves on both product direction as well as morale.</li>
+                            </ul>
 
                             <h2>Wrapping Up <a name="conclusion"></a></h2>
 
@@ -715,12 +786,12 @@
 
                             <h2>Epilogue &amp; Credits <a name="epilogue"></a></h2>
 
-                            <p>If you’ve actually made it this far, I can’t thank you enough for giving this article that much of your attention. I’m tickled by the irony of writing over four thousand words on better ways to save time. Thankfully, workflow and process seem to be evergreen topics.</p>
+                            <p>If you’ve actually made it this far, I can’t thank you enough for giving this article that much of your attention. I’m tickled by the irony of writing over five thousand words on better ways to save time. Thankfully, workflow and process seem to be evergreen topics.</p>
 
                             <p>This article marks the relaunch of my blog and it’s the first of several long form drafts in the pipeline about product design, UX/UI, startups and technology, so please consider <a href="replace">subscribing to the RSS feed</a> or signing up for my email newsletter if you want to get future articles:</p>
 
                             <blockquote>
-                            <p>[insert mailchimp form here]</p>
+                            <p style="background-color: red;">[insert mailchimp form here]</p>
                             </blockquote>
 
                             <hr>
@@ -736,7 +807,7 @@
 
                             <p><img class="monogram img-responsive center-block" src="../images/writing/monogram-signature.png"></p>
 
-                            <p class="blockquote">Note: an earlier version of this article was originally published on <a href="https://zapier.com/blog/run-a-design-studio/">the Zapier company blog.</a> I added  <em>a metric shit ton of edits</em> to build out this more in-depth piece.</p>
+                            <p class="blockquote">Note: I first shared the structured brainstorming technique on <a href="https://zapier.com/blog/run-a-design-studio/">the Zapier company blog,</a> where I referred to it by the earlier name of "design studio".</p>
 
                             <h3 style="border: none; padding-top: 0;">Credits:</h3>
 
