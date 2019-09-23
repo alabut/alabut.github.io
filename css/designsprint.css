@@ -358,9 +358,17 @@ article .filled a:hover {
 
 article .dark .blockquote {
     border-left: 10px solid rgba(255,255,255,0.1);
-    font-size: 36px;
+    font-size: 22px;
     margin: 40px 0;
     padding: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    article .dark .blockquote {
+        font-size: 36px;
+    }
+
 }
 
 article .blockquote .caption {
@@ -454,6 +462,28 @@ article .table-of-contents li a:hover {
 .blockquote .ornamental-first-letter {
     line-height: 0;
     margin-top: 38px;
+}
+
+.superheader {
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.superheadline {
+    display: block;
+    font-size: 22px;
+    font-style: italic;
+    line-height: 120%;
+    margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .superheadline {
+        font-size: 58px;
+        margin-bottom: 60px;
+    }
+
 }
 
 .grayscale {
