@@ -515,6 +515,22 @@ article .table-of-contents li a:hover {
     max-width: 60px;
 }
 
+.grayscale-quote {
+    background: #ededed;
+    border: none;
+    border-radius: 0;
+    border-left: 10px solid darkslategray;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.15);
+    color: darkslategray;
+    margin: 50px 0 40px;
+}
+
+.grayscale-quote strong {
+    font-family: Helvetica;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
 .superheader {
     padding-bottom: 70px;
     text-align: center;
