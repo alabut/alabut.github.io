@@ -332,6 +332,13 @@ article .filled a:hover {
     color: #f15403;
 }
 
+article .blockquote.whitebox {
+    background: #fff;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.05);
+    color: #222;
+    margin: 50px 0 40px;
+}
+
 .blockquote {
     border: 10px solid rgba(0,0,0,0.1);
     border-radius: 10px;
@@ -462,6 +469,50 @@ article .table-of-contents li a:hover {
 .blockquote .ornamental-first-letter {
     line-height: 0;
     margin-top: 38px;
+}
+
+.blockquote.with-citation {
+    text-align: center;
+}
+
+.blockquote.with-citation em {
+    display: block;
+    text-align: left;
+}
+
+.blockquote.with-citation em + em {
+    margin-top: 20px;
+}
+
+.blockquote cite {
+    border: 2px solid rgba(255,255,255,0.1);
+    border-radius: 50px;
+    color: #777;
+    display: inline-block;
+    font-style: normal;
+    font-weight: 100;
+    margin-top: 40px;
+    padding: 10px 20px 10px 10px;
+}
+
+.blockquote cite a {
+    border-bottom-color: #fff;
+    color: #fff;
+    font-family: Helvetica;
+    font-weight: 900;
+    margin: 0 15px 0 10px;
+    text-transform: uppercase;
+}
+
+.blockquote cite a:hover {
+    border-color: #f15403;
+}
+
+.blockquote cite img {
+    border: 3px solid #fff;
+    border-radius: 50%;
+    display: inline;
+    max-width: 60px;
 }
 
 .superheader {
