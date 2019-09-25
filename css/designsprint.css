@@ -39,7 +39,7 @@ header {
 }
 
 .logo {
-    background-image: url(../images/writing/logo-mobile-rounded.png);
+    background-image: url(../images/writing/logo-mobile-white.svg);
     background-repeat: no-repeat;
     background-size: contain;
     height: 30px;
@@ -50,7 +50,7 @@ header {
 }
 
 .logo:hover {
-    background-image: url(../images/writing/logo-mobile-orange.png);
+    background-image: url(../images/writing/logo-mobile-orange.svg);
 }
 
 .mini-nav {
