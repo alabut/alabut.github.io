@@ -387,7 +387,7 @@ article .blockquote .caption {
 article .blockquote.table-of-contents {
     background: #222;
     color: #fff;
-    margin: 40px 0;
+    margin: 40px 0 80px;
     padding: 30px 40px 20px;
 }
 
