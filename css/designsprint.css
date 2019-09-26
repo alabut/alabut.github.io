@@ -39,18 +39,19 @@ header {
 }
 
 .logo {
-    background-image: url(../images/writing/logo-mobile-white.svg);
+    background-image: url(../images/writing/logo-mobile-sprite.svg);
+    background-position: 0 0;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: 100%;
     height: 30px;
     left: calc(50% - 24px);
     position: absolute;
     top: 20px;
-    width: 48px;
+    width: 53px;
 }
 
 .logo:hover {
-    background-image: url(../images/writing/logo-mobile-orange.svg);
+    background-position: 0 -60px;
 }
 
 .mini-nav {
