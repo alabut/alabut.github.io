@@ -564,28 +564,20 @@ article .table-of-contents li a:hover {
 
 .footer {
     background: transparent;
+    color: rgba(255,255,255,0.2);
     margin-top: 0;
 }
 
 .footer .mini-nav {
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     text-align: center;
 }
 
 .footer .footer-wrap {
     border-top: 1px solid rgba(0,0,0,0.1);
-    padding-top: 30px;
-}
-
-.footer .mini-nav a, .footer .mini-nav a.active-nav {
-    border-color: rgba(0,0,0,0.5);
-    color: rgba(0,0,0,0.5);
-}
-
-.footer .mini-nav a:hover {
-    border-color: #000;
-    color: #000;
+    margin-top: 25px;
+    padding-top: 15px;
 }
 
 .dark .footer .footer-wrap {
@@ -593,13 +585,20 @@ article .table-of-contents li a:hover {
 }
 
 .dark .footer .mini-nav a, .dark .footer .mini-nav a.active-nav {
-    border-color: rgba(255,255,255,0.5);
-    color: rgba(255,255,255,0.5);
+    border-color: rgba(255,255,255,0);
+    color: rgba(255,255,255,0.2);
+    font-weight: 900;
+    margin: 0 2px;
+    text-transform: uppercase;;
 }
 
 .dark .footer .mini-nav a:hover {
     border-color: #fff;
     color: #fff;
+}
+
+.footer .copyright {
+    margin: 0 2px;
 }
 
 .avatar img {
@@ -619,10 +618,23 @@ article .table-of-contents li a:hover {
 
 }
 
+.bio p {
+    font-size: 18px;
+}
+
+.bio {
+    margin-top: 20px;
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199.98px) {
 
     .bio {
         margin-top: 20px;
     }
 
+}
+
+article .dark.bio-and-footer {
+    margin-top: 80px;
+    padding: 65px 0 0;
 }
