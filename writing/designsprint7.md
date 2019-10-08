@@ -49,6 +49,10 @@ Design sprints have a few similarities to the agile version for developers:
 * Collaborative approach between various roles.
 * Transparency into technical tasks and progress.
 
+SOMETHING SOMETHING ABOUT HOW I CAN SEE THAT BEING AGILE-LIKE IS PROBABLY ENGINEERING-FRIENDLY, GIVEN THE STRUCTURED AND STRICTLY TIMEBOXED NATURE OF THE FORMAT, WHICH MEANS IT SHOULD ALSO BE PALATABLE/COMPREHENSIBLE/APPROACHABLE TO PMS AND STAKEHOLDERS USED TO WORKING WITH AGILE TEAMS.
+
+OR SOME SUCH SHIT. THIS SECTION IS JUST A TAD TOO SHORT.
+
 ### 2.1.1 Clear Upsides
 
 It’s easy to see why the practice has such widespread appeal. It’s simple to learn, emphasizes collaboration, and uses testable prototypes to shortcut engineering overhead, all within a specific timeframe.
@@ -69,7 +73,7 @@ A well-documented process is fantastic for those early in the skill acquisition 
 
 In addition to being accessible to new designers and non-designers alike, a clearly defined and regimented format is a natural fit for larger organizations that prioritize steady dependable results over the fits and starts of smaller startups. You know the kind of places I'm talking about - the ones that use corporate buzzwords like "innovation" without a hint of irony. It's no wonder the blog posts and books have expanded into workshops, conferences and even certification courses for facilitators. 
 
-(Something something about agencies and freelancers...? Get feedback from Pauly Ting?)
+(Something something about agencies and freelancers...? Get feedback from Pauly Ting?) SOMETHING ABOUT HOW RULES ARE ALSO USEFUL FOR AGENCIES OR FREELANCERS BECAUSE CLIENTS LIKE A CLEAR PROCESS FOR HOW A PROJECT WILL GO. IT HELPS TO SET EXPECTATIONS AND ALSO SET A RHYTHM FOR A SHORT TERM WORKFLOW.
 
 ### 2.3 My Initial Reaction
 
@@ -79,9 +83,11 @@ I’m not saying good design is universal these days, just that the principles f
 
 It’s not like design sprints are bringing awareness to new techniques like when the UX field was first starting up, so design sprints sounded to me like they were just an agile-flavored remix of typical best practices: group brainstorming, usability tests, quick prototypes, etc. Basic stuff taught in any school or bootcamp these days, and also very easy to pick up for self-taught types.
 
-In fact, I should be exactly the target audience for this: a designer from a technical background that’s comfortable with agile techniques. Doing the full-stack of design with fast engineers at startups is my jam.
+In fact, I should be exactly the target audience for this: a designer from a technical background that’s comfortable with agile techniques. Doing the full-stack of design with fast engineers at startups is my jam. So is doing user research on the fly and without making a big production out of it.
 
 Being a designer at an early stage company is particularly challenging and takes a specific kind of attitude, whether learned or acquired. A sort of punk rock level of independence that doesn’t mind being a lone wolf outnumbered by engineers and business types.
+
+INSERT TWEET ABOUT PRODUCT DESIGN = PUNK AND UX DESIGN = JAZZ.
 
 I’ll check out anything that’s down with the cause of making design faster and comes from the helter skelter world of startups.
 
@@ -97,9 +103,9 @@ Well more like a handful problems, as I’ll describe later on in the section on
 
 ### 2.4 Not Everybody Loves It
 
-Ok, so if you're not already super experienced as a designer or technical enough to be familiar with potential drawbacks of agile development, design sprints still sound great. Actually they sound kind of fun - to have a whole week to collaborate with your colleagues in new ways and learn various thought-provoking design exercises. So who wouldn’t like that?
+Ok, so if you're not already super experienced as a designer or technical enough to be familiar with potential drawbacks of agile development, design sprints still sound great. Actually they sound kind of fun - a whole week to collaborate with your colleagues in new ways and learn various thought-provoking design exercises. So who wouldn’t like that?
 
-Well, I’m not sure I do. And I’m not alone.
+Well, I’m not sure it's for me. And I’m not alone.
 
 > I am utterly and completely tired of anyone who claims to have a one size fits all design process to solve all problems. It’s lazy, misleading, and a sign of an inexperienced designer who can’t objectively choose the right process for the current problem.
 
@@ -123,11 +129,11 @@ For example, it’s a recurring joke that agile development isn't always very ag
 
 Yet that’s for a good reason, since *agile is really about expectation management for stakeholders* and avoiding executive randomization of engineering pipelines, not making developers faster.
 
-Simlarly, design sprints probably won't produce the absolute best design work because there's a larger meta goal instead: stakeholder buy-in. You can say it's about teamwork but whatever you call it, the exercise is meant to build respect for designers so that they have the time it takes do more informed work, but it's not so much about producing superior results.
+Simlarly, design sprints probably won't produce the absolute best design work because it's not about making designers better. There's a larger meta goal instead: stakeholder buy-in. You can say it's about teamwork but whatever you call it, the exercise is meant to build respect for designers so that they have the time it takes do more informed work.
 
-> Let’s get real - design sprints aren't about the work, it's meant to get buy-in from stakeholders.
+> Let’s get real - design sprints are about getting buy-in from stakeholders by teaching design basics.
 
-Buy-in for common best practices is useful. It's a smart idea to teach design basics to stakeholders and engineers so that they'll understand the time and research it actually takes to cook up decent designs. Hopefully they'll also see the true cost of rushed and reactive work that doesn't address underlying UX issues.
+Buy-in for common best practices is useful. It's a smart idea to teach overall principles of the discipline to stakeholders and engineers so that they'll understand the time and research it actually takes to cook up decent work. Hopefully they'll also see the true cost of rushed and reactive work that doesn't address underlying UX issues.
 
 However, a week is a long time to take off just for subtle power dynamics. Even if your company isn't in constant survival mode, you should be able to establish solid design principles without completely pausing the product pipeline and asking everyone to learn arcane techniques.
 
@@ -157,9 +163,9 @@ And when it comes to team exercises, be highly selective about only the few key 
 
 Especially when it comes to exercises that are meant to coax out the collective knowledge of a team, all you really want is to stimulate the best ideas from every team member and synthesize them into concrete product directions. All the other techniques in a design sprint are ones that a self-sufficient designer should be able to carry out in parallel, whether solo or by pairing up with devs and PMs, so why waste everybody’s time with esoteric techniques?
 
-Group insights and consensus is exactly what the mini sprint format generates with nothing more than markers, paper, and a stopwatch. It’s a more efficient way to get what I consider to be the core benefit of a much longer design sprint.
+***THIS PARA NEEDS REWORKING*** Group insights and consensus is exactly what the mini sprint format generates with nothing more than markers, paper, and a stopwatch. It’s a more efficient way to get what I consider to be the core benefit of a much longer design sprint.
 
-NOTE: Move the paragraphs above into the section introing my technique, right before getting into details about the format.
+NOTE: Move the paragraphs above into the section introing my technique?
 
 
 
@@ -172,6 +178,10 @@ One of the dirty secrets of business is that work is 90 percent execution. Succe
 It doesn’t matter whether we’re talking about companies that are large or small, remote or co-located, have green logos or blue… The hard truth is that all truly effective teams are stocked full of high performing “armies of one” that are mostly busy coming up with and implementing creative solutions, rather than using creativity to generate stunningly original ideas for work.
 
 It makes sense, right? You can’t afford to have a company filled only with “visionary” types, daydreamers making academic arguments all day. You need people that can soldier on and learn by doing.
+___
+
+EVERYONE HAS IDEAS BUT REAL ARTISTS SHIP.
+___
 
 You need both modes of work - productivity and reflection - but that doesn’t mean equal amounts of time or a rigid schedule for each. Everyone has find their own rhythm for avoiding too much action without thought or thought without action. 
 
@@ -179,11 +189,13 @@ It’s not like taking a break from normal work for a strategy session is guaran
 
 In the real world, strategy sessions are often the opposite of productivity. Sharpie showdowns at the whiteboard, going in circles with endless debates, all while losing momentum on shipping meaningful work. Meeting hell. Vascillating ad nauseam.
 
-Good designers abhor vascilattion. They keep up momentum and maybe even make teams faster, not drag them down.
+Good designers abhor vascillation. They keep up momentum and maybe even make teams faster, not drag them down.
 
 NOTE: ⬆ that's a good candidate for larger graphic treatment.
 
-I guess you could say that an emphasis on speed, independence and most of all, a high quality end product is my version of Dieter Rams' rules for good design. So in my experience, a good designer knows how to make their own prototypes, trawl through support requests to understand customer needs, do competitive analysis, prioritize feature work, and countless other things without having to stop for guidance at every step. They keep their powder dry on group collaboration techniques so that they only gather the entire team when absolutely necessary and for the minimum time possible, to respect their colleagues' time and energy.
+I guess you could say that an emphasis on speed, independence and most of all, a high quality end product is my version of Dieter Rams' rules for good design. So in my experience, a good designer knows how to make their own prototypes, trawl through support requests to understand customer needs, do competitive analysis, prioritize feature work, and countless other things without having to stop for guidance at every step. 
+
+And when it comes to group collaboration techniques, they keep their powder dry and only gather the entire team when absolutely necessary and for the minimum time possible, to respect their colleagues' time and energy.
 
 ### 3.4 Design Exercises Look Funny
 
@@ -245,9 +257,9 @@ Thankfully I’ve dodged those bullets for the most part - I can usually sense t
 
 ### 4.1 A Faster & More Flexible Approach
 
-That pretty much covers my take on design sprints. I guess I just can't stand the idea of rigid structures that make work feel like school and am skeptical of sticking to any one approach.
+That pretty much covers my take on design sprints. I can see a lot of positives but for myself personally, I guess I'm skeptical of sticking to any one approach and can't stand the idea of a rigid structure that makes an exciting workplace feel like a remedial school.
 
-I think having an eclectic appetite is important in acquiring valuable skills and it's worked out pretty well for me in my career. I haven’t hit any home runs but I'm proud of all the base hits: designing useful things that get acquired, cofounding companies, and going through the world’s most prestigious startup incubator. I like to think that surviving and even thriving in the ever-changing world of tech means I know what I’m doing while also staying hungry for new methods.
+I think having an eclectic appetite and flexible work style is important in acquiring valuable skills and it's worked out pretty well for me. I haven’t hit any home runs in my career but I'm proud of all the base hits: designing useful things that get acquired, cofounding companies, and going through the world’s most prestigious startup incubator. I like to think that surviving and even thriving in the ever-changing world of tech means I know what I’m doing while also staying hungry for new methods.
 
 I sprinkled some alternatives thoroughout the critiques and it's worth recapping them all in one list. Here's my overall principles of how survive at startups and other demanding environments, all while doing good work and showing design leadership:
 
@@ -260,11 +272,15 @@ Think of this as my playbook for something I hear designers asking about all the
 
 ### 4.2 An Afternoon = Realistic Timeframe 
 
-And to jump to the punchline of what’s worked for me instead, I’ve found that the best format to bring the whole team together to get their best thinking is a long afternoon meeting, regardless of the particular topic or design exercise.
+And for team exercises in particular, I’ve found that the best format to bring everyone together is a long afternoon meeting, regardless of the particular topic or design exercise. It's just long enough to get their best thinking, yet short enough to fit into an otherwise busy week.
 
 > Anything longer than the length of a movie is a corporate group therapy session disguised as real work.
 
-For brainstorming, that’s just enough time to clear the air and vent any pent-up ideas before discussing more experimental solutions. For usability tests, it’s enough time to watch a session and discuss the lessons learned afterwards. So on and so forth.
+There's probably a biological reason why movies are all 90-120 minutes. It's about how long you can expect a group of people to pay attention to a single topic before they have to get up to eat, use the restroom, or just get on with their day.
+
+So it turns out to be the goldilocks amount for team meetings as well - not too short to rush through things, not too long to melt brains into uselessness.
+
+E.g. for brainstorming, that’s just enough time to clear the air and vent any pent-up ideas before discussing more experimental solutions. For usability tests, it’s enough time to watch a session and discuss the lessons learned afterwards. So on and so forth.
 
 ### 4.3 Team Sketching In 90 Minutes
 
