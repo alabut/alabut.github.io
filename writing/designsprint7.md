@@ -2,42 +2,62 @@ Design Sprints have spread far and wide from their initial roots at startups and
 
 It’s like the way all engineers are familiar with the basic principles of agile development, even if they don’t rigidly follow every step of the process. The ideas are just part of our common vocabulary now.
 
+But in the years since it's popped up, it's worth taking a step back to ask: are design sprints right for everyone? Are there better design and collaboration techniques?
+
 ## Table of Contents
 
 1. Disclaimer: All Advice Is Relative
-2. Origin & Reception
-    2.1. [Inspired by Agile](#origin)
-    2.2. [The Rules Are Clear](#rules)
-    2.3. [My Initial Reaction](#myreaction)
-    2.4. [Not Everybody Loves It](#reception)
-3. Drawbacks
-    3.1. [Selling Instead Of Doing](#drawbacks)
-    3.2. [Startups Have No Time](#time)
-    3.3. [Execution Trumps Strategizing](#execution)
-    3.4. [Design Exercises Look Funny](#funny)
-    3.5. [You Can’t Crowdsource Expertise](#expertise)
-4. Alternatives
-	4.1. [Stay Fast & Flexible](#alternatives)
-	4.2. [An Afternoon Is All You Need](#afternoon)
-	4.3. [Team Sketching In 90 Minutes](#sketching)
-4. [Conclusion](#conclusion)
-5. [Epilogue](#epilogue)
+2. The Origin Story
+	2.1 [Format](#format)
+    2.2 [Inspired By Agile](#agile)
+3. Reception
+    3.1 [Many Love It](#love)
+    3.2 [Rules Are Great For Learning](#rules)
+    3.2.1? A clear process helps agencies?
+    3.3 [My Initial Reaction](#myreaction)
+    3.4 [Detractors](#detractors)
+4. Drawbacks
+    4.1 [Selling Instead Of Doing](#drawbacks)
+    4.2 [Startups Have No Time](#time)
+    4.3 [Execution Trumps Strategy](#execution)
+    4.4 [Design Exercises Look Funny](#funny)
+    4.5 [You Can’t Crowdsource Expertise](#expertise)
+5. Alternatives
+	5.1 [Be Fast & Flexible](#alternatives)
+	5.2 [Limit Team Meetings To 2 Hours](#teammeetings)
+	5.3 [Practice Structured Sketching](#sketching)
+6. [Conclusion](#conclusion)
+7. [Epilogue](#epilogue)
 
 ## 1. Disclaimer: All Advice Is Relative 
 
-Just to state this up front: I’m not against agile development, design sprints, or any other technique. In fact, quite the opposite - I’m a process omnivore and devoured them all when I was figuring out my own approach in the first half of my career. I tried many different things, kept the bits that worked and never stayed wedded to any one single approach.
+Just to state this up front: I’m not against design sprints, agile development or any other methodology for design, engineering or business.
 
-I'm sure there's people that crave structure and would rather stick to a single playbook but I’m also pretty sure that it's a function of seniority to prefer a toolbox of techniques instead. It's been my experience that accomplished people tend to learn different methodologies over time to form their own flexible and idiosyncratic methods that play to their unique strengths.
+Even waterfall has it's place. There's a reason it helped organize half a million government employees in the 60's for the space program!
 
-So what I'm saying is that everyone's experience and learning style is different, and that's why your mileage will vary on any advice, from me or anyone else. You have to consider its context and how it fits yours.
+> Waterfall sent men to the moon
 
-> The supposed benefits of any technique depends on your own experience, personality and environment.
+And I'm also not against the idea of process in general. In fact, quite the opposite - I’m a process omnivore and devoured them all when I was figuring out my own approach in the first half of my career. I tried many different things, kept the bits that worked and never stayed wedded to any one single approach.
+
+Over time, I formed my own flexible and idiosyncratic methods that play to my own unique strengths.
+
+I'm sure it's part of my personality to prefer a flexible toolbox rather than a repeatable pipeline. I.e. focusing on results and quality over process and documentation. Which also explains my chosen industry - startups are judged by the market in real time, whereas agencies for example benefit from having a transparent process to attract clients. Same tools, different game.
+
+But I don't think an eclectic approach is unique to my temperament or sector of technology - it's probably also a function of seniority. Everyone tends to get a broader view as they progress in their career and have more approaches to compare against.
+
+That's my drawn-out explanation of why your mileage will vary on any advice, from me or anyone else. Everyone has different experience levels, learning styles and prefered workplaces, so you have to consider the context of any advice context.
+
+> The supposed benefits of any technique depends on your own experience, personality and work environment.
 
 So like a workplace version of the Rashomon effect, what I’m saying is that “good process” is relative and not everything is a universal truth. This is my own personal take on the role of design in the business world and consider this your warning that I'm an unreliable narrator in the story that follows :)
 
-## 2. Origin & Reception
+## 2. The Origin Story
 
-### 2.1 Inspired By Agile
+### 2.1 Format
+
+BRIEF DESCRIPTION GOES HERE & GRAPHIC ABOUT 5 DAY SCHEDULE
+
+### 2.2 Inspired By Agile
 
 Designers have been working within a sprint format on engineering-centric teams for a long time, but what brought the term "design sprints" to the tipping point of broad awareness is the particular format popularized by Google Ventures and their book documenting the process.
 
@@ -51,11 +71,15 @@ Design sprints have a few similarities to the agile version for developers:
 
 SOMETHING SOMETHING ABOUT HOW I CAN SEE THAT BEING AGILE-LIKE IS PROBABLY ENGINEERING-FRIENDLY, GIVEN THE STRUCTURED AND STRICTLY TIMEBOXED NATURE OF THE FORMAT, WHICH MEANS IT SHOULD ALSO BE PALATABLE/COMPREHENSIBLE/APPROACHABLE TO PMS AND STAKEHOLDERS USED TO WORKING WITH AGILE TEAMS.
 
+OR TALK ABOUT STARTUPS AND THE GV ORIGIN IN TALKING TO STARTUPS?
+
 OR SOME SUCH SHIT. THIS SECTION IS JUST A TAD TOO SHORT.
 
-### 2.1.1 Clear Upsides
+## 3. Reception
 
-It’s easy to see why the practice has such widespread appeal. It’s simple to learn, emphasizes collaboration, and uses testable prototypes to shortcut engineering overhead, all within a specific timeframe.
+### 3.1 Loved By Many
+
+Design sprints have clear upsides and it’s easy to see why the practice has such widespread appeal. It’s simple to learn, emphasizes collaboration, and uses testable prototypes to shortcut engineering overhead, all within a specific timeframe.
 
 INSERT SOMETHING ABOUT USER RESEARCH BEING BULLSHIT AND HOW SPRINTS FOCUS ON ROUGH SKETCHES AND TESTABLE PROTOTYPES, WHICH IS GREAT. ALSO SAY "DESIGN THINKING" IS DOODLING NONSENSE.
 
@@ -65,7 +89,7 @@ Communication skills and independent thought are essential soft skills that are 
 
 Overall, design sprints sound like a fun game with clear rules, a way to demystify creative work by turning it into a repeatable process. It's definitely more approachable than the vague and hand wavy principles of “design thinking".
 
-### 2.2 Rules Are Great For Learning
+### 3.2 Rules Are Great For Learning
 
 Designers earlier in the career seem to particularly benefit from a prescriptive approach, from what I’ve gleaned from conversations on Twitter and popular forums like Designers Guild.
 
@@ -75,7 +99,7 @@ In addition to being accessible to new designers and non-designers alike, a clea
 
 (Something something about agencies and freelancers...? Get feedback from Pauly Ting?) SOMETHING ABOUT HOW RULES ARE ALSO USEFUL FOR AGENCIES OR FREELANCERS BECAUSE CLIENTS LIKE A CLEAR PROCESS FOR HOW A PROJECT WILL GO. IT HELPS TO SET EXPECTATIONS AND ALSO SET A RHYTHM FOR A SHORT TERM WORKFLOW.
 
-### 2.3 My Initial Reaction
+### 3.3 My Initial Reaction
 
 Still, I remember being a bit surprised when design sprints first started to get popular. I remember thinking, *doesn’t everyone know this stuff already?*
 
@@ -83,7 +107,7 @@ I’m not saying good design is universal these days, just that the principles f
 
 It’s not like design sprints are bringing awareness to new techniques like when the UX field was first starting up, so design sprints sounded to me like they were just an agile-flavored remix of typical best practices: group brainstorming, usability tests, quick prototypes, etc. Basic stuff taught in any school or bootcamp these days, and also very easy to pick up for self-taught types.
 
-In fact, I should be exactly the target audience for this: a designer from a technical background that’s comfortable with agile techniques. Doing the full-stack of design with fast engineers at startups is my jam. So is doing user research on the fly and without making a big production out of it.
+In fact, I should be exactly the target audience for this: a designer from a technical background that’s comfortable with agile techniques and early stage companies. Doing the full-stack of design with fast engineers at startups is my jam. So is doing user research on the fly and without making a big production out of it.
 
 Being a designer at an early stage company is particularly challenging and takes a specific kind of attitude, whether learned or acquired. A sort of punk rock level of independence that doesn’t mind being a lone wolf outnumbered by engineers and business types.
 
@@ -101,11 +125,11 @@ But without getting into the age-old debate on the drawbacks of agile, reading u
 
 Well more like a handful problems, as I’ll describe later on in the section on workflow obstacles.
 
-### 2.4 Not Everybody Loves It
+### 3.4 Detractors
 
 Ok, so if you're not already super experienced as a designer or technical enough to be familiar with potential drawbacks of agile development, design sprints still sound great. Actually they sound kind of fun - a whole week to collaborate with your colleagues in new ways and learn various thought-provoking design exercises. So who wouldn’t like that?
 
-Well, I’m not sure it's for me. And I’m not alone.
+Well, I’m not alone in having reservations.
 
 > I am utterly and completely tired of anyone who claims to have a one size fits all design process to solve all problems. It’s lazy, misleading, and a sign of an inexperienced designer who can’t objectively choose the right process for the current problem.
 
@@ -119,9 +143,9 @@ When I found out that I’m not the only one with reservations, that's when I re
 
 After all, if I'm not alone in seeing the drawbacks, then maybe there's other people with a similar reaction that are open to alternatives. So let's get into what I think are the logistical drawbacks of why a week-long sprint is a non-starter in many situations, before we then cleanse the palate with helpful alternatives.
 
-## 3. Workflow Obstacles 
+## 4. Drawbacks
 
-### 3.1 Selling Instead Of Doing
+### 4.1 Selling Instead Of Doing
 
 Various techniques will go in and out fashion over time, that's just a natural part of any industry. However, there's one universal constant about them all: there’s what a methodology says it’ll do on the packaging and *what its actual purpose is.*
 
@@ -145,7 +169,7 @@ All of this means you should temper your expectations about the actual design wo
 
 Again, these are admirable goals but the week-long format is not a fit for a lot of teams, ones with pressing and business-critical needs, with stakeholders that trust the expertise of their hires, and with designers that already know when to use the right tools and in self-sufficient ways that don’t slow everyone down.
 
-### 3.2 Design Under Fire; All Business Is A Sprint; something something
+### 4.2 Startups Don't Have Time;Design Under Fire; All Business Is A Sprint; something something
 
 The main reason I use a variety of techniques on an ad hoc basis is because the types of high-pressure environments I’ve worked in can’t take off a week (or even just a few days!) from their usual work. It’s impossible for most teams to press pause for that long, no matter how dire their design debt.
 
@@ -167,9 +191,7 @@ Especially when it comes to exercises that are meant to coax out the collective 
 
 NOTE: Move the paragraphs above into the section introing my technique?
 
-
-
-### 3.3 Execution Trumps Strategizing 
+### 4.3 Execution Trumps Strategy 
 
 The underlying reason why startups don’t have time is actually pretty rational and applies to most other company types too: staying busy is a survival mechanism. People try to stay busy shipping meaningful work, otherwise they risk stagnation at best and existential threats at worst.
 
@@ -197,7 +219,7 @@ I guess you could say that an emphasis on speed, independence and most of all, a
 
 And when it comes to group collaboration techniques, they keep their powder dry and only gather the entire team when absolutely necessary and for the minimum time possible, to respect their colleagues' time and energy.
 
-### 3.4 Design Exercises Look Funny
+### 4.4 Design Exercises Look Funny
 
 While we're at it, let’s also be real about how design exercises come across to most people.
 
@@ -215,9 +237,11 @@ You might as well turn down the lights, put on some crappy world music and scrol
 
 > video from Silicon Valley
 
-### 3.5 You Can’t Crowdsource Expertise 
+### 4.5 You Can’t Crowdsource Expertise 
 
-HOLY SHIT, VOTING FOR PRODUCT FEATURES IS HILARIOUS.
+HOLY SHIT, VOTING FOR PRODUCT FEATURES IS HILARIOUS. IF I HAD TO PUT ASIDE THE TIME COMMITMENT AND PICK ONE SPECIFIC EXERCISE TO CRUCIFY, IT'S THE HORSESHIT AROUND POST-ITS AND GOLD STARS.
+
+ALTHOUGH THE USER JOURNEY AND OTHER SHIT IS FUNNY TOO.
 
 Playing with crayons and crowdsourcing product decisions by voting with post-its isn’t the best way to show design expertise anyway.
 
@@ -253,9 +277,9 @@ The lack of design leadership can also be due to the workplace rather than the d
 
 Thankfully I’ve dodged those bullets for the most part - I can usually sense the turnover from a distance the way an experienced programmer can smell code rot - but it's still really hard to spot and I’ve seen way too many good creative people get burnt while the company cycles through fresh meat.
 
-## 4. Alternatives 
+## 5. Alternatives 
 
-### 4.1 A Faster & More Flexible Approach
+### 5.1 Be Fast & Flexible
 
 That pretty much covers my take on design sprints. I can see a lot of positives but for myself personally, I guess I'm skeptical of sticking to any one approach and can't stand the idea of a rigid structure that makes an exciting workplace feel like a remedial school.
 
@@ -270,7 +294,7 @@ I sprinkled some alternatives thoroughout the critiques and it's worth recapping
 
 Think of this as my playbook for something I hear designers asking about all the time: how to break out of the artsy kids club and be a grownup at the decision-making table.
 
-### 4.2 An Afternoon = Realistic Timeframe 
+### 5.2 Limit Team Meetings To 2 Hours
 
 And for team exercises in particular, I’ve found that the best format to bring everyone together is a long afternoon meeting, regardless of the particular topic or design exercise. It's just long enough to get their best thinking, yet short enough to fit into an otherwise busy week.
 
@@ -282,7 +306,7 @@ So it turns out to be the goldilocks amount for team meetings as well - not too 
 
 E.g. for brainstorming, that’s just enough time to clear the air and vent any pent-up ideas before discussing more experimental solutions. For usability tests, it’s enough time to watch a session and discuss the lessons learned afterwards. So on and so forth.
 
-### 4.3 Team Sketching In 90 Minutes
+### 5.3 Practice Structured Sketching
 
 On that last point of keeping up momentum while gathering team feedback, sometimes you really do need an all-hands meeting to get the creative juices flowing across various areas of expertise. A designer can't actually do it all alone. 
 
@@ -314,7 +338,7 @@ But if you’re a designer experiencing any of the problems I described about de
 
 Try to mix things up a bit occasionally with things like the mini sprint described below. Block out an afternoon once in a while (let’s say quarterly or so, whenever you feel like there’s pent up demand for brainstorming) and give this exercise a whirl instead to see how it works for you.
 
-## 5. Conclusion 
+## 6. Conclusion 
 
 So that’s my take on an alternative to design sprints for stimulating collective thought. Whether it’s called a mini sprint, design studio, visual brainstorming or just plain sketching, I haven’t seen this exact format discussed much online. That’s a shame, since it’s a a hidden gem and a super unique part of my designer’s toolkit.
 
@@ -322,7 +346,7 @@ Mini sprints are one of my favorite methods for harnessing the best of individua
 
 NOTE: Add one last parting shot at design sprints to wrap this sucker up…
 
-## 6. Epilogue 
+## 7. Epilogue 
 
 If you’ve actually made it this far, I can’t thank you enough for giving so much of your valuable attention in this age of info overload. Trust me, I’m tickled by the irony of writing several thousand words on better ways to save time :)
 
