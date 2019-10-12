@@ -45,11 +45,11 @@ I'm sure it's part of my personality to prefer a flexible toolbox rather than a 
 
 But I don't think an eclectic approach is unique to my temperament or sector of technology - it's probably also a function of seniority. Everyone tends to get a broader view as they progress in their career and have more approaches to compare against.
 
-That's my drawn-out explanation of why your mileage will vary on any advice, from me or anyone else. Everyone has different experience levels, learning styles and prefered workplaces, so you have to consider the context of any advice context.
+Personality, work environment, seniority - those are some of the factors that explain why your mileage will vary on any advice, from me or anyone else. Everyone has different learning styles, prefered workplaces and experience levels, so you should consider the context of any advice.
 
-> The supposed benefits of any technique depends on your own experience, personality and work environment.
+> The supposed benefits of any technique depends on your own preferences and circumstances.
 
-So like a workplace version of the Rashomon effect, what I’m saying is that “good process” is relative and not everything is a universal truth. This is my own personal take on the role of design in the business world and consider this your warning that I'm an unreliable narrator in the story that follows :)
+So like a business edition of the Rashomon effect, what I’m saying is that “good process” is relative and not everything is a universal truth. This is my own personal take on the role of design in the business world and consider this your warning that I'm an unreliable narrator in the story that follows :)
 
 ## 2. The Origin Story
 
@@ -95,7 +95,9 @@ Designers earlier in the career seem to particularly benefit from a prescriptive
 
 A well-documented process is fantastic for those early in the skill acquisition phase of their career. When I was starting out, I was dogmatic about following Jakob Nielsen's advice, to the point that my best man at my wedding gave a usability-themed speech! I saved up every penny of the education budget at my first job to attend the workshops by Adaptive Path, the pioneering agency. Their all-star founders shaped the nascent UX field and gave clear guidelines for rookies like me. 
 
-In addition to being accessible to new designers and non-designers alike, a clearly defined and regimented format is a natural fit for larger organizations that prioritize steady dependable results over the fits and starts of smaller startups. You know the kind of places I'm talking about - the ones that use corporate buzzwords like "innovation" without a hint of irony. It's no wonder the blog posts and books have expanded into workshops, conferences and even certification courses for facilitators. 
+In addition to being accessible to new designers and non-designers alike, a clearly defined and regimented format is a natural fit for larger organizations that prioritize steady dependable results over the fits and starts of smaller startups. You know the kind of places I'm talking about - the ones that use corporate buzzwords like "innovation" without a hint of irony.
+
+Given the hunger in the corporate world for the latest trendy process, it's no wonder the initial blog posts and books for starry-eyed newbies have expanded into a small constellation of workshops, conferences and even certification courses for facilitators of design sprints, just like countless business fads before it that went supernova and then experienced graviational collapse down to a background radiation level of influence. I'm sure there's still a handful of gasbags somewhere that brag about being scrum masters, right?
 
 (Something something about agencies and freelancers...? Get feedback from Pauly Ting?) SOMETHING ABOUT HOW RULES ARE ALSO USEFUL FOR AGENCIES OR FREELANCERS BECAUSE CLIENTS LIKE A CLEAR PROCESS FOR HOW A PROJECT WILL GO. IT HELPS TO SET EXPECTATIONS AND ALSO SET A RHYTHM FOR A SHORT TERM WORKFLOW.
 
