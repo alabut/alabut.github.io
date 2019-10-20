@@ -245,8 +245,15 @@ article ul.double-entry-list strong {
 article .dark {
     background: #111;
     color: #fff;
+    color: rgba(255,255,255,0.85);
     margin: 20px 0 0;
     padding: 40px 0
+}
+
+article .dark strong,
+article .dark h2,
+article .dark h3 {
+    color: #fff;
 }
 
 article .dark + .dark {
