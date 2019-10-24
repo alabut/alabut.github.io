@@ -246,8 +246,8 @@ article .dark {
     background: #111;
     color: #fff;
     color: rgba(255,255,255,0.85);
-    margin: 20px 0 0;
-    padding: 40px 0
+    margin: 40px 0;
+    padding: 60px 0
 }
 
 article .dark strong,
@@ -263,7 +263,6 @@ article .dark + .dark {
 
 article .dark.leadsection {
     margin-top: 0;
-    margin-bottom: 20px;
     padding-top: 0;
     padding-bottom: 40px;
 }
