@@ -668,5 +668,6 @@ article .table-of-contents li a:hover {
 
 article .dark.bio-and-footer {
     margin-top: 80px;
+    margin-bottom: 0;
     padding: 65px 0 0;
 }
