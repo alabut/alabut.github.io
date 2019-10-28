@@ -114,9 +114,7 @@ header h2 {
     text-align: left;
 }
 
-
 .embed-responsive {
-    border: 3px solid #fff;
     margin-top: 10px;
     margin-bottom: 20px;
 }
@@ -211,7 +209,13 @@ figure {
     padding: 20px;
 }
 
-.dark figure {
+@media only screen and (max-width: 767.98px) {
+    figure {
+        margin: 40px auto;
+    }
+}
+
+.transparent-background {
     background: transparent;
     padding: 0;
 }
