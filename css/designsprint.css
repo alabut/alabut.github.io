@@ -262,9 +262,9 @@ article ul.double-entry-list strong {
 }
 
 article .dark {
-    background: #f4f4f4;
-    border-top: 2px solid #eee;
-    border-bottom: 2px solid #eee;
+    background: #eee;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
     color: #000;
     margin: 40px 0;
     padding: 60px 0
