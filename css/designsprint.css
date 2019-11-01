@@ -141,10 +141,12 @@ h3 {
     background-image: url(../images/writing/monogram-gray-on-white.png);
     background-repeat: no-repeat;
     background-position: 50% 0;
-    font-size: 24px;
+    font-size: 22px;
+    font-weight: 900;
     margin-bottom: 20px;
     margin-top: 50px;
     padding-top: 80px;
+    text-transform: uppercase;
 }
 
 article h2 + h3, article .dark h2 + article .dark h3 {
@@ -260,9 +262,10 @@ article ul.double-entry-list strong {
 }
 
 article .dark {
-    background: #111;
-    color: #fff;
-    color: rgba(255,255,255,0.85);
+    background: #f4f4f4;
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+    color: #000;
     margin: 40px 0;
     padding: 60px 0
 }
@@ -270,7 +273,7 @@ article .dark {
 article .dark strong,
 article .dark h2,
 article .dark h3 {
-    color: #fff;
+    color: #000;
 }
 
 article .dark + .dark {
@@ -279,13 +282,20 @@ article .dark + .dark {
 }
 
 article .dark.leadsection {
+    background: rgba(17,17,17,1);
+    border: none;
+    color: #fff;
     margin-top: 0;
     padding-top: 0;
     padding-bottom: 40px;
 }
 
-article .dark a {
+article .dark.leadsection strong {
     color: #fff;
+}
+
+article .dark a {
+    color: #000;
 }
 
 article .dark a:hover {
@@ -322,12 +332,11 @@ article .dark h2 {
 }
 
 article .dark h3 {
-    background-image: url(../images/writing/monogram-gray-on-black.png);
+    /*background-image: url(../images/writing/monogram-gray-on-black.png);*/
 }
 
 article .orange {
     background: #F15403;
-    
     margin-top: 20px;
     padding: 60px 0;
 }
@@ -347,6 +356,10 @@ article .orange img {
 
 article .section-without-leading-subheader {
     padding-top: 40px;
+}
+
+blockquote {
+    border-color: #000;
 }
 
 article .blockquote.filled {
@@ -403,7 +416,7 @@ article .blockquote.whitebox {
 }
 
 article .dark .blockquote {
-    border-left: 10px solid rgba(255,255,255,0.1);
+    border-left: 10px solid #000;
     font-size: 22px;
     margin: 40px 0;
     padding: 40px;
@@ -672,7 +685,14 @@ article .table-of-contents li a:hover {
 }
 
 article .dark.bio-and-footer {
+    background: rgba(17,17,17,1);
     margin-top: 80px;
     margin-bottom: 0;
     padding: 65px 0 0;
+}
+
+article .dark.bio-and-footer,
+article .dark.bio-and-footer strong,
+article .dark.bio-and-footer a {
+    color: #fff;
 }
