@@ -188,6 +188,7 @@ article a {
 }
 
 article a:hover {
+    border-bottom-color: transparent;
     color: #f15403;
     text-decoration: none;
 }
@@ -284,14 +285,19 @@ article .dark + .dark {
 article .dark.leadsection {
     background: rgba(17,17,17,1);
     border: none;
-    color: #fff;
+    color: rgba(255,255,255,0.9);
     margin-top: 0;
     padding-top: 0;
     padding-bottom: 40px;
 }
 
-article .dark.leadsection strong {
+article .dark.leadsection strong,
+article .dark.leadsection a {
     color: #fff;
+}
+
+article .dark.leadsection blockquote {
+    border-color: #fff;
 }
 
 article .dark a {
@@ -302,10 +308,8 @@ article .dark a:hover {
     color: #f15403;
 }
 
-article .dark ul {
-    margin-bottom: 0;
-}
 
+/*
 article .dark li {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     list-style-position: inside;
@@ -326,6 +330,8 @@ article .dark li:last-of-type {
 article .dark li::before {
     content: none;
 }
+*/
+
 
 article .dark h2 {
     margin: 0 0 20px;
@@ -444,19 +450,19 @@ article .blockquote.table-of-contents {
 }
 
 article .blockquote.table-of-contents h1 {
-    border-bottom: 5px solid rgba(255,255,255,0.1);
     display: inline-block;
     font-size: 22px;
     font-weight: 900;
-    margin-bottom: 20px;
-    margin-top: 10px;
-    padding-bottom: 7px;
+    margin: 0;
+    padding: 0;
     text-transform: uppercase;
 }
 
 article .blockquote.table-of-contents ol {
+    border-top: 5px solid rgba(255,255,255,0.1);
+    border-bottom: 5px solid rgba(255,255,255,0.1);
     margin-top: 10px;
-    padding-left: 0;
+    padding: 20px;
 }
 
 article .blockquote.table-of-contents ol ol {
