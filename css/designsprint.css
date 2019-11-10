@@ -8,11 +8,16 @@ body, html {
 }
 
 header {
-    /*background-attachment: fixed;*/
     background-image: url(../images/writing/designsprint/photo-sketching-blackandwhite.jpg);
     background-position: 50% 100%;
     background-size: cover;
     position: relative;
+}
+
+@media only screen and (min-width : 1200px) {
+    header {
+        background-attachment: fixed;
+    }
 }
 
 .header-wrap-gray {
