@@ -227,6 +227,16 @@ ul {
     color: #fff;
 }
 
+.fake.button {
+    opacity: 0.3;
+}
+
+.fake.button:hover {
+    background: transparent;
+    color: #000;
+    cursor: default;
+}
+
 .case-study .button {
     border-radius: 50px;
     display: inline-block;
@@ -681,8 +691,8 @@ ul {
         <div class="column logo dark">
             <div class="card">
                 <img src="https://d32mxho067pe0f.cloudfront.net/images/splash/logo-square-8@2x.png">
-            </div> <!-- /card -->
-        </div> <!-- /column logo dark -->
+            </div>
+        </div>
 
         <div class="column bio">
             <div class="card">
@@ -704,26 +714,7 @@ ul {
             </div> <!-- /card -->
         </div> <!-- /column bio -->
 
-
-
-
         <div class="case-studies">
-
-            
-            
-
-
-
-
-
-
-
-
-
-
-
-
-
 
             <div class="purple container-fluid">
                 <div class="row case-study">
@@ -731,7 +722,7 @@ ul {
                         <div class="case-study-card">
                             <div class="row">
                                 <div class="col-sm-5 col-sm-offset-1">
-                                    <div class="case-study-text-wrapper"> <!-- Yet another wrapper to overcome Bootstrap's limited ability to vertically position content. -->
+                                    <div class="case-study-text-wrapper">
                                         <div class="case-study-text">
                                             <!-- NOTE: the following divs should be refactored out. -->
                                             <div class="subheader">
@@ -750,7 +741,7 @@ ul {
                                     </div> <!-- /case-study-text-wrapper -->
                                 </div> <!-- /col-sm-5 col-sm-offset-1 -->
                                 <div class="col-sm-5">
-                                    <div class="hero-image"> <!-- See Doug Bowman's classic article on CSS: Making The Absolute, Relative -->
+                                    <div class="hero-image">
                                         <img src="images/splash/phone-partnered.png">
                                     </div> <!-- /hero-image -->
                                 </div> <!-- /col-sm-5 -->
@@ -761,12 +752,12 @@ ul {
             </div> <!-- /purple container-fluid -->
 
             <div class="case-study-wrapper blue container-fluid">
-                <div class="row case-study"> 
+                <div class="row case-study">
                     <div class="col-sm-8 col-sm-offset-2">
                         <div class="case-study-card">
-                            <div class="row"> 
+                            <div class="row">
                                 <div class="col-sm-5 col-sm-offset-1">
-                                    <div class="case-study-text-wrapper"> <!-- Yet another wrapper to overcome Bootstrap's limited ability to vertically position content. -->
+                                    <div class="case-study-text-wrapper">
                                         <div class="case-study-text">
                                             <!-- NOTE: the following divs should be refactored out. -->
                                             <div class="subheader">
@@ -785,7 +776,7 @@ ul {
                                     </div> <!-- /case-study-text-wrapper -->
                                 </div> <!-- /col-sm-5 col-sm-offset-1 -->
                                  <div class="col-sm-5">
-                                    <div class="hero-image"> <!-- See Doug Bowman's classic article on CSS: Making The Absolute, Relative -->
+                                    <div class="hero-image">
                                         <img src="images/splash/phone-circle.png">
                                     </div> <!-- /hero-image -->
                                 </div> <!-- /col-sm-5 -->
@@ -795,46 +786,47 @@ ul {
                 </div> <!-- /row case-study -->
             </div> <!-- /case-study-wrapper purple -->
 
-
-            <div class="case-study-wrapper white container-fluid" style="display:none;"> <!-- This tasty level of the parfait yogurt is made with a full width color bar.  -->
-                <div class="row case-study"> <!-- Narrow main column because the actual content is relatively light on word count. -->
+            <div class="case-study-wrapper white container-fluid">
+                <div class="row case-study">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="row"> <!-- A nested row so that text and hero image can be stacked vertically on mobile. -->
-                            <div class="col-sm-6">
-                                <div class="case-study-text-wrapper"> <!-- Yet another wrapper to overcome Bootstrap's limited ability to vertically position content. -->
-                                    <div class="case-study-text">
-                                        <!-- NOTE: some or all of the following divs could be refactored out. -->
-                                        <div class="subheader">
-                                            <h5>CASE STUDY #2</h5>
-                                            <h2>Circle Medical</h2>
-                                        </div>
-                                        <div class="description">
-                                            <p>Streamlined the onboarding of an innovative medical service.</p>
-                                        </div>
-                                        <div class="cta">
-                                            <a class="button" href="/circlemedical">
-                                                <span>Project Details</span>
-                                            </a>
-                                        </div> <!-- /cta -->
-                                    </div> <!-- /case-study-text -->
-                                </div> <!-- /case-study-text-wrapper -->
-                            </div> <!-- /col-sm-6 -->
-                            <div class="col-sm-6">
-                                <div class="hero-image"> <!-- See Doug Bowman's classic article on CSS: Making The Absolute, Relative -->
-                                    <img src="images/splash/phone-circle.png">
-                                </div> <!-- /hero-image -->
-                            </div> <!-- /col-sm-6 -->
-                        </div> <!-- /row -->
+                        <div class="case-study-card">
+                            <div class="row">
+                                <div class="col-sm-5 col-sm-offset-1">
+                                    <div class="case-study-text-wrapper">
+                                        <div class="case-study-text">
+                                            <!-- NOTE: the following divs should be refactored out. -->
+                                            <div class="subheader">
+                                                <h5>VARIOUS PROJECTS</h5>
+                                                <h2>Private Portfolio</h2>
+                                            </div>
+                                            <div class="description">
+                                                <p>Get in touch to view a grab bag of different work across dozens of projects.</p>
+                                            </div>
+                                            <div class="cta">
+                                                <div class="button fake">
+                                                    <span>Contact For Private Link</span>
+                                                </div> <!-- / fake button -->
+                                            </div> <!-- /cta -->
+                                        </div> <!-- /case-study-text -->
+                                    </div> <!-- /case-study-text-wrapper -->
+                                </div> <!-- /col-sm-5 col-sm-offset-1 -->
+                                 <div class="col-sm-5">
+                                    <div class="hero-image">
+                                        <img src="images/splash/phone-misc5.png">
+                                    </div> <!-- /hero-image -->
+                                </div> <!-- /col-sm-5 -->
+                            </div> <!-- /row -->
+                        </div> <!-- /case-study-card -->
                     </div> <!-- /col-sm-8 col-sm-offset-2 -->
                 </div> <!-- /row case-study -->
             </div> <!-- /case-study-wrapper purple -->
 
-            <div class="case-study-wrapper pink container-fluid" style="display:none;"> <!-- This tasty level of the parfait yogurt is made with a full width color bar.  -->
-                <div class="row case-study"> <!-- Narrow main column because the actual content is relatively light on word count. -->
+            <div class="case-study-wrapper pink container-fluid" style="display:none;">
+                <div class="row case-study">
                     <div class="col-sm-8 col-sm-offset-2">
-                        <div class="row"> <!-- A nested row so that text and hero image can be stacked vertically on mobile. -->
+                        <div class="row">
                             <div class="col-sm-6">
-                                <div class="case-study-text-wrapper"> <!-- Yet another wrapper to overcome Bootstrap's limited ability to vertically position content. -->
+                                <div class="case-study-text-wrapper">
                                     <div class="case-study-text social-media-text">
                                         <!-- NOTE: some or all of the following divs could be refactored out. -->
                                         <div class="subheader">
@@ -853,7 +845,7 @@ ul {
                                 </div> <!-- /case-study-text-wrapper -->
                             </div> <!-- /col-sm-6 -->
                             <div class="col-sm-6">
-                                <div class="hero-image social-media-logo"> <!-- See Doug Bowman's classic article on CSS: Making The Absolute, Relative -->
+                                <div class="hero-image social-media-logo">
                                     <img src="https://d32mxho067pe0f.cloudfront.net/images/splash/dribbble.png">
                                 </div> <!-- /hero-image social-media-logo -->
                             </div> <!-- /col-sm-6 -->
