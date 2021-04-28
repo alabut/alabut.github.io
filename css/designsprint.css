@@ -717,4 +717,9 @@ article .bio-and-footer p:last-of-type {
     article .dark.bio-and-footer {
         text-align: center;
     }
+
+    .avatar img {
+        max-height: 100px;
+        max-width: 100px;
+    }
 }
