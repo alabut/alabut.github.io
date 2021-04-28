@@ -700,11 +700,21 @@ article .dark.bio-and-footer {
     border-bottom: none;
     margin-top: 80px;
     margin-bottom: 0;
-    padding: 65px 0 25px;
+    padding: 45px 0 25px;
 }
 
 article .dark.bio-and-footer,
 article .dark.bio-and-footer strong,
 article .dark.bio-and-footer a {
     color: #fff;
+}
+
+article .bio-and-footer p:last-of-type {
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width : 767.98px) {
+    article .dark.bio-and-footer {
+        text-align: center;
+    }
 }
