@@ -630,14 +630,14 @@ article .table-of-contents li a:hover {
 }
 
 .footer .mini-nav {
-    margin-top: 30px;
+    margin-top: 0;
     margin-bottom: 15px;
     text-align: center;
 }
 
 .footer .footer-wrap {
     border-top: 1px solid rgba(0,0,0,0.1);
-    margin-top: 25px;
+    margin-top: 15px;
     padding-top: 15px;
 }
 
@@ -700,7 +700,7 @@ article .dark.bio-and-footer {
     border-bottom: none;
     margin-top: 80px;
     margin-bottom: 0;
-    padding: 65px 0 0;
+    padding: 65px 0 25px;
 }
 
 article .dark.bio-and-footer,
