@@ -32,6 +32,10 @@ header {
     background: none;
 }
 
+article .dark.bio-and-footer {
+    border: none;
+}
+
 /* NEW CUSTOM STYLES (should they be the default? just try disabling designsprint.css to see how nicely minimal the bootstrap-only version is...) */
 
 .minimal-header header {
@@ -63,6 +67,21 @@ article .blockquote.table-of-contents {
 article .blockquote.table-of-contents ol {
     padding-left: 0;
     padding-right: 0;
+}
+
+footer {
+    background: rgba(0,0,0,0.05);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 40px;
+}
+
+footer p {
+    margin-bottom: 5px;
+}
+
+footer p:last-of-type {
+    margin: 0;
 }
 
         </style>
@@ -157,44 +176,36 @@ article .blockquote.table-of-contents ol {
 
                             <h2 id="reception">In Conclusion</h2>
 
-
                             <p>Design sprints have clear upsides and it’s easy to see why the practice has such widespread appeal. It’s simple to learn, emphasizes collaboration, and uses testable prototypes to shortcut engineering overhead, all within a specific timeframe.</p>
 
                             <p>It's become a worldwide phenomenon and you can see the palpable enthusiasm from people trying it for the first time:</p>
+
+                            <footer>
+                                <div class="row">
+                                    <div class="avatar col-sm-3 col-lg-2">
+                                        <img class="img-responsive center-block" class="img-responsive center-block" src="../images/about/al-avatar.png">
+                                    </div> <!--  /col -->
+                                    <div class="bio col-sm-9 col-lg-10">
+                                        <p><strong style="font-family: Helvetica;">AL ABUT</strong> <em>is a product designer &amp; startup&nbsp;veteran.</em></p>
+                                        <p><em>Follow</em> <strong><a href="https://twitter.com/alabut/">@alabut</a></strong> <em>on Twitter.</em></em></p>
+                                    </div> <!--  /col -->
+                                </div> <!-- /row -->
+                            </footer>
 
                         </div> <!-- /col-sm-8 col-sm-offset-2 -->
                     </div> <!-- row -->
                 </div> <!-- /container -->
             </section>
             <aside class="dark bio-and-footer">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-sm-8 col-sm-offset-2">
-                            <div class="row">
-                                <div class="avatar col-sm-3 col-lg-2">
-                                    <img class="img-responsive center-block" class="img-responsive center-block" src="../images/about/al-avatar.png">  
-                                </div>
-                                <div class="bio col-sm-9 col-lg-10">
-                                    <p><strong style="font-family: Helvetica;">AL ABUT</strong> <em>is a product designer &amp; startup&nbsp;veteran.</em></p>
-                                    <p>Follow <a href="https://twitter.com/alabut/">@alabut</a> on Twitter.</em></p>
-                                </div>
-                            </div>
-
-                        </div> <!-- /col -->
-                    </div> <!-- row -->
-                </div> <!-- /container -->
-
                 <div class="container footer">
                     <div class="row mini-nav">
                         <div class="col-sm-8 col-sm-offset-2">
-                            <div class="footer-wrap">
-                                <a href="/">Home</a>
-                                 · 
-                                <a href="/about">About</a>
-                                 · 
-                                <span class="copyright">Made with &hearts; in CA</span>
-                            </div>
-                        </div> <!-- /col-sm-12 mini-nav -->
+                            <a href="/">Home</a>
+                             · 
+                            <a href="/about">About</a>
+                             · 
+                            <span class="copyright">Made with &hearts; in CA</span>
+                        </div> <!-- /col -->
                     </div> <!-- /row mini-nav -->
                 </div> <!-- /container footer -->
             </aside>
