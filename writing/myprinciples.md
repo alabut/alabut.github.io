@@ -24,12 +24,13 @@ With all of my harping on speed, independence and most of all, high quality end 
 
 A good designer knows how to:
 
-Trawl through support requests to understand customer needs.
-Interview stakeholders to distill business goals.
-Do competitive analysis.
-Make their own prototypes to test solutions.
-Prioritize feature work.
-And countless other things, without having to stop for guidance at every step.
+* Trawl through support requests to understand customer needs.
+* Interview stakeholders to distill business goals.
+* Do competitive analysis.
+* Make their own prototypes to test solutions.
+* Prioritize feature work.
+* And countless other things, without having to stop for guidance at every step.
+
 Basically, try to work fast and independently.
 
 And when it comes to group collaboration techniques, keep your powder dry and only gather the entire team when absolutely necessary and for the minimum time possible, to respect their colleagues’ time and energy.
