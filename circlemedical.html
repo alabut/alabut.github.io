@@ -2,15 +2,9 @@
 <html>
     <head>
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-256299-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'UA-256299-1');
-        </script>
+        
+        <!-- Plausible is a privacy-focused analytics tool that doesn't require cookies or GDPR notice. -->
+        <script async defer data-domain="alabut.com" src="https://plausible.io/js/plausible.js"></script>
 
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
@@ -272,52 +266,6 @@ p, ol li {
     border: none;
     margin: 0;
 }
-
-.listbox {
-    background: #f2f2f2;
-    border-radius: 20px;
-    margin: 60px 0;
-    padding: 70px 70px 1px;
-}
-
-@media only screen and (max-width : 576px) {
-    .listbox {
-        padding: 40px 20px 0;
-    }
-}
-
-.listbox h1 {
-    font-size: 32px;
-    font-weight: 900;
-    margin: 0 0 10px;
-}
-
-.listbox ul {
-    font-size: 22px;
-    font-weight: 300;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-.listbox li {
-    border-bottom: 1px solid rgba(0,0,0,0.05);
-    padding: 25px 0;
-}
-
-.listbox li:last-child {
-    border: none;
-    margin-bottom: 60px;
-}
-
-.listbox li em {
-    color: rgba(0,0,0,0.75);
-    display: block;
-    font-family: Georgia;
-    margin-top: 5px;
-}
-
-
 
 /*
     Custom styles for the image gallery, surgically transplanted and modified from David Miller's free "Freelancer" Bootstrap theme:
