@@ -72,15 +72,22 @@
 	border-radius: 20px;
 	color: #fff;
 	margin: 80px 0 20px;
-	padding: 20px 60px 60px;
 }
 
 .dark .listbox h1 {
 	border-color: #fff;
 }
 
+.dark .listbox li {
+    border-bottom: 1px solid rgba(255,255,255,.05);
+}
+
+.dark .listbox li:last-child {
+    border: none;
+}
+
 .dark .listbox li em {
-	color: #fff;
+    color: #fff;
 }
 
 
