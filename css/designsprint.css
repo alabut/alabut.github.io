@@ -479,11 +479,6 @@ article .table-of-contents li::before {
     border: 1px solid rgba(255,255,255,0.5);
 }
 
-article .table-of-contents > ol >li::before {
-    background-color: #fff;
-    border: none;
-}
-
 article .table-of-contents li {
     margin-bottom: 10px;
 }
