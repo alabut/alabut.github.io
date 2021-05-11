@@ -34,6 +34,7 @@ header {
 
 article .dark.bio-and-footer {
     border: none;
+    margin-top: 20px;
 }
 
 /* NEW CUSTOM STYLES (should they be the default? just try disabling designsprint.css to see how nicely minimal the bootstrap-only version is...) */
@@ -65,23 +66,69 @@ article .blockquote.table-of-contents {
 }
 
 article .blockquote.table-of-contents ol {
+    margin-bottom: 0;
     padding-left: 0;
     padding-right: 0;
 }
 
-footer {
+footer.byline {
     background: rgba(0,0,0,0.05);
     border-radius: 10px;
     margin-bottom: 20px;
     padding: 40px;
 }
 
-footer p {
+footer.byline p {
     margin-bottom: 5px;
 }
 
-footer p:last-of-type {
+aside p:last-of-type, footer.byline p:last-of-type {
     margin: 0;
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+.newsletter {
+    text-align: center;
+}
+
+.newsletter, .minimal-header aside.blockquote {
+    background: #111111;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    overflow: hidden;
+    padding: 73px;
+    position: relative;
+}
+
+.newsletter:before, .minimal-header aside.blockquote:before {
+    background-color: #f15403;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    content: "";
+    height: 35px;
+    position: absolute;
+    right: 33%;
+    top: 0;
+    width: 70px;
+}
+
+.newsletter:after, .minimal-header aside.blockquote:after {
+    background-color: #fff;
+    border-radius: 80px;
+    bottom: -130px;
+    content: "";
+    height: 125px;
+    opacity: .1;
+    position: absolute;
+    right: 8%;
+    transform: rotate( 
+-50deg
+ );
+    width: 300px;
 }
 
         </style>
@@ -122,16 +169,12 @@ footer p:last-of-type {
                             <!-- IDEA FOR GRAPHIC: Waterfall sent men to the moon -->
 
                             <aside class="blockquote table-of-contents">
-                                <div class="row-DISABLED">
-                                    <div class="col-sm-6-DISABLED col-sm-offset-3-DISABLED">
-                                        <h1>Inline List Of Smart Thoughts</h1>
-                                        <ol>
-                                            <li>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</li>
-                                            <li>Sed posuere consectetur est at lobortis.</li>
-                                            <li>Etiam porta sem malesuada magna mollis euismod.</li>
-                                        </ol>
-                                    </div> <!-- /col -->
-                                </div> <!-- /row -->
+                                <h1>Inline List Of Smart Thoughts</h1>
+                                <ol>
+                                    <li>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</li>
+                                    <li>Sed posuere consectetur est at lobortis.</li>
+                                    <li>Etiam porta sem malesuada magna mollis euismod.</li>
+                                </ol>
                             </aside>
 
                             <p>Personality, work environment, seniority - these factors explain why your mileage will vary on any advice, from me or anyone else. Everyone has different learning styles, experience levels, and industries, so you should take that all into account and consider the context of any advice before applying it to you or your field.</p>
@@ -142,7 +185,9 @@ footer p:last-of-type {
 
                             <h3>Agile Is A State Of Mind</h3>
 
-                            <p>Just to state this up front as a disclaimer: I’m not against design sprints, agile development, lean startups, or any other business techniques.</p>
+                            <aside class="blockquote">
+                                <p>Just to state this up front as a disclaimer: I’m not against design sprints, agile development, lean startups, or any other business techniques.</p>
+                            </aside>
 
                             <p>I’m a process omnivore and devoured them all when I was figuring out my own approach in the first half of my career. I tried many different things, kept the bits that worked and never stayed wedded to any one single approach. Over time, I formed my own flexible and idiosyncratic methods, ones that play to my own unique strengths and chosen work environments, but I still see the value in methodologies that don't apply to my line of work.</p>
 
@@ -151,6 +196,15 @@ footer p:last-of-type {
                             <h3>Ditches UX Dogma</h3>
 
                             <p>It's fun to shortcut engineering overhead and jump straight into action. Design sprints upend decades of UX dogma and skip past research techniques that add unnecessary overhead for questionable benefits.</p>
+
+                            <aside class="blockquote">
+                                <h2>Inline List Of Smart Thoughts</h2>
+                                <ol>
+                                    <li>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</li>
+                                    <li>Sed posuere consectetur est at lobortis.</li>
+                                    <li>Etiam porta sem malesuada magna mollis euismod.</li>
+                                </ol>
+                            </aside>
 
                             <p>From Jonathan Courtney&#8217;s article <em><a href="https://medium.com/p/user-research-is-overrated-6b0fe101d41">User Research is Overrated</a></em>:</p>
 
@@ -180,7 +234,7 @@ footer p:last-of-type {
 
                             <p>It's become a worldwide phenomenon and you can see the palpable enthusiasm from people trying it for the first time:</p>
 
-                            <footer>
+                            <footer class="byline">
                                 <div class="row">
                                     <div class="avatar col-sm-3 col-lg-2">
                                         <img class="img-responsive center-block" class="img-responsive center-block" src="../images/about/al-avatar.png">
@@ -191,6 +245,11 @@ footer p:last-of-type {
                                     </div> <!--  /col -->
                                 </div> <!-- /row -->
                             </footer>
+
+                            <aside class="newsletter">
+                                <h2>Email Newsletter</h2>
+                                <p>CTA goes here...</p>
+                            </aside>
 
                         </div> <!-- /col-sm-8 col-sm-offset-2 -->
                     </div> <!-- row -->
