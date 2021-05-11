@@ -124,6 +124,31 @@ aside h2 {
     width: 300px;
 }
 
+@media only screen and (max-width: 577.98px) {
+
+    .minimal-header aside.blockquote {
+        padding: 40px;
+    }
+
+    aside ol {
+        margin: 0;
+        padding: 0;
+    }
+
+    aside li:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .newsletter {
+        padding: 60px 20px 0px;
+    }
+
+    .newsletter:after {
+        bottom: -150px;
+    }
+
+}
+
         </style>
     </head>
     <body class="minimal-header">
@@ -240,8 +265,9 @@ aside h2 {
                             </footer>
 
                             <aside class="newsletter">
-                                <h2>Email Newsletter</h2>
-                                <p>CTA goes here...</p>
+                                <h2>Sign Up For My Email Newsletter</h2>
+                                <p>Occasional thoughts on product design, startups &amp; tech.</p>
+                                <iframe src="https://alabut.substack.com/embed" width="100%" height="100%" style="background-color: transparent !important; color: #fff" frameborder="0" scrolling="no"></iframe>
                             </aside>
 
                         </div> <!-- /col-sm-8 col-sm-offset-2 -->
