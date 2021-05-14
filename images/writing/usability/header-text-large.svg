@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="695px" height="127px" viewBox="0 0 695 127" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>usability (desktop)</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="usability-(desktop)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M520,85 L694,85" id="Shape" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+        <text id="A-complete-history" fill="#FFFFFF" font-family="Georgia-Italic, Georgia" font-size="36" font-style="italic" font-weight="normal">
+            <tspan x="197.276367" y="97">A complete history</tspan>
+        </text>
+        <path d="M1,85 L173,85" id="Shape" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+        <text id="USABILITY-TESTING" stroke="#FFFFFF" stroke-width="3" font-family="Inter-Black, Inter" font-size="62" font-weight="700" letter-spacing="4.4000001" fill="#000000" fill-opacity="0">
+            <tspan x="0.0542606007" y="48">USABILITY TESTIN</tspan>
+            <tspan x="647.036648" y="48">G</tspan>
+        </text>
+    </g>
+</svg>
