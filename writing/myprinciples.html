@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!-- Plausible is a privacy-focused analytics tool that doesn't require cookies or GDPR notice. -->
+        <script async defer data-domain="alabut.com" src="https://plausible.io/js/plausible.js"></script>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+        <meta property="og:image" content="https://d32mxho067pe0f.cloudfront.net/images/writing/danae-paparis-cj6Am4O7YJs-unsplash-1200w.jpg">
+        <title>Testing a streamlined blog post format...</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/designsprint.css">
+        <link rel="stylesheet" href="../css/work.css">
+        <link rel="stylesheet" media="print" href="../css/print.css">
+        <style type="text/css">
+
+/* REVERSE THESE DEFAULTS IN THE OTHER STYLESHEET TOO - not folding this within the minimal header class because it shouldn't have a default in the first place */
+
+body, html {
+    background: #fff;
+}
+
+header {
+    background: none;
+}
+
+article .dark.bio-and-footer {
+    border: none;
+    margin-top: 20px;
+}
+
+article .listbox h2 {
+    margin: 0;
+}
+
+article .listbox h2::after {
+    margin: 25px auto 0;
+}
+
+article .listbox li::before {
+    content: none;
+}
+
+article .listbox li:last-child {
+    margin-bottom: 45px;
+}
+
+/* NEW CUSTOM STYLES (should they be the default? just try disabling designsprint.css to see how nicely minimal the bootstrap-only version is...) */
+
+.minimal-header header {
+    text-align: center;
+}
+
+.minimal-header .header-wrap {
+    padding: 100px 15px;
+}
+
+.minimal-header .logo {
+    display: inline-flex;;
+    filter: invert(1);
+    left: initial;
+    position: relative;
+    top: initial;
+}
+
+.minimal-header .logo:hover {
+    /*color: #f15403;*/
+    filter: invert(0);
+}
+
+article .blockquote.table-of-contents {
+    margin: 40px 0;
+    padding: 30px 30px 25px;
+}
+
+article .blockquote.table-of-contents ol {
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+footer.byline {
+    background: rgba(0,0,0,0.05);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 40px;
+}
+
+footer.byline p {
+    margin-bottom: 5px;
+}
+
+aside p:last-of-type, footer.byline p:last-of-type {
+    margin: 0;
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+.newsletter {
+    text-align: center;
+}
+
+.newsletter, .minimal-header aside.blockquote {
+    background: #111111;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    overflow: hidden;
+    padding: 73px;
+    position: relative;
+}
+
+.listbox {
+    overflow: hidden;
+    position: relative;
+}
+
+.listbox:before, .newsletter:before, .minimal-header aside.blockquote:before {
+    background-color: #f15403;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    content: "";
+    height: 35px;
+    position: absolute;
+    right: 33%;
+    top: 0;
+    width: 70px;
+}
+
+.listbox:after, .newsletter:after, .minimal-header aside.blockquote:after {
+    background-color: #fff;
+    border-radius: 80px;
+    bottom: -130px;
+    content: "";
+    height: 125px;
+    opacity: .1;
+    position: absolute;
+    right: 8%;
+    transform: rotate( 
+-50deg
+ );
+    width: 300px;
+}
+
+.listbox:after {
+    background-color: #000;
+}
+
+@media only screen and (max-width: 577.98px) {
+
+    .minimal-header aside.blockquote {
+        padding: 40px;
+    }
+
+    aside ol {
+        margin: 0;
+        padding: 0;
+    }
+
+    aside li:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .newsletter {
+        padding: 60px 20px 0px;
+    }
+
+    .newsletter:after {
+        bottom: -150px;
+    }
+
+}
+
+        </style>
+    </head>
+    <body class="minimal-header">
+        <header>
+            <div class="header-wrap">
+                <a class="logo" href="https://alabut.com"></a>
+                <h1>My Principles &amp; Work Philosophy</h1>
+            </div> <!-- /header-wrap-none -->
+        </header>
+
+        <article>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2">
+
+                            <blockquote>
+                                <p><em>&#8220;Great artists imitate and improve, whereas small ones steal and spoil.&#8221;</em></p>
+                                <footer>
+                                    W. H. Davenport Adams, writing about the poet Alfred Tennyson
+                                </footer>
+                            </blockquote>
+
+                            <p><span class="ornamental-first-letter">D</span>esign Sprints have spread far and wide from their original development at startups and have become a ubiquitous practice on a global scale at a wide range of organizations, commercial or otherwise. It&#8217;s a good bet that any designer reading this probably already knows what they are.</p>
+
+                            <aside class="blockquote table-of-contents">
+                                <h1>Inline List Of Smart Thoughts</h1>
+                                <ol>
+                                    <li>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</li>
+                                    <li>Sed posuere consectetur est at lobortis.</li>
+                                    <li>Etiam porta sem malesuada magna mollis euismod.</li>
+                                </ol>
+                            </aside>
+
+                            <p>The supposed benefits of any technique depends on your own preferences, experience and circumstances.</p>
+
+                            <div class="listbox">
+                                <h2>Possible Solutions</h2>
+                                <ul>
+                                    <li>
+                                        <strong>Redesign existing screens  </strong>
+                                        <em>Change focus from account creation to improving the first office visit.</em>
+                                    </li>
+                                    <li>
+                                        <strong>Break up data entry with notifications </strong>
+                                        <em>Deprecate email-based account creation and focus instead on enabling text and push notifications, so the app can ask for info as needed rather than all at once.</em>
+                                    </li>
+                                </ul>
+                            </div> <!-- listbox -->
+
+                            <p>So like a business edition of the Rashomon effect, what I’m saying is that “good process” is relative and not everything is a universal truth. This is my own personal take on the role of design in the business world and consider this your warning that I&#8217;m an unreliable narrator in the story that follows...</p>
+
+                            <h3>Agile Is A State Of Mind</h3>
+
+                            <aside class="blockquote">
+                                <p>Just to state this up front as a disclaimer: I’m not against design sprints, agile development, lean startups, or any other business techniques.</p>
+                            </aside>
+
+                            <p>Even waterfall has it&#8217;s place. There&#8217;s a reason it helped organize half a million government employees in the 60&#8217;s for the space program!</p>
+
+                            <h3>Ditches UX Dogma</h3>
+
+                            <p>It's fun to shortcut engineering overhead and jump straight into action. Design sprints upend decades of UX dogma and skip past research techniques that add unnecessary overhead for questionable benefits.</p>
+
+                            <aside class="blockquote">
+                                <h2>Inline List Of Smart Thoughts</h2>
+                                <ol>
+                                    <li>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</li>
+                                    <li>Sed posuere consectetur est at lobortis.</li>
+                                    <li>Etiam porta sem malesuada magna mollis euismod.</li>
+                                </ol>
+                            </aside>
+
+                            <p>From Jonathan Courtney&#8217;s article <em><a href="https://medium.com/p/user-research-is-overrated-6b0fe101d41">User Research is Overrated</a></em>:</p>
+
+                            <blockquote>
+                                <p>Up-front user research is a form of product procrastination. It’s busy-work, it’s a way to avoid making hard decisions. It delays the need to make something tangible.</p>
+                            </blockquote>
+
+                            <p>&#8230;and&#8230;</p>
+
+                            <blockquote>
+                                <p>It took a while, but eventually [&#8230;] we figured out that even though it was nice to “have the user in mind” when designing, the useful data came from the first user tests, not the research.</p>
+                            </blockquote>
+
+                            <p>User interviews, focus groups, personas, empathy maps, mindmapping, ethnographic field studies&#8230; <em>it&#8217;s all a bit much.</em> Especially if you&#8217;re not in a large corporate environment and trying to sell the value of a project before it even starts.</p>
+
+                            <h2 id="reception">In Conclusion</h2>
+
+                            <p>Design sprints have clear upsides and it’s easy to see why the practice has such widespread appeal. It’s simple to learn, emphasizes collaboration, and uses testable prototypes to shortcut engineering overhead, all within a specific timeframe.</p>
+
+                            <p>It's become a worldwide phenomenon and you can see the palpable enthusiasm from people trying it for the first time:</p>
+
+                            <footer class="byline">
+                                <div class="row">
+                                    <div class="avatar col-sm-3 col-lg-2">
+                                        <img class="img-responsive center-block" class="img-responsive center-block" src="../images/about/al-avatar.png">
+                                    </div> <!--  /col -->
+                                    <div class="bio col-sm-9 col-lg-10">
+                                        <p><strong style="font-family: Helvetica;">AL ABUT</strong> <em>is a product designer &amp; startup&nbsp;veteran.</em></p>
+                                        <p><em>Follow</em> <strong><a href="https://twitter.com/alabut/">@alabut</a></strong> <em>on Twitter.</em></em></p>
+                                    </div> <!--  /col -->
+                                </div> <!-- /row -->
+                            </footer>
+
+                            <aside class="newsletter">
+                                <h2>Sign Up For My Email Newsletter</h2>
+                                <p>Occasional thoughts on product design, startups &amp; tech.</p>
+                                <iframe src="https://alabut.substack.com/embed" width="100%" height="100%" style="background-color: transparent !important; color: #fff" frameborder="0" scrolling="no"></iframe>
+                            </aside>
+
+                        </div> <!-- /col-sm-8 col-sm-offset-2 -->
+                    </div> <!-- row -->
+                </div> <!-- /container -->
+            </section>
+            <aside class="dark bio-and-footer">
+                <div class="container footer">
+                    <div class="row mini-nav">
+                        <div class="col-sm-8 col-sm-offset-2">
+                            <a href="/">Home</a>
+                             · 
+                            <a href="/about">About</a>
+                             · 
+                            <span class="copyright">Made with &hearts; in CA</span>
+                        </div> <!-- /col -->
+                    </div> <!-- /row mini-nav -->
+                </div> <!-- /container footer -->
+            </aside>
+        </article>
+    </body>
+</html>
