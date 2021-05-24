@@ -5,9 +5,7 @@
 
 I've become a pretty good thief over the years. It's a subtle art to steal inspiration from various sources and then hide the heist, carefully melding the disparate pieces together to form a unique new thing.
 
-That also goes for workflows too, not just designs. I've cobbled together bits and pieces from agile programming, UX design, and disparate fields like movies and entertainment. All in the name of finding what works for me, customized to my unique strengths and working style.
-
-What I've ended up with is not a single or fixed design process, but instead a constantly-evolving set of guiding principles and common work patterns.
+What I've ended up with is not a single design style or process, but instead a constantly-evolving set of guiding principles and common work patterns.
 
 Basically I try to think independently and do good work, fast. And play nicely with others. 
 
