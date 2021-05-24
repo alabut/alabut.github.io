@@ -1,104 +1,106 @@
-“Perpetual optimism is a force multiplier.”
-- Colin Powell
-
-
-
-
+# My Work Philosophy
 
 "Great artists imitate and improve, whereas small ones steal and spoil."
 - W. H. Davenport Adams, writing about the poet Alfred Tennyson
 
-I've gotten away with being a really good thief over the years. I've learned the subtle art of stealing inspiration from various sources and then hiding the heist by carefully melding the disparate pieces together to form a unique new thing in my own style. 
+I've become a pretty good thief over the years. It's a subtle art to steal inspiration from various sources and then hide the heist, carefully melding the disparate pieces together to form a unique new thing.
 
-And I did it not just with individual pieces of work but also workflows too. I've taken bits and pieces of agile programming, UX design, and all kinds of other fields, including ones that have nothing to do with technology, like movies and entertainment.
+That also goes for workflows too, not just designs. I've cobbled together bits and pieces from agile programming, UX design, and disparate fields like movies and entertainment. All in the name of finding what works for me, customized to my unique strengths and working style.
 
-So what I have in the end is not a specific design process but more of a guiding set of principles and common work patterns, bespoke to me and my unique strengths. This is my take on doing good work in the form of full-stack product design on fast-paced teams:
+What I've ended up with is not a single or fixed design process, but instead a constantly-evolving set of guiding principles and common work patterns.
 
+Basically I try to think independently and do good work, fast. And play nicely with others. 
 
+That's about it. Everything else is details.
 
+The main tenets of my personal playbook are:
 
+* Be flexible. Know your toolbox inside and out, so you can use the right tools at the right time, no matter what the team's development process is.
+* Be fast. Momentum is king. Bring a positive and proactive energy to the team.
+* Collaborate well but also think independently. Ingest many viewpoints while still creating opinionated work.
+* Above all, do good work. The final product is the most important thing, all the way down to the smallest detail.
 
+With all of my emphasis on speed, collaboration, independence and most of all, high quality end results, I guess you could say that these are my version of Dieter Rams' principles of good design, especially at startups and fast-paced teams.
 
+## Be Flexible
 
-Be fast & flexible
+Specialization is for insects.
+ - Robert A. Heinlein
 
-Here’s my overall principles of how to survive at startups and other demanding environments, all while doing good work and showing design leadership:
+The multifaceted nature of my profession is a perfect fit for my personality because I've always tried to be a master of several trades. Day-to-day, putting those core values to work can take shape in all kinds of different ways:
 
-* Use an “unprocess”. Pick the right tools at the right time and in a self-sufficient manner, rather than a regimented formal schedule. Think toolbox, not pipeline.
-* Keep up team momentum. Work 1-on–1 with various roles and bring the entire team together only in short bursts.
-* Understand everyone else’s needs rather than pushing design methods on other people to understand your goals. I.e. practice good user research skills within your own company.
-* Avoid groupthink. Don’t shirk hard decisions for the sake of consensus, or you’ll only agree on the lowest common denominator and make Frankenstein designs.
-* Think of this as my playbook for the kind of things designers ask about all the time: how to survive as a sole designer amongst engineers and earn the right to be at the decision-making table with business stakeholders.
+* Trawling through support requests to understand customer needs.
+* Interviewing stakeholders to distill business goals.
+* Doing competitive analysis.
+* Making prototypes to test solutions.
+* Prioritizing feature work.
 
+And doing countless other things, without having to stop for guidance at every step.
 
+To me, product design is a game for fullstack players. UX, UI, prototyping, frontend development, project management, business strategy... you have to play many positions to win at this game.
 
+"UX is like Jazz. You need to be an expert musician and understand all the rules before you can break them.
 
+Product design is like punk. You need three chords and a "can do" attitude. Screw the rules (and screw jazz)."
+- Andy Budd
 
+## Be Fast
 
+It's important to attack the work with energy because none of the rest matters if you can't pull it all together in fun and positive way.
 
+"Perpetual optimism is a force multiplier." 
+ - It Worked for Me: In Life and Leadership, by Colin Powell
 
+Enthusiasm for the team and mission can't be faked, so I'm very picky about where I ply my trade. It's why I always advise junior designers: do the kind of work that you want to do more of and the rest will follow.
 
+## Group Collaboration
 
+There's no doubt that creating products is a team effort. Having good relationships and clear communication is particularly important to my style of work, since I have an almost journalistic approach and try to ingest as many different viewpoints as I can.
 
+"If you want to go fast, go alone. If you want to go far, go together."
+ - African proverb
 
+Something about double diamond? There's a rhythm to group vs solo work. It's not easy to ingest as many viewpoints as possible, yet still create opinionated work.
 
-With all of my harping on speed, independence and most of all, high quality end results, I guess you could say that these are my version of Dieter Rams’ principles of good design, especially at startups.
+Know when it's the right time to zoom out to collaborate and zoom in to execute.
 
-Putting those strategic principles into actual tactical work, a good designer should be able to:
+Collaborate in ways that respect everyone else's time. (needs better rewording) Keep up team momentum. Work 1-on–1 with various roles and bring the entire team together only in short bursts.
 
-* Trawl through support requests to understand customer needs.
-* Interview stakeholders to distill business goals.
-* Do competitive analysis.
-* Make their own prototypes to test solutions.
-* Prioritize feature work.
-* And countless other things, without having to stop for guidance at every step.
+## Independent Thought
 
-Basically, try to work fast and independently.
+Balancing collaborative skills with independent thought and proactive work is where the magic happens.
 
-And when it comes to group collaboration techniques, keep your powder dry and only gather the entire team when absolutely necessary and for the minimum time possible, to respect their colleagues’ time and energy.
+It's a particularly important skill for designers to be able to think for themselves because they're usually outnumbered by other roles, often by vast amounts. It's not uncommon for teams to have ratios as high as one designer per twenty developers, plus an assortment of PM's, stakeholders, marketers, and others.
 
+The stakes are high - a designer's work sets the bar for expected product quality for everyone else. Good design work has an ineffable aspect that sets the tone and injects enthusiasm across all levels of a team. People want to bring good work to life when they're excited about the final product.
 
+Creating work of a high caliber takes a little bit of solitude, a bit of space where independent critical thinking skills can thrive. Otherwise, you're purely reactive and so busy putting out various fires that standards drop just to keep up. Quantity wins over quality and the final product suffers.
 
+So avoid groupthink. Think independently and initiate, don't just wait and react. Don't shirk hard decisions for the sake of consensus, or you'll be in a design-by-committee situation and only make Frankenstein designs.
 
+Don't just take my word for it, look at the science! Groupthink is a common team dynamic and the results are usually inferior to solitary thought by individuals:
 
+"Decades of research have consistently shown that brainstorming groups think of far fewer ideas than the same number of people who work alone and later pool their ideas."
+ - Groupthink: The brainstorming myth, New Yorker, Jan 30, 2012
 
-It’s a critical skill for designers to think for themselves amidst the pressure of being vastly outnumbered by other roles. The stakes are high. It’s about more than just doing good individual work, it’s setting the bar for expected product quality for everyone and avoiding the lowest common denominator outcomes.
+So collaboration is great and all -don't be an asshole because your performance doesn't count if you don't play well with others - but designers aren't hired just to make sure everyone gets along no matter how bad the end result. You're there to make great products.
 
-Don’t just take my word for it, look at the science — there are research studies backing this up. Groupthink is the most common team dynamic and the results of groupthink are inferior to solitary thought by individuals.
+That means you need to be comfortable with thinking on your own, initiating your own product direction, and speaking up with candor.
 
-So collaboration is great and all but that’s not the only thing you’re hired to do, to make sure everyone gets along no matter how bad the end result. You’re there to make great products and that means you need to be strong, speak up with candor, and most of all, lead.
+## Further Reading
 
+I've written an article called Structured Sketching about one of my favorite techniques for group brainstorming, and also a long form critique on the week-long exercise known as design sprints.
 
+Shout out to Nathan Konty for clearly articulating a design approach that I'd been trying to describe for years:
 
+https://twitter.com/alabut/status/1299435591008808960
 
-
-
-LIMIT TEAM MEETINGS IN LENGTH & FREQUENCY
-
-For team exercises in particular, I’ve found that the best format to bring everyone together is a long afternoon meeting, regardless of the particular topic or design exercise. It’s just long enough to get their best thinking, yet short enough to fit into an otherwise busy week.
-
-Anything longer than the length of a movie is a corporate group therapy session disguised as real work.
-
-
-
-
-Structured Sketching
-
-Here's a design exercise I actually like, I like it a lot in fact. Originally called a "design studio", the format was a workshop that takes 1 to 2 days, which I modified and cut down to 90 minutes or less to get the same benefits. I wrote an article on the Zapier blog to explain the abbreviated format and documented the one we did at an off-site, but the gist of it is very simple:
-
-
-
-
-
-
-
-
-
-
-
+https://signalvnoise.com/posts/3794-monsters-and-thieves
 
 ************************
+
 CUTTING ROOM FLOOR
+
 ************************
 
 My approach is bespoke and I don't have a "one size fits all" process for all projects. That said, I do have a few common themes throughout my work and I've distilled a handful of them here.
@@ -107,7 +109,7 @@ That's my take on doing good work, especially product design on fast-paced teams
 
 From my long form article on design sprints:
 
-"...especially when it comes to team exercises, you should be highly selective about only the few key tasks that yield the most benefit and make sure to space it out as much as possible, otherwise you’re wasting not just your time but everyone else’s as well."
+"…especially when it comes to team exercises, you should be highly selective about only the few key tasks that yield the most benefit and make sure to space it out as much as possible, otherwise you're wasting not just your time but everyone else's as well."
 
 Do instead of sell. Enough proselytizing, make something instead. For designers, that means to show your ideas via mocks and clickable prototypes. For developers, express yourself via working code for a prototype that looks rough but works for a few key flows.
 
@@ -120,22 +122,3 @@ So in my world, execution trumps strategy. Everyone has ideas but real artists s
 You can't crowdsource expertise, or, collect feedback from anybody but you can't please everybody.
 
 Designers want respect and a seat at the table? Respect comes from doing great work.
-
-
-
-
-
-
-
-
-
-
-
-
-Credit?
-
-Thank you to Nathan Konty for clearly articulating a design approach that I'd been trying to describe for years:
-
-https://twitter.com/alabut/status/1299435591008808960
-
-https://signalvnoise.com/posts/3794-monsters-and-thieves
