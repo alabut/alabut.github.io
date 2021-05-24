@@ -5,7 +5,7 @@
 
 I've become a pretty good thief over the years. It's a subtle art to steal inspiration from various sources and then hide the heist, carefully melding the disparate pieces together to form a unique new thing.
 
-What I've ended up with is not a single design style or process, but instead a constantly-evolving set of guiding principles and common work patterns.
+What I've ended up with is not a single design style or fixed process, but instead a constantly-evolving set of guiding principles and common work patterns.
 
 Basically I try to think independently and do good work, fast. And play nicely with others. 
 
@@ -22,10 +22,12 @@ With all of my emphasis on speed, collaboration, independence and most of all, h
 
 ## Be Flexible
 
+The multifaceted nature of my profession is a perfect fit for my personality because I've always had wide-ranging interests and try to be a master of several trades.
+
 Specialization is for insects.
  - Robert A. Heinlein
 
-The multifaceted nature of my profession is a perfect fit for my personality because I've always tried to be a master of several trades. Day-to-day, putting those core values to work can take shape in all kinds of different ways:
+Day-to-day, putting those core values to work can take shape in all kinds of different ways:
 
 * Trawling through support requests to understand customer needs.
 * Interviewing stakeholders to distill business goals.
@@ -44,7 +46,7 @@ Product design is like punk. You need three chords and a "can do" attitude. Scre
 
 ## Be Fast
 
-It's important to attack the work with energy because none of the rest matters if you can't pull it all together in fun and positive way.
+It's important to attack the work with energy because none of the rest matters if you can't pull it all together in a fun and positive way.
 
 "Perpetual optimism is a force multiplier." 
  - It Worked for Me: In Life and Leadership, by Colin Powell
@@ -70,7 +72,9 @@ Balancing collaborative skills with independent thought and proactive work is wh
 
 It's a particularly important skill for designers to be able to think for themselves because they're usually outnumbered by other roles, often by vast amounts. It's not uncommon for teams to have ratios as high as one designer per twenty developers, plus an assortment of PM's, stakeholders, marketers, and others.
 
-The stakes are high - a designer's work sets the bar for expected product quality for everyone else. Good design work has an ineffable aspect that sets the tone and injects enthusiasm across all levels of a team. People want to bring good work to life when they're excited about the final product.
+The stakes are high - the quality of a designer's work sets the bar for everyone else.
+
+Good design work has an ineffable aspect that sets the tone and injects enthusiasm across all levels of a team. People want to bring good work to life when they're excited about the final product.
 
 Creating work of a high caliber takes a little bit of solitude, a bit of space where independent critical thinking skills can thrive. Otherwise, you're purely reactive and so busy putting out various fires that standards drop just to keep up. Quantity wins over quality and the final product suffers.
 
@@ -83,7 +87,7 @@ Don't just take my word for it, look at the science! Groupthink is a common team
 
 So collaboration is great and all -don't be an asshole because your performance doesn't count if you don't play well with others - but designers aren't hired just to make sure everyone gets along no matter how bad the end result. You're there to make great products.
 
-That means you need to be comfortable with thinking on your own, initiating your own product direction, and speaking up with candor.
+That means you need to be comfortable with thinking on your own, initiating an opinionated product direction, and speaking up with candor.
 
 ## Further Reading
 
@@ -111,7 +115,7 @@ From my long form article on design sprints:
 
 Do instead of sell. Enough proselytizing, make something instead. For designers, that means to show your ideas via mocks and clickable prototypes. For developers, express yourself via working code for a prototype that looks rough but works for a few key flows.
 
-Just do whatever it takes to build something in an afternoon. Don't disappear for a week building out an all-encompassing final product, and do the opposite by building nothing and just arguing at a whiteboarding. Find that sweet middle spot: build something quickly, have a discussion about it, reject or evolve it, and always keep moving.
+Just do whatever it takes to build something in an afternoon. Don't disappear for a week building out an all-encompassing final product, and do the opposite by building nothing and just arguing at a whiteboard. Find that sweet middle spot: build something quickly, have a discussion about it, reject or evolve it, and always keep moving.
 
 Why the emphasis on speed? Nobody has time. It's like the old Hollywood joke about a producer yelling "we've been shooting for a week and we're already a month behind!"
 
