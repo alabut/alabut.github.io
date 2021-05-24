@@ -1,3 +1,10 @@
+“Perpetual optimism is a force multiplier.”
+- Colin Powell
+
+
+
+
+
 "Great artists imitate and improve, whereas small ones steal and spoil."
 - W. H. Davenport Adams, writing about the poet Alfred Tennyson
 
