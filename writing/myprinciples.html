@@ -85,12 +85,20 @@ article aside li {
     line-height: 120%;
 }
 
+footer.byline:before {
+    content: url(../images/writing/monogram-gray-on-white.png);
+    left: calc(50% - 107px);
+    position: absolute;
+    top: -80px;
+}
+
 footer.byline {
     background: rgba(0,0,0,0.05);
     border-radius: 10px;
     margin-bottom: 20px;
-    margin-top: 60px;
+    margin-top: 130px;
     padding: 40px;
+    position: relative;
 }
 
 footer.byline p {
@@ -202,8 +210,13 @@ aside.blockquote.giant-quotemark:nth-of-type(even) {
     }
 
     .minimal-header aside.blockquote.giant-quotemark {
-        background-position: 40px 10px;
-        padding: 100px 40px 40px;
+        background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/quotemark-orange-mobile.png);
+        background-position: 40px 20px;
+        padding: 70px 40px 40px;
+    }
+
+    aside.blockquote.giant-quotemark:nth-of-type(even) {
+        background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/quotemark-gray-mobile.png);
     }
 
     .minimal-header aside.blockquote:before {
