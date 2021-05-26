@@ -18,7 +18,8 @@ figure,
 .tweet-wrapper, 
 aside.dark, 
 .center-inline-contents, 
-.footer {
+.footer,
+.newsletter {
 	display: none !important;
 }
 
