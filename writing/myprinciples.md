@@ -1,7 +1,7 @@
 # My Work Philosophy
 
 "Great artists imitate and improve, whereas small ones steal and spoil."
-- W. H. Davenport Adams, writing about the poet Alfred Tennyson
+- W. H. Davenport Adams writing about Alfred Tennyson
 
 I've become a pretty good thief over the years. It's a subtle art to steal inspiration from various sources and then hide the heist, carefully melding the disparate pieces together to form a unique new thing.
 
@@ -22,7 +22,7 @@ With all of my emphasis on speed, collaboration, independence and most of all, h
 
 ## Be Flexible
 
-The multifaceted nature of my profession is a perfect fit for my personality because I've always had wide-ranging interests and try to be a master of several trades.
+The multifaceted nature of my profession is a perfect fit for my personality. I've always had wide-ranging interests and try to be a master of several trades.
 
 Specialization is for insects.
  - Robert A. Heinlein
@@ -46,12 +46,14 @@ Product design is like punk. You need three chords and a "can do" attitude. Scre
 
 ## Be Fast
 
-It's important to attack the work with energy because none of the rest matters if you can't pull it all together in a fun and positive way.
+It's important to attack the work with energy. None of the rest matters if you can't pull it all together in a fun and positive way!
+
+Enthusiasm for the team and mission can't be faked, so I'm very picky about where I ply my trade.
 
 "Perpetual optimism is a force multiplier." 
  - It Worked for Me: In Life and Leadership, by Colin Powell
 
-Enthusiasm for the team and mission can't be faked, so I'm very picky about where I ply my trade. It's why I always advise junior designers: do the kind of work that you want to do more of and the rest will follow.
+It's why I always advise junior designers: do the kind of work that you want to do more of and the rest will follow.
 
 ## Group Collaboration
 
@@ -85,7 +87,7 @@ Don't just take my word for it, look at the science! Groupthink is a common team
 "Decades of research have consistently shown that brainstorming groups think of far fewer ideas than the same number of people who work alone and later pool their ideas."
  - Groupthink: The brainstorming myth, New Yorker, Jan 30, 2012
 
-So collaboration is great and all -don't be an asshole because your performance doesn't count if you don't play well with others - but designers aren't hired just to make sure everyone gets along no matter how bad the end result. You're there to make great products.
+So collaboration is great and all - don't be an asshole because your performance doesn't count if you don't play well with others  -  but designers aren't hired just to make sure everyone gets along no matter how bad the end result. You're there to make great products and that requires your absolute best thinking.
 
 That means you need to be comfortable with thinking on your own, initiating an opinionated product direction, and speaking up with candor.
 

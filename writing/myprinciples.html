@@ -81,6 +81,10 @@ article .blockquote.table-of-contents ol {
     padding-right: 0;
 }
 
+article aside li {
+    line-height: 120%;
+}
+
 footer.byline {
     background: rgba(0,0,0,0.05);
     border-radius: 10px;
@@ -114,6 +118,13 @@ aside h2 {
     position: relative;
 }
 
+.minimal-header aside.blockquote.giant-quotemark {
+    background-image: url(../images/writing/quotemark-orange.png);
+    background-position: 70px 70px;
+    background-repeat: no-repeat;
+    padding-left: 193px;
+}
+
 .minimal-header aside.blockquote p {
     font-weight: 600;
     line-height: 140%;
@@ -127,9 +138,31 @@ aside h2 {
     opacity: 0.8;
 }
 
+.giant-quotemark:nth-of-type(odd) a {
+    color: #fff;
+}
+
+.giant-quotemark:nth-of-type(odd) a:hover {
+    border-color: #fff;
+}
+
+aside.blockquote.giant-quotemark:nth-of-type(even) {
+    background-color: #f2f2f2;
+    background-image: url(../images/writing/quotemark-gray.png);
+    color: #222;
+}
+
 .listbox {
     overflow: hidden;
     position: relative;
+}
+
+.listbox li {
+    padding: 5px 0 25px;
+}
+
+.listbox li:first-of-type {
+    padding-top: 25px;
 }
 
 .listbox:before, .newsletter:before, .minimal-header aside.blockquote:before {
@@ -153,13 +186,11 @@ aside h2 {
     opacity: .1;
     position: absolute;
     right: 8%;
-    transform: rotate( 
--50deg
- );
+    transform: rotate(-50deg);
     width: 300px;
 }
 
-.listbox:after {
+.listbox:after, aside.blockquote.giant-quotemark:nth-of-type(even):after {
     background-color: #000;
 }
 
@@ -167,6 +198,15 @@ aside h2 {
 
     .minimal-header aside.blockquote {
         padding: 40px;
+    }
+
+    .minimal-header aside.blockquote.giant-quotemark {
+        background-position: 40px 10px;
+        padding: 100px 40px 40px;
+    }
+
+    .minimal-header aside.blockquote:before {
+        right: 10%;
     }
 
     aside ol {
@@ -204,9 +244,11 @@ aside h2 {
                     <div class="row">
                         <div class="col-sm-8 col-sm-offset-2">
 
-                            <aside class="blockquote">
-                                <p>&#8220;Great artists imitate and improve, whereas small ones steal and spoil.&#8221;
-                                    <em>&mdash; W. H. Davenport Adams, writing about the poet Alfred Tennyson</em></p>
+                            <aside class="blockquote giant-quotemark">
+                                <p>
+                                    &#8220;Great artists imitate and improve, whereas small ones steal and spoil.&#8221;
+                                    <em>&mdash; W. H. Davenport Adams, writing about the poet Alfred Tennyson</em>
+                                </p>
                             </aside>
 
                             <p><span class="ornamental-first-letter">I</span>&#8217;ve become a pretty good thief over the years. It&#8217;s a subtle art to steal inspiration from various sources and then hide the heist, carefully melding the disparate pieces together to form a unique new thing.</p>
@@ -244,9 +286,9 @@ aside h2 {
 
                             <h3>Be Flexible</h3>
 
-                            <p>The multifaceted nature of my profession is a perfect fit for my personality because I've always had wide-ranging interests and try to be a master of several trades.</p>
+                            <p>The multifaceted nature of my profession is a perfect fit for my personality. I've always had wide-ranging interests and try to be a master of several trades.</p>
 
-                            <aside class="blockquote">
+                            <aside class="blockquote giant-quotemark">
                                 <p>
                                     &ldquo;Specialization is for insects.&rdquo;
                                     <em>&mdash; Robert A. Heinlein</em>
@@ -254,42 +296,52 @@ aside h2 {
                             </aside>
                             <p>Day-to-day, putting those core values to work can take shape in all kinds of different ways:</p>
 
-                            <ul>
-                            <li>Trawling through support requests to understand customer needs.</li>
-                            <li>Interviewing stakeholders to distill business goals.</li>
-                            <li>Doing competitive analysis.</li>
-                            <li>Making prototypes to test solutions.</li>
-                            <li>Prioritizing feature work.</li>
-                            </ul>
-
-                            <p>And doing countless other things, without having to stop for guidance at every step.</p>
+                            <aside class="blockquote">
+                                <h2>Typical Daily Tasks</h2>
+                                <ul>
+                                    <li>Trawling through support requests to understand customer needs.</li>
+                                    <li>Interviewing stakeholders to distill business goals.</li>
+                                    <li>Doing competitive analysis.</li>
+                                    <li>Making prototypes to test solutions.</li>
+                                    <li>Prioritizing feature work.</li>
+                                    <li>And doing countless other things, without having to stop for guidance at every step.</li>
+                                </ul>
+                            </aside>
 
                             <p>To me, product design is a game for fullstack players. UX, UI, prototyping, frontend development, project management, business strategy&#8230; you have to play many positions to win at this game.</p>
 
-                            <aside class="blockquote">
+                            <aside class="blockquote giant-quotemark">
                                 <p>&#8220;UX is like Jazz. You need to be an expert musician and understand all the rules before you can break them.</p>
-                                <p>Product design is like punk. You need three chords and a 'can do' attitude. Screw the rules (and screw jazz).&#8221;
-                                    <em>&mdash; <a href="https://twitter.com/andybudd/status/1034618587955298304">Andy Budd</a></em></p>
+                                <p>
+                                    Product design is like punk. You need three chords and a 'can do' attitude. Screw the rules (and screw jazz).&#8221;
+                                    <em>&mdash; <a href="https://twitter.com/andybudd/status/1034618587955298304">Andy Budd</a></em>
+                                </p>
                             </aside>
 
                             <h3>Be Fast</h3>
 
-                            <p>It&#8217;s important to attack the work with energy because none of the rest matters if you can&#8217;t pull it all together in a fun and positive way.</p>
+                            <p>It&#8217;s important to attack the work with energy. None of the rest matters if you can&#8217;t pull it all together in a fun and positive way!</p>
+                            <p>Enthusiasm for the team and mission can&#8217;t be faked, so I&#8217;m very picky about where I ply my trade.</p>
 
-                            <aside class="blockquote">
-                                <p>&#8220;Perpetual optimism is a force multiplier.&#8221;
-                                    <em>&mdash; <a href="https://www.goodreads.com/book/show/13425638-it-worked-for-me">It Worked for Me: In Life and Leadership</a>, by Colin Powell</em></p>
+                            <aside class="blockquote giant-quotemark">
+                                <p>
+                                    &#8220;Perpetual optimism is a force multiplier.&#8221;
+                                    <em>&mdash; <a href="https://www.goodreads.com/book/show/13425638-it-worked-for-me">It Worked for Me: In Life and Leadership</a>, by Colin Powell</em>
+                                </p>
                                 </aside>
 
-                            <p>Enthusiasm for the team and mission can&#8217;t be faked, so I&#8217;m very picky about where I ply my trade. It&#8217;s why I always advise junior designers: do the kind of work that you want to do more of and the rest will follow.</p>
+                            <p>It&#8217;s why I always advise junior designers: <em>do the kind of work that you want to do more of and the rest will follow.</em></p>
 
                             <h3>Group Collaboration</h3>
 
                             <p>There&#8217;s no doubt that creating products is a team effort. Having good relationships and clear communication is particularly important to my style of work, since I have an almost journalistic approach and try to ingest as many different viewpoints as I can.</p>
 
-                            <aside class="blockquote">
-                                <p>&#8220;If you want to go fast, go alone. If you want to go far, go together.&#8221;
-                                    <em>&mdash; African proverb</em></p>
+                            <aside class="blockquote giant-quotemark">
+                                <p>&#8220;If you want to go fast, go alone.</p>
+                                <p>
+                                    If you want to go far, go together.&#8221;
+                                    <em>&mdash; African proverb</em>
+                                </p>
                             </aside>
 
                             <p>Something about double diamond? There&#8217;s a rhythm to group vs solo work. It&#8217;s not easy to ingest as many viewpoints as possible, yet still create opinionated work.</p>
@@ -314,12 +366,14 @@ aside h2 {
 
                             <p>Don&#8217;t just take my word for it, look at the science! Groupthink is a common team dynamic and the results are usually inferior to solitary thought by individuals:</p>
 
-                            <aside class="blockquote">
-                                <p>&#8220;Decades of research have consistently shown that brainstorming groups think of far fewer ideas than the same number of people who work alone and later pool their ideas.&#8221;
-                                    <em>&mdash; <a href="https://www.newyorker.com/magazine/2012/01/30/groupthink">Groupthink: The brainstorming myth</a>, New Yorker</em></p>
+                            <aside class="blockquote giant-quotemark">
+                                <p>
+                                    &#8220;Decades of research have consistently shown that brainstorming groups think of far fewer ideas than the same number of people who work alone and later pool their ideas.&#8221;
+                                    <em>&mdash; <a href="https://www.newyorker.com/magazine/2012/01/30/groupthink">Groupthink: The brainstorming myth</a>, New Yorker</em>
+                                </p>
                             </aside>
 
-                            <p>So collaboration is great and all -don&#8217;t be an asshole because your performance doesn&#8217;t count if you don&#8217;t play well with others - but designers aren&#8217;t hired just to make sure everyone gets along no matter how bad the end result. You&#8217;re there to make great products.</p>
+                            <p>So collaboration is great and all &mdash; don&#8217;t be an asshole because your performance doesn&#8217;t count if you don&#8217;t play well with others  &mdash;  but designers aren&#8217;t hired just to make sure everyone gets along no matter how bad the end result. You&#8217;re there to make great products and that requires your absolute best thinking.</p>
 
                             <p>That means you need to be comfortable with thinking on your own, initiating an opinionated product direction, and speaking up with candor.</p>
 
@@ -334,106 +388,6 @@ aside h2 {
 
                             <p>https://signalvnoise.com/posts/3794-monsters-and-thieves</p>
                             -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                            <blockquote>
-                                <p><em>&#8220;Great artists imitate and improve, whereas small ones steal and spoil.&#8221;</em></p>
-                                <footer>
-                                    W. H. Davenport Adams, writing about the poet Alfred Tennyson
-                                </footer>
-                            </blockquote>
-
-                            <p><span class="ornamental-first-letter">D</span>esign Sprints have spread far and wide from their original development at startups and have become a ubiquitous practice on a global scale at a wide range of organizations, commercial or otherwise. It&#8217;s a good bet that any designer reading this probably already knows what they are.</p>
-
-                            <aside class="blockquote table-of-contents">
-                                <h1>Inline List Of Smart Thoughts</h1>
-                                <ol>
-                                    <li>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</li>
-                                    <li>Sed posuere consectetur est at lobortis.</li>
-                                    <li>Etiam porta sem malesuada magna mollis euismod.</li>
-                                </ol>
-                            </aside>
-
-                            <p>The supposed benefits of any technique depends on your own preferences, experience and circumstances.</p>
-
-                            <div class="listbox">
-                                <h2>Possible Solutions</h2>
-                                <ul>
-                                    <li>
-                                        <strong>Redesign existing screens  </strong>
-                                        <em>Change focus from account creation to improving the first office visit.</em>
-                                    </li>
-                                    <li>
-                                        <strong>Break up data entry with notifications </strong>
-                                        <em>Deprecate email-based account creation and focus instead on enabling text and push notifications, so the app can ask for info as needed rather than all at once.</em>
-                                    </li>
-                                </ul>
-                            </div> <!-- listbox -->
-
-                            <p>So like a business edition of the Rashomon effect, what I’m saying is that “good process” is relative and not everything is a universal truth. This is my own personal take on the role of design in the business world and consider this your warning that I&#8217;m an unreliable narrator in the story that follows...</p>
-
-                            <h3>Agile Is A State Of Mind</h3>
-
-                            <aside class="blockquote">
-                                <p>Just to state this up front as a disclaimer: I’m not against design sprints, agile development, lean startups, or any other business techniques.</p>
-                            </aside>
-
-                            <p>Even waterfall has it&#8217;s place. There&#8217;s a reason it helped organize half a million government employees in the 60&#8217;s for the space program!</p>
-
-                            <h3>Ditches UX Dogma</h3>
-
-                            <p>It's fun to shortcut engineering overhead and jump straight into action. Design sprints upend decades of UX dogma and skip past research techniques that add unnecessary overhead for questionable benefits.</p>
-
-                            <aside class="blockquote">
-                                <h2>Inline List Of Smart Thoughts</h2>
-                                <ol>
-                                    <li>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</li>
-                                    <li>Sed posuere consectetur est at lobortis.</li>
-                                    <li>Etiam porta sem malesuada magna mollis euismod.</li>
-                                </ol>
-                            </aside>
-
-                            <p>From Jonathan Courtney&#8217;s article <em><a href="https://medium.com/p/user-research-is-overrated-6b0fe101d41">User Research is Overrated</a></em>:</p>
-
-                            <blockquote>
-                                <p>Up-front user research is a form of product procrastination. It’s busy-work, it’s a way to avoid making hard decisions. It delays the need to make something tangible.</p>
-                            </blockquote>
-
-                            <p>&#8230;and&#8230;</p>
-
-                            <blockquote>
-                                <p>It took a while, but eventually [&#8230;] we figured out that even though it was nice to “have the user in mind” when designing, the useful data came from the first user tests, not the research.</p>
-                            </blockquote>
-
-                            <p>User interviews, focus groups, personas, empathy maps, mindmapping, ethnographic field studies&#8230; <em>it&#8217;s all a bit much.</em> Especially if you&#8217;re not in a large corporate environment and trying to sell the value of a project before it even starts.</p>
-
-                            <h2 id="reception">In Conclusion</h2>
-
-                            <p>Design sprints have clear upsides and it’s easy to see why the practice has such widespread appeal. It’s simple to learn, emphasizes collaboration, and uses testable prototypes to shortcut engineering overhead, all within a specific timeframe.</p>
-
-                            <p>It's become a worldwide phenomenon and you can see the palpable enthusiasm from people trying it for the first time:</p>
 
                             <footer class="byline">
                                 <div class="row">
