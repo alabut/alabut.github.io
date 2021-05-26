@@ -53,7 +53,7 @@ header {
 }
 
 .logo {
-    background-image: url(../images/writing/logo-mobile-white.png);
+    background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/logo-mobile-white.png);
     background-repeat: no-repeat;
     background-size: 100%;
     height: 30px;
@@ -65,7 +65,7 @@ header {
 
 @media only screen and (min-width : 768px) {
     .logo {
-        background-image: url(../images/writing/logo-mobile-sprite.svg);
+        background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/logo-mobile-sprite.svg);
         background-position: 0 0;
     }
 
@@ -143,7 +143,7 @@ article h2::after {
 }
 
 h3 {
-    background-image: url(../images/writing/monogram-gray-on-white.png);
+    background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/monogram-gray-on-white.png);
     background-repeat: no-repeat;
     background-position: 50% 0;
     font-size: 22px;
@@ -343,7 +343,7 @@ article .dark h2 {
 }
 
 article .dark h3 {
-    /*background-image: url(../images/writing/monogram-gray-on-black.png);*/
+    /*background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/monogram-gray-on-black.png);*/
 }
 
 article .orange {
