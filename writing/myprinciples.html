@@ -117,6 +117,26 @@ aside h2 {
     text-align: center;
 }
 
+.newsletter a {
+    background: #f15403;
+    border: 1px solid #f15403;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-family: "Helvetica";
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 10px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.newsletter a:hover {
+    background: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+
 .newsletter, .minimal-header aside.blockquote {
     background: #111111;
     border: none;
@@ -207,7 +227,33 @@ aside.blockquote.giant-quotemark:nth-of-type(even) {
     background-color: #000;
 }
 
-@media only screen and (max-width: 577.98px) {
+@media only screen and (min-width: 576px) {
+
+    .newsletter {
+        background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/email.svg);
+        background-repeat: no-repeat;
+        background-size: 100px;
+        background-position: 53px 76px;
+        padding-left: 193px;
+    }
+
+    .newsletter, .newsletter h2 {
+        position: relative;
+        text-align: left;
+    }
+
+    .newsletter h2 {
+        margin-bottom: 70px;
+    }
+
+    article .newsletter h2::after {
+        left: 0;
+        position: absolute;
+    }
+
+}
+
+@media only screen and (max-width: 575.98px) {
 
 
 
@@ -243,7 +289,7 @@ aside.blockquote.giant-quotemark:nth-of-type(even) {
     }
 
     .newsletter {
-        padding: 60px 20px 0px;
+        padding: 60px 40px;
     }
 
     .newsletter:after {
@@ -413,8 +459,8 @@ aside.blockquote.giant-quotemark:nth-of-type(even) {
 
                             <aside class="newsletter">
                                 <h2>Sign Up For My Email Newsletter</h2>
-                                <p>Occasional thoughts on product design, startups &amp; tech.</p>
-                                <iframe src="https://alabut.substack.com/embed" width="100%" height="100%" style="background-color: transparent !important; color: #fff" frameborder="0" scrolling="no"></iframe>
+                                <p>Thoughts on product design, startups &amp; tech.</p>
+                                <p><a href="https://alabut.substack.com/welcome">Subscribe</a></p>
                             </aside>
 
                         </div> <!-- /col-sm-8 col-sm-offset-2 -->
