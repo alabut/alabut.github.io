@@ -19,7 +19,8 @@ figure,
 aside.dark, 
 .center-inline-contents, 
 .footer,
-.newsletter {
+.newsletter,
+.byline {
 	display: none !important;
 }
 
@@ -38,20 +39,26 @@ article .dark,
 article .section-without-leading-subheader,
 article h2 + h3, 
 article .dark h2 + article .dark h3,
-article .orange + .dark {
-	margin: 0;
-	padding: 0;
+article .orange + .dark,
+article .listbox,
+.minimal-header aside.blockquote {
+	border-radius: 0 !important;
+	margin: 0 !important;
+	padding: 0 !important;
 }
 
 h2,
 article h2, 
 article .dark h2 {
+	font-size: 22px;
 	margin-top: 40px;
 	margin-bottom: 10px;
+    text-align: left;
 }
 
 article li {
 	list-style-type: circle;
+	margin-left: 20px;
 }
 
 article .blockquote.filled {
@@ -62,4 +69,13 @@ article .blockquote.filled,
 article .dark .blockquote,
 article a {
 	border-color: rgba(0,0,0,0.1)
+}
+
+.listbox, .minimal-header aside.blockquote.giant-quotemark {
+	margin: 0 !important;
+	padding: 0 0 20px !important;
+}
+
+article .listbox li:last-child {
+	margin-bottom: 0 !important;
 }
