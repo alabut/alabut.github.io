@@ -1,0 +1,281 @@
+/* REVERSE THESE DEFAULTS IN THE OTHER STYLESHEET TOO - not folding this within the minimal header class because it shouldn't have a default in the first place */
+
+body, html {
+    background: #fff;
+}
+
+header {
+    background: none;
+}
+
+article .dark.bio-and-footer {
+    border: none;
+    margin-top: 20px;
+}
+
+article .listbox h2 {
+    margin: 0;
+}
+
+article .listbox h2::after {
+    margin: 25px auto 0;
+}
+
+article .listbox li::before {
+    content: none;
+}
+
+article .listbox li:last-child {
+    margin-bottom: 45px;
+}
+
+/* NEW CUSTOM STYLES (should they be the default? just try disabling designsprint.css to see how nicely minimal the bootstrap-only version is...) */
+
+.minimal-header header {
+    text-align: center;
+}
+
+.minimal-header .header-wrap {
+    padding: 100px 15px;
+}
+
+.minimal-header .logo {
+    display: inline-flex;;
+    filter: invert(1);
+    left: initial;
+    position: relative;
+    top: initial;
+}
+
+.minimal-header .logo:hover {
+    /*color: #f15403;*/
+    filter: invert(0);
+}
+
+article .blockquote.table-of-contents {
+    margin: 40px 0;
+    padding: 30px 30px 25px;
+}
+
+article .blockquote.table-of-contents ol {
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+article aside li {
+    line-height: 120%;
+}
+
+footer.byline:before {
+    content: url(https://d32mxho067pe0f.cloudfront.net/images/writing/monogram-gray-on-white.png);
+    left: calc(50% - 107px);
+    position: absolute;
+    top: -80px;
+}
+
+footer.byline {
+    background: rgba(0,0,0,0.05);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 130px;
+    padding: 40px;
+    position: relative;
+}
+
+footer.byline p {
+    margin-bottom: 5px;
+}
+
+aside p:last-of-type, footer.byline p:last-of-type {
+    margin: 0;
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+.newsletter {
+    text-align: center;
+}
+
+.newsletter a {
+    background: #f15403;
+    border: 1px solid #f15403;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-family: "Helvetica";
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 10px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.newsletter a:hover {
+    background: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+
+.newsletter, .minimal-header aside.blockquote {
+    background: #111111;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    overflow: hidden;
+    padding: 73px;
+    position: relative;
+}
+
+.minimal-header aside.blockquote:first-of-type {
+    margin-top: 0;
+}
+
+.minimal-header aside.blockquote.giant-quotemark {
+    background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/quotemark-orange.png);
+    background-position: 70px 70px;
+    background-repeat: no-repeat;
+    padding-left: 193px;
+}
+
+.minimal-header aside.blockquote p {
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.minimal-header aside.blockquote em {
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+.giant-quotemark:nth-of-type(odd) a {
+    color: #fff;
+}
+
+.giant-quotemark:nth-of-type(odd) a:hover {
+    border-color: #fff;
+}
+
+aside.blockquote.giant-quotemark:nth-of-type(even) {
+    background-color: #f2f2f2;
+    background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/quotemark-gray.png);
+    color: #222;
+}
+
+.listbox {
+    overflow: hidden;
+    position: relative;
+}
+
+.listbox li {
+    padding: 5px 0 25px;
+}
+
+.listbox li:first-of-type {
+    padding-top: 25px;
+}
+
+.listbox:before, .newsletter:before, .minimal-header aside.blockquote:before {
+    background-color: #f15403;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    content: "";
+    height: 35px;
+    position: absolute;
+    right: 33%;
+    top: 0;
+    width: 70px;
+}
+
+.listbox:after, .newsletter:after, .minimal-header aside.blockquote:after {
+    background-color: #fff;
+    border-radius: 80px;
+    bottom: -130px;
+    content: "";
+    height: 125px;
+    opacity: .1;
+    position: absolute;
+    right: 8%;
+    transform: rotate(-50deg);
+    width: 300px;
+}
+
+.listbox:after, aside.blockquote.giant-quotemark:nth-of-type(even):after {
+    background-color: #000;
+}
+
+@media only screen and (min-width: 576px) {
+
+    .newsletter {
+        background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/email.svg);
+        background-repeat: no-repeat;
+        background-size: 100px;
+        background-position: 53px 76px;
+        padding-left: 193px;
+    }
+
+    .newsletter, .newsletter h2 {
+        position: relative;
+        text-align: left;
+    }
+
+    .newsletter h2 {
+        margin-bottom: 70px;
+    }
+
+    article .newsletter h2::after {
+        left: 0;
+        position: absolute;
+    }
+
+}
+
+@media only screen and (max-width: 575.98px) {
+
+
+
+    .minimal-header .header-wrap {
+        padding: 50px 15px;
+    }
+
+    .minimal-header aside.blockquote {
+        padding: 40px;
+    }
+
+    .minimal-header aside.blockquote.giant-quotemark {
+        background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/quotemark-orange-mobile.png);
+        background-position: 40px 20px;
+        padding: 70px 40px 40px;
+    }
+
+    aside.blockquote.giant-quotemark:nth-of-type(even) {
+        background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/quotemark-gray-mobile.png);
+    }
+
+    .minimal-header aside.blockquote:before {
+        right: 10%;
+    }
+
+    aside ol {
+        margin: 0;
+        padding: 0;
+    }
+
+    aside li:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .newsletter {
+        padding: 60px 40px;
+    }
+
+    .newsletter:after {
+        bottom: -150px;
+    }
+
+}

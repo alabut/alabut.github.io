@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="695px" height="147px" viewBox="0 0 695 147" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>sd photos (desktop)</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="sd-photos-(desktop)" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <text id="San-Diego" stroke="#FFFFFF" stroke-width="3" font-family="Inter-Black, Inter" font-size="123" font-weight="700" letter-spacing="0.991935492" fill="#000000" fill-opacity="0">
+            <tspan x="0.505750515" y="142">SAN DIEGO</tspan>
+        </text>
+        <path d="M562,16 L694,16" id="Shape" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+        <text id="Shooting-photos-arou" fill="#FFFFFF" font-family="Georgia-Italic, Georgia" font-size="36" font-style="italic" font-weight="normal">
+            <tspan x="153.744141" y="28">Shooting photos around</tspan>
+        </text>
+        <path d="M1,16 L132,16" id="Shape" stroke="#FFFFFF" stroke-width="2" stroke-linecap="square"></path>
+    </g>
+</svg>
