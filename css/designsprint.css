@@ -53,10 +53,10 @@ header {
 }
 
 .logo {
-    background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/logo-mobile-white.png);
+    background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/logo-mobile-white@2x.png);
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 30px;
+    height: 31px;
     left: calc(50% - 24px);
     position: absolute;
     top: 20px;
@@ -65,12 +65,12 @@ header {
 
 @media only screen and (min-width : 768px) {
     .logo {
-        background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/logo-mobile-sprite.png);
+        background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/logo-mobile-sprite@2x.png);
         background-position: 0 0;
     }
 
     .logo:hover {
-        background-position: 0 -60px;
+        background-position: 0 -36px;
     }
 }
 
