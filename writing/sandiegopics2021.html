@@ -385,12 +385,17 @@ blockquote, blockquote p {
 figure {
     background-color: rgba(255,255,255,0.1);
     margin: 0 0 30px;
-    padding: 10px;
+    padding: 0;
 }
 
-.article-body figure img {
-    border: none;
+article img {
     border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+article figure img {
+    border: none;
+    border-radius: 10px 10px 0 0;
     margin: 0;
 }
 
@@ -398,6 +403,7 @@ figcaption {
     font-style: italic;
     margin: 15px 0 10px;
     opacity: 0.8;
+    padding-bottom: 15px;
     text-align: center;
 }
 
@@ -447,13 +453,14 @@ article .dark.bio-and-footer {
 /* OVERRIDES FOR ALTERNATING SECTIONS */
 
 .light {
-    background: #fff;
+    background: #fbfbfb;
     color: rgb(17,17,17);
 }
 
 .light figure {
-    background-color: rgb(17,17,17);
-    color: #fff;
+    background-color: #fff;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.03);
+    color: #333;
 }
 
 .light blockquote,
@@ -486,7 +493,7 @@ article .dark.bio-and-footer {
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2" style="padding-top: 0;padding-bottom: 20px;">
 
-    					<p><span class="ornamental-first-letter" style="float: left;font-weight: 900;margin-right: 5px;">A</span>fter a 15 year ride on the rollercoaster that is the San Francisco startup scene, I moved back to my hometown in early 2020 to be closer to family. After going head's down in work mode and getting adjusted to our new remote world order, I finally got back to one of my favorite old hobbies this year: photowalks.</p>
+    					<p><span class="ornamental-first-letter" style="float: left;font-weight: 900;margin-right: 5px;">A</span>fter a 15 year ride on the rollercoaster that is the San Francisco startup scene, I moved back to my hometown in early 2020 to be closer to family. After going head's down in work mode and getting adjusted to our new remote world order, this year I finally got back to one of my favorite old hobbies: photowalks.</p>
 
     					<blockquote>
     					   <p class="blockquote-quotation">“Photography is a love affair with life.”</p>
@@ -496,8 +503,8 @@ article .dark.bio-and-footer {
     					<p>I just love going out to find interesting shots, taking little day trips around town to different spots. I&#8217;ll put the earbuds in and get into a flow state almost instantly, walking around while pleasantly lost in thought, people-watching and hunting for angles.</p>
 
     					<figure>
-    					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0054.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0054.jpg" />
-    					<figcaption>Scripps Pier at sunset, perfect for walking the dogs at low tide.</figcaption>
+        					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0054.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0054.jpg" />
+        					<figcaption>Scripps Pier at sunset, perfect for walking the dogs at low tide.</figcaption>
     					</figure>
 
 
@@ -522,8 +529,8 @@ article .dark.bio-and-footer {
                         <div class="col-sm-12">
 
         					<figure>
-        					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/sony-bw.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/sony-bw.jpg" />
-        					<figcaption>Sony ZV&#8211;1 with mini tripod, fuzzy mic cover, and some sticky baseball bat tape for a nice solid grip.</figcaption>
+            					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/sony-bw.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/sony-bw.jpg" />
+            					<figcaption>Sony ZV&#8211;1 with mini tripod, fuzzy mic cover, and some sticky baseball bat tape for a nice solid grip.</figcaption>
         					</figure>
                         </div> <!-- /col -->
                         
@@ -541,13 +548,13 @@ article .dark.bio-and-footer {
                         <div class="col-sm-12">
 
                             <figure>
-                            <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0072-cropped-and-resized.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0072.jpg" />
-                            <figcaption>You have to really zoom in to see the fine details, especially around the ears.</figcaption>
+                                <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0072-cropped-and-resized.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0072.jpg" />
+                                <figcaption>You have to really zoom in to see the fine details, especially around the ears.</figcaption>
                             </figure>
 
                             <figure>
-                            <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0072.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0072.jpg" />
-                            <figcaption>Pull back and you might also notice the lack of weird color halos or clear spots where the phone often forgets to blur.</figcaption>
+                                <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0072.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0072.jpg" />
+                                <figcaption>Pull back and you might also notice the lack of weird color halos or clear spots where the phone often forgets to blur.</figcaption>
                             </figure>
                         </div> <!-- /col -->
                         
@@ -559,8 +566,8 @@ article .dark.bio-and-footer {
                         <div class="col-sm-12">
 
         					<figure>
-        					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0057.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0057.jpg" />
-        					<figcaption>Self-portrait with my handy little camera. Notice that my fingers, the camera and fuzzy mic cover are blurred, which is an impossible shot for phones.</figcaption>
+            					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0057.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0057.jpg" />
+            					<figcaption>Self-portrait with my handy little camera. Notice that my fingers, the camera and fuzzy mic cover are blurred, which is an impossible shot for phones.</figcaption>
         					</figure>
                         </div> <!-- /col -->
                         
@@ -576,19 +583,19 @@ article .dark.bio-and-footer {
                         <div class="col-sm-12">
 
         					<figure>
-        					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0095.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0095.jpg" />
-        					<figcaption>My niece loves picking flowers with her grandparents.</figcaption>
+            					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0095.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0095.jpg" />
+            					<figcaption>My niece loves picking flowers with her grandparents.</figcaption>
         					</figure>
 
         					<figure>
-        					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0102.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0102.jpg" />
-        					<figcaption>I got my nephew into building model kits, right around the same age that I started.</figcaption>
+            					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0102.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0102.jpg" />
+            					<figcaption>I got my nephew into building model kits, right around the same age that I started.</figcaption>
         					</figure>
-                            </figure>
 
                             <figure>
-                            <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0064.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0064.jpg" />
-                            <figcaption>Statue at Harbor Island.</figcaption>
+                                <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0064.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0064.jpg" />
+                                <figcaption>Statue at Harbor Island.</figcaption>
+                            </figure>
                         </div> <!-- /col -->
                         
                         <div class="col-sm-8 col-sm-offset-2">
@@ -626,8 +633,8 @@ article .dark.bio-and-footer {
                     <div class="col-sm-12">
 
     					<figure>
-    					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0080.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0080.jpg" />
-    					<figcaption><a href="https://www.instagram.com/mexikota_art/">mexikota_art on Instagram</a></figcaption>
+        					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0080.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0080.jpg" />
+        					<figcaption>Check out more of his colorful work at <a href="https://www.instagram.com/mexikota_art/">mexikota_art on Instagram</a></figcaption>
     					</figure>
                     </div> <!-- /col -->
                     
@@ -638,37 +645,32 @@ article .dark.bio-and-footer {
 
                     <div class="col-sm-12">
 
-    					<figure>
     					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0074.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0074.jpg" />
-    					</figure>
+    					
                     </div> <!-- /col -->
 
                     <div class="col-sm-4">
 
-    					<figure>
     					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0082.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0082.jpg" />
-    					</figure>
                     </div> <!-- /col -->
 
                     <div class="col-sm-4">
 
-    					<figure>
+    					
     					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0081.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0081.jpg" />
-    					</figure>
                     </div> <!-- /col -->
 
                     <div class="col-sm-4">
 
-    					<figure>
+    					
     					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0079.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0079.jpg" />
-    					</figure>
                     </div> <!-- /col -->
 
                     <div class="col-sm-12">
 
                         <figure>
-                        <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0077.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0077.jpg" />
-                        <figcaption>General Emiliano Zapata, 1879&#8211;1919</figcaption>
+                            <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0077.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0077.jpg" />
+                            <figcaption>General Emiliano Zapata, 1879&#8211;1919</figcaption>
                         </figure>
                     </div> <!-- /col -->
 
@@ -693,66 +695,59 @@ article .dark.bio-and-footer {
 
                         <div class="col-sm-12">
 
-                            <figure>
+                            
                             <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0096.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0096.jpg" />
-                            </figure>
                         </div> <!-- /col -->
 
                         <div class="col-sm-6">
 
-        					<figure>
+        					
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0075.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0075.jpg" />
-        					</figure>
                         </div> <!-- /col -->
 
                         <div class="col-sm-6">
 
-        					<figure>
+        					
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0097.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0097.jpg" />
-        					</figure>
                         </div> <!-- /col -->
 
                         <div class="col-sm-12">
 
-                            <figure>
+                            
                             <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0089.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0089.jpg" />
-                            </figure>
                         </div> <!-- /col -->
 
                         <div class="col-sm-4">
 
-        					<figure>
+        					
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0062.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0062.jpg" />
-        					</figure>
                         </div> <!-- /col -->
 
                         <div class="col-sm-4">
 
-        					<figure>
+        					
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0068.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0068.jpg" />
-        					</figure>
                         </div> <!-- /col -->
 
                         <div class="col-sm-4">
 
-        					<figure>
+        					
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0100.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0100.jpg" />
+                        </div> <!-- /col -->
+
+                        <div class="col-sm-6">
+
+        					<figure>
+            					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0063.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0063.jpg" />
+            					<figcaption><a href="https://www.yelp.com/biz/pams-place-descanso">Pam&#8217;s Place</a>, a roadside stand with a moving story (and amazing jerky)</figcaption>
         					</figure>
                         </div> <!-- /col -->
 
                         <div class="col-sm-6">
 
         					<figure>
-        					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0063.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0063.jpg" />
-        					<figcaption><a href="https://www.yelp.com/biz/pams-place-descanso">Pam&#8217;s Place</a>, a roadside stand with a moving story (and amazing jerky)</figcaption>
-        					</figure>
-                        </div> <!-- /col -->
-
-                        <div class="col-sm-6">
-
-        					<figure>
-        					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0101.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0101.jpg" />
-        					<figcaption>We took in some majestic views when driving back from Big Bear.</figcaption>
+            					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0101.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0101.jpg" />
+            					<figcaption>We took in some majestic views when driving back from Big Bear.</figcaption>
         					</figure>
                         </div> <!-- /col -->
                     </div> <!-- /row -->
@@ -776,23 +771,20 @@ article .dark.bio-and-footer {
 
                     <div class="col-sm-6">
 
-    					<figure>
+    					
     					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0065.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0065.jpg" />
-    					</figure>
                     </div> <!-- /col -->
 
                     <div class="col-sm-6">
 
-    					<figure>
+    					
     					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0066.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0066.jpg" />
-    					</figure>
                     </div> <!-- /col -->
 
                     <div class="col-sm-12">
 
-    					<figure>
+    					
     					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0067.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0067.jpg" />
-    					</figure>
                     </div> <!-- /col -->
                 </div> <!-- /row -->
             </div> <!-- /container -->
@@ -819,34 +811,31 @@ article .dark.bio-and-footer {
                         <div class="col-sm-12">
 
         					<figure>
-        					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0093.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0093.jpg" />
-        					<figcaption>Kate Sessions, 1857&#8211;1940. Scientist, horticulturist, nurserywoman, and &#8220;Mother of Balboa Park&#8221;.</figcaption>
+            					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0093.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0093.jpg" />
+            					<figcaption>Kate Sessions, 1857&#8211;1940. Scientist, horticulturist, nurserywoman, and &#8220;Mother of Balboa Park&#8221;.</figcaption>
         					</figure>
 
-        					<figure>
+        					
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0085.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0085.jpg" />
-        					</figure>
                         </div> <!-- /col -->
 
                         <div class="col-sm-6">
 
-                            <figure>
+                            
                             <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0087.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0087.jpg" />
-                            </figure>
                         </div> <!-- /col -->
 
                         <div class="col-sm-6">
 
-                            <figure>
+                            
                             <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0088.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0088.jpg" />
-                            </figure>
                         </div> <!-- /col -->
 
                         <div class="col-sm-12">
 
         					<figure>
-        					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0091.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0091.jpg" />
-        					<figcaption>&#8220;As long as men can breathe or eyes can see, so long lives this and this gives life to thee.&#8221;</figcaption>
+            					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0091.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0091.jpg" />
+            					<figcaption>&#8220;As long as men can breathe or eyes can see, so long lives this and this gives life to thee.&#8221;</figcaption>
         					</figure>
                         </div> <!-- /col -->
                     </div> <!-- /row -->
@@ -870,23 +859,20 @@ article .dark.bio-and-footer {
 
                     <div class="col-sm-12">
 
-                        <figure>
+                        
                         <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8380.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8380.jpg" />
-                        </figure>
                     </div> <!-- /col -->
 
                     <div class="col-sm-6">
 
-    					<figure>
+    					
     					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8379.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8379.jpg" />
-    					</figure>
                     </div> <!-- /col -->
 
                     <div class="col-sm-6">
 
-    					<figure>
+    					
     					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8382.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8382.jpg" />
-    					</figure>
                     </div> <!-- /col -->
                 </div> <!-- /row -->
             </div> <!-- /container -->
@@ -912,13 +898,11 @@ article .dark.bio-and-footer {
 
                         <div class="col-sm-12">
 
-        					<figure>
+        					
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0056.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0056.jpg" />
-        					</figure>
 
-        					<figure>
+        					
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0055.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0055.jpg" />
-        					</figure>
                         </div> <!-- /col -->
                     </div> <!-- /row -->
                 </div> <!-- /container -->
@@ -942,24 +926,24 @@ article .dark.bio-and-footer {
                     <div class="col-sm-12">
 
                         <figure>
-                        <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8596.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8596.jpg" />
-                        <figcaption>The famed Del Mar racetrack at dawn.</figcaption>
+                            <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8596.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8596.jpg" />
+                            <figcaption>The famed Del Mar racetrack at dawn.</figcaption>
                         </figure>
                     </div> <!-- /col -->
 
                     <div class="col-sm-6">
 
                         <figure>
-                        <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8245.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8245.jpg" />
-                        <figcaption>Cutting through the marsh to the dog beach in OB.</figcaption>
+                            <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8245.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8245.jpg" />
+                            <figcaption>Cutting through the marsh to the dog beach in OB.</figcaption>
                         </figure>
                     </div> <!-- /col -->
 
                     <div class="col-sm-6">
 
                         <figure>
-                        <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_3317.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_3317.jpg" />
-                        <figcaption>Me and my little guy at Del Mar.</figcaption>
+                            <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_3317.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_3317.jpg" />
+                            <figcaption>Me and my little guy at Del Mar.</figcaption>
                         </figure>
 
                     </div> <!-- /col -->
@@ -967,24 +951,24 @@ article .dark.bio-and-footer {
                     <div class="col-sm-12">
 
                         <figure>
-                        <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0099.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0099.jpg" />
-                        <figcaption>La Jolla Shores on an early overcast morning, looking towards the pier at Scripps Institute of Oceanography.</figcaption>
+                            <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0099.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0099.jpg" />
+                            <figcaption>La Jolla Shores on an early overcast morning, looking towards the pier at Scripps Institute of Oceanography.</figcaption>
                         </figure>
                     </div> <!-- /col -->
 
                     <div class="col-sm-6">
 
                         <figure>
-                        <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8772.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8772.jpg" />
-                        <figcaption>Where the San Diego River meets the dog beach in OB.</figcaption>
+                            <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8772.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8772.jpg" />
+                            <figcaption>Where the San Diego River meets the dog beach in OB.</figcaption>
                         </figure>
                     </div> <!-- /col -->
 
                     <div class="col-sm-6">
 
                         <figure>
-                        <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_9213.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_9213.jpg" />
-                        <figcaption>South Mission Beach</figcaption>
+                            <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_9213.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_9213.jpg" />
+                            <figcaption>South Mission Beach</figcaption>
                         </figure>
                     </div> <!-- /col -->
                 </div> <!-- /row -->
@@ -1009,60 +993,49 @@ article .dark.bio-and-footer {
 
                         <div class="col-sm-12">
 
-                            <figure>
+                            
                             <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0094.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0094.jpg" />
-                            </figure>
                         </div> <!-- /col -->
 
                         <div class="col-sm-6">
 
-        					<figure>
+        					
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0059.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0059.jpg" />
-        					</figure>
                         </div> <!-- /col -->
 
                         <div class="col-sm-6">
 
-        					<figure>
+        					
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0060.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0060.jpg" />
-        					</figure>
                         </div> <!-- /col -->
 
                         <div class="col-sm-12">
 
-        					<figure>
+        					
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8998.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8998.jpg" />
-        					</figure>
                         </div> <!-- /col -->
 
                         <div class="col-sm-6">
 
-        					<figure>
+        					
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0073.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0073.jpg" />
-        					</figure>
                         </div> <!-- /col -->
 
                         <div class="col-sm-6">
 
-        					<figure>
+        					
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0076.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0076.jpg" />
-        					</figure>
                         </div> <!-- /col -->
 
                         <div class="col-sm-12">
 
-        					<figure>
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0069.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0069.jpg" />
-        					<figcaption>Can you spot the chihuahua? It&#8217;s the one strutting around like he owns the entire place :)</figcaption>
-        					</figure>
 
-        					<figure>
+        					
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0071-cropped-and-resized.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0071-cropped-and-resized.jpg" />
-        					</figure>
 
-        					<figure>
+        					
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0061.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0061.jpg" />
-        					</figure>
                         </div> <!-- /col -->
 
         			</div> <!-- row -->
