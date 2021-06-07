@@ -424,7 +424,7 @@ figcaption a:hover {
 }
 
 .section-divider {
-    margin: 40px 0;
+    margin: 60px 0 40px;
     text-align: center;
 }
 
@@ -453,27 +453,63 @@ footer.byline {
 }
 
 
+/* Non-mobile styles for fancier image captions */
 
-/* OVERRIDES FOR ALTERNATING SECTIONS */
 
-.light {
-    background: #fbfbfb;
-    color: rgb(17,17,17);
+
+@media only screen and (min-width : 768px) {
+
+figure {
+    padding: 0;
+    position: relative;
 }
 
-.light figure {
+article figure img {
+    border-radius: 10px;
+    margin: 0;
+}
+
+figcaption {
+    background: rgba(0,0,0,0.9);
+    border-radius: 0 0 10px 10px;
+    bottom: 0;
+    color: #fff;
+    left: 0;
+    margin: 0;
+    padding: 15px;
+    position: absolute;
+    width: 100%;
+}
+
+}
+
+
+
+/* Overrides for lighter alternating sections */
+
+.light-section {
+    background: #fbfbfb;
+    color: rgb(17,17,17);
+    padding: 40px 0 60px;
+}
+
+.light-section figure {
     background-color: #fff;
     box-shadow: 0 10px 10px 0 rgba(0,0,0,0.03);
     color: #333;
 }
 
-.light blockquote,
-.light .section-divider hr {
+.light-section blockquote,
+.light-section .section-divider hr {
     border-color: rgb(17,17,17);
 }
 
-.light .icon {
+.light-section .icon {
     filter: invert();
+}
+
+.dark-section {
+    padding-bottom: 60px;
 }
 
         </style>
@@ -493,7 +529,7 @@ footer.byline {
         <!-- ***************** ARTICLE BODY ***************** -->
         
         <article>
-            <div class="container">
+            <div class="container dark-section">
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2" style="padding-top: 0;padding-bottom: 20px;">
 
@@ -511,13 +547,11 @@ footer.byline {
         					<figcaption>Scripps Pier at sunset, perfect for walking the dogs at low tide.</figcaption>
     					</figure>
 
-
-
                     </div> <!-- /col -->
                 </div> <!-- row -->
-            </div> <!-- /container -->
+            </div> <!-- /container dark-section -->
 
-            <section class="light">
+            <section class="light-section">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-8 col-sm-offset-2" style="padding-top: 0;padding-bottom: 20px;">
@@ -526,12 +560,10 @@ footer.byline {
                                 <img class="icon" src="https://d32mxho067pe0f.cloudfront.net/images/writing/icons/icon-camera-on-tripod.svg">
                                 <hr>
                             </div> <!-- /section-divider -->
-
         					<p>What really motivated me to practice my shooting skills more regularly is that I bought an actual real camera last summer, a Sony ZV&#8211;1. It came out last year as the first of a series of models made specifically for content creators and vloggers, with especially impressive 4k video output from a 6k sensor.</p>
                         </div> <!-- /col -->
                         
                         <div class="col-sm-12">
-
         					<figure>
             					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/sony-bw.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/sony-bw.jpg" />
             					<figcaption>Sony ZV&#8211;1 with mini tripod, fuzzy mic cover, and some sticky baseball bat tape for a nice solid grip.</figcaption>
@@ -539,18 +571,14 @@ footer.byline {
                         </div> <!-- /col -->
                         
                         <div class="col-sm-8 col-sm-offset-2">
-
         					<p>Well ok, it&#8217;s technically a point-and-shoot instead of a <em>&#8220;real&#8221;</em> camera with giant interchangeable lenses, but it&#8217;s my first non-phone camera in years and more than real enough for me. It&#8217;s been fun to put it through its paces and re-learn the basics like exposure and aperture.</p>
 
                             <blockquote>A super obvious insight: pretty much any camera is good at portrait and macro shots compared to even the best smartphone.</blockquote>
-
         					<p>I knew intellectually that cameras took good closeups but I'd gotten used to the programmatically-generated <em>&#8220;portrait mode&#8221;</em> as a substitute. There really is just no comparison though when you want to get a nice crisp foreground subject that&#8217;s bathed in a deliciously blurred backdrop.</p>
-
         					<p>Check out the little details around my dog&#8217;s face for example, with the intricate whiskers and hairs that usually get wiped out in my iPhone's portrait mode:</p>
                         </div> <!-- /col -->
                         
                         <div class="col-sm-12">
-
                             <figure>
                                 <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0072-cropped-and-resized.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0072.jpg" />
                                 <figcaption>You have to really zoom in to see the fine details, especially around the ears.</figcaption>
@@ -563,12 +591,10 @@ footer.byline {
                         </div> <!-- /col -->
                         
                         <div class="col-sm-8 col-sm-offset-2">
-
         					<p>Another thing a camera does easily is to blur foreground elements:</p>
                         </div> <!-- /col -->
                         
                         <div class="col-sm-12">
-
         					<figure>
             					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0057.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0057.jpg" />
             					<figcaption>Self-portrait with my handy little camera. Notice that my fingers, the camera and fuzzy mic cover are blurred, which is an impossible shot for phones.</figcaption>
@@ -576,21 +602,16 @@ footer.byline {
                         </div> <!-- /col -->
                         
                         <div class="col-sm-8 col-sm-offset-2">
-
         					<p>I could be biased but I think those photos <em>&#8220;pop&#8221;</em> more, although honestly I&#8217;m probably the only one that notices. It&#8217;s become a pleasantly entertaining hobby even if these details end up going unnoticed by others. </p>
-
         					<blockquote>It&#8217;s turned into a fun game to learn my camera better and find the kinds of shots that it&#8217;s uniquely good at.</blockquote>
-
         					<p>Here's a few more examples with buttery smooth backgrounds:</p>
                         </div> <!-- /col -->
 
                         <div class="col-sm-12">
-
         					<figure>
             					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0095.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0095.jpg" />
             					<figcaption>My niece loves picking flowers with her grandparents.</figcaption>
         					</figure>
-
         					<figure>
             					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0102.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0102.jpg" />
             					<figcaption>I got my nephew into building model kits, right around the same age that I started.</figcaption>
@@ -603,7 +624,6 @@ footer.byline {
                         </div> <!-- /col -->
                         
                         <div class="col-sm-8 col-sm-offset-2">
-
         					<p>Also, it&#8217;s been an interesting learning experience to find out what a camera <em>isn't</em> good at.</p>
 
                             <p>I knew that our incredibly capable smartphones have spoiled us these days with crisp images under most conditions, but I still assumed that photographs I liked were <em>"good"</em> in the sense of <em>"good for a phone"</em>. I figured that these amateur phone pics couldn't hold up to the larger dedicated lens and sensor of a semi-pro camera.
@@ -611,17 +631,15 @@ footer.byline {
                             <p>That turned out to be true. Well, kind of.</p>
 
                             <p>Apparently there are a wide variety of situations where a bigger camera still can&#8217;t beat our tiny little pocket companions, especially when doing things like handheld landscape photos or stabilized video. Those types of shots have invisible amounts of complexity under the hood that I never really appreciated until they came out blurry or shaky on my fancy camera, and I&#8217;d often still prefer shots from my phone even if they didn&#8217;t.</p>
-
         					<blockquote>I realize now that my camera &amp; phone both take amazing shots, just in different situations.</blockquote>
-
         					<p>So in the end, my trusty old iPhone X also took a bunch of my favorite photos this year. Plus all of the camera&#8217;s output would end up on the phone anyway because that&#8217;s where I do color correction and share to social media, so I definitely got a lot of use out of both devices as a pair.</p>
                         </div> <!-- /col -->
                     </div> <!-- /row -->
                 </div> <!-- /container -->
 
-            </section> <!-- /light -->
+            </section> <!-- /light-section -->
 
-            <div class="container">
+            <div class="container dark-section">
                 <div class="row">
                     <div class="col-sm-8 col-sm-offset-2">
 
@@ -635,7 +653,6 @@ footer.byline {
                     </div> <!-- /col -->
 
                     <div class="col-sm-12">
-
     					<figure>
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0080.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0080.jpg" />
         					<figcaption>Check out more of his colorful work at <a href="https://www.instagram.com/mexikota_art/">mexikota_art on Instagram</a></figcaption>
@@ -648,30 +665,23 @@ footer.byline {
                     </div> <!-- /col -->
 
                     <div class="col-sm-12">
-
     					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0074.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0074.jpg" />
     					
                     </div> <!-- /col -->
 
                     <div class="col-sm-4">
-
     					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0082.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0082.jpg" />
                     </div> <!-- /col -->
 
                     <div class="col-sm-4">
-
-    					
     					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0081.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0081.jpg" />
                     </div> <!-- /col -->
 
                     <div class="col-sm-4">
-
-    					
     					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0079.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0079.jpg" />
                     </div> <!-- /col -->
 
                     <div class="col-sm-12">
-
                         <figure>
                             <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0077.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0077.jpg" />
                             <figcaption>General Emiliano Zapata, 1879&#8211;1919</figcaption>
@@ -679,68 +689,50 @@ footer.byline {
                     </div> <!-- /col -->
 
                 </div> <!-- /row -->
-            </div> <!-- /container -->
+            </div> <!-- /container dark-section -->
 
             
-            <section class="light">
-
+            <section class="light-section">
                 <div class="container">
                     <div class="row">
                         <div class="col-sm-8 col-sm-offset-2">
-
                             <div class="section-divider">
                                 <hr>
                                 <img class="icon" src="https://d32mxho067pe0f.cloudfront.net/images/writing/icons/icon-mountains.svg">
                                 <hr>
                             </div> <!-- /section-divider -->
-
         					<p>I&#8217;m especially grateful that this year included much-needed getaways to Julian and Big Bear, driving winding backroads through panoramic country scenery. It was exactly the change of pace I needed from feeling cooped up.</p>
                         </div> <!-- /col -->
 
                         <div class="col-sm-12">
-
-                            
                             <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0096.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0096.jpg" />
                         </div> <!-- /col -->
 
                         <div class="col-sm-6">
-
-        					
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0075.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0075.jpg" />
                         </div> <!-- /col -->
 
                         <div class="col-sm-6">
-
-        					
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0097.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0097.jpg" />
                         </div> <!-- /col -->
 
                         <div class="col-sm-12">
-
-                            
                             <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0089.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0089.jpg" />
                         </div> <!-- /col -->
 
                         <div class="col-sm-4">
-
-        					
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0062.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0062.jpg" />
                         </div> <!-- /col -->
 
                         <div class="col-sm-4">
-
-        					
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0068.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0068.jpg" />
                         </div> <!-- /col -->
 
                         <div class="col-sm-4">
-
-        					
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0100.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0100.jpg" />
                         </div> <!-- /col -->
 
                         <div class="col-sm-6">
-
         					<figure>
             					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0063.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0063.jpg" />
             					<figcaption><a href="https://www.yelp.com/biz/pams-place-descanso">Pam&#8217;s Place</a>, a roadside stand with a moving story (and amazing jerky)</figcaption>
@@ -748,7 +740,6 @@ footer.byline {
                         </div> <!-- /col -->
 
                         <div class="col-sm-6">
-
         					<figure>
             					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0101.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0101.jpg" />
             					<figcaption>We took in some majestic views when driving back from Big Bear.</figcaption>
@@ -757,9 +748,9 @@ footer.byline {
                     </div> <!-- /row -->
                 </div> <!-- /container -->
 
-            </section> <!-- /light -->
+            </section> <!-- /light-section -->
 
-            <div class="container">
+            <div class="container dark-section">
                 <div class="row">
 
                     <div class="col-sm-8 col-sm-offset-2">
@@ -774,69 +765,51 @@ footer.byline {
                     </div> <!-- /col -->
 
                     <div class="col-sm-6">
-
-    					
     					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0065.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0065.jpg" />
                     </div> <!-- /col -->
 
                     <div class="col-sm-6">
-
-    					
     					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0066.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0066.jpg" />
                     </div> <!-- /col -->
 
                     <div class="col-sm-12">
-
-    					
     					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0067.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0067.jpg" />
                     </div> <!-- /col -->
                 </div> <!-- /row -->
-            </div> <!-- /container -->
+            </div> <!-- /container dark-section -->
 
             
-            <section class="light">
-
+            <section class="light-section">
                 <div class="container">
                     <div class="row">
                         
                         <div class="col-sm-8 col-sm-offset-2">
-                            
                             <div class="section-divider">
                                 <hr>
                                 <img class="icon" src="https://d32mxho067pe0f.cloudfront.net/images/writing/icons/icon-balboa-park.svg">
                                 <hr>
                             </div> <!-- /section-divider -->
-
         					<p>One place I particularly missed after moving away was Balboa Park. It&#8217;s just such a unique location: a world-class zoo, 16 museums and an assortment of theaters, gardens and other cultural highlights, all in one immensely walkable location.</p>
-
         					<p>My wife and I love it so much that we got married there!</p>
                         </div> <!-- /col -->
 
                         <div class="col-sm-12">
-
         					<figure>
             					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0093.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0093.jpg" />
             					<figcaption>Kate Sessions, 1857&#8211;1940. Scientist, horticulturist, nurserywoman, and &#8220;Mother of Balboa Park&#8221;.</figcaption>
         					</figure>
-
-        					
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0085.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0085.jpg" />
                         </div> <!-- /col -->
 
                         <div class="col-sm-6">
-
-                            
                             <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0087.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0087.jpg" />
                         </div> <!-- /col -->
 
                         <div class="col-sm-6">
-
-                            
                             <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0088.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0088.jpg" />
                         </div> <!-- /col -->
 
                         <div class="col-sm-12">
-
         					<figure>
             					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0091.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0091.jpg" />
             					<figcaption>&#8220;As long as men can breathe or eyes can see, so long lives this and this gives life to thee.&#8221;</figcaption>
@@ -845,13 +818,11 @@ footer.byline {
                     </div> <!-- /row -->
                 </div> <!-- /container -->
 
-            </section> <!-- /light -->
+            </section> <!-- /light-section -->
 
-            <div class="container">
+            <div class="container dark-section">
                 <div class="row">
-                    
                     <div class="col-sm-8 col-sm-offset-2">
-                        
                         <div class="section-divider">
                             <hr>
                             <img class="icon" src="https://d32mxho067pe0f.cloudfront.net/images/writing/icons/icon-minibus.svg">
@@ -862,62 +833,45 @@ footer.byline {
                     </div> <!-- /col -->
 
                     <div class="col-sm-12">
-
-                        
                         <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8380.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8380.jpg" />
                     </div> <!-- /col -->
 
                     <div class="col-sm-6">
-
-    					
     					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8379.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8379.jpg" />
                     </div> <!-- /col -->
 
                     <div class="col-sm-6">
-
-    					
     					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8382.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8382.jpg" />
                     </div> <!-- /col -->
                 </div> <!-- /row -->
-            </div> <!-- /container -->
+            </div> <!-- /container dark-section -->
 
             
-            <section class="light">
-
+            <section class="light-section">
                 <div class="container">
                     <div class="row">
-                        
                         <div class="col-sm-8 col-sm-offset-2">
-                            
                             <div class="section-divider">
                                 <hr>
                                 <img class="icon" src="https://d32mxho067pe0f.cloudfront.net/images/writing/icons/icon-river.svg">
                                 <hr>
                             </div> <!-- /section-divider -->
-
         					<p>Although I grew up here and thought I knew the town inside out, it turns out that I still have a lot to learn.</p>
                             <blockquote>I&#8217;ve been completely oblivious to the calm river that runs right through the middle of San Diego.</blockquote>
                             <p>I&#8217;ve seen a few people fish and bike along the banks, but for the most part it&#8217;s empty by design because it&#8217;s meant to be unspoilt as possible. For example, kayaking is forbidden except for one time a year during an organized event to clean up litter.</p>
                         </div> <!-- /col -->
 
                         <div class="col-sm-12">
-
-        					
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0056.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0056.jpg" />
-
-        					
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0055.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0055.jpg" />
                         </div> <!-- /col -->
                     </div> <!-- /row -->
                 </div> <!-- /container -->
+            </section> <!-- /light-section -->
 
-            </section> <!-- /light -->
-
-            <div class="container">
+            <div class="container dark-section">
                 <div class="row">
-                    
                     <div class="col-sm-8 col-sm-offset-2">
-                        
                         <div class="section-divider">
                             <hr>
                             <img class="icon" src="https://d32mxho067pe0f.cloudfront.net/images/writing/icons/icon-wave.svg">
@@ -928,7 +882,6 @@ footer.byline {
                     </div> <!-- /col -->
 
                     <div class="col-sm-12">
-
                         <figure>
                             <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8596.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8596.jpg" />
                             <figcaption>The famed Del Mar racetrack at dawn.</figcaption>
@@ -936,15 +889,13 @@ footer.byline {
                     </div> <!-- /col -->
 
                     <div class="col-sm-6">
-
                         <figure>
                             <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8245.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8245.jpg" />
-                            <figcaption>Cutting through the marsh to the dog beach in OB.</figcaption>
+                            <figcaption>The marsh trails at the OB dog beach.</figcaption>
                         </figure>
                     </div> <!-- /col -->
 
                     <div class="col-sm-6">
-
                         <figure>
                             <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_3317.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_3317.jpg" />
                             <figcaption>Me and my little guy at Del Mar.</figcaption>
@@ -953,7 +904,6 @@ footer.byline {
                     </div> <!-- /col -->
 
                     <div class="col-sm-12">
-
                         <figure>
                             <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0099.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0099.jpg" />
                             <figcaption>La Jolla Shores on an early overcast morning, looking towards the pier at Scripps Institute of Oceanography.</figcaption>
@@ -961,84 +911,62 @@ footer.byline {
                     </div> <!-- /col -->
 
                     <div class="col-sm-6">
-
                         <figure>
                             <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8772.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8772.jpg" />
-                            <figcaption>Where the San Diego River meets the dog beach in OB.</figcaption>
+                            <figcaption>Where the San Diego River meets Ocean Beach.</figcaption>
                         </figure>
                     </div> <!-- /col -->
 
                     <div class="col-sm-6">
-
                         <figure>
                             <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_9213.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_9213.jpg" />
                             <figcaption>South Mission Beach</figcaption>
                         </figure>
                     </div> <!-- /col -->
                 </div> <!-- /row -->
-            </div> <!-- /container -->
+            </div> <!-- /container dark-section -->
 
             
-            <section class="light">
-
+            <section class="light-section">
                 <div class="container">
                     <div class="row">
                         
                         <div class="col-sm-8 col-sm-offset-2">
-                            
                             <div class="section-divider">
                                 <hr>
                                 <img class="icon" src="https://d32mxho067pe0f.cloudfront.net/images/writing/icons/icon-random.svg">
                                 <hr>
                             </div> <!-- /section-divider -->
-
         					<p>And rounding it all off, here's grab bag of random uncategorized photos that caught my eye:</p>
                         </div> <!-- /col -->
 
                         <div class="col-sm-12">
-
-                            
                             <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0094.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0094.jpg" />
                         </div> <!-- /col -->
 
                         <div class="col-sm-6">
-
-        					
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0059.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0059.jpg" />
                         </div> <!-- /col -->
 
                         <div class="col-sm-6">
-
-        					
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0060.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0060.jpg" />
                         </div> <!-- /col -->
 
                         <div class="col-sm-12">
-
-        					
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8998.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_8998.jpg" />
                         </div> <!-- /col -->
 
                         <div class="col-sm-6">
-
-        					
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0073.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0073.jpg" />
                         </div> <!-- /col -->
 
                         <div class="col-sm-6">
-
-        					
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0076.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0076.jpg" />
                         </div> <!-- /col -->
 
                         <div class="col-sm-12">
-
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0069.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0069.jpg" />
-
-        					
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0071-cropped-and-resized.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0071-cropped-and-resized.jpg" />
-
-        					
         					<img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0061.jpg" alt="https://d32mxho067pe0f.cloudfront.net/images/writing/sandiego2021/IMG_0061.jpg" />
                         </div> <!-- /col -->
 
@@ -1059,6 +987,11 @@ footer.byline {
                                 <p>Thoughts on product design, startups &amp; tech.</p>
                                 <p><a href="https://alabut.substack.com/welcome">Subscribe</a></p>
                             </aside>
+                        </div> <!-- /col -->
+
+        			</div> <!-- row -->
+        		</div> <!-- /container -->
+            </section> <!-- /light-section -->
 
             <aside class="dark bio-and-footer">
                 <div class="container footer">
