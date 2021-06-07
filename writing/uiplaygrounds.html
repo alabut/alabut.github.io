@@ -234,6 +234,36 @@ aside.blockquote.giant-quotemark:nth-of-type(even) {
     background-color: #000;
 }
 
+/* DARK MODE */
+
+.dark-mode {
+	background-color: #222;
+	color: #eee;
+}
+
+.dark-mode.minimal-header .logo {
+	filter: invert(0);
+}
+
+.dark-mode footer.byline {
+	background: rgba(255,255,255,0.05);
+}
+
+.dark-mode footer.byline:before {
+	filter: invert(1);
+}
+
+.dark-mode footer.byline a {
+	color: #f15403;
+}
+
+.dark-mode footer.byline a:hover {
+	border-color: #eee;
+	color: #eee;
+}
+
+/* NON-MOBILE STYLES */
+
 @media only screen and (min-width: 576px) {
 
     .newsletter {
@@ -259,6 +289,8 @@ aside.blockquote.giant-quotemark:nth-of-type(even) {
     }
 
 }
+
+/* MOBILE STYLES */
 
 @media only screen and (max-width: 575.98px) {
 
@@ -307,7 +339,7 @@ aside.blockquote.giant-quotemark:nth-of-type(even) {
 
         </style>
     </head>
-    <body class="minimal-header">
+    <body class="minimal-header dark-mode">
         <header>
             <div class="header-wrap">
                 <a class="logo" href="https://alabut.com"></a>
