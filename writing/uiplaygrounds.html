@@ -74,6 +74,7 @@ article .listbox li:last-child {
 	color: #666;
     font-size: 22px;
     margin-top: 20px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -245,6 +246,17 @@ aside.blockquote.giant-quotemark:nth-of-type(even) {
 	filter: invert(0);
 }
 
+.dark-mode.minimal-header header h2 {
+	color: #eee;
+}
+
+
+.dark-mode h4 {
+    color: rgba(255,255,255,0.5);
+    font-size: 16px;
+    margin: 0;
+}
+
 .dark-mode footer.byline {
 	background: rgba(255,255,255,0.05);
 }
@@ -253,13 +265,17 @@ aside.blockquote.giant-quotemark:nth-of-type(even) {
 	filter: invert(1);
 }
 
-.dark-mode footer.byline a {
+.dark-mode article a {
 	color: #f15403;
 }
 
-.dark-mode footer.byline a:hover {
+.dark-mode article a:hover {
 	border-color: #eee;
 	color: #eee;
+}
+
+.dark-mode .newsletter a {
+	color: #fff;
 }
 
 /* NON-MOBILE STYLES */
@@ -345,6 +361,7 @@ aside.blockquote.giant-quotemark:nth-of-type(even) {
                 <a class="logo" href="https://alabut.com"></a>
                 <h1>UI Playgrounds</h1>
                 <h2>A retrospective on how fertile ecosystems drive design experimentation</h2>
+                <h4>June 7th, 2021</h4>
             </div> <!-- /header-wrap-none -->
         </header>
 
