@@ -242,6 +242,24 @@ aside.blockquote.giant-quotemark:nth-of-type(even) {
 	color: #eee;
 }
 
+.dark-mode header:before,
+.dark-mode header:after {
+	background-color: #fff;
+    border-radius: 80px;
+    top: 90px;
+    content: "";
+    height: 125px;
+    opacity: .05;
+    position: absolute;
+    left: calc(50% - 170px);
+    transform: rotate(-40deg);
+    width: 340px;
+}
+
+.dark-mode header:after {
+	transform: rotate(40deg);
+}
+
 .dark-mode.minimal-header .logo {
 	filter: invert(0);
 }
