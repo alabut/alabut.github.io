@@ -245,19 +245,19 @@ aside.blockquote.giant-quotemark:nth-of-type(even) {
 .dark-mode header:before,
 .dark-mode header:after {
 	background-color: #fff;
-    border-radius: 80px;
-    top: 90px;
+    border-radius: 50px;
+    top: 43px;
     content: "";
-    height: 125px;
+    height: 280px;
     opacity: .05;
     position: absolute;
-    left: calc(50% - 170px);
-    transform: rotate(-40deg);
-    width: 340px;
+    left: calc(50% - 140px);
+    transform: rotate(-45deg);
+    width: 280px;
 }
 
 .dark-mode header:after {
-	transform: rotate(40deg);
+	transform: rotate(0deg);
 }
 
 .dark-mode.minimal-header .logo {
@@ -333,6 +333,13 @@ aside.blockquote.giant-quotemark:nth-of-type(even) {
 
 @media only screen and (max-width: 575.98px) {
 
+    .dark-mode header:before,
+    .dark-mode header:after {
+        top: 51px;
+        height: 260px;
+        left: calc(50% - 130px);
+        width: 260px;
+    }
 
 
     .minimal-header .header-wrap {
