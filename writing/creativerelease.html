@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!-- Plausible is a privacy-focused analytics tool that doesn't require cookies or GDPR notice. -->
+        <script async defer data-domain="alabut.com" src="https://plausible.io/js/plausible.js"></script>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+        <meta property="og:image" content="https://d32mxho067pe0f.cloudfront.net/images/writing/danae-paparis-cj6Am4O7YJs-unsplash-1200w.jpg">
+        <title>Embracing the writing challenge</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/designsprint.css">
+        <link rel="stylesheet" href="../css/work.css">
+        <link rel="stylesheet" media="print" href="../css/print.css">
+        <style type="text/css">
+
+/* REVERSE THESE DEFAULTS IN THE OTHER STYLESHEET TOO? I'm not folding this within the minimal header class because it shouldn't have a default in the first place */
+
+body, html {
+    background: #fff;
+}
+
+header {
+    background: none;
+}
+
+article .dark.bio-and-footer {
+    border: none;
+    margin-top: 20px;
+}
+
+article .listbox h2 {
+    margin: 0;
+}
+
+article .listbox h2::after {
+    margin: 25px auto 0;
+}
+
+article .listbox li::before {
+    content: none;
+}
+
+article .listbox li:last-child {
+    margin-bottom: 45px;
+}
+
+/* NEW CUSTOM STYLES (should they be the default? just try disabling designsprint.css to see how nicely minimal the bootstrap-only version is...) */
+
+.minimal-header header {
+    text-align: center;
+}
+
+.minimal-header .header-wrap {
+    padding: 100px 15px;
+}
+
+.minimal-header .logo {
+    display: inline-flex;;
+    filter: invert(1);
+    left: initial;
+    position: relative;
+    top: initial;
+}
+
+.minimal-header .logo:hover {
+    /*color: #f15403;*/
+    filter: invert(0);
+}
+
+.minimal-header header h2 {
+	color: #666;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+article .blockquote.table-of-contents {
+    margin: 40px 0;
+    padding: 30px 30px 25px;
+}
+
+article .blockquote.table-of-contents ol {
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+article aside li {
+    line-height: 120%;
+}
+
+footer.byline:before {
+    content: url(https://d32mxho067pe0f.cloudfront.net/images/writing/monogram-gray-on-white.png);
+    left: calc(50% - 107px);
+    position: absolute;
+    top: -80px;
+}
+
+footer.byline {
+    background: rgba(0,0,0,0.05);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 130px;
+    padding: 40px;
+    position: relative;
+}
+
+footer.byline p {
+    margin-bottom: 5px;
+}
+
+aside p:last-of-type, footer.byline p:last-of-type {
+    margin: 0;
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+.newsletter {
+    text-align: center;
+}
+
+.newsletter a {
+    background: #f15403;
+    border: 1px solid #f15403;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-family: "Helvetica";
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 10px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.newsletter a:hover {
+    background: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+
+.newsletter, .minimal-header aside.blockquote {
+    background: #111111;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    overflow: hidden;
+    padding: 73px;
+    position: relative;
+}
+
+.minimal-header aside.blockquote:first-of-type {
+    margin-top: 0;
+}
+
+.minimal-header aside.blockquote.giant-quotemark {
+    background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/quotemark-orange.png);
+    background-position: 70px 70px;
+    background-repeat: no-repeat;
+    padding-left: 193px;
+}
+
+.minimal-header aside.blockquote p {
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.minimal-header aside.blockquote em {
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+.giant-quotemark:nth-of-type(odd) a {
+    color: #fff;
+}
+
+.giant-quotemark:nth-of-type(odd) a:hover {
+    border-color: #fff;
+}
+
+aside.blockquote.giant-quotemark:nth-of-type(even) {
+    background-color: #f2f2f2;
+    background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/quotemark-gray.png);
+    color: #222;
+}
+
+.listbox {
+    overflow: hidden;
+    position: relative;
+}
+
+.listbox li {
+    padding: 5px 0 25px;
+}
+
+.listbox li:first-of-type {
+    padding-top: 25px;
+}
+
+.listbox:before, .newsletter:before, .minimal-header aside.blockquote:before {
+    background-color: #f15403;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    content: "";
+    height: 35px;
+    position: absolute;
+    right: 33%;
+    top: 0;
+    width: 70px;
+}
+
+.listbox:after, .newsletter:after, .minimal-header aside.blockquote:after {
+    background-color: #fff;
+    border-radius: 80px;
+    bottom: -130px;
+    content: "";
+    height: 125px;
+    opacity: .1;
+    position: absolute;
+    right: 8%;
+    transform: rotate(-50deg);
+    width: 300px;
+}
+
+.listbox:after, aside.blockquote.giant-quotemark:nth-of-type(even):after {
+    background-color: #000;
+}
+
+/* DARK MODE */
+
+.dark-mode {
+	background-color: #222;
+	color: #eee;
+}
+
+.dark-mode header:before,
+.dark-mode header:after {
+	background-color: #fff;
+    border-radius: 50px;
+    top: 43px;
+    content: "";
+    height: 280px;
+    opacity: .05;
+    position: absolute;
+    left: calc(50% - 140px);
+    transform: rotate(-45deg);
+    width: 280px;
+}
+
+.dark-mode header:after {
+	transform: rotate(0deg);
+}
+
+.dark-mode.minimal-header .logo {
+	filter: invert(0);
+}
+
+.dark-mode.minimal-header header h2 {
+	color: #eee;
+}
+
+.dark-mode h3 {
+    color: #000;
+    filter: invert(1);
+}
+
+
+.dark-mode h4 {
+    color: rgba(255,255,255,0.5);
+    font-size: 16px;
+    margin: 0;
+}
+
+.dark-mode footer.byline {
+	background: rgba(255,255,255,0.05);
+}
+
+.dark-mode footer.byline:before {
+	filter: invert(1);
+}
+
+.dark-mode article a {
+	color: #f15403;
+}
+
+.dark-mode article a:hover {
+	border-color: #eee;
+	color: #eee;
+}
+
+.dark-mode .newsletter a {
+	color: #fff;
+}
+
+/* NON-MOBILE STYLES */
+
+@media only screen and (min-width: 576px) {
+
+    .newsletter {
+        background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/email.svg);
+        background-repeat: no-repeat;
+        background-size: 100px;
+        background-position: 53px 76px;
+        padding-left: 193px;
+    }
+
+    .newsletter, .newsletter h2 {
+        position: relative;
+        text-align: left;
+    }
+
+    .newsletter h2 {
+        margin-bottom: 70px;
+    }
+
+    article .newsletter h2::after {
+        left: 0;
+        position: absolute;
+    }
+
+}
+
+/* MOBILE STYLES */
+
+@media only screen and (max-width: 575.98px) {
+
+    .dark-mode header:before,
+    .dark-mode header:after {
+        top: 51px;
+        height: 260px;
+        left: calc(50% - 130px);
+        width: 260px;
+    }
+
+
+    .minimal-header .header-wrap {
+        padding: 50px 15px;
+    }
+
+    .minimal-header aside.blockquote {
+        padding: 40px;
+    }
+
+    .minimal-header aside.blockquote.giant-quotemark {
+        background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/quotemark-orange-mobile.png);
+        background-position: 40px 20px;
+        padding: 70px 40px 40px;
+    }
+
+    aside.blockquote.giant-quotemark:nth-of-type(even) {
+        background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/quotemark-gray-mobile.png);
+    }
+
+    .minimal-header aside.blockquote:before {
+        right: 10%;
+    }
+
+    aside ol {
+        margin: 0;
+        padding: 0;
+    }
+
+    aside li:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .newsletter {
+        padding: 60px 40px;
+    }
+
+    .newsletter:after {
+        bottom: -150px;
+    }
+
+}
+
+        </style>
+    </head>
+    <body class="minimal-header dark-mode">
+        <header>
+            <div class="header-wrap">
+                <a class="logo" href="https://alabut.com"></a>
+                <h1>Growth Through Writing</h1>
+                <h2>Embracing the grind of creative challenges</h2>
+                <h4>June 15th, 2021</h4>
+            </div> <!-- /header-wrap-none -->
+        </header>
+
+        <article>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2">
+
+							<p>I&#8217;m writing this in the aftermath of a personal crisis.</p>
+
+                            <p>Don&#8217;t worry, I&#8217;m not in any kind of danger, nor will I burden anyone with the particulars of the soap opera that enveloped our family over the last few days. That&#8217;s not the point of this article. It&#8217;s about the creative release of just writing.</p>
+
+                            <p>There was a particular moment yesterday, amidst all the madness, when the dark clouds parted for a minute and I was caught off-guard by something nice. It felt surprisingly good to get a notification about <a href="https://twitter.com/hannibaltabu/status/1404518176302329856">my new friend Hannibal&#8217;s latest blog post.</a> I looked down at my phone and felt a little sliver of light, a warm happy feeling. A reminder of our writing challenge that we started a few weeks ago with my old friend Pinguino.</p>
+
+                            <p>Not burdened, tired, irritated or anxious, like creative challenges have felt to me in the past, to the point that I usually don&#8217;t participate in them. Instead, I was glad to be reminded of it. And that&#8217;s kind of a new feeling for me when it comes to writing, or at least new for the first time in a long while.</p>
+
+                            <p>I&#8217;d completely forgotten about our little writing circle, to be frank. It&#8217;s understandable given everything going on and I wouldn&#8217;t have expected any less from anyone else in the same situation. I was in a fog and sitting around lost in my own thoughts, ruminating on the events and worrying about my wife, who was in a similar state of shock. </p>
+
+                            <p>I was starting to go stir crazy, she was numb. We stared at each other and the walls, unbelieving of the social wreckage strewn all around us, how other people could be so cruel.</p>
+
+                            <p>And then&#8230; <em>ping</em> &#8230;a welcome distraction. Creative juices stirred again.</p>
+
+                            <p>Not a full-bodied fever of creativity. Not philosopher Slavoj Zizek&#8217;s <a href="https://www.youtube.com/watch?v=1C315x8T0zU&ab_channel=AJSalas">&#8220;you are ready to suffer&#8221;</a> embrace of the tortured artist. Just a small rumbling of normalcy returning. Today I&#8217;m stepping up to the plate to look for a base hit and stay in the game, I&#8217;m not swinging for the fences. Not even close.</p>
+
+                            <p>And that&#8217;s ok. In fact maybe it&#8217;s better, instead of chasing the muse and riding the dragon every time.</p>
+
+                            <p>There&#8217;s a newish idea in physical training that <a href="https://www.youtube.com/watch?v=_fbCcWyYthQ">you should never be sore</a>, that you should train to 70&#8211;80% capacity at most and go for volume of training rather than intensity. Better to go for 5 short runs a week than to kill yourself at a biweekly crossfit class with trainers doing their best impression of the Marine instructor from Full Metal Jacket.</p>
+
+                            <p>A more measured approach goes against my personality. My usual motto in life is <em>&#8220;why do things when you can overdo them instead&#8221;</em> and I don&#8217;t regret it at all. It&#8217;s who I am and it&#8217;s gotten me to where I am today. </p>
+
+                            <p>But it&#8217;s also led to burnout and swings, so maybe it's time to try something different. Maybe I should leave some in the tank and embrace the small wins of grinding out consistency, if only to mix things up.</p>
+
+                            <p>In addition to the weekly cadence, I&#8217;ve also been inspired by the specific writing of my partners. Thinking about Hannibal&#8217;s candor about <a href="https://hannibaltabu.tumblr.com/post/652673487481290752/the-case-of-the-pricy-turkey-burger-im-going-to">interactions with his son</a>, and Pinguino&#8217;s general love of life that shines through in <a href="https://twitter.com/pinguino/status/1402756190950461445">her road trip pics</a>, is what made me want to share this more personal writing, to open up and be more real instead of the unintentional success theater that comes from only sharing the good stuff or work challenges. You have to take the sweet with the sour, and the personal with the professional.</p>
+
+                            <p>And, well, ok. If I&#8217;m even more candid, I really have an audience of not 2 but at least 3: Hannibal and Pinguino, but also myself, and maybe other friends if I can embrace this semi-public vulnerability. This writing helps clarify and structure my thinking, or at least gives me a worry stone to focus on and give time for the longer processing to happen.</p>
+
+                            <p>There&#8217;s a comfort in writing this way, writing without publishing, at least not to a broader group. This post is semi-public: public in theory in that it&#8217;s available to anyone with the link, private in reality that it&#8217;s not linked from anywhere other than a reply tweet that&#8217;ll get lost in the shuffle. It lives in a liminal space, floating somewhere between draft and finished article; private journal vs public confessional.</p>
+
+                            <p>Obscurity by design. It&#8217;s comforting. Intimate. Connective. And hopefully what I think it&#8217;ll ultimately be, in some small measure: cathartic.</p>
+
+                            <p>So that&#8217;s where I ended up this afternoon. It took a few swings at the bat to write something more personal than my first three posts and I&#8217;m glad to have done it. It reminds me of the early days of blogging and although we&#8217;ll never go completely back to the less commercial roots of the web, any occasional spark of the indie web to remind us is welcome.</p>
+
+                            <p>But I&#8217;ll come back to that last topic some other time. Today I&#8217;m going to save some in the tank.</p>
+
+                            <footer class="byline">
+                                <div class="row">
+                                    <div class="avatar col-sm-3 col-lg-2">
+                                        <img class="img-responsive center-block" class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/about/al-avatar.png">
+                                    </div> <!--  /col -->
+                                    <div class="bio col-sm-9 col-lg-10">
+                                        <p><strong style="font-family: Helvetica;">AL ABUT</strong> <em>is a product designer &amp; startup&nbsp;veteran.</em></p>
+                                        <p><em>Follow</em> <strong><a href="https://twitter.com/alabut/">@alabut</a></strong> <em>on Twitter.</em></em></p>
+                                    </div> <!--  /col -->
+                                </div> <!-- /row -->
+                            </footer>
+
+                            <aside class="newsletter">
+                                <h2>Sign Up For My Email Newsletter</h2>
+                                <p>Thoughts on product design, startups &amp; tech.</p>
+                                <p><a href="https://alabut.substack.com/welcome">Subscribe</a></p>
+                            </aside>
+
+                        </div> <!-- /col-sm-8 col-sm-offset-2 -->
+                    </div> <!-- row -->
+                </div> <!-- /container -->
+            </section>
+            <aside class="dark bio-and-footer">
+                <div class="container footer">
+                    <div class="row mini-nav">
+                        <div class="col-sm-8 col-sm-offset-2">
+                            <a href="/">Home</a>
+                             · 
+                            <a href="/about">About</a>
+                             · 
+                            <span class="copyright">Made with &hearts; in CA</span>
+                        </div> <!-- /col -->
+                    </div> <!-- /row mini-nav -->
+                </div> <!-- /container footer -->
+            </aside>
+        </article>
+    </body>
+</html>
