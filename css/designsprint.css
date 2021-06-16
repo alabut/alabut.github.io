@@ -64,10 +64,6 @@ header {
 }
 
 @media only screen and (min-width : 768px) {
-    .logo {
-        background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/logo-mobile-sprite@2x.png);
-        background-position: 0 0;
-    }
 
     .logo:hover {
         background-position: 0 -36px;
