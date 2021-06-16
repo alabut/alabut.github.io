@@ -1,0 +1,109 @@
+.newsletter {
+    text-align: center;
+}
+
+.newsletter a {
+    background: #f15403;
+    border: 1px solid #f15403;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-family: "Helvetica";
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 10px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.newsletter a:hover {
+    background: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+
+.newsletter, .minimal-header aside.blockquote {
+    background: #111111;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    overflow: hidden;
+    padding: 73px;
+    position: relative;
+}
+
+.listbox:before, .newsletter:before, .minimal-header aside.blockquote:before {
+    background-color: #f15403;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    content: "";
+    height: 35px;
+    position: absolute;
+    right: 33%;
+    top: 0;
+    width: 70px;
+}
+
+.listbox:after, .newsletter:after, .minimal-header aside.blockquote:after {
+    background-color: #fff;
+    border-radius: 80px;
+    bottom: -130px;
+    content: "";
+    height: 125px;
+    opacity: .1;
+    position: absolute;
+    right: 8%;
+    transform: rotate(-50deg);
+    width: 300px;
+}
+
+.dark-mode .newsletter a {
+    color: #fff;
+}
+
+
+
+/* NON-MOBILE STYLES ONLY */
+
+@media only screen and (min-width: 576px) {
+
+    .newsletter {
+        background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/email.svg);
+        background-repeat: no-repeat;
+        background-size: 100px;
+        background-position: 53px 76px;
+        padding-left: 193px;
+    }
+
+    .newsletter, .newsletter h2 {
+        position: relative;
+        text-align: left;
+    }
+
+    .newsletter h2 {
+        margin-top: 0;
+        margin-bottom: 70px;
+    }
+
+    article .newsletter h2::after {
+        left: 0;
+        position: absolute;
+    }
+
+}
+
+
+
+/* MOBILE STYLES */
+
+@media only screen and (max-width: 575.98px) {
+
+    .newsletter {
+        padding: 60px 40px;
+    }
+
+    .newsletter:after {
+        bottom: -150px;
+    }
+
+}
