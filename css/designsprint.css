@@ -118,6 +118,11 @@ header h2 {
 .embed-responsive {
     margin-top: 10px;
     margin-bottom: 20px;
+    background-color: rgba(0,0,0,0.1);
+    background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/icons/icon-video.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 50px;
 }
 
 h2 {
@@ -207,7 +212,11 @@ article img {
 }
 
 figure {
-    background: #fff;
+    background-color: #fff;
+    background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/icons/icon-image.svg);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 50px;
     border-radius: 10px; 
     margin: 60px auto;
     padding: 20px;
