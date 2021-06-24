@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!-- Plausible is a privacy-focused analytics tool that doesn't require cookies or GDPR notice. -->
+        <script async defer data-domain="alabut.com" src="https://plausible.io/js/plausible.js"></script>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+        <meta property="og:image" content="https://d32mxho067pe0f.cloudfront.net/images/writing/danae-paparis-cj6Am4O7YJs-unsplash-1200w.jpg">
+        <title>Stop Multi-tasking Your Eyeballs: Making a case for single monitor workstations</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/designsprint.css">
+        <link rel="stylesheet" href="../css/work.css">
+        <link rel="stylesheet" media="print" href="../css/print.css">
+        <style type="text/css">
+
+/* REVERSE THESE DEFAULTS IN THE OTHER STYLESHEET TOO? I'm not folding this within the minimal header class because it shouldn't have a default in the first place */
+
+body, html {
+    background: #fff;
+}
+
+header {
+    background: none;
+}
+
+article .dark.bio-and-footer {
+    border: none;
+    margin-top: 20px;
+}
+
+article .listbox h2 {
+    margin: 0;
+}
+
+article .listbox h2::after {
+    margin: 25px auto 0;
+}
+
+article .listbox li::before {
+    content: none;
+}
+
+article .listbox li:last-child {
+    margin-bottom: 45px;
+}
+
+/* NEW CUSTOM STYLES (should they be the default? just try disabling designsprint.css to see how nicely minimal the bootstrap-only version is...) */
+
+.minimal-header header {
+    text-align: center;
+}
+
+.minimal-header .header-wrap {
+    padding: 100px 15px;
+}
+
+.minimal-header .logo {
+    display: inline-flex;;
+    filter: invert(1);
+    left: initial;
+    position: relative;
+    top: initial;
+}
+
+.minimal-header .logo:hover {
+    /*color: #f15403;*/
+    filter: invert(0);
+}
+
+.minimal-header header h2 {
+	color: #666;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+article .blockquote.table-of-contents {
+    margin: 40px 0;
+    padding: 30px 30px 25px;
+}
+
+article .blockquote.table-of-contents ol {
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+article aside li {
+    line-height: 120%;
+}
+
+footer.byline:before {
+    content: url(https://d32mxho067pe0f.cloudfront.net/images/writing/monogram-gray-on-white.png);
+    left: calc(50% - 107px);
+    position: absolute;
+    top: -80px;
+}
+
+footer.byline {
+    background: rgba(0,0,0,0.05);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 130px;
+    padding: 40px;
+    position: relative;
+}
+
+footer.byline p {
+    margin-bottom: 5px;
+}
+
+aside p:last-of-type, footer.byline p:last-of-type {
+    margin: 0;
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+.newsletter {
+    text-align: center;
+}
+
+.newsletter a {
+    background: #f15403;
+    border: 1px solid #f15403;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-family: "Helvetica";
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 10px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.newsletter a:hover {
+    background: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+
+.newsletter, .minimal-header aside.blockquote {
+    background: #111111;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    overflow: hidden;
+    padding: 73px;
+    position: relative;
+}
+
+.minimal-header aside.blockquote:first-of-type {
+    margin-top: 0;
+}
+
+.minimal-header aside.blockquote.giant-quotemark {
+    background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/quotemark-orange.png);
+    background-position: 70px 70px;
+    background-repeat: no-repeat;
+    padding-left: 193px;
+}
+
+.minimal-header aside.blockquote p {
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.minimal-header aside.blockquote em {
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+.giant-quotemark:nth-of-type(odd) a {
+    color: #fff;
+}
+
+.giant-quotemark:nth-of-type(odd) a:hover {
+    border-color: #fff;
+}
+
+aside.blockquote.giant-quotemark:nth-of-type(even) {
+    background-color: #f2f2f2;
+    background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/quotemark-gray.png);
+    color: #222;
+}
+
+.listbox {
+    overflow: hidden;
+    position: relative;
+}
+
+.listbox li {
+    padding: 5px 0 25px;
+}
+
+.listbox li:first-of-type {
+    padding-top: 25px;
+}
+
+.listbox:before, .newsletter:before, .minimal-header aside.blockquote:before {
+    background-color: #f15403;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    content: "";
+    height: 35px;
+    position: absolute;
+    right: 33%;
+    top: 0;
+    width: 70px;
+}
+
+.listbox:after, .newsletter:after, .minimal-header aside.blockquote:after {
+    background-color: #fff;
+    border-radius: 80px;
+    bottom: -130px;
+    content: "";
+    height: 125px;
+    opacity: .1;
+    position: absolute;
+    right: 8%;
+    transform: rotate(-50deg);
+    width: 300px;
+}
+
+.listbox:after, aside.blockquote.giant-quotemark:nth-of-type(even):after {
+    background-color: #000;
+}
+
+/* DARK MODE */
+
+.dark-mode {
+	background-color: #222;
+	color: #eee;
+}
+
+.dark-mode.minimal-header .logo {
+	filter: invert(0);
+}
+
+.dark-mode.minimal-header header h2 {
+	color: #eee;
+}
+
+.dark-mode h3 {
+    color: #000;
+    filter: invert(1);
+}
+
+
+.dark-mode h4 {
+    color: rgba(255,255,255,0.5);
+    font-size: 16px;
+    margin: 0;
+}
+
+.dark-mode footer.byline {
+	background: rgba(255,255,255,0.05);
+}
+
+.dark-mode footer.byline:before {
+	filter: invert(1);
+}
+
+.dark-mode article a {
+	color: #f15403;
+}
+
+.dark-mode article a:hover {
+	border-color: #eee;
+	color: #eee;
+}
+
+.dark-mode .newsletter a {
+	color: #fff;
+}
+
+/* NON-MOBILE STYLES */
+
+@media only screen and (min-width: 576px) {
+
+    .newsletter {
+        background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/email.svg);
+        background-repeat: no-repeat;
+        background-size: 100px;
+        background-position: 53px 76px;
+        padding-left: 193px;
+    }
+
+    .newsletter, .newsletter h2 {
+        position: relative;
+        text-align: left;
+    }
+
+    .newsletter h2 {
+        margin-bottom: 70px;
+    }
+
+    article .newsletter h2::after {
+        left: 0;
+        position: absolute;
+    }
+
+}
+
+/* MOBILE STYLES */
+
+@media only screen and (max-width: 575.98px) {
+
+    .dark-mode header:before,
+    .dark-mode header:after {
+        top: 51px;
+        height: 260px;
+        left: calc(50% - 130px);
+        width: 260px;
+    }
+
+
+    .minimal-header .header-wrap {
+        padding: 50px 15px;
+    }
+
+    .minimal-header aside.blockquote {
+        padding: 40px;
+    }
+
+    .minimal-header aside.blockquote.giant-quotemark {
+        background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/quotemark-orange-mobile.png);
+        background-position: 40px 20px;
+        padding: 70px 40px 40px;
+    }
+
+    aside.blockquote.giant-quotemark:nth-of-type(even) {
+        background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/quotemark-gray-mobile.png);
+    }
+
+    .minimal-header aside.blockquote:before {
+        right: 10%;
+    }
+
+    aside ol {
+        margin: 0;
+        padding: 0;
+    }
+
+    aside li:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .newsletter {
+        padding: 60px 40px;
+    }
+
+    .newsletter:after {
+        bottom: -150px;
+    }
+
+}
+
+        </style>
+    </head>
+    <body class="minimal-header dark-mode">
+        <header>
+            <div class="header-wrap">
+                <a class="logo" href="https://alabut.com"></a>
+                <h1>Stop Multi-tasking Your Eyeballs</h1>
+                <h2>Making a case for single monitor workstations</h2>
+                <h4>June 24th, 2021</h4>
+            </div> <!-- /header-wrap-none -->
+        </header>
+
+        <article>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2">
+
+							<aside class="blockquote giant-quotemark">
+                                <p>
+                                    &#8220;When we think we're multitasking we're actually multiswitching. That is what the brain is very good at doing - quickly diverting its attention from one place to the next. We think we're being productive. We are, indeed, being busy. But in reality we're simply giving ourselves extra work.&#8221;
+                                    <em>&mdash;Michael Harris</em>
+                                </p>
+                            </aside>
+
+                            <p><span class="ornamental-first-letter">I</span> came across some pictures of my home office last year and it reminded me of how I usually like to set up my rig for work:</p>
+
+                            <p><img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/singlemonitor/scripps1.jpg" alt="Picture of my home office from last year" /></p>
+
+                            <p>One of my mindless timewasters is to scroll through the beautiful shots of gaming and computer desk setups on Instagram, cruising through hashtags like <a href="https://www.instagram.com/explore/tags/workspaces/">#workspaces</a> or <a href="https://www.instagram.com/explore/tags/minimalsetups/">#minimalsetups</a>.</p>
+
+                            <p>Almost all of the pictures have dual screens though and you might think that's the norm, so I thought I’d explain why I’ve long been a fan of putting away the laptop screen in a vertical clamshell stand and using a single external monitor instead.</p>
+
+                            <p>As far as I can tell, the science is mixed on which one is better for concentration and mental clarity. There's some evidence that it’s better to have more screen real estate, no matter how many displays, whereas other studies say that there's a higher cognitive load to constantly visually scan between multiple monitors. The effect is especially pronounced if they&#8217;re not of the exact same dimensions, with your brain subconsciously scanning the jigsaw puzzle of a big monitor next to the laptop's smaller one.</p>
+
+                            <p>Basically, I find that working on a single monitor is a more focused experience. For me personally, the conventional wisdom doesn't resonate and the science doesn't give a definitive answer, so it&#8217;s more about my own anecdotal experience: I feel like I get into a flow state more often with a single monitor. Earlier in my career when I thought more was better and tried out out multiple screens, I always felt a little scattered instead, with my eyes constantly bouncing around and scanning for new info.</p>
+
+                            <p>Also on a purely practical level for designers, it&#8217;s better for the laptop since the graphics card gets better performance from driving only one monitor, plus also being vertical means better heat dissipation.</p>
+
+                            <p>And lastly, you can see from my setup that the laptop also doubles as a headphone stand ;)</p>
+
+                            <p><img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/singlemonitor/scripps2.jpg" alt="Picture of my laptop in a vertical clamshell stand with a pair of headphones resting on it" /></p>
+
+                            <p>This setup might not be for everyone, so go ahead and try two or more screens but don’t feel weird if it feels weird and you can&#8217;t put your finger on why. If you don’t like it, then go against the grain and try a single monitor instead of the usual laptop and monitor setup. I’ve sworn by my approach for years and would often get weird looks at work for using this weird setup but trust me, it's worth at least giving a test drive to see if it's your jam too.</p>
+
+                            <footer class="byline">
+                                <div class="row">
+                                    <div class="avatar col-sm-3 col-lg-2">
+                                        <img class="img-responsive center-block" class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/about/al-avatar.png">
+                                    </div> <!--  /col -->
+                                    <div class="bio col-sm-9 col-lg-10">
+                                        <p><strong style="font-family: Helvetica;">AL ABUT</strong> <em>is a product designer &amp; startup&nbsp;veteran.</em></p>
+                                        <p><em>Follow</em> <strong><a href="https://twitter.com/alabut/">@alabut</a></strong> <em>on Twitter.</em></em></p>
+                                    </div> <!--  /col -->
+                                </div> <!-- /row -->
+                            </footer>
+
+                            <aside class="newsletter">
+                                <h2>Sign Up For My Email Newsletter</h2>
+                                <p>Thoughts on product design, startups &amp; tech.</p>
+                                <p><a href="https://alabut.substack.com/welcome">Subscribe</a></p>
+                            </aside>
+
+                        </div> <!-- /col-sm-8 col-sm-offset-2 -->
+                    </div> <!-- row -->
+                </div> <!-- /container -->
+            </section>
+            <aside class="dark bio-and-footer">
+                <div class="container footer">
+                    <div class="row mini-nav">
+                        <div class="col-sm-8 col-sm-offset-2">
+                            <a href="/">Home</a>
+                             · 
+                            <a href="/about">About</a>
+                             · 
+                            <span class="copyright">Made with &hearts; in CA</span>
+                        </div> <!-- /col -->
+                    </div> <!-- /row mini-nav -->
+                </div> <!-- /container footer -->
+            </aside>
+        </article>
+    </body>
+</html>
