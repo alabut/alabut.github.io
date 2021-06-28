@@ -1,0 +1,103 @@
+/* this really should be the blog.css but that file's outdated from when I was doing initial layout explorations. */
+
+
+
+
+figure {
+    background-color: rgba(255,255,255,0.1);
+    margin: 0 0 30px;
+    padding: 0;
+}
+
+article img {
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+article figure img {
+    border: none;
+    border-radius: 10px 10px 0 0;
+    margin: 0;
+}
+
+figcaption {
+    font-style: italic;
+    margin: 15px 5px 10px;
+    opacity: 0.8;
+    padding-bottom: 15px;
+    text-align: center;
+}
+
+figcaption a {
+	border:  none;
+    color: #f15403;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+figcaption a:hover {
+	border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+
+
+
+
+/* Non-mobile styles for fancier image captions */
+
+@media only screen and (min-width : 768px) {
+
+figure {
+    padding: 0;
+    position: relative;
+}
+
+article figure img {
+    border-radius: 10px;
+    margin: 0;
+}
+
+figcaption {
+    background: rgba(0,0,0,0.9);
+    border-radius: 0 0 10px 10px;
+    bottom: 0;
+    color: #fff;
+    left: 0;
+    margin: 0;
+    padding: 15px;
+    position: absolute;
+    width: 100%;
+}
+
+}
+
+
+
+
+/* Overrides for lighter alternating sections */
+
+.light-section {
+    background: #fbfbfb;
+    color: rgb(17,17,17);
+    padding: 40px 0 60px;
+}
+
+.light-section figure {
+    background-color: #fff;
+    box-shadow: 0 10px 10px 0 rgba(0,0,0,0.03);
+    color: #333;
+}
+
+.light-section blockquote,
+.light-section .section-divider hr {
+    border-color: rgb(17,17,17);
+}
+
+.light-section .icon {
+    filter: invert();
+}
+
+.dark-section {
+    padding-bottom: 60px;
+}
