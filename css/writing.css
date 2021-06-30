@@ -1,7 +1,9 @@
-/* this really should be the blog.css but that file's outdated from when I was doing initial layout explorations. */
+/* All of this should live in blog.css but that file's outdated from when I was doing initial layout explorations. */
 
 
 
+
+/* Pictures and their captions, first used in the article for San Diego photography */
 
 figure {
     background-color: rgba(255,255,255,0.1);
@@ -14,6 +16,10 @@ article img {
     margin-bottom: 30px;
 }
 
+article img.icon {
+	border-radius: 0;
+}
+
 article figure img {
     border: none;
     border-radius: 10px 10px 0 0;
@@ -23,7 +29,7 @@ article figure img {
 figcaption {
     font-style: italic;
     margin: 15px 5px 10px;
-    opacity: 0.8;
+    opacity: 1;
     padding-bottom: 15px;
     text-align: center;
 }
@@ -39,7 +45,6 @@ figcaption a:hover {
 	border-bottom: 2px solid #fff;
     color: #fff;
 }
-
 
 
 
@@ -60,7 +65,7 @@ article figure img {
 
 figcaption {
     background: rgba(0,0,0,0.9);
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 8px 8px;
     bottom: 0;
     color: #fff;
     left: 0;
@@ -100,4 +105,13 @@ figcaption {
 
 .dark-section {
     padding-bottom: 60px;
+}
+
+
+
+
+/* new styles started in oldfriend.html */
+
+blockquote.smallquote, blockquote.smallquote p {
+	font-size: 18px;
 }

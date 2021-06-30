@@ -1,0 +1,725 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+        <title>An Ode To A New Old Friend - a tribute to my first computer, a Texas Instruments TI-99/4A</title>
+        
+        <!-- Plausible is a privacy-focused analytics tool that doesn't require cookies or GDPR notice. -->
+        <script async defer data-domain="alabut.com" src="https://plausible.io/js/plausible.js"></script>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/designsprint.css">
+        <link rel="stylesheet" href="../css/myprinciples.css">
+        <link rel="stylesheet" href="../css/writing.css">
+        <style type="text/css">
+            @media all {
+                .featherlight { color: #333; }
+                .lightbox { display: none; }
+                .fl-page h1,
+                .fl-page h3,
+                .fl-page h4 {
+                    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+                    font-weight: 100;
+                    letter-spacing: 1px;
+                }
+                .fl-page h1 { font-size: 110px; margin-bottom: 0.5em; }
+                .fl-page h1 i { font-style: normal; color: #ddd; }
+                .fl-page h1 span { font-size: 30px; color: #333;}
+                .fl-page h3 { text-align: right; }
+                .fl-page h3 { font-size: 15px; }
+                .fl-page h4 { font-size: 2em; }
+                .fl-page .jumbotron { margin-top: 2em; }
+                .fl-page .doc { margin: 2em 0;}
+                .fl-page .btn-download { float: right; }
+                .fl-page .btn-default { vertical-align: bottom; }
+
+                .fl-page .btn-lg span { font-size: 0.7em; }
+                .fl-page .footer { margin-top: 3em; color: #aaa; font-size: 0.9em;}
+                .fl-page .footer a { color: #999; text-decoration: none; margin-right: 0.75em;}
+                .fl-page .github { margin: 2em 0; }
+                .fl-page .github a { vertical-align: top; }
+                .fl-page .marketing a { color: #999; }
+
+                /* override default feather style... */
+                .fixwidth {
+                    background: rgba(256,256,256, 0.8);
+                }
+                .fixwidth .featherlight-content {
+                    width: 500px;
+                    padding: 25px;
+                    color: #fff;
+                    background: #111;
+                }
+                .fixwidth .featherlight-close {
+                    color: #fff;
+                    background: #333;
+                }
+
+            }
+            @media(max-width: 768px){
+                .fl-page h1 span { display: block; }
+                .fl-page .btn-download { float: none; margin-bottom: 1em; }
+            }
+        </style>
+        <style type="text/css" media="screen">
+
+body, html {
+    background: #222;
+    color: #fff;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.header {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#48009e+0,9f28c6+48,a80171+100 */
+    background: rgb(72,0,158); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(72,0,158,1) 0%, rgba(159,40,198,1) 48%, rgba(168,1,113,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(72,0,158,1)), color-stop(48%,rgba(159,40,198,1)), color-stop(100%,rgba(168,1,113,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(72,0,158,1) 0%,rgba(159,40,198,1) 48%,rgba(168,1,113,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(72,0,158,1) 0%,rgba(159,40,198,1) 48%,rgba(168,1,113,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(72,0,158,1) 0%,rgba(159,40,198,1) 48%,rgba(168,1,113,1) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(72,0,158,1) 0%,rgba(159,40,198,1) 48%,rgba(168,1,113,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#48009e', endColorstr='#a80171',GradientType=0 ); /* IE6-9 */
+    background-size: cover;
+    background-position: 50% 100%;
+}
+
+.mini-nav,
+.project-metadata,
+.work-container {
+    margin-top: 60px;
+}
+
+.mini-nav {
+    text-align: right;
+}
+
+.mini-nav a {
+    color: rgba(255,255,255,0.5);
+    font-weight: 600;
+    margin: 0 20px;
+    padding-bottom: 2px;
+    text-decoration: none;
+}
+
+.mini-nav a:hover, .mini-nav a:focus {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+
+.mini-nav a.active-nav {
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    cursor: default;
+}
+
+.project-metadata {
+    text-align: center;
+}
+
+.project-metadata img {
+    /*-webkit-filter: drop-shadow(0 20px 13px rgba(0,0,0,0.75));*/
+    /*width: 50%;*/
+}
+
+.project-metadata ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.project-metadata li {
+    display: inline-block;
+    margin: 30px 98px 30px 0;
+    text-align: left;
+}
+
+.work-container li {
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    display: inline;
+    float: left;
+    list-style-type: none;
+    margin: 0 25px 0 0;
+    padding: 0 25px 0 0;
+}
+
+.work-container li:last-of-type {
+    border: none;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+@media only screen and (min-width : 1200px) {
+    .project-metadata li {
+        margin-right: 47px;
+    }
+}
+
+@media only screen and (max-width : 630px) {
+    .project-metadata img {
+        /*width: 100%;*/
+    }
+
+    .work-container li {
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        display: block;
+        float: none;
+        margin: 0 0 10px;
+        padding: 0 0 10px;
+    }
+}
+
+.work-container:last-of-type {
+    margin-bottom: 40px;
+}
+
+.work-container .headline {
+    font-size: 36px;
+}
+
+@media only screen and (min-width : 576px) {
+    .work-container .headline {
+        font-size: 72px;
+    }
+}
+
+.embed-responsive {
+    border: 3px solid #fff;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    border-left: 3px solid #fff;
+    margin-top: 40px;
+    margin-bottom: 25px;
+    padding: 0 0 0 10px;
+}
+
+.article-body h1 {
+    border-color: #222;
+}
+
+h4 {
+    font-family: Georgia;
+    font-size: 22px;
+    font-style: italic;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+h4:last-of-type {
+    margin-bottom: 0;
+}
+
+h5 {
+    color: rgba(255,255,255,0.5);
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.work-container h5 {
+    margin-bottom: 0;
+}
+
+p {
+    font-family: Georgia;
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.ornamental-first-letter {
+    font-size: 50px;
+    line-height: 50px;
+    /******************
+    ⬆⬆⬆ Font-size and line-height must be matching for the proper effect.
+    ******************/
+    float: left;
+    font-weight: 900;
+    margin-right: 5px;
+}
+
+.article-body .headline, blockquote, blockquote p {
+    font-size: 27px;
+}
+
+@media only screen and (min-width : 576px) {
+    p {
+    font-size: 22px;
+    }
+
+    .ornamental-first-letter {
+        font-size: 62px;
+        line-height: 62px;
+    }
+
+    .article-body .headline, blockquote, blockquote p {
+        font-size: 34px;
+    }
+}
+
+.article-body {
+    background: rgb(36, 21, 79);
+    color: #fff;
+}
+
+/*.article-body img {
+    border: 3px solid #ddd;
+    margin-bottom: 60px;
+}*/
+
+
+
+/*
+    Custom styles for the image gallery, surgically transplanted and modified from David Miller's free "Freelancer" Bootstrap theme:
+    https://startbootstrap.com/themes/freelancer/
+*/
+
+.img-fluid {
+    height: auto;
+    max-width: 100%;
+}
+
+.portfolio .portfolio-item {
+    display: block;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.article-body .portfolio .portfolio-item img {
+    border: none;
+    margin: 0;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption:hover {
+    opacity: 1;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption {
+    background-color: rgba(91,24,164,0.8);
+    opacity: 0;
+    -webkit-transition: all ease .25s;
+    transition: all ease .25s;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption {
+    color: #fff;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
+    margin: auto;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption i {
+    font-size: 30px
+}
+
+.h-100 {
+    height: 100%!important;
+}
+
+.w-100 {
+    width: 100%!important;
+}
+
+.position-absolute {
+    position: absolute!important;
+}
+
+.d-flex {
+    display: -ms-flexbox!important;
+    display: flex!important;
+}
+
+
+
+/* 2021 overrides; customized layout for this article */
+
+header {
+    background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/oldfriend/ti994a-large-bw.jpg);
+    background-position: 50% 0%;
+    background-size: cover;
+}
+
+.header-wrap-gray {
+    background: linear-gradient(180deg, transparent 0%, rgba(17,17,17,0.8) 50%, rgba(17,17,17,1) 100%);
+}
+
+article {
+    background-color: rgb(17,17,17);
+}
+
+.ornamental-first-letter {
+    font-size: 70px;
+}
+
+p {
+    font-size: 20px;
+}
+
+blockquote {
+    border: none;
+    border-top: 5px solid #fff;
+    border-bottom: 5px solid #fff;
+    margin: 40px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+blockquote, blockquote p {
+    font-family: Georgia;
+    font-weight: 900;
+    line-height: 120%;
+}
+
+.blockquote-quotation {
+    font-style: italic;
+}
+
+.blockquote-citation {
+    font-size: 22px;
+}
+
+.icon {
+    margin: 0 20px;
+    max-height: 80px;
+    max-width: 80px;
+}
+
+.section-divider {
+    margin: 60px 0 40px;
+    text-align: center;
+}
+
+.section-divider hr {
+    border: none;
+    border-top: 2px solid #FFF;
+    display: inline-block;
+    font-size: 2px;
+    height: 5px;
+    line-height: 2px;
+    margin: 0;
+    opacity: 0.15;
+    width: 80px;
+}
+
+.newsletter {
+    margin-bottom: 60px;
+}
+
+article .dark.bio-and-footer {
+    margin-top: 0;
+}
+
+footer.byline {
+    margin-top: 100px;
+}
+
+        </style>
+    </head>
+    <body>
+
+        <header>
+            <div class="header-wrap-gray">
+                <a class="logo" href="https://alabut.com"></a>
+                <picture class="header-text">
+                    <source media="(min-width: 768px)" srcset="https://d32mxho067pe0f.cloudfront.net/images/writing/oldfriend/header-text-large.png">
+                    <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/oldfriend/header-text-small.png">
+                </picture>
+            </div> <!-- /header-wrap -->
+        </header>
+       
+        <!-- ***************** ARTICLE BODY ***************** -->
+        
+        <article>
+            <div class="container dark-section">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2" style="padding-top: 0;padding-bottom: 20px;">
+
+    					<p><span class="ornamental-first-letter" style="float: left;font-weight: 900;margin-right: 5px;">T</span>oday, I had a short conversation with an automated chatbot and it made me think of the first time I talked to a computer, when I was around 6 years old.</p>
+
+                        <p>It’s fascinating when life comes full circle like that sometimes. Rewind a few decades back and the first programming I can remember was in the first grade, when I wrote out some lines in BASIC on my console computer to carry on a highly scripted conversation.</p>
+
+                        <p>It was a Texas Instruments TI&#8211;99/4A and I loved the hell out of that thing. I wish I'd come up with a nickname as catchy as Threepio, so let's retcon this story and call it Foura from here on out.</p>
+
+                        <figure>
+                            <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/oldfriend/ti994a-large-bw.jpg" alt="" />
+                            <figcaption>Good old reliable Foura. It’s so 80’s that it looked like the love child of a DeLorean and a Cyclon.</figcaption>
+                        </figure>
+
+                        <p>Although it sounds like an impressive humblebrag to say I programmed a chatbot at such a precocious age, you have to trust me when I say that I didn't do anything remotely that complicated and instead it was just an insanely simple sleight of hand. It was just a few print statements that waited for responses and it wasn't at all like the super advanced artificial intelligence you see in the movies.</p>
+
+                        <p>The stilted conversation went something like this:</p>
+
+                        <blockquote class="smallquote">
+                            <p><strong>Computer:</strong> “Hi Al! Did you have fun at school?”</p>
+                            <p><strong>Me:</strong> “Not really.”</p>
+                            <p><strong>Computer:</strong> “Did you make any new friends?”</p>
+                            <p><strong>Me:</strong> “Nope, they’re all still jerks.”</p>
+                            <p><strong>Computer:</strong> “Sorry, better luck tomorrow!”</p>
+                        </blockquote>
+
+                        <p>It's easy to guess that this was all pre-written and the computer didn’t actually recognize any of my answers, it would just spit out the next question regardless.</p>
+
+                        <p>Still, I finally had something awesome to take to school for show and tell. Even better, it was a smart little friend. One that talked back. <strong>Imagine you’re the only kid with a real live R2D2.</strong></p>
+
+                        <p>The demo at school went exactly as planned but not at all like I’d imagined.</p>
+
+                    </div> <!-- /col -->
+                </div> <!-- row -->
+            </div> <!-- /container dark-section -->
+
+            <section class="light-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2" style="padding-top: 0;padding-bottom: 20px;">
+
+                            <div class="section-divider">
+                                <hr>
+                                <img class="icon" src="https://d32mxho067pe0f.cloudfront.net/images/writing/icons/icon-school.svg">
+                                <hr>
+                            </div> <!-- /section-divider -->
+
+        					<p>I lugged Foura to school and found it one of those TV carts to ride around in, plugged the little guy in to talk and was ready to show it off to the rest of my classmates that had ignored me all year after I’d transferred in from another school.</p>
+
+                            <p>The TV cart became a part of him and made him into an instant giant, like putting a pumpkin on the shoulders of the headless horseman. He stood all day in a corner of the class, five feet tall and silent. Ready to come to life towards the end of school as our final presentation.</p>
+
+                            <p>This would be my big coming out party! I’d invented a life hack to make <em>dozens of new friends at once.</em></p>
+
+                            <p>You can see where this is going.</p>
+
+                            <p>The time came, I talked through what Foura was, the games you could play, and how it “talked” with a program I’d written. And the overwhelming response was… crickets.</p>
+
+                            <p>The vast emptiness of space. Listening to the infinite beyond, until the teacher said:</p>
+
+                            <blockquote>
+                                <p>“Thank you very much Al, that was… interesting. Class dismissed!”</p>
+                            </blockquote>
+
+                            <p>The class emptied out instantly like it was a fire drill and I was left standing with my robot. Not even the teacher got it.</p>
+
+                        </div> <!-- /col -->
+                    </div> <!-- /row -->
+                </div> <!-- /container -->
+            </section> <!-- /light-section -->
+
+
+            <div class="container dark-section">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+
+                        <div class="section-divider">
+                            <hr>
+                            <img class="icon" src="https://d32mxho067pe0f.cloudfront.net/images/writing/icons/icon-lonely.svg">
+                            <hr>
+                        </div> <!-- /section-divider -->
+
+                        
+                        <p>Suffice it to say that I wasn’t the most popular kid in school. Foura didn’t help as much as I’d hoped.</p>
+
+                        <p>I felt like all these kids could see exactly how uncool I was and I’d just hung a <em>“Bully Me!”</em> sign around my neck that would stay there until I finished grade school.</p>
+
+                        <p>Which is exactly what happened. I would’ve been better off being ignored.</p>
+
+                        <p>Things got so bad that my mom took me to self-defense classes, but all that did was get me suspended twice in fifth grade when I finally had the skills to fight back. My parents were at the end of their rope, trying counseling, sports, everything they could think of. My mom brought in reinforcements from the old country and had her sisters and mom fly in from Turkey, staying with us to lend a helping hand.</p>
+
+                        <p>Finally, the eventual solution was to skip 6th grade and just get the hell out of that toxic environment, to make a fresh start new start in middle school.</p>
+
+                        <p><em>It worked.</em> All kinds of fun adventures started after the nightmare that was grade school.</p>
+
+                        <p>Two things happened in quick succession: I went abroad for 7th grade and was the cool kid for a year as the visiting American, then I went to a tech-oriented school when we got back stateside. My junior high and high school was like heaven - an academically-accomplished magnet for math, science, and computers, yet also ethnically diverse and with only 10% white students.</p>
+
+                        <p>I <strong>loved</strong> that school. It was full of freaks and geeks just like me, so I fit right in. I even ended up going into tech as a career and I’m thankful to this day that I’m still in this game, one that feels just as much like play as it does work.</p>
+
+                        <p>Everything worked out in the end.</p>
+
+                        <p>In hindsight, I realize now that I wasn’t actually as uncool as I felt in grade school but that <strong>the kids in grade school just weren’t my tribe.</strong> Especially when they flocked together in numbers. Trying to explain my rudimentary programming skills to those idiots was like expecting a pack of dogs to play the piano.<p>
+
+                        <p>I found my people later. It all worked out. Those wilderness years in elementary school just didn't have the droids I was looking for.</p>
+
+                    </div> <!-- /col -->
+
+                </div> <!-- /row -->
+            </div> <!-- /container dark-section -->
+
+            
+            <section class="light-section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2">
+                            <div class="section-divider">
+                                <hr>
+                                <img class="icon" src="https://d32mxho067pe0f.cloudfront.net/images/writing/icons/icon-bully.svg">
+                                <hr>
+                            </div> <!-- /section-divider -->
+
+                            <p><strong>Many years later, I ran into one of my bullies as an adult, in one of the last places I would’ve ever expected.</strong></p>
+
+                            <p>After college, my favorite place to hang out was the Flash user group in San Diego. It was Flash in name only and covered all kinds of new tech, anything you could use to make cool stuff online for fun or profit.</p>
+
+                            <figure>
+                                <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/oldfriend/flash.png" alt="" />
+                                <figcaption>Decades before today’s advanced client-side javascript, there was the first version of Flash with Actions, which allowed you to do real scripted interactivity in the browser and was the precursor to Actionscript.</figcaption>
+                            </figure>
+
+                            <p>We’d get together at nights in random locations, people with day jobs in the industry that still couldn’t get enough playtime with these great toys. We were riding the enthusiasm of a hot new industry being born right before our eyes, changing by the day. We gathered from disparate areas like academia, private industry and the military, like some kind of anonymous addicts to a new drug.</p>
+
+                            <p>Years before Hacker News and Meetups, the user group was a revelation for those of us toiling away in the bowels of San Diego’s white collar version of a service industry.</p>
+
+                            <p><strong>We were brains for hire during the day, curious explorers in our free time, looking for fellow travelers to form our rogue band of tech misfits.</strong></p>
+
+                            <p>A generation earlier, we would’ve read The Whole Earth Catalog and gone to the Homebrew Club, maybe even dropped acid on the beach. Now we talked shop, ate rolled tacos, and planned road trips to LA to see art exhibits by guys we read about on K10K.</p>
+
+                            <figure>
+                                <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/oldfriend/hackersandpainters.jpeg" alt="" />
+                                <figcaption>My own personal bible was a hardcover of Paul Graham’s Hackers &amp; Painters. My copy was just as annotated but way more dog-eared and worn down.</figcaption>
+                            </figure>
+
+                            <p>
+                            One day, we had a guest speaker that was a regional sales manager for software that I can’t remember now and doesn’t exist anymore anyway.</p>
+
+                            <p>I towered over this little guy with questions about the product roadmap and took his business card, then realized who he was later at home that night when putting the card away and rued the missed opportunity to get some violent closure.</p>
+
+                            <p>This was the monster that tormented me so much that I turned down my 2nd grade teacher’s invitation to skip to 3rd grade because it would’ve meant going deeper into his circle of hell. Poor Mrs Patrick, so kind and gentle but she had no inkling of the sacrifice she was asking of me.</p>
+
+                            <p>Academics came second to personal safety and I cried my way out of that jam.</p>
+
+                            <p>So I pinged my friend Brett about my discovery, the organizer of our Flash group. This is when I learned that one way to spot a real friend is when they offer extreme versions of help even though you didn’t ask.</p>
+
+                            <p>Instead of just being surprised and chuckling about it, Brett's first reaction was aggressive loyalty. His exact words were <em>“want me to look up where this fucker lives?”</em></p>
+
+                            <p>Now that’s a “ride or die” bro right there.</p>
+
+                            <p>I turned it down but it would’ve been an amazing movie scene straight out of Swingers:</p>
+
+                            <blockquote class="smallquote">
+                                <p>“Hey! I had some more questions about your lecture!”</p>
+                                <p>“Um, what? I’m at my home now?”</p>
+                                <p>“I know, this’ll be quick, I promise!”</p>
+                                <p>“Please get off my lawn.”</p>
+                                <p>“Listen, I’m just curious what the support turnaround time is for a knuckle sandwich?”</p>
+                            </blockquote>
+
+                            <p>And then <strong>pow in the kisser,</strong> a comeuppance decades in the making.</p>
+                            <p>Go ahead and call the cops, I'll just tell them that it was revenge of the nerds.</p>
+
+                        </div> <!-- /col -->
+                    </div> <!-- /row -->
+                </div> <!-- /container -->
+            </section> <!-- /light-section -->
+
+
+            <div class="container dark-section">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2">
+
+                        <div class="section-divider">
+                            <hr>
+                            <img class="icon" src="https://d32mxho067pe0f.cloudfront.net/images/writing/icons/icon-family.svg">
+                            <hr>
+                        </div> <!-- /section-divider -->
+
+                        <p>Weirdly, I think of this kind of stuff a lot when I’m having fun with my little nephew.</p>
+
+                        <p>He’s super into building massively complex structures in Minecraft, as well as physical creations with Lego blocks. His dream vacation spot is Legoland.</p>
+
+                        <p>I try to encourage his interest in tech or whatever else he’s into but can't help it when my mind wanders. Whenever we’re off on one of our little adventures, I have little pauses here and there where I stop and wonder what kind of adult he’ll be and what the story is that he’ll tell himself about these formative years.</p>
+
+                        <p>What is his self narrative? Will it be like mine, full of torment that he had to suffer through before finding redemption?</p>
+
+
+                            <div class="col-sm-6">
+                                
+                                <figure>
+                                    <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/oldfriend/nephew.jpeg" alt="" />
+                                    <figcaption>He’s wearing his Darth Vader beanie, gloves and shirt. We’re both wearing a bunch of gear because we had to run a mile in the rain to catch a showing of Rogue One.</figcaption>
+                                </figure>
+                            </div>
+
+
+                        <p>Maybe it's a bit naive of me, but I hope that he’ll have similarly positive experiences at a vastly accelerated pace and without nearly as many drawbacks.</p>
+
+                        <p>I mean come on, computers are cool now. It’s how you get your hands on the real version of Minecraft, which all the kids are obsessed with. So is programming, because that’s how you make unique customizations in the game, called mods.</p>
+
+                        <p>Show and tell in the form of YouTube is also cool, so we started his first channel and he spent an entire weekend vlogging. He worked hard to shoot those videos and his appetite was barely satiated. I can tell that he’s just getting started on this journey to embrace his full nerdiness.</p>
+
+                        <p>What really blew my hair back about how different things are today was when I found out that they even have summer camps in Minecraft where kids learn to code by making mods. It’s like a dev bootcamp for children. I would’ve done anything at his age to go to something like this, if it had existed.</p>
+
+                        <p>My little guy’s head explodes every time I bring up the possibility of going to Minecraft summer camp and meeting other kids that are into it too. He’s been studying up on his reading skills just to get ready to program.</p>
+
+                        <p>It seems that no matter how much things have changed, nerds of a feather still flock together, at any age.</p>
+
+                    </div> <!-- /col -->
+
+                </div> <!-- /row -->
+            </div> <!-- /container dark-section -->
+
+
+            <section class="light-section">
+                <div class="container">
+                    <div class="row">
+                        
+                        <div class="col-sm-8 col-sm-offset-2">
+                            <div class="section-divider">
+                                <hr>
+                                <img class="icon" src="https://d32mxho067pe0f.cloudfront.net/images/writing/icons/icon-computer.svg">
+                                <hr>
+                            </div> <!-- /section-divider -->
+        					
+                            <p>So all this time later, after an entire lifetime as a tech enthusiast and 15 years into my career, I wonder: what is the first program other geeks write for themselves, after they get through the initial Hello World tutorials? Do they also create rudimentary chatbots to fill the void until they found their tribe?</p>
+
+                            <p>I can't be the only nerd that wrote some version of my one-sided AI conversation with Foura or had similar epiphanies about finding your people. It’s funny to think of the tech industry as being so powerful at connecting people when it’s been fueled by an engine of lonely childhoods, but maybe that won’t be the case for much longer.</p>
+
+                            <p><em>Originally published Mar 22, 2017 on <a href="https://medium.com/@alabut/an-ode-to-a-new-old-friend-5b19728e94e9">Medium</a></em></p>
+
+                        </div> <!-- /col -->
+
+
+                        <div class="col-sm-8 col-sm-offset-2">
+                            <footer class="byline">
+                                <div class="row">
+                                    <div class="avatar col-sm-3 col-lg-2">
+                                        <img class="img-responsive center-block" class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/about/al-avatar.png">
+                                    </div> <!--  /col -->
+                                    <div class="bio col-sm-9 col-lg-10">
+                                        <p><strong style="font-family: Helvetica;">AL ABUT</strong> <em>is a product designer &amp; startup&nbsp;veteran.</em></p>
+                                        <p><em>Follow</em> <strong><a href="https://twitter.com/alabut/">@alabut</a></strong> <em>on Twitter.</em></em></p>
+                                    </div> <!--  /col -->
+                                </div> <!-- /row -->
+                            </footer>
+                            <aside class="newsletter">
+                                <h2>Sign Up For My Email Newsletter</h2>
+                                <p>Thoughts on product design, startups &amp; tech.</p>
+                                <p><a href="https://alabut.substack.com/welcome">Subscribe</a></p>
+                            </aside>
+                        </div> <!-- /col -->
+
+        			</div> <!-- row -->
+        		</div> <!-- /container -->
+            </section> <!-- /light-section -->
+
+            <aside class="dark bio-and-footer">
+                <div class="container footer">
+                    <div class="row mini-nav">
+                        <div class="col-sm-8 col-sm-offset-2">
+                            <a href="/">Home</a>
+                             · 
+                            <a href="/about">About</a>
+                             · 
+                            <span class="copyright">Made with &hearts; in CA</span>
+                        </div> <!-- /col -->
+                    </div> <!-- /row mini-nav -->
+                </div> <!-- /container footer -->
+            </aside>
+
+        </article>
+
+    </body>
+</html>
