@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!-- Plausible is a privacy-focused analytics tool that doesn't require cookies or GDPR notice. -->
+        <script async defer data-domain="alabut.com" src="https://plausible.io/js/plausible.js"></script>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+        <meta property="og:image" content="https://d32mxho067pe0f.cloudfront.net/images/writing/spaceisimportant/serengeti.jpg">
+        <title>Space Exploration is Important: Reflecting our Earthly challenges instead of ignoring them</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/designsprint.css">
+        <link rel="stylesheet" href="../css/work.css">
+        <link rel="stylesheet" href="../css/writing.css">
+        <link rel="stylesheet" media="print" href="../css/print.css">
+        <style type="text/css">
+
+/* REVERSE THESE DEFAULTS IN THE OTHER STYLESHEET TOO? I'm not folding this within the minimal header class because it shouldn't have a default in the first place */
+
+body, html {
+    background: #fff;
+}
+
+header {
+    background: none;
+}
+
+article .dark.bio-and-footer {
+    border: none;
+    margin-top: 20px;
+}
+
+article .listbox h2 {
+    margin: 0;
+}
+
+article .listbox h2::after {
+    margin: 25px auto 0;
+}
+
+article .listbox li::before {
+    content: none;
+}
+
+article .listbox li:last-child {
+    margin-bottom: 45px;
+}
+
+/* NEW CUSTOM STYLES (should they be the default? just try disabling designsprint.css to see how nicely minimal the bootstrap-only version is...) */
+
+.minimal-header header {
+    text-align: center;
+}
+
+.minimal-header .header-wrap {
+    padding: 100px 15px;
+}
+
+.minimal-header .logo {
+    display: inline-flex;;
+    filter: invert(1);
+    left: initial;
+    position: relative;
+    top: initial;
+}
+
+.minimal-header .logo:hover {
+    /*color: #f15403;*/
+    filter: invert(0);
+}
+
+.minimal-header header h2 {
+	color: #666;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+article .blockquote.table-of-contents {
+    margin: 40px 0;
+    padding: 30px 30px 25px;
+}
+
+article .blockquote.table-of-contents ol {
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+article aside li {
+    line-height: 120%;
+}
+
+footer.byline:before {
+    content: url(https://d32mxho067pe0f.cloudfront.net/images/writing/monogram-gray-on-white.png);
+    left: calc(50% - 107px);
+    position: absolute;
+    top: -80px;
+}
+
+footer.byline {
+    background: rgba(0,0,0,0.05);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 130px;
+    padding: 40px;
+    position: relative;
+}
+
+footer.byline p {
+    margin-bottom: 5px;
+}
+
+aside p:last-of-type, footer.byline p:last-of-type {
+    margin: 0;
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+.newsletter {
+    text-align: center;
+}
+
+.newsletter a {
+    background: #f15403;
+    border: 1px solid #f15403;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-family: "Helvetica";
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 10px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.newsletter a:hover {
+    background: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+
+.newsletter, .minimal-header aside.blockquote {
+    background: #111111;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    overflow: hidden;
+    padding: 73px;
+    position: relative;
+}
+
+.minimal-header aside.blockquote:first-of-type {
+    margin-top: 0;
+}
+
+.minimal-header aside.blockquote.giant-quotemark {
+    background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/quotemark-orange.png);
+    background-position: 70px 70px;
+    background-repeat: no-repeat;
+    padding-left: 193px;
+}
+
+.minimal-header aside.blockquote p {
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.minimal-header aside.blockquote em {
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+.giant-quotemark:nth-of-type(odd) a {
+    color: #fff;
+}
+
+.giant-quotemark:nth-of-type(odd) a:hover {
+    border-color: #fff;
+}
+
+aside.blockquote.giant-quotemark:nth-of-type(even) {
+    background-color: #f2f2f2;
+    background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/quotemark-gray.png);
+    color: #222;
+}
+
+.listbox {
+    overflow: hidden;
+    position: relative;
+}
+
+.listbox li {
+    padding: 5px 0 25px;
+}
+
+.listbox li:first-of-type {
+    padding-top: 25px;
+}
+
+.listbox:before, .newsletter:before, .minimal-header aside.blockquote:before {
+    background-color: #f15403;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    content: "";
+    height: 35px;
+    position: absolute;
+    right: 33%;
+    top: 0;
+    width: 70px;
+}
+
+.listbox:after, .newsletter:after, .minimal-header aside.blockquote:after {
+    background-color: #fff;
+    border-radius: 80px;
+    bottom: -130px;
+    content: "";
+    height: 125px;
+    opacity: .1;
+    position: absolute;
+    right: 8%;
+    transform: rotate(-50deg);
+    width: 300px;
+}
+
+.listbox:after, aside.blockquote.giant-quotemark:nth-of-type(even):after {
+    background-color: #000;
+}
+
+/* DARK MODE */
+
+.dark-mode {
+	background-color: #222;
+	color: #eee;
+}
+
+.dark-mode.minimal-header .logo {
+	filter: invert(0);
+}
+
+.dark-mode.minimal-header header h2 {
+	color: #eee;
+}
+
+.dark-mode h3 {
+    color: #000;
+    filter: invert(1);
+}
+
+
+.dark-mode h4 {
+    color: rgba(255,255,255,0.5);
+    font-size: 16px;
+    margin: 0;
+}
+
+.dark-mode footer.byline {
+	background: rgba(255,255,255,0.05);
+}
+
+.dark-mode footer.byline:before {
+	filter: invert(1);
+}
+
+.dark-mode article a {
+	color: #f15403;
+}
+
+.dark-mode article a:hover {
+	border-color: #eee;
+	color: #eee;
+}
+
+.dark-mode .newsletter a {
+	color: #fff;
+}
+
+/* NON-MOBILE STYLES */
+
+@media only screen and (min-width: 576px) {
+
+    .newsletter {
+        background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/email.svg);
+        background-repeat: no-repeat;
+        background-size: 100px;
+        background-position: 53px 76px;
+        padding-left: 193px;
+    }
+
+    .newsletter, .newsletter h2 {
+        position: relative;
+        text-align: left;
+    }
+
+    .newsletter h2 {
+        margin-bottom: 70px;
+    }
+
+    article .newsletter h2::after {
+        left: 0;
+        position: absolute;
+    }
+
+}
+
+/* MOBILE STYLES */
+
+@media only screen and (max-width: 575.98px) {
+
+    .dark-mode header:before,
+    .dark-mode header:after {
+        top: 51px;
+        height: 260px;
+        left: calc(50% - 130px);
+        width: 260px;
+    }
+
+
+    .minimal-header .header-wrap {
+        padding: 50px 15px;
+    }
+
+    .minimal-header aside.blockquote {
+        padding: 40px;
+    }
+
+    .minimal-header aside.blockquote.giant-quotemark {
+        background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/quotemark-orange-mobile.png);
+        background-position: 40px 20px;
+        padding: 70px 40px 40px;
+    }
+
+    aside.blockquote.giant-quotemark:nth-of-type(even) {
+        background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/quotemark-gray-mobile.png);
+    }
+
+    .minimal-header aside.blockquote:before {
+        right: 10%;
+    }
+
+    aside ol {
+        margin: 0;
+        padding: 0;
+    }
+
+    aside li:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .newsletter {
+        padding: 60px 40px;
+    }
+
+    .newsletter:after {
+        bottom: -150px;
+    }
+
+}
+
+        </style>
+    </head>
+    <body class="minimal-header dark-mode">
+        <header>
+            <div class="header-wrap">
+                <a class="logo" href="https://alabut.com"></a>
+                <h1>Space Exploration Is Important</h1>
+                <h2>This time it's different: reflecting our Earthly challenges instead of ignoring them</h2>
+                <h4>July 27th, 2021</h4>
+            </div> <!-- /header-wrap-none -->
+        </header>
+
+        <article>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-sm-offset-2">
+
+                            <aside class="blockquote giant-quotemark">
+                                <p>
+                                    &#8220;No hot water, no toilets, no lights. But Whitey's on the moon.&#8221;
+                                    <em>&mdash; Gil Scott-Heron, 1970</em>
+                                </p>
+                            </aside>
+
+                            <p><span class="ornamental-first-letter">T</span>his all started with a passionate defence of The Expanse on Facebook, before spiraling out into Lovecraft Country and ultimately the roots of the space program itself.</p>
+
+                            <p>A few friends had mentioned that although they&#8217;re fans of The Expanse, it took a few tries to slog through the first season before it clicked for them.</p>
+
+                            <p>I was agog. How could anyone not be hooked from the very first moment? Maybe I was so taken in by the world-building that I ignored some other weaker aspects?
+
+                            <p>It&#8217;s possible. I was also instantly taken in by Raised By Wolves, except I can&#8217;t think of any weak points there. The lead actress in particular put on an absolute clinic while she crushed the shit out of that role. <em>Crushed.</em> </p>
+
+
+
+                            <h3>Space Race, Take Three</h3>
+
+                            <p>Maybe art takes on different meanings depending on what you bring to it, like if you&#8217;ve been following the impact of technology on society throughout your entire life.</p>
+
+                            <p>I mean, does anyone else wonder what the real world implications are of SpaceX’s rush to Mars colony and Blue Origin’s to asteroid mining? That's not to mention the hundreds (thousands?) of little space startups excitedly watching from the sidelines as those two titans battle it out to build the infrastructure deeper into space, like they already did for low earth orbit.</p>
+
+                            <p>It’s like we’re watching the railroads to the Pacific being built out in real time, one youtube stream at a time.</p>
+
+                            <p>It&#8217;s utterly fascinating. But that same history warns us of our own potential for abuse.</p>
+
+                            <p>And it's not just SpaceX and Blue Origin that's finding profitable ways to venture out into the vacuum, they're just the tip of the iceberg. The little startup space companies following in their wake aren’t hypothetical and in the future, they exist right now in the current day. </p>
+
+                            <p>For example, just to pick one crazy-sounding one: there’s an entire class of company that doesn’t own any rockets or control their payload, they simply make satellites with tons of little satellites within them, like russian dolls. They don't even make the mini satellites, just send them up.</p>
+
+                            <p>They're called cubesats. When you think satelittle, you think of something the size of a car. Nope. They're so small that they're about the size of a Rubik's Cube. Hence the cube in cubesats.</p>
+
+                            <figure>
+                                <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/spaceisimportant/cubesats.jpg" alt="" />
+                                <figcaption>There&#8217;s so many of these things that 1 in 5 violate international orbit disposal guidelines. It's the new space trash.</figcaption>
+                            </figure>
+
+                            <p>Friend of mine worked at one such cubesat company and did very well. Now he’s an investor somewhere. </p>
+
+                            <!-- <p>ASK CHRIS WAKE ABOUT THIS</p> -->
+
+                            <p>Cubesats aren&#8217;t made by just one company. They&#8217;re their own ecosystem within the larger ecosystem. Sort of like wifi routers - there are many brands and makers of essentially the same specs.</p>
+
+
+
+                            <p>There’s another company that does make their own mini satellites but no idea who uses them because they rent out time on their sensors by the second. E.g. a satelitte&#8217;s end user for a few minutes could be some government snooping over military bases and then seconds later it’s a commercial fishery monitoring the open water. </p>
+
+                            <p>And that’s just low earth orbit, in very broad strokes.</p>
+
+                            <p>What do you think this entire ecosystem of the space industry will do with a permanent moon base? Which is just a gas station on the way to Mars and deeper, which themselves are waypoints to… etc.</p>
+
+                            <p>The more you get into these companies, the more real this stuff is to them. A friend that applied to Blue Origin talks in ways that completely blur the lines between sci-fi and reality. </p>
+
+                            <p>And that’s just the commercial side of things. NASA’s conversations about the Mars colony setting up proper governance, education, and culture are very real and very, very needed, given the track record of exploitation the companies already have on earth. </p>
+
+                            <p>My casual armchair quarterback guess is that our solar system will start looking like The Expanse within my lifetime.</p>
+
+                            <p>Long haul truckers will be bringing in precious minerals from asteroids to be processed on the way to Mars or Earth. It&#8217;ll be as routine as SpaceX&#8217;s rockets landing back on their launch pads are today. And the companies will fight as hard against the unionization of these astronauts as they do against their workers back on our home planet.</p>
+
+                            <p>So yeah, I think The Expanse is a good show. Does that begin to explain why? 😂</p>
+
+
+
+                            <h3>Getting To The Real Questions</h3>
+
+                            <p>A slightly heavier take is that have to care about space exploration because it’s going to happen and ignoring it means exploitation will run rampant to new horrifying heights. No one will be there to check corporate greed. </p>
+
+                            <p>That’s why everyone against it is asking the wrong question.</p>
+
+                            <p>It’s not: should we go into space? No, this isn’t tax-payer funded and dependent on our approval. It's not even military-driven like the early space race. This time, the private industry is in the driver's seat and has its own momentum now. We're already going.</p>
+
+                            <p>We are going into space and the right question is who do we want to be as we go? Star Trek’s utopia? Or the Star Wars hellscape. Which universe would you prefer?</p>
+
+                            <p>I'll give you a hint about which team I'm on. Elon went to the Air Force Academy and said he wants a Starfleet. I’m guessing that’s Bezos’ worst nightmare, having to answer to a bunch of uppity entitled cadets.</p>
+
+                            <p>Then again, Branson is playing the clever fool and disguised as a non-factor, written off as just the party guy cheering on the main players. He may be the dark horse in this race.</p>
+
+                            <p>But even those white guys give me massive amounts of pause. They look too much like the colonizers from previous centuries, writ large. I don't see myself in them as much as I do when I watch a Black space goddess from the future in Lovecraft Country.</p>
+
+                            <figure>
+                                <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/spaceisimportant/seraphina.jpg" alt="" />
+                                <figcaption>Hippolyta meets Seraphina</figcaption>
+                            </figure>
+
+                            <p>So the punchline is: we have to care, otherwise we export our exploitation to a rampant level throughout the solar system.</p>
+
+
+
+                            <h3>Riding The Rocket Of My Dreams</h3>
+
+                            <p>Ultimately the person I&#8217;m trying to convince is myself. Underneath all this is a tone poem about diversity in real life making room for my own imagination. </p>
+
+                            <p>I&#8217;ll probably never physically go to space in my lifetime, yet my mind wanders. The more types of people see themselves in space, the more I see myself, even if none of them look like me.</p>
+
+                            <p>And if the only people that care about space are the ones that look like the guys funding the trip, then we all lose.</p>
+
+                            <figure>
+                                <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/spaceisimportant/serengeti.jpg" alt="" />
+                                <figcaption>An artistic depiction of Afrofuturism by <a href="https://www.flickr.com/photos/solen-feyissa/50040111491/">Solen Feyissa</a></figcaption>
+                            </figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            <footer class="byline">
+                                <div class="row">
+                                    <div class="avatar col-sm-3 col-lg-2">
+                                        <img class="img-responsive center-block" class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/about/al-avatar.png">
+                                    </div> <!--  /col -->
+                                    <div class="bio col-sm-9 col-lg-10">
+                                        <p><strong style="font-family: Helvetica;">AL ABUT</strong> <em>is a product designer &amp; startup&nbsp;veteran.</em></p>
+                                        <p><em>Follow</em> <strong><a href="https://twitter.com/alabut/">@alabut</a></strong> <em>on Twitter.</em></em></p>
+                                    </div> <!--  /col -->
+                                </div> <!-- /row -->
+                            </footer>
+
+                            <aside class="newsletter">
+                                <h2>Sign Up For My Email Newsletter</h2>
+                                <p>Thoughts on product design, startups &amp; tech.</p>
+                                <p><a href="https://alabut.substack.com/welcome">Subscribe</a></p>
+                            </aside>
+
+                        </div> <!-- /col -->
+                    </div> <!-- row -->
+                </div> <!-- /container -->
+            </section>
+            <aside class="dark bio-and-footer">
+                <div class="container footer">
+                    <div class="row mini-nav">
+                        <div class="col-sm-8 col-sm-offset-2">
+                            <a href="/">Home</a>
+                             · 
+                            <a href="/about">About</a>
+                             · 
+                            <span class="copyright">Made with &hearts; in CA</span>
+                        </div> <!-- /col -->
+                    </div> <!-- /row mini-nav -->
+                </div> <!-- /container footer -->
+            </aside>
+        </article>
+    </body>
+</html>
