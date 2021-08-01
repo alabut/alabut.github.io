@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <!-- Plausible is a privacy-focused analytics tool that doesn't require cookies or GDPR notice. -->
+        <script async defer data-domain="alabut.com" src="https://plausible.io/js/plausible.js"></script>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+        <meta property="og:image" content="https://d32mxho067pe0f.cloudfront.net/images/writing/spaceisimportant/serengeti.jpg">
+        <title>Change Before You Have To: How to plan for disruption</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../css/designsprint.css">
+        <link rel="stylesheet" href="../css/work.css">
+        <link rel="stylesheet" href="../css/writing.css">
+        <link rel="stylesheet" media="print" href="../css/print.css">
+        <style type="text/css">
+
+/* REVERSE THESE DEFAULTS IN THE OTHER STYLESHEET TOO? I'm not folding this within the minimal header class because it shouldn't have a default in the first place */
+
+body, html {
+    background: #fff;
+}
+
+header {
+    background: none;
+}
+
+article .dark.bio-and-footer {
+    border: none;
+    margin-top: 20px;
+}
+
+article .listbox h2 {
+    margin: 0;
+}
+
+article .listbox h2::after {
+    margin: 25px auto 0;
+}
+
+article .listbox li::before {
+    content: none;
+}
+
+article .listbox li:last-child {
+    margin-bottom: 45px;
+}
+
+/* NEW CUSTOM STYLES (should they be the default? just try disabling designsprint.css to see how nicely minimal the bootstrap-only version is...) */
+
+.minimal-header header {
+    text-align: center;
+}
+
+.minimal-header .header-wrap {
+    padding: 100px 15px;
+}
+
+.minimal-header .logo {
+    display: inline-flex;;
+    filter: invert(1);
+    left: initial;
+    position: relative;
+    top: initial;
+}
+
+.minimal-header .logo:hover {
+    /*color: #f15403;*/
+    filter: invert(0);
+}
+
+.minimal-header header h2 {
+	color: #666;
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+article .blockquote.table-of-contents {
+    margin: 40px 0;
+    padding: 30px 30px 25px;
+}
+
+article .blockquote.table-of-contents ol {
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+article aside li {
+    line-height: 120%;
+}
+
+footer.byline:before {
+    content: url(https://d32mxho067pe0f.cloudfront.net/images/writing/monogram-gray-on-white.png);
+    left: calc(50% - 107px);
+    position: absolute;
+    top: -80px;
+}
+
+footer.byline {
+    background: rgba(0,0,0,0.05);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 130px;
+    padding: 40px;
+    position: relative;
+}
+
+footer.byline p {
+    margin-bottom: 5px;
+}
+
+aside p:last-of-type, footer.byline p:last-of-type {
+    margin: 0;
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+.newsletter {
+    text-align: center;
+}
+
+.newsletter a {
+    background: #f15403;
+    border: 1px solid #f15403;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    font-family: "Helvetica";
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 10px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+}
+
+.newsletter a:hover {
+    background: transparent;
+    border-color: #fff;
+    color: #fff;
+}
+
+.newsletter, .minimal-header aside.blockquote {
+    background: #111111;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    overflow: hidden;
+    padding: 73px;
+    position: relative;
+}
+
+.minimal-header aside.blockquote:first-of-type {
+    margin-top: 0;
+}
+
+.minimal-header aside.blockquote.giant-quotemark {
+    background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/quotemark-orange.png);
+    background-position: 70px 70px;
+    background-repeat: no-repeat;
+    padding-left: 193px;
+}
+
+.minimal-header aside.blockquote p {
+    font-weight: 600;
+    line-height: 140%;
+}
+
+.minimal-header aside.blockquote em {
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+    margin-top: 5px;
+    opacity: 0.8;
+}
+
+.giant-quotemark:nth-of-type(odd) a {
+    color: #fff;
+}
+
+.giant-quotemark:nth-of-type(odd) a:hover {
+    border-color: #fff;
+}
+
+aside.blockquote.giant-quotemark:nth-of-type(even) {
+    background-color: #f2f2f2;
+    background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/quotemark-gray.png);
+    color: #222;
+}
+
+.listbox {
+    overflow: hidden;
+    position: relative;
+}
+
+.listbox li {
+    padding: 5px 0 25px;
+}
+
+.listbox li:first-of-type {
+    padding-top: 25px;
+}
+
+.listbox:before, .newsletter:before, .minimal-header aside.blockquote:before {
+    background-color: #f15403;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    content: "";
+    height: 35px;
+    position: absolute;
+    right: 33%;
+    top: 0;
+    width: 70px;
+}
+
+.listbox:after, .newsletter:after, .minimal-header aside.blockquote:after {
+    background-color: #fff;
+    border-radius: 80px;
+    bottom: -130px;
+    content: "";
+    height: 125px;
+    opacity: .1;
+    position: absolute;
+    right: 8%;
+    transform: rotate(-50deg);
+    width: 300px;
+}
+
+.listbox:after, aside.blockquote.giant-quotemark:nth-of-type(even):after {
+    background-color: #000;
+}
+
+/* DARK MODE */
+
+.dark-mode {
+	background-color: #222;
+	color: #eee;
+}
+
+.dark-mode.minimal-header .logo {
+	filter: invert(0);
+}
+
+.dark-mode.minimal-header header h2 {
+	color: #eee;
+}
+
+.dark-mode h3 {
+    color: #000;
+    filter: invert(1);
+}
+
+
+.dark-mode h4 {
+    color: rgba(255,255,255,0.5);
+    font-size: 16px;
+    margin: 0;
+}
+
+.dark-mode footer.byline {
+	background: rgba(255,255,255,0.05);
+}
+
+.dark-mode footer.byline:before {
+	filter: invert(1);
+}
+
+.dark-mode article a {
+	color: #f15403;
+}
+
+.dark-mode article a:hover {
+	border-color: #eee;
+	color: #eee;
+}
+
+.dark-mode .newsletter a {
+	color: #fff;
+}
+
+/* NON-MOBILE STYLES */
+
+@media only screen and (min-width: 576px) {
+
+    .newsletter {
+        background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/email.svg);
+        background-repeat: no-repeat;
+        background-size: 100px;
+        background-position: 53px 76px;
+        padding-left: 193px;
+    }
+
+    .newsletter, .newsletter h2 {
+        position: relative;
+        text-align: left;
+    }
+
+    .newsletter h2 {
+        margin-bottom: 70px;
+    }
+
+    article .newsletter h2::after {
+        left: 0;
+        position: absolute;
+    }
+
+}
+
+/* MOBILE STYLES */
+
+@media only screen and (max-width: 575.98px) {
+
+    .dark-mode header:before,
+    .dark-mode header:after {
+        top: 51px;
+        height: 260px;
+        left: calc(50% - 130px);
+        width: 260px;
+    }
+
+
+    .minimal-header .header-wrap {
+        padding: 50px 15px;
+    }
+
+    .minimal-header aside.blockquote {
+        padding: 40px;
+    }
+
+    .minimal-header aside.blockquote.giant-quotemark {
+        background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/quotemark-orange-mobile.png);
+        background-position: 40px 20px;
+        padding: 70px 40px 40px;
+    }
+
+    aside.blockquote.giant-quotemark:nth-of-type(even) {
+        background-image: url(https://d32mxho067pe0f.cloudfront.net/images/writing/quotemark-gray-mobile.png);
+    }
+
+    .minimal-header aside.blockquote:before {
+        right: 10%;
+    }
+
+    aside ol {
+        margin: 0;
+        padding: 0;
+    }
+
+    aside li:last-of-type {
+        margin-bottom: 0;
+    }
+
+    .newsletter {
+        padding: 60px 40px;
+    }
+
+    .newsletter:after {
+        bottom: -150px;
+    }
+
+}
+
+        </style>
+    </head>
+    <body class="minimal-header dark-mode">
+        <header>
+            <div class="header-wrap">
+                <a class="logo" href="https://alabut.com"></a>
+                <h1>Change Before You Have To</h1>
+                <h2>Planning for disruption</h2>
+                <h4>August 2nd, 2021</h4>
+            </div> <!-- /header-wrap-none -->
+        </header>
+
+        <article>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+
+                            <p><span class="ornamental-first-letter">J</span>ack Welch, the former CEO of General Electric, liked to think about change. I'm sure he meant purely in business terms but maybe it applies to personal life too.</p>
+
+                            <aside class="blockquote giant-quotemark">
+                                <p>
+                                    &#8220;When growth is constant the structural problems are hidden. When disruption happens, change is unavoidable.&#8221;
+                                    <em>&mdash; Jack Welch</em>
+                                </p>
+                            </aside>
+
+                            <p>There's something that appeals to me about intentionally making things uncomfortable, especially where I'm at with my own personal growth. It's my current mental challenge to become comfortable with uncomfortable thoughts and feelings.</p>
+
+                            <p>Maybe change is growth when you expect it and disruption when you don't?</p>
+
+                            <h3>Changing My Mornings</h3>
+
+                            <p>Just this past Friday, I bitched out some colleagues and in hindsight, it was because I was uncomfortable.</p>
+
+                            <p>It was natural to feel that way in our first meaningful design review and if I'd just been more patient with those feelings, I could've looked past them to ask clarification questions. Then I would've seen that we were on the same page all along.</p>
+
+                            <p>Also I was very hungry and un-caffeinated. So I'm going to start with that small change: preparing cold snacks and coffee the night before I have early morning meetings.</p>
+
+                            <p>So that's my takeaway: start with small steps and don't wait for a sign. And ask clarification questions when feeling confronted.</p>
+
+                            <p>What about you, dear reader? If you're waiting for a more obvious sign in your own life, then here you go:</p>
+                            
+                        </div> <!-- /col -->
+
+                        <div class="col-lg-12">
+
+                            <figure>
+                                <img class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/writing/change/sign.jpg" alt="" />
+                                <figcaption>This is the sign you've been waiting for...</figcaption>
+                            </figure>
+    
+                        </div> <!-- /col -->
+
+
+
+                        <div class="col-lg-8 col-lg-offset-2">
+
+                            <footer class="byline">
+                                <div class="row">
+                                    <div class="avatar col-sm-3 col-lg-2">
+                                        <img class="img-responsive center-block" class="img-responsive center-block" src="https://d32mxho067pe0f.cloudfront.net/images/about/al-avatar.png">
+                                    </div> <!--  /col -->
+                                    <div class="bio col-sm-9 col-lg-10">
+                                        <p><strong style="font-family: Helvetica;">AL ABUT</strong> <em>is a product designer &amp; startup&nbsp;veteran.</em></p>
+                                        <p><em>Follow</em> <strong><a href="https://twitter.com/alabut/">@alabut</a></strong> <em>on Twitter.</em></em></p>
+                                    </div> <!--  /col -->
+                                </div> <!-- /row -->
+                            </footer>
+
+                            <aside class="newsletter">
+                                <h2>Sign Up For My Email Newsletter</h2>
+                                <p>Thoughts on product design, startups &amp; tech.</p>
+                                <p><a href="https://alabut.substack.com/welcome">Subscribe</a></p>
+                            </aside>
+
+                        </div> <!-- /col -->
+                    </div> <!-- row -->
+                </div> <!-- /container -->
+            </section>
+            <aside class="dark bio-and-footer">
+                <div class="container footer">
+                    <div class="row mini-nav">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <a href="/">Home</a>
+                             · 
+                            <a href="/about">About</a>
+                             · 
+                            <span class="copyright">Made with &hearts; in CA</span>
+                        </div> <!-- /col -->
+                    </div> <!-- /row mini-nav -->
+                </div> <!-- /container footer -->
+            </aside>
+        </article>
+    </body>
+</html>
