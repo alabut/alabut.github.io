@@ -262,19 +262,37 @@ ul {
 }
 
 .case-study .subheader h5 {
-    background: rgba(0,0,0,0.1);
+    background: rgba(0,0,0,0.2);
     border-radius: 50px;
-    box-shadow:
-        0 -1px 0 rgba(0,0,0,0.3),
-        0 1px 0 rgba(255,255,255,0.1);
-    color: #fff;
+    color: rgba(255,255,255,0.8);
     display: inline-block;
-    font-size: 12px;
-    font-weight: 500;
+    font-size: 11px;
+    font-weight: 900;
     letter-spacing: 1px;
-    margin: 0 0 5px;
+    margin: 0 0 15px;
     padding: 6px 12px;
     text-transform: uppercase;
+}
+
+.icon-badge {
+    background: rgba(0,0,0,0.3);
+    border-radius: 100%;
+    display: inline-block;
+    font-style: normal;
+    margin: 0 5px 0 0;
+    padding: 5px 8px;
+}
+
+.icon-acquired {
+/*    background: green;*/
+}
+
+.icon-ycombinator {
+    background: color(srgb 0.9486 0.3971 0.1352);
+}
+
+.case-study .description p {
+    margin-bottom: 10px;
 }
 
 .gray .case-study .subheader h5,
@@ -838,7 +856,7 @@ ul {
                                         <div class="case-study-text">
                                             <!-- NOTE: the following divs should be refactored out. -->
                                             <div class="subheader">
-                                                <h5>Acquired 2022</h5>
+                                                <h5><em class="icon-badge icon-acquired">$</em> Acquired 2022</h5>
                                                 <h2>SiteScape</h2>
                                             </div>
                                             <div class="description">
@@ -873,7 +891,7 @@ ul {
                                         <div class="case-study-text">
                                             <!-- NOTE: the following divs should be refactored out. -->
                                             <div class="subheader">
-                                                <h5>Backed by Y Combinator</h5>
+                                                <h5><em class="icon-badge icon-ycombinator">Y</em> Backed by Y Combinator</h5>
                                                 <h2>Partnered</h2>
                                             </div>
                                             <div class="description">
@@ -908,7 +926,7 @@ ul {
                                         <div class="case-study-text">
                                             <!-- NOTE: the following divs should be refactored out. -->
                                             <div class="subheader">
-                                                <h5>Backed by Y Combinator</h5>
+                                                <h5><em class="icon-badge icon-ycombinator">Y</em> Backed by Y Combinator</h5>
                                                 <h2>Circle Medical</h2>
                                             </div>
                                             <div class="description">
